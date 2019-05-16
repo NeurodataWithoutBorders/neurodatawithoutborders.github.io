@@ -24,5 +24,7 @@ data format for importing ECoG and invasive electrophysiology data. The applicat
 NWBwidgets is a library for exploring an NWB file in a Jupyter notebook. This tool lets you travese the hierarchical structure of an NWB file and visualize the data from each of the NWB elements within the file.
 
 ## [EcogVIS](https://github.com/luiztauffer/ecogVIS)
-EcogVIS is a python based, timeseries visualizer for Electrocorticography (ECoG) signals stored in NWB files. EcogVIS makes it intuitive and simple to viualize ECoG signals from selected channels, brain regions, make annotations and mark intervals of interest. Signal processing and analysis tools will soon be added.
-![ecogVIS](../images/EcogVIS_screenshot.png)
+EcogVIS is a python based, timeseries visualizer for Electrocorticography (ECoG) signals stored in NWB files. EcogVIS makes it intuitive and simple to viualize ECoG signals from selected channels, brain regions, make annotations and mark intervals of interest. Signal processing and analysis tools will soon be added. <br>
+
+<img alt="EcogVIS" src="../images/EcogVIS_screenshot.png" width="900" class="center-block">
+
