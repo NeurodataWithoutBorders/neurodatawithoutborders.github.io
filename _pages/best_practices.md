@@ -1,7 +1,7 @@
 # Best Practices
 
-The following document is a summary of a meeting of NWB:N developers, contributors and early adopters at the 
-Hackathon #6 at HHMI Janelia Research Campus on May 16th, 2019.
+The goal of the following document is to provide users of the NWB:N with additional guidelines on common best practices
+to facilitate consistent use of the standard and help avoid common problems.
 
 ### Authors
 Oliver Ruebel, Andrew Tritt, Ryan Ly, Benjamin Dichter, ...
@@ -20,14 +20,19 @@ Oliver Ruebel, Andrew Tritt, Ryan Ly, Benjamin Dichter, ...
   
 
 ## Preamble
-NWB:N has a high degree of flexibility that allows it to accommodate the needs of the diverse neuroscience community; 
-however this can create a challenge. New users struggle because they have a number of different ways they can put data
-into this format and they do not know which way is best. Tool builders also struggle with this flexibility because they 
-prefer to have a more predictable structure to build analysis tools against. We could address this by imposing stricter
-rules in the NWB:N standard, but this would break backwards compatibility and might hinder the format's flexibility.
-Here, we strike a compromise, by describing "best practices." This is a document of advice from developers and
-experienced users that outlines some of the pitfalls to avoid and usage patterns to emulate so that you can fully
-leverage the tools in the NWB:N ecosystem.
+The goal of this document is to to help users and developers to most effectively leverage the NWB:N data standard and 
+its ecosystem of software tools.
+
+
+To enable NWB:N to accommodate the needs of the diverse neuroscience community, NWB:N provides a great degree of 
+flexibility. In particular, the number of instances of a particular ``neurodata_type`` and corresponding names are often
+not fixed, to enable, e.g., storage of data from arbitrary numbers of devices withing the same file. While this 
+flexibility is essential to enable coverage of a broad range of use-cases, it can also lead to ambiguity.  At the same
+time, we ultimately have the desire to have the schema as strict-as-possible to provide users and tool builders with a
+consistent organization of data. As such, we need to strike a fine balance between flexibility to enable support
+for varying experiments and use-cases and strictness in the schema to enforce standard organization of data. The
+following "best practices" provide  advice from developers and experienced users that outline some of the pitfalls to
+avoid and common usage patterns to emulate. 
 
 ## NWB Files
 An `NWBFile` object generally contains data from a single experimental session.
@@ -45,18 +50,28 @@ it will be inefficient to store data in a table with many columns.
 
 ### bools
 Although boolean values (`True`/`False`) are not used in the core schema, they are a supported data type, and we
-encourage the use of DynamicTable columns with boolean values. For instance, boolean values would be appropriate for
+encourage the use of `DynamicTable` columns with boolean values. For instance, boolean values would be appropriate for
 a `correct` custom column to the trials table.
 
 ### times
-In [`TimeInterval`](https://nwb-schema.readthedocs.io/en/latest/format.html#timeintervals) objects such as the trials and 
-epochs table, `start_time` and `stop_time` should both be in seconds with respect to the `session_start_time` (as are all 
-times in  NWB:N). If you add more times in the trials table, for instance a subject response time, name it with `_time` at the 
-end (e.g. `response_time`) and store the time values in seconds from the `session_start_time`, just like `start_time` and 
+* **Times are always stored in seconds in NWB:N.** This rule applies to times in ``TimeSeries``, ``TimeIntervals`` and 
+across NWB:N in general. E.g., in 
+[`TimeInterval`](https://nwb-schema.readthedocs.io/en/latest/format.html#timeintervals) objects such as the trials and 
+epochs table, `start_time` and `stop_time` should both be in seconds with respect to the `timestamps_reference_time` 
+(which by default is set to the `session_start_time`).
+
+* **Additional time columns in ``TimeInterval`` tables (e.g., trials) should have ``_time`` as name suffix.** E.g., if 
+you add more times in the trials table, for instance a subject response time, name it with `_time` at the end (e.g. 
+`response_time`) and store the time values in seconds from the `timestamps_reference_time`, just like `start_time` and 
 `stop_time`.
 
-### location
-The `'location'` column of the electrodes table is meant to store the brain region that the electrode is in. Different
+* **Set the `timestamps_reference_time` if you need to use a different reference time.**  Rather than relative times, 
+it can in practice be useful to use a common global reference time across files (e.g., Posix time). To do so, NWB:N 
+allows users to set the `timestamps_reference_time` which serves as reference for all timestamps in a file. By default,
+ `timestamp_reference_time` is usually set to the `session_start_time` to use relative times. 
+
+### electrodes: 'location'
+The `'location'` column of the electrodes table is meant to store the brain region that the electrode as in. Different
 labs have different standards for electrode localization. Some use atlases and coordinate maps to precisely place an
 electrode, and use physiological measures to confirm its placement. Others use histology or imaging processing 
 algorithms to identify regions after-the-fact. You fill this column with localization results from your most accurate
@@ -71,10 +86,12 @@ terms.)
 The location column of the electrodes table is required. If you do not know the location of an electrode, use `'unknown'`.
 
 ## Naming of neurodata_types
-Many of the neurodata_types in NWB:N have a flexible name. This allows multiple objects of the same type to be stored
+Many of the 
+[neurodata_types](https://nwb-schema.readthedocs.io/en/latest/format_description.html#neurodata-type-assigning-types-to-specifications)
+in NWB:N allow you to set their name to something other than the default name. This allows multiple objects of the same type to be stored
 side-by-side and allows data writers to provide human-readable information about the contents of the neurodata_type. If 
 appropriate, simply use the name of the neurodata_type as the name of that object. For instance, if you are
-placing an `ElectricalSeries` object in `/acquisition` that holds voltage traces for a multichannel recording, consider
+placing an [`ElectricalSeries`](https://nwb-schema.readthedocs.io/en/latest/format.html#electricalseries) object in `/acquisition` that holds voltage traces for a multichannel recording, consider
 simply naming that object `"ElectricalSeries"`. This is the `default_name` for that object, and naming it like this will increase
 your chances that analysis and visualization tools will operate seamlessly with you data.
 
