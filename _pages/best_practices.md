@@ -27,6 +27,7 @@ Oliver Ruebel, Andrew Tritt, Ryan Ly, Benjamin Dichter, ...
 * [Naming of neurodata_types](#naming-of-neurodata_types)
   * [Naming of processing modules](#naming-of-processing-modules)
 * [Unit (of measurement)](#unit-of-measurement)
+* [Extensions](#extensions)
 * [Simulated data](#simulated-data)
   
 
@@ -143,6 +144,10 @@ instance has a `unit` as an
 attribute of the `data` Dataset, which is meant to indicate the unit of measurement of that data. We advise using SI units. 
 Time is always in units of seconds.
 
+## Extenions
+* **Extend only when necessary** Extensions are a mechanism to integrate data with NWB:N that is otherwise not supported. We should create new extenions only when necessary and use exsisting neurodata_types as much as possible. DynamicTables used in NWB:N, e.g., to store information about time intervals and electordes, provide the ability to dynamically add columns without the need for extensions and, as such, can help avoid the need for custom extenions in many cases.  
+* **Use/Reuse existing neurodata_types** When possible, reuse existing types when creating extensions. Building on existing types facilitates the reuse of existing functionaly and interpretation of the data.
+* **Provide meaningful docs** When creating extenions be sure to provide as part of the extension specification, meaningful documentation of all fields (groups, datasets, attributes, links etc.) to describe what they store and how they are used. 
 
 ## Simulated data
 **The output of a simulation should be stored in NWB, but not the settings of the simulation.** You may store the result
