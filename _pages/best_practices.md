@@ -15,7 +15,9 @@ to facilitate consistent use of the standard and help avoid common problems and 
 its ecosystem of software tools.
 
 ### Authors
-Oliver Ruebel, Andrew Tritt, Ryan Ly, Benjamin Dichter, ...
+Oliver Ruebel, Andrew Tritt, Ryan Ly, Ben Dichter, ...
+
+last edited: June 12, 2019
 
 * [Preamble](#preamble)
 * [NWBFiles](#nwb-files)
@@ -30,6 +32,8 @@ Oliver Ruebel, Andrew Tritt, Ryan Ly, Benjamin Dichter, ...
 * [Unit (of measurement)](#unit-of-measurement)
 * [Extensions](#extensions)
 * [Simulated data](#simulated-data)
+
+
 
 
 ## Preamble
@@ -62,8 +66,14 @@ generator like uuid to ensure its uniqueness and it is not important that the `i
 
 ## TimeSeries
 Many of the neurodata_types in NWB inherit from the [`TimeSeries`](https://nwb-schema.readthedocs.io/en/latest/format.html#timeseries) neurodata_type. When using `TimeSeries` or any of its descendants, make sure the following are followed.
+
 * **Time dimension goes first.** In `TimeSeries.data`, the first dimension on the disk is always time. Keep in mind that the dimensions are reversed in MatNWB, so in memory in MatNWB the time dimension must be __last__. In PyNWB the order of the dimensions is the same in memory as on disk, so the time index should be first.
+
 * **`ElectrialSeries` are reserved for neural data.** `ElectrialSeries` holds signal from electrodes positioned in or around the brain that are monitoring neural activity, and only those electrodes should be in the `electrodes`  table. Use `TimeSeries` for other data in units Volts, such as the reading on a force-sensitive resistor.
+
+* **times are always in seconds.** `timestamps` or `starting_time` should be in seconds with respect to the `timestamps_reference_time`.
+
+* **`TimeSeries` data should be stored as one continuous stream.** Data should be stored in one continuous stream, as it is acquired, not by trial as is often reshaped for analysis. Data can be trial-aligned on-the-fly using the `trials` table. Storing measured data as a continuous stream ensures that we have access to the inter-trial data, and that we can align the data with whatever window we need. If you only have data in specific segments of time, then only include those timepoints in the data. Use `timestamps`, even if there is a constant sampling rate within each segment, and have the `timestamps` correctly reflect the gaps in the recording. Use the `TimeSeries.description` field to explain how the data was segmented.
 
 ## DynamicTables
 [`DynamicTable`](https://nwb-schema.readthedocs.io/en/latest/format.html#dynamictable) allow you to define custom columns,
@@ -158,12 +168,12 @@ Time is always in units of seconds.
 ## Simulated data
 **The output of a simulation should be stored in NWB, but not the settings of the simulation.** You may store the result
  of simulations in NWB files. NWB:N allows you to store data as if it were recorded
-**in vivo** to facilitate comparison between simulated results and **in vivo** results. Core components of the NWB:N
+***in vivo*** to facilitate comparison between simulated results and ***in vivo*** results. Core components of the NWB:N
 schema and HDF5 backend have been engineered to handle data from hundreds of thousands of units, and natively support
 parallel data access via MPI, so much of the NWB:N format should work for large-scale simulations out-of-the-box. The
 neurodata extension "simulation_output" provides a neurodata_type for storing continuous recordings from multiple cells
 and multiple compartments per cell. The extension only supports storing the output data of a simulation and does not
 support parameters for simulation configuration. This is out-of-scope for NWB:N, since it does not facilitate
-side-by-side comparison between simulated and **in vivo** results, and is quite difficult to generalize given the
+side-by-side comparison between simulated and ***in vivo*** results, and is quite difficult to generalize given the
 diversity of ways one can parametrize a simulation. That said, if you would benefit from storing such data in your
 NWB:N file, you might consider creating your own custom extension.
