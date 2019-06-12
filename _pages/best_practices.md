@@ -20,6 +20,7 @@ Oliver Ruebel, Andrew Tritt, Ryan Ly, Benjamin Dichter, ...
 * [Preamble](#preamble)
 * [NWBFiles](#nwb-files)
   * [identifiers](#identifiers)
+* [TimeSeries](#timeseries)
 * [DynamicTables](DynamicTables)
   * [bools](#bools)
   * [times](#times)
@@ -58,6 +59,11 @@ human-readable.
 * **The `identifier` tag should be a globally unique value for the `NWBFile.`** Two different `NWBFile`s from the same
 session should have different `identifier` values if they differ in any way. It is recommended that you use a unique id
 generator like uuid to ensure its uniqueness and it is not important that the `identifier` field is human readable.
+
+## TimeSeries
+Many of the neurodata_types in NWB inherit from the [`TimeSeries`](https://nwb-schema.readthedocs.io/en/latest/format.html#timeseries) neurodata_type. When using `TimeSeries` or any of its descendants, make sure the following are followed.
+* **Time dimension goes first.** In `TimeSeries.data`, the first dimension on the disk is always time. Keep in mind that the dimensions are reversed in MatNWB, so in memory in MatNWB the time dimension must be __last__. In PyNWB the order of the dimensions is the same in memory as on disk, so the time index should be first.
+* **`ElectrialSeries` are reserved for neural data.** `ElectrialSeries` holds signal from electrodes positioned in or around the brain that are monitoring neural activity, and only those electrodes should be in the `electrodes`  table. Use `TimeSeries` for other data in units Volts, such as the reading on a force-sensitive resistor.
 
 ## DynamicTables
 [`DynamicTable`](https://nwb-schema.readthedocs.io/en/latest/format.html#dynamictable) allow you to define custom columns,
