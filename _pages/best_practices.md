@@ -17,7 +17,7 @@ its ecosystem of software tools.
 ### Authors
 Oliver Ruebel, Andrew Tritt, Ryan Ly, Ben Dichter, ...
 
-last edited: June 12, 2019
+last edited: June 13, 2019
 
 * [Preamble](#preamble)
 * [NWBFiles](#nwb-files)
@@ -164,6 +164,7 @@ Time is always in units of seconds.
 * **Extend only when necessary** Extensions are an essential mechanism to integrate data with NWB:N that is otherwise not supported. However, we here need to consider that there are certain cost associated with extensions, e.g., cost for creating, supporting, documenting, and maintaining new extensions and effort for users to use and learn extensions. As such, we should create new extensions only when necessary and use existing neurodata_types as much as possible. DynamicTables used in NWB:N, e.g., to store information about time intervals and electrodes, provide the ability to dynamically add columns without the need for extensions and, as such, can help avoid the need for custom extensions in many cases.
 * **Use/Reuse existing neurodata_types** When possible, use existing types when creating extensions either by creating new neurodata_types that inherit from existing ones, or by creating neurodata_types that contain existing ones. Building on existing types facilitates the reuse of existing functionality and interpretation of the data. If a community extension already exists that has a similar scope, it is preferable to use that extension rather than creating a new one.
 * **Provide meaningful docs** When creating extensions be sure to provide as part of the extension specification, meaningful documentation of all fields (groups, datasets, attributes, links etc.) to describe what they store and how they are used.
+* **Write the specification to the file.** When using pynwb, you can store the specification (core and extension(s)) within the NWB file by using `io.write(filepath, cache_spec=True)`. Caching the specification is preferable, particularly if you are using a custom extension, because this ensures that anybody who receives the data also receives the necessary data to interpret it.
 
 ## Simulated data
 **The output of a simulation should be stored in NWB, but not the settings of the simulation.** You may store the result
