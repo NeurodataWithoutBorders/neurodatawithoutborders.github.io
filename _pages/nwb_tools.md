@@ -15,6 +15,16 @@ other groups, and are in active development.
 
 **Disclaimer:** Reference herein to any specific product, process, or service by its trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by the NWB:N development team, United States Government or any agency thereof, or The Regents of the University of California. Use of the NeurodataWithoutBorders name for endorsements is prohibited.
 
+## [CaImAn](https://github.com/flatironinstitute/CaImAn)
+<html>
+  <table border="0">
+    <tr>
+      <td><img alt="Brainstorm" src="https://github.com/flatironinstitute/CaImAn/blob/master/docs/LOGOS/Caiman_logo_FI.png?raw=true" width="400" class="center-block"></td>
+      <td>Computational toolbox for large scale Calcium Imaging Analysis, including movie handling, motion correction, source extraction, spike deconvolution and result visualization. CaImAn now supports reading and writing data in NWB:N 2.0. NWB:N tutorial <a href="https://github.com/flatironinstitute/CaImAn/blob/dev/use_cases/NWB/demo_pipeline_NWB.py">here</a>.</td>
+    </tr>
+  </table>
+</html>
+
 ## [Brainstorm](https://neuroimage.usc.edu/brainstorm/Introduction)
 <html>
   <table border="0">
