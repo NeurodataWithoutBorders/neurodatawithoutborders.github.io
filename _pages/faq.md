@@ -60,9 +60,8 @@ For details please review our  <a href="{{ site.url }}{{ site.baseurl }}/contrib
 For details on how to contribute to PyNWB see our
 <a href="{{ site.url }}{{ site.baseurl }}/contributing">Contributing Guidelines</a>
 
-## Does pynwb support both python 2.7 and python >3.5?
+## Does PyNWB support both Python 2.7 and >3.5?
 
-Yes, for now. The next minor release of PyNWB will continue to support Python 2.7, but we may end support for Python 2.7 in future releases.
-
+Up to PyNWB v.1.0.3 (and HDMF v1.1.2) we supported both Python 2.7 and >3.5. We have ended support for Python 2.7 in later versions of PyNWB and HDMF (see [#1028](https://github.com/NeurodataWithoutBorders/pynwb/pull/1028) and [#126](https://github.com/hdmf-dev/hdmf/pull/126)) as numpy, pandas and other major packages we rely on have dropped Python 2 support in their latest versions and as Python 2 end-of-life is approaching already in 01/01/2020. 
 
 
