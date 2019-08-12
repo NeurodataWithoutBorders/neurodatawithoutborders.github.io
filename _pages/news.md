@@ -8,9 +8,13 @@ permalink: /news
 
 # News
 
+## August 2019 Issue of the NWB:N Newsletter
+**Date:** August 12, 2019
+
+A new issue of our NWB:N newsletter is now available online <a href="https://mailchi.mp/49a33d0ef48e/nwbn-newsletter-aug-2019?e=e527807b8d" target="_blank">here</a>.
 
 ## NWB:N User- and Developer Days 2019
-**Data:** June 7
+**Date:** June 7, 2019
 
 The 2019 NWB:N User Days and Developer Hackathon were a great success. We thank all participants; without such a great community of users and developers NWB:N would not be possible! Read more about what happend at the event in the [final report](https://github.com/NeurodataWithoutBorders/nwb_hackathons/raw/master/HCK06_2019_Janelia/report/Report___6th_NWB_N_Hackathon.pdf) and in the following [news release](https://cs.lbl.gov/news-media/news/2019/neurodata-without-borders-project-hosts-user-and-developer-hackathons/).
 
