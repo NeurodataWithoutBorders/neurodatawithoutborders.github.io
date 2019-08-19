@@ -17,7 +17,7 @@ its ecosystem of software tools.
 ### Authors
 Oliver Ruebel, Andrew Tritt, Ryan Ly, Ben Dichter, ...
 
-last edited: June 13, 2019
+last edited: Aug 19, 2019
 
 * [Preamble](#preamble)
 * [NWBFiles](#nwb-files)
@@ -130,7 +130,7 @@ appropriate, simply use the name of the neurodata_type as the name of that objec
 placing an [`ElectricalSeries`](https://nwb-schema.readthedocs.io/en/latest/format.html#electricalseries) object in
 `/acquisition` that holds voltage traces for a multichannel recording, consider
 simply naming that object `"ElectricalSeries"`. This is the `default_name` for that object, and naming it like this will increase
-your chances that analysis and visualization tools will operate seamlessly with you data.
+your chances that analysis and visualization tools will operate seamlessly with you data. <br><br> There may be cases where you have multiple neurodata instances of the same type in the same Group. In this case the instances must have unique names. If they are both equally important data sources, build upon the class name (e.g. `"ElectricalSeries_1"` and `"ElectricalSeries_2"`). If one of the instances is an extra of less importance, name that one something different (e.g. `"ElectricalSeries"` and `"ElectricalSeries_extra_electrode"`).
 
 * **Names are not for storing meta-data.** If you need to place other data of the same neurodata_type, you will need to
 choose another name. Keep in mind that meta-data should not be stored solely in the name of objects. It is OK to name an
@@ -160,7 +160,7 @@ instance has a `unit` as an
 attribute of the `data` Dataset, which is meant to indicate the unit of measurement of that data. We advise using SI units.
 Time is always in units of seconds.
 
-## Extenions
+## Extensions
 * **Extend only when necessary** Extensions are an essential mechanism to integrate data with NWB:N that is otherwise not supported. However, we here need to consider that there are certain cost associated with extensions, e.g., cost for creating, supporting, documenting, and maintaining new extensions and effort for users to use and learn extensions. As such, we should create new extensions only when necessary and use existing neurodata_types as much as possible. DynamicTables used in NWB:N, e.g., to store information about time intervals and electrodes, provide the ability to dynamically add columns without the need for extensions and, as such, can help avoid the need for custom extensions in many cases.
 * **Use/Reuse existing neurodata_types** When possible, use existing types when creating extensions either by creating new neurodata_types that inherit from existing ones, or by creating neurodata_types that contain existing ones. Building on existing types facilitates the reuse of existing functionality and interpretation of the data. If a community extension already exists that has a similar scope, it is preferable to use that extension rather than creating a new one.
 * **Provide meaningful docs** When creating extensions be sure to provide as part of the extension specification, meaningful documentation of all fields (groups, datasets, attributes, links etc.) to describe what they store and how they are used.
