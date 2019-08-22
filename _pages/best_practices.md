@@ -75,6 +75,8 @@ Many of the neurodata_types in NWB inherit from the [`TimeSeries`](https://nwb-s
 
 * **`TimeSeries` data should be stored as one continuous stream.** Data should be stored in one continuous stream, as it is acquired, not by trial as is often reshaped for analysis. Data can be trial-aligned on-the-fly using the `trials` table. Storing measured data as a continuous stream ensures that other users have access to the inter-trial data, and that we can align the data with whatever window they need. If you only have data in specific segments of time, then only include those timepoints in the data. Use `timestamps`, even if there is a constant sampling rate within each segment, and have the `timestamps` correctly reflect the gaps in the recording. Use the `TimeSeries.description` field to explain how the data was segmented.
 
+* **If the sampling rate is constant, use `rate`.** `TimeSeries` allows you to specify time using either `timestamps` or `rate` and `starting_time` (which defaults to 0). For `TimeSeries` objects that have a constant sampling rate, `rate` should be used instead of `timestamps`. This will ensure that you can use analysis and visualization tools that rely on a constant sampling rate.
+
 ## DynamicTables
 [`DynamicTable`](https://nwb-schema.readthedocs.io/en/latest/format.html#dynamictable) allow you to define custom columns,
 which offer a high degree of flexibility.
