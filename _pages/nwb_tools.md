@@ -15,6 +15,16 @@ other groups, and are in active development.
 
 **Disclaimer:** Reference herein to any specific product, process, or service by its trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by the NWB:N development team, United States Government or any agency thereof, or The Regents of the University of California. Use of the NeurodataWithoutBorders name for endorsements is prohibited.
 
+## [NWBExplorer](http://nwbexplorer.opensourcebrain.org)
+<html>
+  <table border="0">
+    <tr>
+      <td><img alt="NWBExplorer" src="../images/NWBExplorer.png" width="400" class="center-block"></td>
+      <td>NWB Explorer is an application that can be used by scientists to read, visualize and explore the content of NWB:N 2 files.</td>
+    </tr>
+  </table>
+</html>
+
 ## [CaImAn](https://github.com/flatironinstitute/CaImAn)
 <html>
   <table border="0">
