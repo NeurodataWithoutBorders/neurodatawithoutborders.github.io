@@ -4,6 +4,7 @@ layout: default
 excerpt: "NWB:N Best Practices"
 sitemap: false
 permalink: /best_practices
+redirect_from: /best_practice
 ---
 
 

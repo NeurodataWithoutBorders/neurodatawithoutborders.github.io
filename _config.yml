@@ -19,5 +19,9 @@ include:
 sass:
   sass_dir: _sass
 
+# Allow the same page to be mapped to multiple URLs
+plugins:
+  - jekyll-redirect-from
+
 google_analytics: UA-134749152-1
 
