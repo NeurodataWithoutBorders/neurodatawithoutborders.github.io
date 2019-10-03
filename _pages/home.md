@@ -3,7 +3,7 @@ title: "NeurodataWithoutBorders: Neurophysiology"
 layout: home
 excerpt: "NWB:N"
 sitemap: false
-permalink: /
+permalink: /home
 ---
 
 # Neurodata Without Borders: Neurophysiology (NWB:N)
