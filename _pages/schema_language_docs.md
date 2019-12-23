@@ -6,4 +6,7 @@ sitemap: false
 permalink: /schemalanguage
 ---
 
-<iframe style="width: 100%;height: 100vh;position: relative;" src="https://schema-language.readthedocs.io" frameborder="0" allowfullscreen></iframe>
+<meta http-equiv="refresh" content="0; URL=https://schema-language.readthedocs.io/en/stable/">
+
+This page has moved. Redirecting to [https://schema-language.readthedocs.io/en/stable/](https://schema-language.readthedocs.io/en/stable/)
+

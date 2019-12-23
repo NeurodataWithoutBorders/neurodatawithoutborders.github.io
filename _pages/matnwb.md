@@ -6,5 +6,7 @@ sitemap: false
 permalink: /matnwbemb
 ---
 
-<iframe style="width: 100%;height: 100vh;position: relative;" src="https://neurodatawithoutborders.github.io/matnwb/" frameborder="0" sandbox="allow-same-origin allow-top-navigation allow-same-origin" allowfullscreen></iframe>
+<meta http-equiv="refresh" content="0; URL=https://neurodatawithoutborders.github.io/matnwb/">
+
+This page has moved. Redirecting to [https://neurodatawithoutborders.github.io/matnwb/](https://neurodatawithoutborders.github.io/matnwb/)
 

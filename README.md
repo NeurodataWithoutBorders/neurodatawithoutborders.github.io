@@ -1,6 +1,8 @@
 # NeurodataWithoutBorders: Neurophysiology
 
-This repo is for the technical website for the NWB:N project
+This repo is for development projects related to the NWB:N project. For more information about NWB:N see our main website at [nwb.org](https://www.nwb.org/).
+
+**NOTE:** All original content from this webstie has been moved to [nwb.org](https://www.nwb.org/). This website is intended for project pages only. For details about NWB itself, user/developer documentation, event information, news, publications etc., and everything else NWB please see [nwb.org](https://www.nwb.org/).
 
 ## Updating Content
 * **Submitting changes** Use GitHub pull requests to submit changes.

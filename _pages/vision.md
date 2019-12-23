@@ -6,10 +6,6 @@ sitemap: false
 permalink: /vision
 ---
 
+<meta http-equiv="refresh" content="0; URL=https://www.nwb.org/nwb-software/">
 
-# Vision and Future Directions
-
-## NWB:N technologies at the heart of the neurodata lifecycle
-
-<img alt="NWB:N Components" src="images/2017_11_ruebel_sfn_nwb_future_vision.png" width="800" class="center-block">
-(Figure courtesy of Oliver Ruebel, LBNL)
+This page has moved. Redirecting to [https://www.nwb.org/nwb-software/](https://www.nwb.org/nwb-software/)
