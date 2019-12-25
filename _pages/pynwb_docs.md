@@ -6,6 +6,9 @@ sitemap: false
 permalink: /pynwb
 ---
 
-<iframe style="width: 100%;height: 100vh;position: relative;" src="https://pynwb.readthedocs.io/en/latest/" frameborder="0" allowfullscreen></iframe>
+<meta http-equiv="refresh" content="0; URL=https://pynwb.readthedocs.io/en/stable/">
+
+This page has moved. Redirecting to [https://pynwb.readthedocs.io/en/stable/](https://pynwb.readthedocs.io/en/stable/)
+
 
 

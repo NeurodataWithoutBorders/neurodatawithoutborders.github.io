@@ -1,9 +1,12 @@
 ---
-title: "Schema Language"
+title: "NWB Data Standard Schema"
 layout: default
-excerpt: "PyNWB"
+excerpt: "NWB Schema"
 sitemap: false
 permalink: /datastandard
 ---
 
-<iframe style="width: 100%;height: 100vh;position: relative;" src="https://nwb-schema.readthedocs.io/en/latest/" frameborder="0" allowfullscreen></iframe>
+
+<meta http-equiv="refresh" content="0; URL=https://nwb-schema.readthedocs.io/en/stable/">
+
+This page has moved. Redirecting to [https://nwb-schema.readthedocs.io/en/stable/](https://nwb-schema.readthedocs.io/en/stable/)
