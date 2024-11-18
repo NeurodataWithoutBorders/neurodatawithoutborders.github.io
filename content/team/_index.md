@@ -72,13 +72,13 @@ technical_team_section:
       name: Saskia de Vries
     - image: /images/yaroslav.png
       name: Yaroslav Halchenko
-    - image: /images/ryan.png
+    - image: /images/RyanLy.png
       name: Ryan Ly
-    - image: /images/lawrence.png
+    - image: /images/lawrence-niu.png
       name: Lawrence Niu
     - image: /images/kushal.png
       name: Kushal Bakshi
-    - image: /images/anna.png
+    - image: /images/szonja-weigl.jpeg
       name: Anna (Szonja) Weigl
 core_dev_section:
   pynwb_section:
@@ -87,7 +87,7 @@ core_dev_section:
       - image: /images/oliver.png
         name: Oliver Ruebel
         post: Staff Scientist at Berkeley Lab
-      - image: /images/ryan.png
+      - image: /images/RyanLy.png
         name: Ryan Ly
         post: Scientific Data Engineer at Berkeley Lab
       - image: /images/andrew.png
@@ -95,7 +95,7 @@ core_dev_section:
         post: Computer Systems Engineer at Berkeley Lab
   matnwb_section:
     enable: true
-    image: /images/lawrence.png
+    image: /images/lawrence-niu.png
     name: Lawrence Niu
     post: Principal Engineer at MBF Biosciences
   nwb_community_section:
