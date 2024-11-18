@@ -6,15 +6,7 @@ hero_section:
     - title: Neurodata Without Borders
       subtitle: Version 2.0 FINAL Now Available
       btn_text: Read More
-      btn_link: /
-    - title: Neurodata Without Borders
-      subtitle: Version 2.0 FINAL Now Available
-      btn_text: Read More
-      btn_link: /
-    - title: Neurodata Without Borders
-      subtitle: Version 2.0 FINAL Now Available
-      btn_text: Read More
-      btn_link: /
+      btn_link: "https://github.com/NeurodataWithoutBorders/nwb-schema"
 banner_section:
   enable: true
   title: Making databases about the brain more usable and accessible for
