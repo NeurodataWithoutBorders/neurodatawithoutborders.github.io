@@ -29,11 +29,11 @@ main:
     hasChildren: true
   - name: "News"
     weight: 1
-    url: "news/"
+    url: "https://us3.campaign-archive.com/home/?u=eacaccc485a4e5f36034bbdbd&id=a9718ab27f"
     parent: Community
   - name: "Events"
     weight: 2
-    url: "event-cards/"
+    url: "https://neurodatawithoutborders.github.io/nwb_hackathons/"
     parent: Community
   - name: "NWB Enhancement Proposals"
     weight: 3

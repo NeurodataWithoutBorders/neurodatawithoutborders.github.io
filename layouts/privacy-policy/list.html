@@ -28,8 +28,8 @@
                         <img src="{{ .icon }}" alt="" width="20">
                     </div>
                     <div>
-                        {{ with .heading }}
-                        <a href="" class="inter-600 text-16 blue nav-link">{{ . | markdownify }}</a>
+                        {{ if .heading }}
+                        <a href="{{ .link }}" class="inter-600 text-16 blue nav-link">{{ .heading | markdownify }}</a>
                         {{ end }}
                         <div class="{{ with .content }}pt-1{{ end }}">
                             <div class="softwareSectA">
