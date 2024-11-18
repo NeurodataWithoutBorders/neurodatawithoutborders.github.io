@@ -1,0 +1,161 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+<section class="hero bg-main softwareSect d-flex align-items-center">
+    <div class="container-lg">
+        <h1 class="inter-700 text-48 text-white">{{ .Title | markdownify }}</h1>
+    </div>
+</section>
+{{/* End Hero Section */}}
+
+{{/* Software Type Section */}}
+{{ with .Params.software_types }}
+{{ if .enable }}
+<section class="section bg-dark-100">
+    <div class="container-lg">
+        <h3 class="inter-700 text-40 dark-900 mb-3">{{ .title | markdownify }}</h3>
+        <p class="inter-400 text-16 dark-700 lh-base">{{ .content | markdownify }}</p>
+        <div class="row g-4 justify-content-center pt-4">
+            {{ range .boxes }}
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="bg-white h-100 rounded-3 p-4 shadow-sm">
+                    <div class="d-flex flex-column row-gap-4">
+                        <div>
+                            <div class="shadow-inner p-3 border rounded-2 d-inline-block">
+                                <img src="{{ .icon }}" alt="" class="img-fluid typeBox">
+                            </div>
+                        </div>
+                        <div class="">
+                            <h5 class="inter-700 text-20 dark-900 mb-4">{{ .title | markdownify }}</h5>
+                            <p class="inter-400 text-16 dark-700">{{ .content | markdownify }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Software Type Section */}}
+
+{{/* Bottom Sections */}}
+{{ range $i, $p := .Params.sections }}
+{{ $even := not (modBool $i 2) }}
+<section class="{{ if $even }}bg-dark-100{{ end }} softwareSectA">
+    <div class="container-lg">
+        <div
+            class="row {{ if $even }}flex-lg-row-reverse{{ end }} gy-4 justify-content-center justify-content-md-between section">
+            <div class="col-sm-10 col-md-5">
+                <img src="{{ $p.image }}" alt="" class="img-fluid {{ if $p.community_software }}fixedHeight{{ end }}">
+            </div>
+            <div class="col-sm-10 col-lg-6">
+                <div class="d-flex flex-column row-gap-2">
+                    <h3 class="inter-700 text-40 dark-900 mb-3">{{ $p.title | markdownify }}</h3>
+                    {{ with $p.problem }}
+                    <div>
+                        <strong class="inter-600 text-20 dark-900">Problem:</strong>
+                        <p class="inter-400 text-16 dark-700 mt-2">{{ . | markdownify }}</p>
+                    </div>
+                    {{ end }}
+                    {{ with $p.approach }}
+                    <div>
+                        <strong class="inter-600 text-20 dark-900">Approach:</strong>
+                        <p class="inter-400 text-16 dark-700 mt-2">{{ . | markdownify }}</p>
+                    </div>
+                    {{ end }}
+                    {{ with $p.function }}
+                    <div>
+                        <strong class="inter-600 text-20 dark-900">Function:</strong>
+                        <p class="inter-400 text-16 dark-700 mt-2">{{ . | markdownify }}</p>
+                    </div>
+                    {{ end }}
+                    {{ if $p.community_software }}
+                    {{ else }}
+                    {{ with $p.upper_description }}
+                    <div>
+                        <strong class="inter-600 text-20 dark-900">Description:</strong>
+                        <p class="inter-400 text-16 dark-700 mt-2">{{ . | markdownify }}</p>
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+            {{ if $p.description }}
+            <div class="row gy-4 justify-content-center justify-content-md-between px-0 mt-0">
+                {{ if $p.community_software }}
+                <div class="col-12 col-sm-8 flex-row col-md-6 px-0">
+                    <div>
+                        <strong class="inter-600 text-20 dark-900">Description:</strong>
+                        <p class="inter-400 text-16 dark-700 mt-2">{{ $p.description | markdownify }}</p>
+                        {{ range .list }}
+                        <div class="ps-4">
+                            <h4 class="inter-600 text-16 dark-600">{{ .title | markdownify }}</h4>
+                            <p class="dark-600 inter-400 text-16">{{ .content | markdownify }}</p>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ else }}
+                <div class="col-12 col-sm-8 flex-row col-md-10 ps-4 col-lg-12">
+                    <div>
+                        {{ with $p.description }}
+                        <strong class="inter-600 text-20 dark-900">Description:</strong>
+                        <p class="inter-400 text-16 dark-700 mt-2">{{ . | markdownify }}</p>
+                        {{ end }}
+                        {{ range .list }}
+                        <div class="ps-4">
+                            <h4 class="inter-600 text-16 dark-600">{{ .title | markdownify }}</h4>
+                            <p class="dark-600 inter-400 text-16">{{ .content | markdownify }}</p>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+                <div class="col-12 col-sm-8 col-md-6 ps-4">
+                    {{ with $p.community_software }}
+                    <div>
+                        <strong class="inter-600 text-20 dark-900">Community Software:</strong>
+                        <p class="inter-400 text-16 dark-700 mt-2">{{ . | markdownify }}</p>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{/* End Bottom Sections */}}
+
+
+{{ with .Params.community_tools }}
+{{ if .enable }}
+<section class="section">
+    <div class="container-lg">
+        <div class="text-center">
+            <h3 class="inter-700 text-40 dark-900 mb-3">{{ .title | markdownify }}</h3>
+            <p class="inter-400 text-16 dark-700 lh-base">{{ .content | markdownify }}</p>
+        </div>
+        {{ with .tools }}
+        <div class="pt-4 row g-4">
+            {{ range . }}
+            <div class="col-sm-6 col-md-3">
+                <div class="rouned-3 shadow-sm py-2">
+                    <div class="mx-auto d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-3">
+                            <img src="{{ .image }}" alt="" class="img-fluid">
+                        </div>
+                        <p class="inter-400 text-20 dark-700 pt-4 mb-0">{{ .title | markdownify }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}

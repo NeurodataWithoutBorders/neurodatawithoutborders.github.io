@@ -1,0 +1,8 @@
+github.com/AlanTanner/pdfjs-hugo-module v0.0.0-20230225042301-9aebba4bfd14 h1:pKLP4pAFi3OEYoAMKyYaDxJY0MxmsQ7KhH4WaE/ssPc=
+github.com/AlanTanner/pdfjs-hugo-module v0.0.0-20230225042301-9aebba4bfd14/go.mod h1:rDKGlupurJcLDdZmbZKYq4SZabM9Q+68VLpzTk7vz/w=
+github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20240711030223-49ae4a26e064 h1:ApV/xWY4XiWSBbhP6yYYHwuWwRfnf1MlQfGLJt+LGys=
+github.com/gethugothemes/hugo-modules/gallery-slider v0.0.0-20240711030223-49ae4a26e064/go.mod h1:MvQ2js/ofZ22CTX5wuvE+dC0rMe6C5HAWL2fEOu/yzE=
+github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 h1:SmpwwN3DNzJWbV+IT8gaFu07ENUFpCvKou5BHYUKuVs=
+github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200/go.mod h1:kx8MBj9T7SFR8ZClWvKZPmmUxBaltkoXvnWlZZcSnYA=
+github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
+github.com/twbs/bootstrap v5.3.2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=

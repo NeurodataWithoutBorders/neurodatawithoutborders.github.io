@@ -1,0 +1,117 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+<section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
+    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/publicationsBg.png');">
+    <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
+    <div class="position-absolute ellipses">
+        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+    </div>
+</section>
+{{/* End Hero Section */}}
+
+{{/* Main Section */}}
+<section class="w-100 bg-dark-100 section">
+    <div class="container-lg">
+        <div class="row gy-5 justify-content-center justify-content-lg-between">
+
+            <div class="d-none d-lg-block" style="width: 280px !important;">
+                {{ range .Pages }}
+                {{ $trimed := replaceRE "(\\s)" "" .Title }}
+                {{ $link := lower $trimed }}
+                <div
+                    class="d-flex flex-column row-gap-3 my-2">
+                    <a href="#{{ $link }}"
+                        class='bg-white rounded-3 shadow-sm px-3 py-2 d-flex align-items-center gap-2 nav-link sideLink'>
+                        {{ with .Params.icon }}
+                        <div class="">
+                            <img src="{{ . }}" alt="" width="20"
+                                class="filter-icon animate">
+                        </div>
+                        {{ end }}
+                        <span class="inter-400 dark-700 text-16 mb-0 pt-1 filter-icon animate">{{ .Title | markdownify }}</span>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+
+            <div class="col-12 col-sm-11 col-lg-8 col-xl-9 d-flex flex-column row-gap-5">
+                {{ range .Pages }}
+                {{ $trimed := replaceRE "(\\s)" "" .Title }}
+                {{ $link := lower $trimed }}
+                {{ if .Params.socials }}
+                <div class="rounded-3 p-2 p-sm-5 shadow-sm bg-white" id="{{ $link }}">
+                    <div class="row justify-content-between">
+                        <div>
+                            <h3 class="inter-700 text-36 dark-900 mb-3">{{ .Title | markdownify }}</h3>
+                        </div>
+                        <div class="row row-gap-4">
+                            {{ range .Params.boxes }}
+                            <div class="col-12 col-md-6">
+                                <div class="border-dark-50 border rounded-3 p-3 h-100">
+                                    {{ with .icon }}
+                                    <div class="rounded-3 bg-slate p-3 d-inline-block mb-3">
+                                        <img src="{{ . }}" alt="" width="24">
+                                    </div>
+                                    {{ end }}
+                                    <h4 class="inter-600 text-18 dark-700 mb-0">{{ .title | markdownify }}</h4>
+                                    <p class="inter-400 text-14 dark-700 pt-1">{{ .content | markdownify }}</p>
+                                </div>
+                            </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+                {{ else }}
+                <div class="rounded-3 p-2 p-sm-5 shadow-sm bg-white" id="{{ $link }}">
+                    <div class="row justify-content-between softwareSectA {{ if .Params.main_image }}flex-column-reverse{{ end }} flex-md-row">
+                        <div class="{{ if .Params.main_image }}col-md-6{{ end }}">
+                            <h3 class="inter-700 text-36 dark-900 mb-3">{{ .Title | markdownify }}</h3>
+                            {{ if .Params.content }}
+                            <p class="inter-400 text-16 dark-700">{{ .Params.content | markdownify }}</p>
+                            {{ end }}
+                            {{ if .Params.list }}
+                            <div class="d-flex flex-column row-gap-3">
+                                {{ range .Params.list }}
+                                <div class="d-flex gap-3 text-break">
+                                    <div>
+                                        <img src="/images/marker.png" alt="" width="16">
+                                    </div>
+                                    <div>
+                                        <p class="inter-400 text-16 dark-700 mb-0">{{ .content | markdownify }}</p>
+                                        {{ with .Params.subtitle }}
+                                        <p class="inter-400 text-12 dark-700 mt-2">
+                                            {{ range $i, $p := . }}
+                                            {{ if eq $i 0 }}
+                                            <span>{{ $p }}</span>
+                                            {{ else }}
+                                            <span>and {{ $p }}</span>
+                                            {{ end }}
+                                            {{ end }}
+                                        </p>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                                {{ with .image }}
+                                <div class="ms-4 mb-3">
+                                    <img src="{{ . }}" alt="" class="listImg">
+                                </div>
+                                {{ end }}
+                                {{ end }}
+                            </div>
+                            {{ end }}
+                        </div>
+                        {{ with .Params.main_image }}
+                        <div class="col-md-5 mb-4 mb-md-0">
+                            <img src="{{ . }}" alt="" class="img-fluid rounded-3">
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{/* End Main Section */}}
+{{ end }}

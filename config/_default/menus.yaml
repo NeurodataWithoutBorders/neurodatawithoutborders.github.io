@@ -1,0 +1,106 @@
+# Main
+main:
+  - name: "About"
+    weight: 1
+    hasChildren: true
+  - name: "About NWB"
+    weight: 1
+    url: "about-us/"
+    parent: About
+  - name: "The Software Ecosystem"
+    weight: 2
+    url: "nwb-software/"
+    parent: About
+  - name: "Team"
+    weight: 3
+    url: "team/"
+    parent: About
+  - name: "Publications"
+    weight: 4
+    url: "publications/"
+    parent: About
+  - name: "Contact Us"
+    weight: 5
+    url: "contact-us/"
+    parent: About
+  
+  - name: "Community"
+    weight: 2
+    hasChildren: true
+  - name: "News"
+    weight: 1
+    url: "news/"
+    parent: Community
+  - name: "Events"
+    weight: 2
+    url: "event-cards/"
+    parent: Community
+  - name: "NWB Enhancement Proposals"
+    weight: 3
+    url: "https://github.com/nwb-extensions/nwbep-review/blob/main/README.md"
+    parent: Community
+  - name: "Converting Data to NWB"
+    weight: 4
+    url: "converting-data-to-nwb/"
+    parent: Community  
+  - name: "Grants and Projects"
+    weight: 5
+    url: "grants-and-projects/"
+    parent: Community
+  - name: "Working Groups"
+    weight: 6
+    url: "working-groups/"
+    parent: Community
+
+  - name: "Using NWB"
+    weight: 3
+    url: "https://nwb-overview.readthedocs.io"
+  - name: "Policies"
+    weight: 4
+    url: "privacy-policy/"
+
+# Footer
+### About
+about:
+  - name: "About NWB"  
+    weight: 1
+    url: "/about-us"
+  - name: "The Software Ecosystem"
+    weight: 2
+    url: "/nwb-software"
+  - name: "Team"
+    weight: 3
+    url: "/team"
+  - name: "Publications"
+    weight: 4
+    url: "/publications"
+  - name: "Contact Us"
+    weight: 5
+    url: "/contact-us"
+
+### Community
+community:
+  - name: "News"
+    weight: 1
+    url: "/news"
+  - name: "Events"
+    weight: 2
+    url: "/event-cards"
+  - name: "NWB Enhancement Proposals"
+    weight: 3
+    url: "https://github.com/nwb-extensions/nwbep-review/blob/main/README.md"
+  - name: "Converting Data to NWB"
+    weight: 4
+    url: "/converting-data-to-nwb"
+  - name: "Grants and Projects"
+    weight: 5
+    url: "/grants-and-projects"
+  - name: "Working Groups"
+    weight: 6
+    url: "/working-groups"
+
+### Legal
+legal: 
+  - name: "Privacy Policy"
+    weight: 1
+    url: "/privacy-policy"

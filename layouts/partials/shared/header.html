@@ -1,0 +1,152 @@
+<!-- navigation -->
+<div class="header-height-fix"></div>
+<header class="header-nav py-3 header">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-12 px-0">
+        <nav class="navbar navbar-expand-lg p-0">
+          <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
+            <img src="{{ site.Params.logo }}" alt="" class="img-fluid" width="200px">
+          </a>
+
+          <button
+            class="navbar-toggler ms-auto border-0 outline-0 focus-ring"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navHeader"
+            aria-controls="navHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="d-inline bi bi-list h1 dark-300"></i>
+            <i class="d-none bi bi-x-lg h1 dark-300"></i>
+          </button>
+
+          <div class="collapse navbar-collapse smallDropdown p-3 p-lg-0" id="navHeader">
+            {{ $navButton:= site.Params.cta.enable }}
+            <ul
+              class="navbar-nav {{ if $navButton }}
+                mx-auto
+              {{ else }}
+                ms-auto
+              {{ end }}">
+              {{ $currentPage := . }}
+              {{ range site.Menus.main }}
+                {{ $menu_item_url := .URL | absLangURL }}
+                {{ $page_url:= $currentPage.Permalink | absLangURL }}
+                {{ $active := eq $menu_item_url $page_url }}
+
+                {{ if .HasChildren }}
+                  <li class="nav-item dropdown px-1 d-lg-none end-0">
+                    <a
+                      class="nav-link dropdown-toggle dark-300 inter-400 w-100 d-flex justify-content-between align-items-center"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false">
+                      {{ .Name }}
+                    </a>
+                    <ul class="dropdown-menu">
+                      {{ range .Children }}
+
+                        {{ $drop_menu_item_url := .URL | absLangURL }}
+                        {{ $active := eq $drop_menu_item_url $page_url }}
+
+
+                        <li class="px-3">
+                          <a
+                            class="dropdown-item animate {{ if $active }}
+                              active
+                            {{ end }} dark-900 inter-400"
+                            {{ if findRE `^http` .URL }}
+                              target="_blank" rel="noopener"
+                            {{ end }}
+                            href="{{ if findRE `^#` .URL }}
+                              {{ if not $.IsHome }}
+                                {{ site.BaseURL | relLangURL }}
+                              {{ end }}{{ .URL }}
+                            {{ else }}
+                              {{ .URL | relLangURL }}
+                            {{ end }}">
+                            {{ .Name }}
+                          </a>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown px-1 d-none d-lg-block">
+                    <a
+                      class="nav-link dropdown-toggle dark-300 inter-400"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false">
+                      {{ .Name }}
+                    </a>
+                    <ul class="megamenu list-unstyled ">
+                      {{ range .Children }}
+
+                        {{ $drop_menu_item_url := .URL | absLangURL }}
+                        {{ $active := eq $drop_menu_item_url $page_url }}
+
+
+                        <li class="">
+                          <a
+                            class="dropdown-item animate {{ if $active }}
+                              active
+                            {{ end }} px-3 py-1 rounded-2 dark-900 inter-400"
+                            {{ if findRE `^http` .URL }}
+                              target="_blank" rel="noopener"
+                            {{ end }}
+                            href="{{ if findRE `^#` .URL }}
+                              {{ if not $.IsHome }}
+                                {{ site.BaseURL | relLangURL }}
+                              {{ end }}{{ .URL }}
+                            {{ else }}
+                              {{ .URL | relLangURL }}
+                            {{ end }}">
+                            {{ .Name }}
+                          </a>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  </li>
+                {{ else }}
+                  <li class="nav-item px-2">
+                    <a
+                      class="nav-link {{ if $active }}active{{ end }} dark-300 inter-400"
+                      {{ if findRE `^http` .URL }}
+                        target="_blank" rel="noopener"
+                      {{ end }}
+                      href="{{ if findRE `^#` .URL }}
+                        {{ if not $.IsHome }}
+                          {{ site.BaseURL | relLangURL }}
+                        {{ end }}{{ .URL }}
+                      {{ else }}
+                        {{ .URL | relLangURL }}
+                      {{ end }}">
+                      {{ .Name }}
+                    </a>
+                  </li>
+                {{ end }}
+              {{ end }}
+            </ul>
+
+            {{ if $navButton }}
+              <div class="navbar-right">
+                <a
+                  href="{{ site.Params.cta.link | relURL }}"
+                  class="btn btn-primary bg-second scale border-second animate">
+                  {{ site.Params.cta.text }}
+                </a>
+              </div>
+            {{ end }}
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- /navigation -->

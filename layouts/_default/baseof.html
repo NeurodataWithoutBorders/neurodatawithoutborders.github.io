@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+  <head>
+    {{- partial "essentials/head.html" . -}}
+  </head>
+
+  <body>
+    <header>
+      {{- partial "shared/header.html" . -}}
+    </header>
+    <main>
+      {{- block "main" . }}{{- end }}
+    </main>
+    <footer>
+      {{- partial "shared/footer.html" . -}}
+    </footer>
+    {{- partial "essentials/script-footer.html" . -}}
+  </body>
+</html>

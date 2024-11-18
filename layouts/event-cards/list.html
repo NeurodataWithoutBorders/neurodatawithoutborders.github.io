@@ -1,0 +1,139 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+<section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
+    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/eventsBg.png');">
+    <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
+    <div class="position-absolute ellipses">
+        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+    </div>
+</section>
+{{/* End Hero Section */}}
+
+{{/* Intro Section */}}
+{{ with .Params.intro_section }}
+{{ if .enable }}
+<section class="section">
+  <div class="container-lg">
+    <div class="row justify-content-center justify-content-md-between gy-5 g-md-0 align-items-center">
+      <div class="col-sm-8 col-md-4">
+        <img src="{{ .image }}" alt="" class="img-fluid">
+      </div>
+      <div class="col-sm-8 col-md-7">
+        <h3 class="inter-700 text-48 dark-900 mb-4">{{ .title | markdownify }}</h3>
+        <p class="inter-400 text-16 dark-700 mb-0">{{ .content | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Intro Section */}}
+
+{{/* Events Section */}}
+{{ with where site.RegularPages "Section" "event-cards" }}
+<section class="section bg-dark-100">
+  <div class="container-lg d-flex flex-column gap-5">
+
+    <h2 class="inter-700 text-40 mb-0">Upcoming Events</h2>
+
+    <div class="row g-3 g-xl-5">
+      {{ range first 5 . }}
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="aboutBox px-3 py-4 animate rounded-3 bg-white">
+          <div class="d-flex flex-column flex-sm-row gap-3 pb-4 border-bottom">
+            <div>
+              <div class="bg-blue rounded-3 px-3 py-2 text-white d-inline-block text-center">
+                <h5 class="inter-600 text-24 mb-0 dark-100 lh-0">{{ .Date | time.Format "02" }}</h5>
+                <p class="inter-500 text-14 mb-0 lh-0">{{ .Date | time.Format "January" }}</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column row-gap-1">
+              <h4 class="inter-600 text-20 mb-0">{{ .Title | markdownify }}</h4>
+              <div class="d-flex align-items-center gap-2">
+                <div>
+                  <img src="/images/essentials/calender.png" alt="" width="17">
+                </div>
+                <div>
+                  <p class="inter-400 text-14 mb-0 pt-1 dark-700">{{ with .Date }}<span>{{ . | time.Format ":date_long"
+                      }}</span>{{ end }} to {{ with .Params.lastDate }} <span>{{ . | time.Format ":date_long"
+                      }}</span>{{ end }}</p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="d-flex align-items-center gap-2 me-4">
+                  <div>
+                    <img src="/images/essentials/clock.png" alt="" width="17">
+                  </div>
+                  {{ with .Params.time }}
+                  <p class="inter-400 text-14 mb-0 pt-1 blue">{{ . }}</p>
+                  {{ end }}
+                </div>
+                {{ with .Params.comments }}
+                <div class="d-flex align-items-center gap-2">
+                  <div>
+                    <img src="/images/essentials/comments.png" alt="" width="17">
+                  </div>
+                  <p class="inter-400 text-14 mb-0 pt-1 blue">{{ . }}</p>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 d-flex flex-lg-row row-gap-3 justify-content-between">
+            {{ with .Params.register_btn }}
+            <div class="d-flex gap-1 align-items-center">
+              <a href="{{ . }}"
+                class="btn btn-sm btn-primary bg-yellow border-yellow text-18 px-4 rounded-3 btn-lg scale animate">Register</a>
+            </div>
+            {{ end }}
+            <div class="d-flex align-items-center">
+              <a href="{{ .Permalink }}"
+                class="btn btn-sm btn-outline-primary border-blue blue  text-18 px-4 rounded-3 btn-lg scale eventsBtn animate">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+{{ end }}
+{{/* End Events Section */}}
+
+{{/* Past Events Section */}}
+{{ with where site.RegularPages "Section" "event-cards" }}
+<section class="section">
+  <div class="container-lg">
+    <div class="col-md-8 pb-5">
+      <h3 class="inter-700 text-40 dark-900 mb-4">Past Events</h3>
+      <p class="inter-400 text-16 dark-700 softwareSectA mb-0">The NWB team has hosted events at numerous conferences
+        and institutes to introduce the format and solicit feedback. To suggest a new event, please <a href="">contact
+          us</a>.</p>
+    </div>
+    <div class="row gy-4 justify-content-center justify-content-md-between">
+      {{ range after 5 . }}
+      <div class="rounded-3 p-3 bg-darkes">
+        <div class="d-flex gap-3 flex-column flex-sm-row align-items-start align-items-md-center">
+          <div class="p-3 rounded-3">
+            <img src="/images/calander.png" alt="" width="20" height="20">
+          </div>
+          <div class="row gy-2">
+            <a href="{{ .Permalink }}" class="nav-link inter-600 text-20 dark-900 mb-0">{{ .Title | markdownify }}</a>
+            <p class="d-flex align-items-center gap-2 mb-0 px-0">
+              <img src="/images/schedule.png" alt="" width="14">
+              <span class="inter-400 text-14 dark-500">{{ .Date | time.Format ":date_long" }} - {{ .Params.lastDate | time.Format ":date_long" }}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{/* End Past Events Section */}}
+
+{{ end }}

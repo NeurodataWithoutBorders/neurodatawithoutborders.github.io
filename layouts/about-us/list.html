@@ -1,0 +1,148 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+<section class="hero bg-main aboutSect d-flex justify-content-center align-items-center">
+        <h1 class="inter-700 text-48 text-white text-center">{{ .Title | markdownify }}</h1>
+</section>
+{{/* End Hero Section */}}
+
+{{/* About and Overview Section */}}
+{{ with .Params.about_section }}
+{{ if .enable }}
+<section class="section d-flex flex-column aboutOverview">
+    <div class="d-flex flex-column flex-lg-row gap-4 container-lg mx-auto align-items-center justify-content-center justify-content-md-between">
+        <div class="col-12 col-sm-8 col-lg-6">
+            <div>
+                <img src="{{ .image }}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-12 col-sm-8 col-lg-6">
+            <div class="ps-lg-5">
+                <h3 class="dark-900 inter-700 text-40 mb-4">{{ .title | markdownify }}</h3>
+                {{ with .content }}
+                <p class="dark-700 text-16 inter-400 lh-md mb-4">{{ . | markdownify }}</p>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+        {{ end }}
+    {{ end }}
+
+    {{ with .Params.overview_section }}
+        {{ if .enable }}
+<section class="section bg-dark-100 d-flex flex-column aboutOverview">
+    <div class=" d-flex flex-column-reverse flex-lg-row gap-4 container-lg mx-auto align-items-center justify-content-center justify-content-md-between">
+        <div class="col-12 col-sm-8 col-lg-6">
+            <div class="ps-lg-5">
+                <h3 class="dark-900 inter-700 text-40 mb-4">{{ .title | markdownify }}</h3>
+                {{ with .content }}
+                <p class="dark-700 text-16 inter-400 lh-md mb-4">{{ . | markdownify }}</p>
+                {{ end }}
+            </div>
+        </div>
+        <div class="col-12 col-sm-8 col-lg-6">
+            <div>
+                <img src="{{ .image }}" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+        {{ end }}
+</section>
+    {{ end }}
+{{/* End About and Overview Section */}}
+
+{{/* Initiatives Section  */}}
+{{ with .Params.initiatives_section }}
+    {{ if .enable }}
+<section class="ctaSect w-100 py-5">
+    <div class="container-sm text-center py-4">
+        <h3 class="inter-700 dark-100 text-40 pb-3">{{ .title | markdownify}}</h3>
+        <p class="inter-500 text-18 dark-50">{{ .content | markdownify }}</p>
+    </div>
+</section>
+    {{ end }}
+{{ end }}
+{{/* End Initiatives Section */}}
+
+{{/*  NWB Neurophysiology Section  */}}
+{{ with .Params.neurophysiology_section }}
+    {{ if .enable }}
+<section class="section">
+    <div class="col-sm-9 px-3 px-sm-0 mx-auto text-center d-flex flex-column justify-content-center row-gap-4">
+        <h3 class="inter-700 text-40 dark-900">{{ .title | markdownify }}</h3>
+        {{ range .content }}
+        {{ with .text }}
+        <p class="inter-400 text-16 dark-700 mb-0">{{ . | markdownify }}</p>
+        {{ end }}
+        {{ with .image }}
+        <img src="{{ . }}" alt="nwb-neuro" class="img-fluid my-5">
+        {{ end }}
+        {{ with .wide_image }}
+        <div class="wide-image-container">
+            <img src='{{ . }}' alt="" class="wide-image my-5">
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
+    {{ end }}
+{{ end }}
+{{/*  End NWB Neurophysiology Section  */}}
+
+{{/*  NWB Format Section  */}}
+{{ with .Params.nwb_goals_section }}
+    {{ if .enable }}
+<section class="section bg-light formatSection">
+    <div class="container-lg">
+        <h3 class="inter-700 text-40 dark-900 text-center">{{ .title | markdownify }}</h3>
+        <div class="pt-5 row justify-content-center g-4">
+            {{ range .boxes }}
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="bg-white p-4 rounded-4 d-flex gap-4 h-100">
+                    <div class="boxImg">
+                        <img src="{{ .icon }}" alt="" width="36">
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <strong class="inter-600 text-20 text-black mb-1">{{ .title | markdownify }}</strong>
+                        {{ range .checks }}
+                        <div class="d-flex gap-2 justify-content-start align-items-start">
+                            <img src="/images/essentials/check_mark.png" alt="" class="mark mt-1">
+                            <span class="inter-400 text-14">{{ .check }}</span>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+    {{ end }}
+{{ end }}
+{{/*  End NWB Format Section  */}}
+
+{{/*  History Section  */}}
+{{ with .Params.history_section }}
+    {{ if .enable }}
+<section class="section">
+    <div class="container d-flex flex-column justify-content-center row-gap-4">
+        <h3 class="inter-700 text-40 dark-900">{{ .title | markdownify }}</h3>
+        {{ range .content }}
+        {{ with .text }}
+        <p class="inter-400 text-18 dark-700 mb-0">{{ . }}</p>
+        {{ end }}
+        {{ with .image }}
+        <img src="{{ . }}" alt="nwb-neuro" class="img-fluid my-5">
+        {{ end }}
+        {{ with .wide_image }}
+        <div class="wide-image-container">
+            <img src='{{ . }}' alt="" class="wide-image my-5">
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
+    {{ end }}
+{{ end }}
+{{/*  End History Section  */}}
+{{ end }}

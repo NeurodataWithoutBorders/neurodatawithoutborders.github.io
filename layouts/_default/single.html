@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+<section class="hero teamSect d-flex justify-content-center align-items-center position-relative" style="background: radial-gradient(#063053e5, #062e52e5), url('{{ .Params.bg_image }}');">
+  <div class="col-md-6">
+    <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
+  </div>
+</section>
+{{/* End Hero Section */}}
+
+{{/*  Main Section  */}}
+{{ with .Content }}
+<section class="section">
+  <div class="container-lg">
+    <div class="content inter-400 text-18 dark-700 row gy-4"> 
+      {{ . | markdownify }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{/*  End Main Section  */}}
+{{ end }}

@@ -1,0 +1,76 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+<section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
+    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/working-groups-bg.png');">
+    <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
+    <div class="position-absolute ellipses">
+        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+    </div>
+</section>
+{{/* End Hero Section */}}
+
+{{/* Banner Section */}}
+{{ with .Params.banner_section }}
+{{ if .enable }}
+<section class="bg-dark-100">
+    <div class="container-lg text-center py-5">
+        <p class="inter-400 text-16 dark-700 mb-0">{{ .content | markdownify }}</p>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Banner Section */}}
+
+{{/* Sections */}}
+{{ range $i, $p := .Params.sections }}
+<section class="workingSection {{ if .bg_white }}bg-white{{ else }}bg-dark-100{{ end }} {{ if eq $i 0 }}pt-5{{ end }}">
+    <div class="container-lg">
+        <div
+            class="row justify-content-center justify-content-md-between align-items-center {{ if not (modBool $i 2) }}flex-row-reverse{{ end }}">
+            <div class="col-sm-10 col-md-6">
+                <h3 class="inter-700 dark-900 mb-4 {{ if .bg_white }}text-32{{ else }}text-48{{ end }}">{{ .title |
+                    markdownify }}</h3>
+                <p class="inter-400 text-16 black-700 softwareSectA">{{ .content | markdownify }}</p>
+            </div>
+            <div class="col-sm-10 col-md-5">
+                <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{/* End Sections */}}
+
+{{/* Past Working Group Section */}}
+{{ with .Params.past_groups }}
+{{ if .enable }}
+<section class="section bg-dark-100">
+    <div class="container-lg">
+        <h3 class="inter-700 text-48 dark-900 text-center">Past Working Groups</h3>
+
+        {{ range $i, $p := .sections }}
+        <div
+            class="row justify-content-center justify-content-md-between align-items-center {{ if not (modBool $i 2) }}flex-row-reverse{{ end }} mt-5">
+            <div class="col-sm-10 col-md-5">
+                <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+            </div>
+            <div class="col-sm-10 col-md-6">
+                <h3 class="inter-700 dark-900 mb-4 text-32">{{
+                    .title | markdownify }}</h3>
+                <p class="inter-400 text-16 black-700 softwareSectA">{{ .content | markdownify }}</p>
+            </div>
+        </div>
+        {{ end }}
+
+        {{ with .outcomes }}
+        <div class="mt-5">
+            <h4 class="inter-600 text-32 dark-900">{{ .title | markdownify }}</h4>
+            <p class="inter-400 text-16 dark-900 softwareSectA">{{ .content | markdownify }}</p>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Past Working Group Section */}}
+{{ end }}

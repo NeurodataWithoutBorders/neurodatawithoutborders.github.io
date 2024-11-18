@@ -1,0 +1,1078 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: static/images
+public_folder: /images
+collections:
+  - name: 'news'
+    label: 'News'
+    folder: 'content/news'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'text' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
+      - { label: 'Order', name: 'weight', widget: 'number' }
+      - { label: 'Author Details', name: 'author_details', widget: 'object', fields: [
+          { label: 'Name', name: 'name', widget: 'string' },
+          { label: 'Image', name: 'image', widget: 'image' },
+          { label: 'Bio', name: 'bio', widget: 'string' }
+        ]
+        }
+      - { label: 'Categories', name: 'tags', widget: 'string' }
+
+  - name: 'event-cards'
+    label: 'Event Cards'
+    folder: 'content/event-cards'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Intro Section (main page)', name: 'intro_section', required: false, widget: 'object', fields: [
+          { label: 'Display', name: 'enable', widget: 'boolean', default: true },
+          { label: 'Image', name: 'image', widget: 'image' },
+          { label: 'Title', name: 'title', widget: 'string' },
+          { label: 'Content', name: 'content', widget: 'markdown' }
+        ]
+        }
+      - { label: 'Start Date', name: 'date', widget: 'datetime', required: false }
+      - { label: 'End Date', name: 'lastDate', widget: 'datetime', required: false }
+      - { label: 'Comments', name: 'comments', widget: 'number', required: false }
+      - { label: 'Time', name: 'time', widget: 'string', required: false }
+      - { label: 'Register Btn', name: 'register_btn', widget: 'string', required: false }
+      - { label: 'Order', name: 'weight', widget: 'number', required: false }
+
+
+  - name: 'publications'
+    label: 'Publications'
+    folder: 'content/publications'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Icon', name: 'icon', widget: 'image' }
+      - { label: 'Content', name: 'content', widget: 'markdown', required: false }
+      - { label: 'Main Image', name: 'main_image', widget: 'image', required: false }
+      - { label: 'Socials', name: 'socials', widget: 'boolean', required: false }
+      - { label: 'Boxes', name: 'boxes', widget: 'list', required: false, fields: [
+          { label: 'Icon', name: 'icon', widget: 'image' },
+          { label: 'Title', name: 'title', widget: 'string' },
+          { label: 'Content', name: 'content', widget: 'text' }
+        ] 
+        }
+      - { label: 'List', name: 'list', widget: 'list', required: false, fields: [
+          { label: 'Content', name: 'content', widget: 'text' },
+          { label: 'Image', name: 'image', widget: 'image', required: false },
+          { label: 'Subtitle', name: 'subtitle', widget: 'list', required: false, fields: [
+            { label: 'Subtitle Item', name: 'subtitle_item', widget: 'string' }
+          ]
+          }
+        ]
+        }
+
+
+  - name: "Pages"
+    label: "Pages"
+    files:
+      - name: 'home'
+        label: 'Home Page'
+        file: 'content/_index.md'
+        fields:
+          - { label: 'Page Name', name: 'title', widget: 'string' }
+          - { label: 'Hero Section', name: 'hero_section', widget: 'object', fields: [
+              { label: 'Display', name: 'enable', widget: 'boolean' },
+              { label: 'Slides', name: 'slides', widget: 'list', fields: [
+                { label: 'Title', name: 'title', widget: 'string' },
+                { label: 'Subtitle', name: 'subtitle', widget: 'string' },
+                { label: 'Button Text', name: 'btn_text', widget: 'string' },
+                { label: 'Button Link', name: 'btn_link', widget: 'string' }
+                ]
+              }
+            ]
+            }
+          - { label: 'Banner Section', name: 'banner_section', widget: 'object', fields: [
+              { label: 'Display', name: 'enable', widget: 'boolean' },
+              { label: 'Title', name: 'title', widget: 'text' }
+            ]
+            }
+          - { label: 'Card Section', name: 'card_section', widget: 'object', fields: [
+              { label: 'Display', name: 'enable', widget: 'boolean' },
+              { label: 'Cards', name: 'cards', widget: 'list', fields: [
+                { label: 'Icon', name: 'image', widget: 'image' },
+                { label: 'Title', name: 'title', widget: 'string' },
+                { label: 'Button Text', name: 'btn_text', widget: 'string' },
+                { label: 'Button Link', name: 'btn_link', widget: 'string' }
+              ]
+              }
+            ]
+            }
+          - { label: 'Portfolio Section', name: 'portfolio_section', widget: 'object', fields: [
+              { label: 'Display', name: 'enable', widget: 'boolean' },
+              { label: 'Image', name: 'image', widget: 'image' },
+              { label: 'Heading', name: 'heading', widget: 'string' },
+              { label: 'Paragraph', name: 'paragraph', widget: 'markdown' },
+              { label: 'Logos', name: 'logos', widget: 'list', fields: [
+                { label: 'Logo', name: 'logo', widget: 'image' }
+              ]
+              }
+            ]
+            }
+          - { label: 'News Section', name: 'news_section', widget: 'object', fields: [
+              { label: 'Display', name: 'enable', widget: 'boolean' },
+              { label: 'Button Text', name: 'btn_text', widget: 'string' },
+              { label: 'Button Link', name: 'btn_link', widget: 'string' }
+            ]
+            }
+          - { label: 'Sponsors Section', name: 'sponsers_section', widget: 'object', fields: [
+              { label: 'Display', name: 'enable', widget: 'boolean' },
+              { label: 'Logos', name: 'logos', widget: 'list', fields: [
+                { label: 'Image', name: 'image', widget: 'image' },
+                { label: 'Link', name: 'link', widget: 'string' }
+              ]
+              }
+            ]
+            }
+          - { label: 'CTA Section', name: 'cta_section', widget: 'object', fields: [
+              { label: 'Display', name: 'enable', widget: 'boolean' },
+              { label: 'Heading', name: 'heading', widget: 'text' },
+              { label: 'Button Text', name: 'btn_text', widget: 'string' },
+              { label: 'Button Link', name: 'btn_link', widget: 'string' }
+            ]
+            }
+                
+
+      - name: "about-us"
+        label: "About Us"
+        file: "content/about-us/_index.md"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "About Section"
+            name: "about_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+
+          - label: "Overview Section"
+            name: "overview_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+
+          - label: "Initiatives Section"
+            name: "initiatives_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+
+          - label: "Neurophysiology Section"
+            name: "neurophysiology_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "list"
+                fields:
+                  - label: "Text"
+                    name: "text"
+                    widget: "markdown"
+                    required: false
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                    required: false
+                  - label: "Wide Image"
+                    name: "wide_image"
+                    widget: "image"
+                    required: false
+
+          - label: "NWB Goals Section"
+            name: "nwb_goals_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Goals"
+                name: "boxes"
+                widget: "list"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Icon"
+                    name: "icon"
+                    widget: "image"
+                  - label: "Checks"
+                    name: "check"
+                    widget: "list"
+                    fields:
+                      - label: "Item"
+                        name: "item"
+                        widget: "string"
+
+          - label: "History Section"
+            name: "history_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "list"
+                fields:
+                  - label: "Text"
+                    name: "text"
+                    widget: "markdown"
+                    required: false
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                    required: false
+                  - label: "Wide Image"
+                    name: "wide_image"
+                    widget: "image"
+                    required: false
+
+
+      - name: "nwb_software_ecosystem_page"
+        label: "NWB Software Ecosystem Page"
+        file: "content/nwb-software/_index.md"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Software Types"
+            name: "software_types"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+              - label: "Boxes"
+                name: "boxes"
+                widget: "list"
+                fields:
+                  - label: "Icon"
+                    name: "icon"
+                    widget: "image"
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Content"
+                    name: "content"
+                    widget: "text"
+
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Problem"
+                name: "problem"
+                widget: "text"
+                required: false
+              - label: "Approach"
+                name: "approach"
+                widget: "text"
+                required: false
+              - label: "Function"
+                name: "function"
+                widget: "text"
+                required: false
+              - label: "Full Space Description"
+                name: "upper_description"
+                widget: "markdown"
+                required: false
+              - label: "Description"
+                name: "description"
+                widget: "markdown"
+                required: false
+              - label: "Description List"
+                name: "list"
+                widget: "list"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Content"
+                    name: "content"
+                    widget: "markdown"
+
+          - label: "Community Tools"
+            name: "community_tools"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+              - label: "Tools"
+                name: "tools"
+                widget: "list"
+                fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+               
+
+
+      - name: "team_page"
+        label: "Team Page"
+        file: "content/team/_index.md"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Governance Section"
+            name: "governance_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+
+          - label: "Executive Section"
+            name: "executive_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+              - label: "List"
+                name: "list"
+                widget: "list"
+                fields:
+                  - label: "Item"
+                    name: "item"
+                    widget: "string"
+
+          - label: "Current Team Section"
+            name: "current_team_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Team Members"
+                name: "team_members"
+                widget: "list"
+                fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+
+          - label: "Alumni Section"
+            name: "alumni_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Alumni"
+                name: "alumni"
+                widget: "list"
+                fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                  - label: "Date"
+                    name: "date"
+                    widget: "string"
+
+          - label: "Technical Board"
+            name: "technical_board"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+              - label: "List"
+                name: "list"
+                widget: "list"
+                fields:
+                  - label: "Item"
+                    name: "item"
+                    widget: "string"
+
+          - label: "Technical Team Section"
+            name: "technical_team_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Team Members"
+                name: "team_members"
+                widget: "list"
+                fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+
+          - label: "Core Dev Section"
+            name: "core_dev_section"
+            widget: "object"
+            fields:
+              - label: "PyNWB Section"
+                name: "pynwb_section"
+                widget: "object"
+                fields:
+                  - label: "Display"
+                    name: "enable"
+                    widget: "boolean"
+                  - label: "Team Members"
+                    name: "team_members"
+                    widget: "list"
+                    fields:
+                      - label: "Image"
+                        name: "image"
+                        widget: "image"
+                      - label: "Name"
+                        name: "name"
+                        widget: "string"
+                      - label: "Post"
+                        name: "post"
+                        widget: "string"
+              - label: "MatNWB Section"
+                name: "matnwb_section"
+                widget: "object"
+                fields:
+                  - label: "Display"
+                    name: "enable"
+                    widget: "boolean"
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                  - label: "Post"
+                    name: "post"
+                    widget: "string"
+              - label: "NWB Community Section"
+                name: "nwb_community_section"
+                widget: "object"
+                fields:
+                  - label: "Display"
+                    name: "enable"
+                    widget: "boolean"
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                  - label: "Post"
+                    name: "post"
+                    widget: "string"
+
+          - label: "Developer Community Section"
+            name: "dev_community_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+
+
+      - name: "contact_us"
+        label: "Contact Us"
+        file: "content/contact-us/_index.md"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Community Section"
+            name: "community_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+                default: true
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+              - label: "Boxes"
+                name: "boxes"
+                widget: "list"
+                fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Content"
+                    name: "content"
+                    widget: "text"
+
+          - label: "Live Chat"
+            name: "live_chat"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+              - label: "Boxes"
+                name: "boxes"
+                widget: "list"
+                fields:
+                  - label: "Icon"
+                    name: "icon"
+                    widget: "image"
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Content"
+                    name: "content"
+                    widget: "string"
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
+                  - label: "Button"
+                    name: "button"
+                    widget: "object"
+                    fields:
+                      - label: "Display"
+                        name: "enable"
+                        widget: "boolean" 
+
+
+      - name: "neurodatarehack"
+        label: "Events"
+        file: "content/events/_index.md"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Subtitle"
+            name: "subtitle"
+            widget: "string"
+          - label: "Date"
+            name: "date"
+            widget: "datetime"
+          - label: "Hero Image"
+            name: "hero_image"
+            widget: "image"
+          - label: "Insight Section"
+            name: "insight_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+                default: true
+              - label: "List Title"
+                name: "list_title"
+                widget: "string"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Insights"
+                name: "insights"
+                widget: "list"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Subtitle"
+                    name: "subtitle"
+                    widget: "string"
+                    required: false
+                  - label: "Content"
+                    name: "content"
+                    widget: "markdown"
+                    required: false
+                  - label: "PDF"
+                    name: "pdf"
+                    widget: "file"
+                    required: false
+          - label: "Disclaimer"
+            name: "discalimer"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+                default: true
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+
+
+      - name: "converting-data-to-nwb"
+        label: "Converting Data To NWB"
+        file: "content/converting-data-to-nwb/_index.md"
+        create: true
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "List"
+            name: "list"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+                default: true
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - label: "Item"
+                    name: "item"
+                    widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+
+          - label: "Available Tools Section"
+            name: "available_tools_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+                default: true
+              - label: "Boxes"
+                name: "boxes"
+                widget: "list"
+                fields:
+                  - label: "Icon"
+                    name: "icon"
+                    widget: "image"
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Type"
+                    name: "type"
+                    widget: "string"
+                  - label: "Features"
+                    name: "features"
+                    widget: "list"
+                    fields:
+                      - label: "Feature"
+                        name: "feature"
+                        widget: "string"
+                  - label: "Limitations"
+                    name: "limitations"
+                    widget: "string"
+                    required: false
+                  - label: "Resources"
+                    name: "resources"
+                    widget: "list"
+                    fields:
+                      - label: "Text"
+                        name: "text"
+                        widget: "string"
+                      - label: "Link"
+                        name: "link"
+                        widget: "string"
+
+          - label: "Choosing Tools"
+            name: "choosing_tools"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+                default: true
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - label: "Item"
+                    name: "item"
+                    widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+
+
+      - name: "grants_and_projects"
+        label: "Grants And Projects"
+        file: "content/grants-and-projects/_index.md"
+        create: true
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+        
+          ### Sponsored Projects Section
+          - label: "Sponsored Projects"
+            name: "sponsered_projects"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+                default: true
+              - label: "Boxes"
+                name: "boxes"
+                widget: "list"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Content"
+                    name: "content"
+                    widget: "markdown"
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+
+          ### Intro Section
+          - label: "Intro Section"
+            name: "intro_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+                default: true
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Subtitle"
+                name: "subtitle"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+              - label: "Sponsors Title"
+                name: "sponsers_title"
+                widget: "string"
+
+          ### Sponsors Section
+          - label: "Sponsors"
+            name: "sponsers"
+            widget: "list"
+            fields:
+              - label: "Year"
+                name: "year"
+                widget: "string"
+              - label: "Boxes"
+                name: "boxes"
+                widget: "list"
+                fields:
+                  - label: "Sponsor Name"
+                    name: "sponser_name"
+                    widget: "list"
+                    fields:
+                      - label: "Name"
+                        name: "name"
+                        widget: "string"
+                  - label: "Institute"
+                    name: "institute"
+                    widget: "string"
+                    required: false
+                  - label: "Location"
+                    name: "location"
+                    widget: "string"
+                    required: false
+                  - label: "Content"
+                    name: "content"
+                    widget: "markdown"
+                    required: false
+
+          ### Past Projects Section
+          - label: "Past Projects Section"
+            name: "past_projects_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+                default: true
+              - label: "Projects"
+                name: "projects"
+                widget: "list"
+                fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Content"
+                    name: "content"
+                    widget: "markdown"
+
+          ### Boxes Section
+          - label: "Boxes Section"
+            name: "boxes"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+                default: true
+              - label: "Box"
+                name: "box"
+                widget: "list"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Content"
+                    name: "content"
+                    widget: "markdown"
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+
+
+      - label: "Working Groups"
+        name: "working_groups"
+        file: "content/working-groups/_index.md"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+      
+          - label: "Banner Section"
+            name: "banner_section"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Content"
+                name: "content"
+                widget: "text"
+          
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Background White"
+                name: "bg_white"
+                widget: "boolean"
+                required: false
+          
+          - label: "Past Groups"
+            name: "past_groups"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Sections"
+                name: "sections"
+                widget: "list"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Content"
+                    name: "content"
+                    widget: "markdown"
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+              - label: "Outcomes"
+                name: "outcomes"
+                widget: "object"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Content"
+                    name: "content"
+                    widget: "markdown"
+
+
+      - name: "privacy-policy"
+        label: "Privacy Policy"
+        file: "content/privacy-policy/_index.md"
+        create: true
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+  
+          - label: "Section"
+            name: "section"
+            widget: "list"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+      
+              - label: "List"
+                name: "list"
+                widget: "list"
+                fields:
+                  - label: "Subtitle"
+                    name: "subtitle"
+                    widget: "string"
+                    required: false
+            
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - label: "Heading"
+                        name: "heading"
+                        widget: "string"
+              
+                      - label: "Icon"
+                        name: "icon"
+                        widget: "image"
+              
+                      - label: "Content"
+                        name: "content"
+                        widget: "markdown"
+                        required: false
+
+                      - label: "Nested List"
+                        name: "nested_list"
+                        widget: "list"
+                        required: false
+                        fields:
+                          - label: "Heading"
+                            name: "heading"
+                            widget: "string"
+                
+                          - label: "Icon"
+                            name: "icon"
+                            widget: "image"
+                
+                          - label: "Content"
+                            name: "content"
+                            widget: "markdown"
+                            required: false

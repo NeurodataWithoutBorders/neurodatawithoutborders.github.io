@@ -1,0 +1,300 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+{{ with .Params.hero_section }}
+{{ if .enable }}
+<section class="hero homeHero bg-main heroSection pt-5 pt-md-0">
+  <div class="position-relative overflow-hidden w-100 h-100 mt-5 mt-md-0">
+    {{/*  <div>
+      <img src="/images/essentials/circle.png" alt="nwb-home" class="w-25">
+    </div>  */}}
+    <div class="position-absolute heroDots">
+      <img src="/images/essentials/dots.png" alt="nwb-home" class="w-50">
+    </div>
+    <div class="position-absolute blueDots w-100 h-100">
+      <img src="/images/essentials/blue-dots.png" alt="nwb-home" class="bluePart">
+    </div>
+    <div class="swiper heroSwiper mySlide container-lg h-100 px-0">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        {{ range .slides }}
+        <div class="swiper-slide d-md-flex flex-md-row-reverse align-items-md-center ms-md-3 mx-auto">
+          <div class="heroImg col-md-7 mb-sm-5 mb-md-0 px-0 ms-3 ms-sm-5 ms-md-0 d-flex justify-content-center align-items-center">
+            <img src="/images/hero.png" alt="nwb-home" class="img-fluid">
+          </div>
+          <div class="col-11 col-sm-8 col-md-5 z-2 d-md-flex flex-column gap-3 mx-auto mx-md-0 text-center text-md-start px-md-0 mx-md-0">
+            <h1 class="inter-700 text-white text-48-responsive">{{ .title | markdownify }}</h1>
+            <p class="inter-500 dark-50 text-18">{{ .subtitle | markdownify }}</p>
+            <div>
+              <a href="{{ .btn_link }}"
+                class="btn btn-main btn-lg text-18 bg-yellow border-yellow inter-500 translate animate">{{ .btn_text
+                }}</a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Hero Section */}}
+
+{{/* Banner Section */}}
+{{ with .Params.banner_section }}
+{{ if .enable }}
+<section class="w-100 bg-light-sky">
+  <div class="py-5 banner mx-auto">
+    <p class="inter-600 text-24 text-center mb-0">{{ .title | markdownify }}</p>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Banner Section */}}
+
+
+{{/* About Section */}}
+{{ with .Params.card_section }}
+{{ if .enable }}
+<section class="w-100 h-100 section">
+  <div class="container-lg row mx-auto gy-5 gx-4">
+    {{ range .cards }}
+    <div class="col-12 col-sm-6 col-lg-3 mx-auto px-0 px-sm-2">
+      <div
+        class="rounded-3 px-5 py-4 d-flex flex-column justify-content-between align-items-center aboutBox animate h-100 row-gap-4">
+        <img src="{{ .image }}" alt="about-nwb" width="64">
+        <div class="h-25">
+          <p class="inter-600 text-20 text-center mb-0">{{ .title | markdownify }}</p>
+        </div>
+        <a href="{{ .btn_link }}" class="btn btn-outline-main second border-second aboutBtn btn-lg scale animate">{{
+          .btn_text }}</a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End About Section */}}
+
+{{/* Portfolio Section */}}
+{{ with .Params.portfolio_section }}
+{{ if .enable }}
+<section class="section w-100 h-100 pt-0">
+  <div class="container-lg row mx-auto justify-content-between">
+    <div class="col-12 col-md-5 rounded-3 px-0 mb-5 mb-md-0">
+      <img src="{{ .image }}" alt="nwb-portfolio" class="w-100">
+    </div>
+    <div class="col-12 col-md-6 d-flex flex-column gap-4 px-0">
+      <h3 class="inter-700 text-40 mb-0">{{ .heading | markdownify }}</h3>
+      {{ with .paragraph }}
+      <p class="text-16 inter-400 lh-base dark-700">{{ . | markdownify }}</p>
+      {{ end }}
+      <div class="d-flex gap-3 ms-1 ms-md-0">
+        {{ range .logos }}
+        <div class="p-1 shadow-sm rounded-3 achiImg">
+          <img src="{{ .logo }}" alt="nwb-achivements" class="img-fluid">
+        </div>
+        {{ end }}
+      </div>
+      <div class="pt-4">
+        <a href="" class="btn btn-main btn-lg text-18 bg-main border-main inter-500 translate animate text-white">Learn
+          More</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Portfolio Section */}}
+
+{{/* News And Updates Section */}}
+{{ with .Params.news_section }}
+{{ if .enable }}
+<section class="section w-100 h-100 newsSect">
+  <div class="swiper newsSwiper container d-flex flex-column gap-5 px-0">
+
+    <div class="row justify-content-between align-items-center w-100">
+      <div class="col-md-6">
+        <h2 class="text-white inter-700 text-40 mb-0 text-center text-md-start">Latest News & Updates</h2>
+      </div>
+      <div class="col-md-6 d-md-flex justify-content-end d-none">
+        <a href="/news/"
+          class="btn btn-outline-main px-4 second border-second aboutBtn btn-lg scale animate">See All News</a>
+      </div>
+    </div>
+
+    <div class="swiper-wrapper">
+      {{ $pages := where site.RegularPages "Section" "news" }}
+      {{ range $pages.ByDate.Reverse }}
+      <div class="swiper-slide">
+        <div class="shadow">
+          <div class="shadow-sm">
+            <img src="{{ .Params.image }}" alt="" class="rounded-top-3" style="width: 100% !important; height: 240px !important; object-fit: cover !important;">
+        </div>
+          <div class="h-40 p-4 bg-main rounded-bottom-3 d-flex flex-column gap-3">
+            <div class="d-flex gap-2 align-items-center">
+              <div class="icons">
+                <img src="/images/essentials/calender.png" alt="calender" class="img-fluid">
+              </div>
+              <p class="inter-400 text-14 slate mb-0 pt-1">{{ .Date | time.Format ":date_long"}}</p>
+            </div>
+            <div>
+              <h3 class="inter-600 text-20 dark-100">{{ .Title | markdownify | truncate 30 }}</h3>
+              <p class="inter-400 text-16 dark-300 mb-0">{{ .Params.subtitle | markdownify | truncate 60 }}</p>
+            </div>
+            <div>
+              <a href="{{ .Permalink }}"
+                class="btn btn-main text-16 yellow bg-transparent border-transparent inter-400 scale animate p-0 border-0">
+                Read More
+                <img src="/images/essentials/arrow_right.png" alt="nwb_right_arrow" class="w-20">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="col-md-6 d-flex justify-content-center mt-4 d-md-none">
+    <a href="/news/"
+      class="btn btn-outline-main px-4 second border-second aboutBtn btn-lg scale animate">See All New</a>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End News And Updates Section */}}
+
+{{/* Events Section */}}
+{{ with where .Site.RegularPages "Section" "event-cards" }}
+<section class="section">
+  <div class="swiper eventsSwiper container-lg d-flex flex-column gap-5 pb-5">
+
+    <h2 class="inter-700 text-40 text-center mb-0">Upcoming Events</h2>
+
+    <div class="swiper-wrapper">
+      {{ range . }}
+      <div class="swiper-slide">
+        <div class="aboutBox px-3 py-4 animate rounded-3 bg-white">
+          <div class="d-flex flex-sm-row gap-3 pb-4 border-bottom">
+            <div>
+              <div class="bg-blue rounded-3 px-3 py-2 text-white d-inline-block text-center">
+                <h5 class="inter-600 text-24 mb-0 dark-100 lh-0">{{ .Date | time.Format "02" }}</h5>
+                <p class="inter-500 text-14 mb-0 lh-0">{{ .Date | time.Format "January" }}</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column row-gap-1">
+              <h4 class="inter-600 text-20 mb-0">{{ .Title | markdownify }}</h4>
+              <div class="d-flex align-items-center gap-2">
+                <div>
+                  <img src="/images/essentials/calender.png" alt="" width="17">
+                </div>
+                <div>
+                  <p class="inter-400 text-14 mb-0 pt-1 dark-700">{{ with .Date }}<span>{{ . | time.Format ":date_long"
+                      }}</span>{{ end }} to {{ with .Params.lastDate }} <span>{{ . | time.Format ":date_long"
+                      }}</span>{{ end }}</p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="d-flex align-items-center gap-2 me-4">
+                  <div>
+                    <img src="/images/essentials/clock.png" alt="" width="17">
+                  </div>
+                  {{ with .Params.time }}
+                  <p class="inter-400 text-14 mb-0 pt-1 blue">{{ . | markdownify }}</p>
+                  {{ end }}
+                </div>
+                {{ with .Params.comments }}
+                <div class="d-flex align-items-center gap-2">
+                  <div>
+                    <img src="/images/essentials/comments.png" alt="" width="17">
+                  </div>
+                  <p class="inter-400 text-14 mb-0 pt-1 blue">{{ . }}</p>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 d-flex flex-lg-row row-gap-3 justify-content-between">
+            {{ with .Params.register_btn }}
+            <div class="d-flex align-items-center">
+              <a href="{{ . }}"
+                class="btn btn-sm btn-primary bg-yellow border-yellow text-18 px-4 rounded-3 btn-lg scale animate">Register</a>
+            </div>
+            {{ end }}
+            <div class="d-flex align-items-center">
+              <a href="{{ .Permalink }}"
+                class="btn btn-sm btn-outline-primary border-blue blue  text-18 px-4 rounded-3 btn-lg scale eventsBtn animate">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="swiper-button-prev mt-1"></div>
+    <div class="swiper-button-next mt-1"></div>
+    <div class="swiper-pagination" style="bottom: 0px;"></div>
+  </div>
+</section>
+{{ end }}
+{{/* End Events Section */}}
+
+{{/* Sponsers Section */}}
+{{ with .Params.sponsers_section }}
+{{ if .enable }}
+<section class="w-100 h-100">
+  <div class="border-top container-lg py-5 mb-5">
+    <h3 class="inter-600 text-24 text-center">Current Sponsors</h3>
+
+    <div class="logo-slider py-4">
+      <div class="logos">
+        {{ range .logos }}
+        <div class="logo clients">
+          <a href="{{ .link }}" target="_blank">
+            <img src="{{ .image }}" alt="Logo 1">
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Sponsers Section */}}
+
+{{/* CTA */}}
+{{ with .Params.cta_section }}
+{{ if .enable }}
+<section class="ctaSect w-100 py-5">
+  <div class="container-lg">
+    <div class="row row-gap-4 text-center text-sm-start">
+      <div class="col-sm-6">
+        <p class="inter-700 text-40 text-white">{{ .heading | markdownify }}</p>
+      </div>
+      <div class="col-sm-6 justify-content-sm-end justify-content-center d-flex align-items-center">
+        <a href="{{ .btn_link }}"
+          class="btn btn-main bg-second btn-lg px-4 text-white text-18 second border-second translate animate">{{
+          .btn_text }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End CTA */}}
+{{ end }}

@@ -1,0 +1,191 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+<section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
+    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/newsPageBg.png');">
+    {{ with .Parent.Title }}
+    <h1 class="inter-700 text-48 text-white text-center z-4">{{ . | markdownify }}</h1>
+    {{ end }}
+    <div class="position-absolute ellipses">
+        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+    </div>
+</section>
+{{/* End Hero Section */}}
+
+{{/* Main Section */}}
+<section class="section bg-dark-100">
+    <div class="container-lg">
+        <div class="row flex-column-reverse flex-lg-row justify-content-between mb-5 ps-lg-0">
+            <div class="d-sm-flex justify-content-between col-lg-8 pt-5 pt-lg-0 ps-lg-0">
+                <h3 class="inter-700 dark-900 text-48-responsive">{{ .Title | markdownify }}</h3>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center pe-0 ps-lg-5">
+                <div class="d-flex align-items-center border-dark-50 bg-white rounded-3 w-100" id="search">
+                    {{/* <input type="text" id="search" class="border-0 inter-400 text-16 slate w-75 bg-white"
+                        placeholder="Search">
+                    <label for="search" class="w-25 d-flex justify-content-end" style="cursor: pointer;">
+                        <img src="/images/essentials/search.png" alt="" width="20">
+                    </label> */}}
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-lg-8">
+                <div>
+                    <img src="{{ .Params.image }}" alt="" class="rounded-top-3"
+                        style="width: 100% !important; height: 240px !important; object-fit: cover !important;">
+                </div>
+                <div class="mt-4 bg-white px-5 py-2">
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <div class="d-flex gap-2 align-items-center">
+                            {{ with .Date }}
+                            <img src="/images/events/schedule.png" alt="" width="14">
+                            <span class="inter-400 text-14 dark-500">{{ . | time.Format ":date_long" }}</span>
+                            {{ end }}
+                        </div>
+                        <div>
+                            {{ with .Params.author }}
+                            <img src="/images/user-dark.svg" alt="" width="14">
+                            <span class="inter-400 text-14 dark-500">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        <div>
+                            {{ with .Params.tags }}
+                            <img src="/images/folder.svg" alt="" width="14">
+                            <span class="inter-400 text-14 dark-500">
+                                {{ . }}
+                            </span>
+                        </div>
+                        {{ end }}
+                    </div>
+                    <div class="inter dark-500 mt-4">
+                        {{ .Content }}
+                    </div>
+                    <div class="mt-4 ">
+                        <div class="border-bottom">
+                            <p class="inter-700 dark-700 text-20 mb-1">Share</p>
+                        </div>
+                        <div class="mt-4 pb-5 d-flex flex-wrap gap-3">
+                            <div>
+                                <a class="btn btn-primary btn-lg border-0" style="background-color: #55acee;"
+                                    target="_blank"
+                                    href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink | safeURL }}"
+                                    role="button"><i class="bi bi-twitter me-2"></i>Twitter</a>
+                            </div>
+                            <div>
+                                <a class="btn btn-primary btn-lg border-0" style="background-color: #1b84d4;"
+                                    target="_blank"
+                                    href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | safeURL }}"
+                                    role="button"><i class="bi bi-facebook me-2"></i>Facebook</a>
+                            </div>
+                            <div>
+                                <a class="btn btn-primary btn-lg border-0" style="background-color: #066cb9;"
+                                    target="_blank"
+                                    href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink | safeURL }}&title={{ .Title | urlquery }}"
+                                    role="button"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+                            </div>
+                            <div>
+                                <a class="btn btn-primary btn-lg border-0 bg-secondary" target="_blank"
+                                    href="mailto:?subject={{ .Title | urlquery }}&body=Check out this article: {{ .Permalink | safeURL }}"
+                                    role="button"><i class="bi bi-envelope me-2"></i>Email</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-5">
+                    {{ with .Params.author_details }}
+                    <div class="p-3 bg-slate border">
+                        <div class="d-flex flex-wrap gap-3 align-items-center">
+                            <div style="width: 100px;">
+                                <img src="{{ .image }}" alt="" class="img-fluid rounded-circle">
+                            </div>
+                            <div>
+                                <p class="mb-1 blue inter-600 text-20">{{ .name }}</p>
+                                <p class="mb-0 dark-700 inter-400">{{ .bio }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                    <div class="mt-4">
+                        <div class="border-bottom">
+                            <p class="inter-700 dark-700 text-20 mb-1">Related Posts</p>
+                        </div>
+                        <div class="mt-4 row justify-content-between gy-4">
+                            {{ $currentAuthor := .Params.author_details.name }}
+                            {{ with where .Site.RegularPages "Section" "news" }}
+                            {{ range first 3 (where . "Params.author_details.name" $currentAuthor) }}
+                            <a href="{{ .Permalink }}" class="col-sm-6 col-md-4" style="text-decoration: none;">
+                                <h2 class="inter-700 dark-900 text-20 underline-hover">{{ .Title }}</h2>
+                                <p class="inter-400 dark-700 mb-0">{{ .Params.subtitle | truncate 70 }}</p>
+                            </a>
+                            {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-5 ps-lg-5">
+                <h4 class="inter-600 text-24 dark-900">Recent News</h4>
+                <div class="row g-2" data-pagefind-body>
+                    {{ $pages := where .Site.RegularPages "Section" "news" }}
+                    {{ range first 4 ($pages.ByDate.Reverse) }}
+                    <div class="col-md-6 col-lg-12 col-sm-8 mx-auto">
+                        <div class="rounded-3 shadow-sm bg-white p-2">
+                            <div class="d-flex  gap-3 align-items-center">
+                                <div>
+                                    <img data-pagefind-meta="image[src]" src="{{ .Params.image }}" alt="" width="90"
+                                        height="70" class="rounded-3">
+                                </div>
+                                <div class="w-100 d-flex flex-column row-gap-1">
+                                    <div class="d-flex align-items-sm-center gap-1">
+                                        <div>
+                                            <img src="/images/essentials/calender.png" alt="calender" width="17">
+                                        </div>
+                                        <p class="inter-400 text-12 dark-600 mb-0 pt-1" data-pagefind-meta="date">{{
+                                            .Date | time.Format "January 02, 2006 "}}</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="inter-600 dark-900 text-16 mb-0 pt-1" data-pagefind-meta="title">{{
+                                            .Title | markdownify |
+                                            truncate 30 }}</h4>
+                                    </div>
+                                    <div>
+                                        <a href="{{ .Permalink }}"
+                                            class="btn btn-outline-primary border-0 bg-transparent blue animate scale p-0">
+                                            Read More
+                                            <img src="/images/essentials/right_arrow.png" alt="" width="15"
+                                                class="ms-2">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+
+                <h4 class="inter-600 text-24 dark-900 mt-5">Archives</h4>
+                <div class="row g-2">
+                    <div class="col-sm-6 col-lg-12">
+                        <div class="rounded-3 bg-white shadow-sm p-3">
+                            <div class="d-flex align-items-start gap-3">
+                                <div>
+                                    <img src="/images/essentials/bookmark_star.png" alt="" width="15">
+                                </div>
+                                <div>
+                                    <h4 class="inter-600 text-14 dark-900 mb-1 mt-1">August 2022</h4>
+                                    <p class="inter-400 text-12 dark-700 mb-0">Nunc vulputate libero et velit interdum,
+                                        ac aliquet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+{{/* End Main Section */}}
+{{ end }}

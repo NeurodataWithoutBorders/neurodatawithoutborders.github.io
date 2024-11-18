@@ -1,0 +1,31 @@
+{{/*  Swiper JS  */}}
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+{{/*  Scripts  */}}
+{{ with resources.Get "js/plugins.js" }}
+{{ $js := resources.Get "js/plugins.js" }}
+{{ $params := dict }}
+{{ $sourceMap := cond hugo.IsProduction "" "inline" }}
+{{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2018" "params" $params }}
+{{ $js = $js | js.Build $opts }}
+{{ if hugo.IsProduction }}
+{{ $js = $js | fingerprint }}
+{{ end }}  
+
+<script src="{{ $js.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $js.Data.Integrity }}"{{ end }} defer></script>
+{{ end }}
+
+{{ with resources.Get "js/main.js" }}
+{{ $js := resources.Get "js/main.js" }}
+{{ $params := dict }}
+{{ $sourceMap := cond hugo.IsProduction "" "inline" }}
+{{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2018" "params" $params }}
+{{ $js = $js | js.Build $opts }}
+{{ if hugo.IsProduction }}
+{{ $js = $js | fingerprint }}
+{{ end }}  
+
+<script src="{{ $js.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $js.Data.Integrity }}"{{ end }} defer></script>
+{{ end }}
+
+<script src="/pagefind/pagefind-ui.js"></script>

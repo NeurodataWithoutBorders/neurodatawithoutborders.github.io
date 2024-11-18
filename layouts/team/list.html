@@ -1,0 +1,230 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+<section class="hero teamSect d-flex justify-content-center align-items-center position-relative" style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/teamBg.png');">
+    <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
+    <div class="position-absolute ellipses">
+        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+    </div>
+</section>
+{{/* End Hero Section */}}
+
+{{/* Goverance Section */}}
+{{ with .Params.governance_section }}
+{{ if .enable }}
+<section class="section">
+    <div class="container d-flex flex-column justify-content-center row-gap-4">
+        <h3 class="inter-700 text-40 dark-900">{{ .title | markdownify }}</h3>
+        <p class="inter-400 text-16 dark-700 mb-0">{{ .content | markdownify }}</p>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Goverance Section */}}
+
+{{/* Executive Board Section */}}
+{{ with .Params.executive_section }}
+<section class="section bg-dark-100">
+    <div class="container d-flex flex-column justify-content-center row-gap-4">
+        <h3 class="inter-700 text-40 dark-900">{{ .title | markdownify }}</h3>
+        <p class="inter-400 text-16 dark-700 mb-0">{{ .content | markdownify }}</p>
+        {{ if .list }}
+        <ol class="ps-4 d-flex flex-column row-gap-3">
+            {{ range .list }}
+            <li class="inter-400 text-16 dark-700 mb-0">{{ .item | markdownify }}</li>
+            {{ end }}
+        </ol>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{/* End Executive Board Section */}}
+
+{{/* Current Team Section */}}
+{{ with .Params.current_team_section }}
+  {{ if .enable }}
+  <section class="section bg-dark-100 pt-0">
+    <div class="container-lg">
+      <h3 class="inter-700 dark-900 text-40 pb-5">Current Membership of the Executive Board</h3>
+      <div class="row g-2 g-md-4" id="team-members">
+        {{ range $index, $element := .team_members }}
+        <div class="col-6 col-sm-4 col-md-3 team-member {{ if gt $index 7 }}d-none{{ end }}" data-index="{{ $index }}">
+          <div class="h-100 bg-white rounded-3 p-md-4 p-2 shadow-sm pb-md-3">
+            <img src="{{ $element.image }}" alt="" class="img-fluid rounded-3">
+            <h5 class="inter-700 text-20 dark-900 pt-4">{{ $element.name | markdownify }}</h5>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ if gt (len .team_members) 8 }}
+      <div class="d-flex justify-content-center align-items-center pt-4 flex-column flex-sm-row gap-2 mt-5">
+        <a href="javascript:void(0);" id="show-more" class="btn btn-lg border shadow-sm bg-white dark-900 inter-500 text-16">
+          <span>Show More</span>
+          <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20">
+        </a>
+        <a href="javascript:void(0);" id="show-less" class="btn btn-lg border shadow-sm bg-white dark-900 inter-500 text-16 d-none">
+          <span>Show Less</span>
+          <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20" class="rotatedIcon">
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+{{/* End Current Team Section */}}
+
+{{/* Alumni Section */}}
+{{ with .Params.alumni_section }}
+{{ if .enable }}
+<section class="section bg-dark-100 pt-0">
+    <div class="container-lg">
+        <h3 class="inter-700 dark-900 text-40 pb-5">Executive Board Alumni</h3>
+        <div class="row g-2 g-md-4">
+            {{ range .alumni }}
+            <div class="col-6 col-sm-3">
+                <div class="h-100 bg-white rounded-3 p-md-4 p-2 shadow-sm pb-md-2">
+                    <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                    <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name }}</h5>
+                    <p class="inter-400 text-14 dark-900">{{ .date }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Alumni Section */}}
+
+{{/* Technical Board Section */}}
+{{ with .Params.technical_board }}
+{{ if .enable }}
+<section class="section">
+    <div class="container d-flex flex-column justify-content-center row-gap-4">
+        <h3 class="inter-700 text-40 dark-900">{{ .title | markdownify }}</h3>
+        <p class="inter-400 text-16 dark-700 mb-0">{{ .content | markdownify }}</p>
+        <ol class="ps-4 d-flex flex-column row-gap-3">
+            {{ range .list }}
+            <li class="inter-400 text-16 dark-700 mb-0">{{ .item | markdownify }}</li>
+            {{ end }}
+        </ol>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Technical Board Section */}}
+
+{{/* Current Members of Technical Board Section */}}
+{{ with .Params.technical_team_section }}
+  {{ if .enable }}
+  <section class="section bg-dark-100">
+    <div class="container-lg">
+      <h3 class="inter-700 dark-900 text-40 pb-5">Current Membership of the Technical Advisory Board</h3>
+      <div class="row g-2 g-md-4" id="team-members-tech">
+        {{ range $i, $p := .team_members }}
+        <div class="col-12 col-sm-4 col-md-3 team-member-tech {{ if gt $i 7 }}d-none{{ end }}" data-index="{{ $i }}">
+          <div class="h-100 bg-white rounded-3 p-2 p-md-4 shadow-sm pb-md-3">
+            <img src="{{ $p.image }}" alt="" class="img-fluid rounded-3">
+            <h5 class="inter-700 text-20 dark-900 pt-4">{{ $p.name | markdownify }}</h5>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ if gt (len .team_members) 8 }}
+      <div class="d-flex justify-content-center align-items-center pt-4 flex-column flex-sm-row gap-2">
+        <a href="javascript:void(0);" id="show-more-tech" class="btn btn-lg shadow-sm bg-white dark-900 inter-500 text-16">
+          <span>Show More</span>
+          <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20">
+        </a>
+        <a href="javascript:void(0);" id="show-less-tech" class="btn btn-lg shadow-sm bg-white dark-900 inter-500 text-16 d-none">
+          <span>Show Less</span>
+          <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20" class="rotatedIcon">
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+{{/* End Current Members of Technical Board Section */}}
+
+{{/* Core Development Team Section */}}
+{{ with .Params.core_dev_section }}
+<section class="section">
+    <div class="container-lg">
+        <h2 class="inter-700 text-40 dark-900">Core Development Team</h2>
+
+        {{/* PyNWB Section */}}
+        {{ with .pynwb_section }}
+        {{ if .enable }}
+        <div class="pt-5">
+            <h3 class="inter-600 dark-900 text-36">PyNWB</h3>
+            <div class="row gy-2 g-md-3 g-lg-5 pt-4">
+                {{ range .team_members }}
+                <div class="col-sm-6 col-md-4">
+                    <div class="h-100 bg-white rounded-3 p-4 shadow-sm pb-2 d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                        </div>
+                        <div>
+                          <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>
+                          <p class="inter-400 text-14 dark-900">{{ .post | markdownify }}</p>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+        {{/* End PyNWB Section */}}
+
+        {{/* MatNWB Section */}}
+        <div class="pt-5">
+            <div class="row g-2 g-md-4 pt-4 justify-content-center justify-content-md-between">
+                {{ with .matnwb_section }}
+                {{ if .enable }}
+                <div class="col-sm-6 col-md-4">
+                    <h3 class="inter-600 dark-900 text-36 pb-4 titleHeight">MatNWB</h3>
+                    <div class="bg-white rounded-3 p-4 shadow-sm boxHeight">
+                        <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                        <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>
+                        <p class="inter-400 text-14 dark-900">{{ .post | markdownify }}</p>
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+
+                {{ with .nwb_community_section }}
+                {{ if .enable }}
+                <div class="col-sm-6 col-md-4 pt-5 pt-sm-0">
+                    <h3 class="inter-600 dark-900 text-36 pb-4 titleHeight">NWB Community Liaison</h3>
+                    <div class="bg-white rounded-3 p-4 shadow-sm boxHeight">
+                        <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                        <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>
+                        <p class="inter-400 text-14 dark-900">{{ .post | markdownify }}</p>
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        {{/* End MatNWB Section */}}
+    </div>
+</section>
+{{ end }}
+{{/* End Core Development Team Section */}}
+
+{{/* Dev Community Section */}}
+{{ with .Params.dev_community_section }}
+{{ if .enable }}
+<section class="section">
+    <div class="container d-flex flex-column justify-content-center row-gap-4">
+        <h3 class="inter-700 text-40 dark-900">{{ .title | markdownify }}</h3>
+        <p class="inter-400 text-16 dark-700 mb-0">{{ .content | markdownify }}</p>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Dev Community Section */}}
+{{ end }}

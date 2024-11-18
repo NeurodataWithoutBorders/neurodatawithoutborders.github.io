@@ -1,0 +1,61 @@
+<div class="position-relative">
+    <div class="position-absolute w-100 h-100 overflow-hidden z-n1 bg-darken-main">
+        <div class="position-absolute">
+            <img src="/images/essentials/footer-dots-t.png" alt="" class="w-50">
+        </div>
+        <div class="position-absolute footer-dots">
+            <img src="/images/essentials/footer-dots.png" alt="" class="w-50">
+        </div>
+    </div>
+    <div class="container-lg footer-padi z-3">
+        <div class="row g-4 justify-content-between">
+
+            <div class="col-10 col-sm-5 col-md-3">
+                <div class="d-flex flex-column row-gap-4">
+                    {{ with site.Params.footer_logo }}
+                    <a href="/">
+                        <img src="{{ . }}" alt="nwb-colored-log" class="w-75">
+                    </a>
+                    {{ end }}
+                    {{ with site.Params.copyright_text }}
+                    <p class="inter-400 text-16 dark-300">{{ . }}</p>
+                    {{ end }}
+                </div>
+            </div>
+
+            <div class="col-10 col-sm-5 col-md-3">
+                <div class="d-flex flex-column row-gap-4">
+                    <strong class="inter-500 text-18 dark-50">About</strong>
+                    <ul class="list-unstyled d-flex flex-column row-gap-3">
+                        {{ range site.Menus.about }}
+                        <li><a href="{{ .URL }}" class="inter-400 nav-link underline-hover animate dark-300 text-16">{{ .Name | markdownify }}</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-10 col-sm-5 col-md-3">
+                <div class="d-flex flex-column row-gap-4">
+                    <strong class="inter-500 text-18 dark-50">Community</strong>
+                    <ul class="list-unstyled d-flex flex-column row-gap-3">
+                    {{ range site.Menus.community }}
+                        <li><a href="{{ .URL }}" class="inter-400 nav-link underline-hover animate dark-300 text-16">{{ .Name | markdownify }}</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-10 col-sm-5 col-md-3">
+                <div class="d-flex flex-column row-gap-4">
+                    <strong class="inter-500 text-18 dark-50">Legal</strong>
+                    <ul class="list-unstyled d-flex flex-column row-gap-3">
+                        {{ range site.Menus.legal }}
+                        <li><a href="{{ .URL }}" class="inter-400 nav-link underline-hover animate dark-300 text-16">{{ .Name | markdownify }}</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

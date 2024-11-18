@@ -1,0 +1,174 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+<section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
+    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/newsPageBg.png');">
+    <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
+    <div class="position-absolute ellipses">
+        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+    </div>
+</section>
+{{/* End Hero Section */}}
+
+{{/* Main Section */}}
+<section class="section bg-dark-100">
+    <div class="container-lg">
+        <div class="row justify-content-between mb-5">
+            <div class="d-sm-flex justify-content-between col-md-8">
+                <h3 class="inter-700 dark-900 text-48">All Post</h3>
+                <div class="d-flex align-items-center justify-content-between gap-3 py-3 py-sm-0">
+                    <p class="inter-400 text-16 dark-500 mb-0">Sort by:</p>
+                    <div>
+                        <select class="border-dark-50 border px-3 py-2 rounded-3 inter-400 text-16 slate bg-white w-100"
+                            aria-label="Default select example" style="cursor: pointer;">
+                            <option selected>All Post</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center pe-0">
+                <div class="d-flex align-items-center border-dark-50 bg-white rounded-3 w-100" id="search">
+                    {{/*  <input type="text" id="search" class="border-0 inter-400 text-16 slate w-75 bg-white"
+                        placeholder="Search">
+                    <label for="search" class="w-25 d-flex justify-content-end" style="cursor: pointer;">
+                        <img src="/images/essentials/search.png" alt="" width="20">
+                    </label>  */}}
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between g-5">
+            <div class="col-lg-8">
+                <div class="row g-4" data-pagefind-body>
+                    {{ $pages := where site.RegularPages "Section" "news" }}
+                    {{ $paginator := .Paginate $pages.ByWeight }}
+                    {{ range $paginator.Pages }}
+                    <div class="col-sm-8 col-md-6 mx-auto">
+                        <div class="rounded-top-3 shadow-sm overflow-hidden">
+                            <img data-pagefind-meta="image[src]" src="{{ .Params.image }}" alt="" style="width: 100% !important; height: 240px !important; object-fit: cover !important;">
+                        </div>
+                        <div class="p-4 bg-white d-flex flex-column gap-3 rounded-bottom-3 shadow-sm">
+                            {{ with .Date }}
+                            <div class="d-flex gap-2 align-items-center">
+                                <div class="icons">
+                                    <img src="/images/essentials/calender.png" alt="calender" class="img-fluid">
+                                </div>
+                                <p class="inter-400 text-14 dark-600 mb-0 pt-1" data-pagefind-meta="date">{{ . | time.Format "January 02, 2006" }}
+                                </p>
+                            </div>
+                            {{ end }}
+                            {{ with .Title }}
+                            <div>
+                                <h3 class="inter-600 text-20 dark-900 mb-0" data-pagefind-meta="title">{{ . | markdownify | truncate 30 }}</h3>
+                            </div>
+                            {{ end }}
+                            {{ with .Params.subtitle }}
+                            <div>
+                                <p class="inter-400 text-16 dark-700 mb-0">{{ .| markdownify | truncate 70 }}</p>
+                            </div>
+                            {{ end }}
+                            <div>
+                                <a href="{{ .Permalink }}"
+                                    class="btn btn-main text-18 yellow bg-transparent border-transparent inter-400 scale animate p-0 border-0">
+                                    Read More
+                                    <img src="/images/essentials/arrow_right.png" alt="nwb_right_arrow" class="w-20">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                    {{ $pag := .Paginator }}
+                    {{ if gt $pag.TotalPages 1 }}
+                    <div class="w-100 mt-5">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                {{ with $pag.Prev }}
+                                <a href="{{ .URL }}" class="nav-link scale animate">
+                                    <img src="/images/essentials/chevron_backward.png" alt="" width="8">
+                                    <span class="inter-500 text-16 dark-700 ms-1">Previous</span>
+                                </a>
+                                {{ end }}
+                            </div>
+                            <div class="d-flex gap-3">
+                                {{ range $pag.Pagers }}
+                                <a href="{{ .URL }}" class="p-3 py-2 nav-link inner-shadow rounded-3 animate scale paginator {{ if eq .PageNumber $.Paginator.PageNumber }}activePagination {{ else }} border-slate slate {{ end }}">
+                                    {{ .PageNumber }}
+                                </a>
+                                {{ end }}
+                            </div>
+                            <div>
+                                {{ with $pag.Next }}
+                                <a href="{{ .URL }}" class="nav-link scale animate">
+                                    <span class="inter-500 text-16 dark-700 me-1">Next</span>
+                                    <img src="/images/essentials/chevron_forward.png" alt="" width="8">
+                                </a>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+
+
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-5 px-lg-0 ps-lg-2">
+                <h4 class="inter-600 text-24 dark-900">Recent News</h4>
+                <div class="row g-2">
+                    {{ range first 4 (.Pages.ByDate.Reverse) }}
+                    <div class="col-md-6 col-lg-12 col-sm-8 mx-auto">
+                        <div class="rounded-3 shadow-sm bg-white p-2">
+                            <div class="d-flex  gap-3 align-items-center">
+                                <div>
+                                    <img src="{{ .Params.image }}" alt="" width="90" height="70" class="rounded-3">
+                                </div>
+                                <div class="w-100 d-flex flex-column row-gap-1">
+                                    <div class="d-flex align-items-sm-center gap-1">
+                                        <div>
+                                            <img src="/images/essentials/calender.png" alt="calender" width="17">
+                                        </div>
+                                        <p class="inter-400 text-12 dark-600 mb-0 pt-1">{{ .Date | time.Format "January 02, 2006 "}}</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="inter-600 dark-900 text-16 mb-0 pt-1">{{ .Title | markdownify |
+                                            truncate 30 }}</h4>
+                                    </div>
+                                    <div>
+                                        <a href="{{ .Permalink }}"
+                                            class="btn btn-outline-primary border-0 bg-transparent blue animate scale p-0">
+                                            Read More
+                                            <img src="/images/essentials/right_arrow.png" alt="" width="15"
+                                                class="ms-2">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+
+                <h4 class="inter-600 text-24 dark-900 mt-5">Archives</h4>
+                <div class="row g-2">
+                    <div class="col-sm-6 col-lg-12">
+                        <div class="rounded-3 bg-white shadow-sm p-3">
+                            <div class="d-flex align-items-start gap-3">
+                                <div>
+                                    <img src="/images/essentials/bookmark_star.png" alt="" width="15">
+                                </div>
+                                <div>
+                                    <h4 class="inter-600 text-14 dark-900 mb-1 mt-1">August 2022</h4>
+                                    <p class="inter-400 text-12 dark-700 mb-0">Nunc vulputate libero et velit interdum,
+                                        ac aliquet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+{{/* End Main Section */}}
+{{ end }}
