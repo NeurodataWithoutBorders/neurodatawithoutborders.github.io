@@ -1,5 +1,5 @@
 ---
-title: "Team "
+title: "Team"
 governance_section:
   enable: true
   title: Governance Structure
@@ -38,7 +38,7 @@ current_team_section:
       name: Loren Frank
     - image: /images/satrajit.png
       name: Satrajit Ghost
-    - image: /images/Adam.png
+    - image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSL6eKXnOefpwg9BUB1OfL4mHHx9Vbii1pUhuBb61RiyEtY3zM7"
       name: Adam Kepecs
     - image: /images/mala.png
       name: Mala Murthy
