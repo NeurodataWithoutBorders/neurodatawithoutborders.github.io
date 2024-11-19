@@ -28,10 +28,10 @@ available_tools_section:
             - feature: "Facilitates uploading to DANDI Archive"
           limitations: "May require manual addition of lab-specific data"
           resources:
-            - text: "Text Tutorial"
-              link: /
+            - text: "Text Tutorials"
+              link: "https://nwb-guide.readthedocs.io/en/latest/tutorials/index.html"
             - text: "YouTube Walkthrough"
-              link: /
+              link: "https://www.youtube.com/watch?v=EhhdDVuHAZ0"
 
         - icon: "/images/neuroconv.png"
           title: "NeuroConv"
@@ -43,9 +43,9 @@ available_tools_section:
             - feature: "Supports cloud deployment"
           resources:
             - text: "GitHub Repository"
-              link: /
+              link: "https://github.com/catalystneuro/neuroconv"
             - text: "Documentation"
-              link: /
+              link: "https://neuroconv.readthedocs.io"
 
         - icon: "/images/pynwb.png"
           title: "PyNWB"
@@ -56,13 +56,13 @@ available_tools_section:
             - feature: "Developing custom NWB extensions"
           resources:
             - text: "GitHub Repository"
-              link: /
+              link: "https://github.com/NeurodataWithoutBorders/pynwb"
             - text: "Documentation"
-              link: /
+              link: "https://pynwb.readthedocs.io"
             - text: "Tutorials"
-              link: /
+              link: "https://pynwb.readthedocs.io/en/latest/tutorials/index.html"
             - text: "NWB YouTube Channel"
-              link: /
+              link: "https://www.youtube.com/@NeurodataWithoutBorders"
 
         - icon: "/images/matnwb.png"
           title: "MatNWB"
@@ -72,11 +72,11 @@ available_tools_section:
             - feature: "Working with unsupported data formats"
           resources:
             - text: "GitHub Repository"
-              link: /
+              link: "https://github.com/NeurodataWithoutBorders/matnwb"
             - text: "Tutorials"
-              link: /
+              link: "https://github.com/NeurodataWithoutBorders/matnwb?tab=readme-ov-file#tutorials"
             - text: "NWB YouTube Channel"
-              link: /
+              link: "https://www.youtube.com/@NeurodataWithoutBorders"
 
 ### Choosing Tools
 choosing_tools:
