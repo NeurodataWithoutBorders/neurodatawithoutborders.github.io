@@ -54,12 +54,12 @@ sections:
       specification, and data storage.
     description: NWB currently provides the following APIs
     list:
-      - title: "PyNWB:"
+      - title: "PyNWB"
         content: "Python reference API for NWB 2  to read, write, use, extend, and
-          analyze data stored in NWB. <a href=''> Documentation . Sources
+          analyze data stored in NWB. <a href='https://pynwb.readthedocs.io/en/stable/'>Documentation</a> <a href='https://github.com/NeurodataWithoutBorders/pynwb'>Source
           (GitHub)</a>"
       - title: MatNWB
-        content: Matlab API for NWB. <a href='https://github.com/NeurodataWithoutBorders/matnwb'> Documentation . Sources (GitHub)</a>
+        content: Matlab API for NWB. <a href='https://github.com/NeurodataWithoutBorders/matnwb'> Documentation & Source (GitHub)</a>
     community_software: In addition to the core APIs developed by the NWB team,
       there is a growing collection of software tools and libraries that support
       NWB. See our Analysis and Visualization Tools page for a list of tools
