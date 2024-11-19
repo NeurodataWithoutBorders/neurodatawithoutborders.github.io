@@ -90,7 +90,7 @@ core_dev_section:
       - image: /images/RyanLy.png
         name: Ryan Ly
         post: Scientific Data Engineer at Berkeley Lab
-      - image: /images/andrew.png
+      - image: /images/AndrewTritt.png
         name: Andrew Tritt
         post: Computer Systems Engineer at Berkeley Lab
   matnwb_section:
