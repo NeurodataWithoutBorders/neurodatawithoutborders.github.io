@@ -1,5 +1,5 @@
 ---
-title: Grants And Projects
+title: Grants and Projects
 sponsered_projects:
   enable: true
   boxes:
