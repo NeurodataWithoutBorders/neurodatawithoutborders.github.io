@@ -83,7 +83,7 @@ sections:
       discuss what experimental metadata is essential, and which formats and
       structures are appropriate for different metadata types. <br><br> <a
       href=''>Working Groups Page</a>
-    image: /images/incf-group.png
+    image: /images/incf.png
   - title: INCF Electrophysiology Stimulation Ontology Working Group
     bg_white: true
     content: Stimulus protocols are an essential component of neurophysiological

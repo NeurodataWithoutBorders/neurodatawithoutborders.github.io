@@ -93,6 +93,9 @@ core_dev_section:
       - image: /images/AndrewTritt.png
         name: Andrew Tritt
         post: Computer Systems Engineer at Berkeley Lab
+      - image: /images/MatthewAvaylon.jpg
+        name: Matthew Avaylon
+        post: Staff Software Engineer at Berkeley Lab
   matnwb_section:
     enable: true
     image: /images/lawrence-niu.png
