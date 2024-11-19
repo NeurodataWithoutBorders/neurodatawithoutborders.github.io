@@ -9,7 +9,7 @@ hero_section:
       btn_link: "https://github.com/NeurodataWithoutBorders/nwb-schema"
 banner_section:
   enable: true
-  title: Making databases about the brain more usable and accessible for
+  title: Making neurophysiology data more usable and accessible for
     neuroscientists worldwide
 card_section:
   enable: true
@@ -32,7 +32,7 @@ card_section:
       btn_link: "https://mailchi.mp/fe2a9bc55a1a/nwb-signup"
 portfolio_section:
   enable: true
-  image: /images/portfolio.png
+  image: /images/ai_img.jpg
   heading: Neurodata Without Borders
   paragraph: Neurodata Without Borders (NWB) is a data standard for
     neurophysiology, providing neuroscientists with a common standard to share,
