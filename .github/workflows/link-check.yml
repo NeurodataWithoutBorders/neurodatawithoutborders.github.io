@@ -1,11 +1,11 @@
-# Workflow for building and link checking the Hugo site on PRs
-name: Build and Link Check
+# Workflow for building and link checking a Hugo site on PRs
+name: Build and Link Check Hugo site on PRs
 
 on:
   # Runs on pull requests targeting the dev branch
   pull_request:
     branches: ["dev"]
-  # Allows running this workflow manually from the Actions tab
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # Default to bash
@@ -40,12 +40,13 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-        run: |
-          hugo --minify
+        run: hugo --minify
+
+      - name: List files in public directory
+        run: ls -R public
 
       - name: Link Checker
         id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          fail: false
           args: --verbose --exclude "https://example.com" public
