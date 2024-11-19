@@ -1,0 +1,41 @@
+# Deploy preview of the website for PRs
+name: Deploy PR Previews
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+concurrency: preview-${{ github.ref }}
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Hugo CLI
+        run: |
+          wget -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.128.0/hugo_extended_0.128.0_linux-amd64.deb \
+          && sudo dpkg -i hugo.deb
+
+      - name: Install Node.js dependencies
+        run: |
+          if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then npm ci; else npm install; fi
+
+      - name: Build Hugo Site
+        if: github.event.action != 'closed'
+        env:
+          HUGO_ENVIRONMENT: preview
+        run: hugo --minify -d public
+
+      - name: Deploy PR Preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          source-dir: ./public
+          action: auto
