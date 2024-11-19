@@ -9,8 +9,14 @@ hero_section:
       btn_link: "https://github.com/NeurodataWithoutBorders/nwb-schema"
 banner_section:
   enable: true
-  title: Making neurophysiology data more usable and accessible for
-    neuroscientists worldwide
+  title: "**This website is under construction.** Please excuse our appearance as we
+    work to improve the site.
+    
+
+For the latest, please go do http://nwb.org.
+
+
+For feedback, file an issue here: https://github.com/NeurodataWithoutBorders/neurodatawithoutborders.github.io/issues"
 card_section:
   enable: true
   cards:
