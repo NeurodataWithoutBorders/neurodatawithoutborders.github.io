@@ -57,7 +57,7 @@ main:
     url: "https://nwb-overview.readthedocs.io"
   - name: "Policies"
     weight: 4
-    url: "privacy-policy/"
+    url: "policies/"
 
 # Footer
 ### About
@@ -98,9 +98,3 @@ community:
   - name: "Working Groups"
     weight: 6
     url: "/working-groups"
-
-### Legal
-legal: 
-  - name: "Privacy Policy"
-    weight: 1
-    url: "/privacy-policy"
