@@ -71,10 +71,10 @@
                                 <span class="text-16 inter-400 dark-700 negMargin">
                                     {{ range $i, $p := $params.sponser_name }}
                                     {{ if eq $i 0 }}
-                                    <a href=""
-                                        class="inter-700 blue link-offset-2 sponserLink animate">{{$p.name|markdownify}}</a>
+                                    <a
+                                        class="inter-700 blue link-offset-2 animate">{{$p.name|markdownify}}</a>
                                     {{ else }}, and
-                                    <a href="" class="inter-700 blue link-offset-2 sponserLink animate">
+                                    <a class="inter-700 blue link-offset-2 animate">
                                         {{$p.name|markdownify}}
                                     </a>
                                     {{ end }}

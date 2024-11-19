@@ -20,7 +20,7 @@ intro_section:
   enable: true
   title: Kavli Sponsored Projects
   subtitle: Kavli Sponsored Projects
-  content: <a href=''>The Kavli Foundation</a> has provided seed grants to aid
+  content: <a href='https://www.kavlifoundation.org/'>The Kavli Foundation</a> has provided seed grants to aid
     labs in standardizing their experimental data using the NWB data format.
     Funds were used to support the building and sharing of data or software in
     the NWB ecosystem. We are no longer accepting applications for 2022 and
@@ -125,16 +125,6 @@ sponsers:
         content: Conducting a cross-species, cross-laboratory comparison of mouse,
           macaque, and human cortical intracellular electrophysiology datasets
           using NWB
-      - sponser_name:
-          - name: Alexander Mathis
-        institute: EPFL
-        content: Integrate NWB data format within the <a href=''>DeepLabCut</a>
-          ecosystem
-      - sponser_name:
-          - name: Alexander Mathis
-        institute: EPFL
-        content: Integrate NWB data format within the <a href=''>DeepLabCut</a>
-          ecosystem
       - sponser_name:
           - name: Alexander Mathis
         institute: EPFL
