@@ -4,7 +4,7 @@ section:
   - title: Policies on Community-driven Development and Integration of New
       Neuroscience Technologies with NWB
     list:
-      - subtitle: "NWB Extension Sharing:"
+      - subtitle: "NWB Extension Sharing"
         items:
           - heading: "Guidelines for sharing NWB extensions (NDX)"
             icon: /images/guidelines.png
@@ -36,18 +36,21 @@ section:
             icon: /images/v-guidelines.png
             content: Requirements and strategy for versioning namespaces for the NWB core
               schema and extensions
+            link: "https://docs.google.com/document/d/1UQfN7jg8TDIkWlUg3k3yGhz9RfxqXkGoVpQPIh9Tgz0/edit?usp=sharing"
   - title: NWB Technical Advisory Board
     list:
       - items:
           - heading: NWB Technical Advisory Board Governance Plan
             icon: /images/nwb-tech.png
             content: Information about the TAB, role, and membership.
+            link: "https://docs.google.com/document/d/1EmKZp8vBksE6W5vs6jWnRdaGDTuPMqzHI8CtCNhH8Mg/edit?usp=sharing"
   - title: Software and Data Standard Policies
     list:
       - items:
           - heading: NWB and HDMF Software Release Cycle
             icon: /images/nwb-release.png
             content: General release cycle for the NWB and HDMF software and schema
+            link: "https://docs.google.com/document/d/19eWuTKFKwWdTrA9Zhh8Qc46SHYikPeI4XiWiIyYy87U/edit?usp=sharing"
           - heading: NWB and HDMF Versioning and Compatibility
             icon: /images/nwb-cap.png
             content: Standard practices for versioning and maintaining compatibility between
@@ -56,12 +59,14 @@ section:
             icon: /images/nwb-schema.png
             content: Standard process for management of issues on core NWB software and
               schema code repositories.
+            link: "https://docs.google.com/document/d/14BYMftBEh62-wFmOj-yvs31MZzBhaT4RPRf7npLK540/edit?usp=sharing"
           - heading: Best Practices for NWB Data
             icon: /images/nwb-practice.png
             content: Collection of additional guidelines on common best practices to
               facilitate consistent use of the NWB standard and help avoid
               common problems and most effectively leverage the NWB data
               standard and its ecosystem of software tools.
+            link: "https://nwbinspector.readthedocs.io/en/dev/best_practices/best_practices_index.html"
   - title: Project-specific Policies
     list:
       - subtitle: ""
@@ -78,7 +83,6 @@ section:
               support for NWB training and integration as part of the NIH
               project “Advancing Standardization of Neurophysiology Data Through
               Dissemination of NWB” 
-
 
               [DataJoint / NWB Roadmap (external)](/):  **DataJoint** and **NWB** are two neuroinformatics initiatives in active development. The projects develop independently yet they have complementary aims and overlapping user communities. This document establishes key processes for coordinating development and communications in order to promote integration and interoperability across the two ecosystems.
           - heading: Previous grants
