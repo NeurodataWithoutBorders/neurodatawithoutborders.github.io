@@ -29,23 +29,23 @@ available_tools_section:
           limitations: "May require manual addition of lab-specific data"
           resources:
             - text: "Text Tutorials"
-              link: "https://nwb-guide.readthedocs.io/en/latest/tutorials/index.html"
+              url: "https://nwb-guide.readthedocs.io/en/latest/tutorials/index.html"
             - text: "YouTube Walkthrough"
-              link: "https://www.youtube.com/watch?v=EhhdDVuHAZ0"
+              url: "https://www.youtube.com/watch?v=EhhdDVuHAZ0"
 
         - icon: "/images/neuroconv.png"
           title: "NeuroConv"
           type: "Python library (underlies NWB GUIDE)"
           features:
-            - feature: "Supports 44+ neurophysiology data formats"
+            - feature: "Supports 45+ neurophysiology data formats"
             - feature: "Offers more flexibility than NWB GUIDE"
             - feature: "Provides tools for post-hoc time alignment of multiple data streams"
             - feature: "Supports cloud deployment"
           resources:
             - text: "GitHub Repository"
-              link: "https://github.com/catalystneuro/neuroconv"
+              url: "https://github.com/catalystneuro/neuroconv"
             - text: "Documentation"
-              link: "https://neuroconv.readthedocs.io"
+              url: "https://neuroconv.readthedocs.io"
 
         - icon: "/images/pynwb.png"
           title: "PyNWB"
@@ -56,13 +56,13 @@ available_tools_section:
             - feature: "Developing custom NWB extensions"
           resources:
             - text: "GitHub Repository"
-              link: "https://github.com/NeurodataWithoutBorders/pynwb"
+              url: "https://github.com/NeurodataWithoutBorders/pynwb"
             - text: "Documentation"
-              link: "https://pynwb.readthedocs.io"
+              url: "https://pynwb.readthedocs.io"
             - text: "Tutorials"
-              link: "https://pynwb.readthedocs.io/en/latest/tutorials/index.html"
+              url: "https://pynwb.readthedocs.io/en/latest/tutorials/index.html"
             - text: "NWB YouTube Channel"
-              link: "https://www.youtube.com/@NeurodataWithoutBorders"
+              url: "https://www.youtube.com/@NeurodataWithoutBorders"
 
         - icon: "/images/matnwb.png"
           title: "MatNWB"
@@ -72,11 +72,11 @@ available_tools_section:
             - feature: "Working with unsupported data formats"
           resources:
             - text: "GitHub Repository"
-              link: "https://github.com/NeurodataWithoutBorders/matnwb"
+              url: "https://github.com/NeurodataWithoutBorders/matnwb"
             - text: "Tutorials"
-              link: "https://github.com/NeurodataWithoutBorders/matnwb?tab=readme-ov-file#tutorials"
+              url: "https://github.com/NeurodataWithoutBorders/matnwb?tab=readme-ov-file#tutorials"
             - text: "NWB YouTube Channel"
-              link: "https://www.youtube.com/@NeurodataWithoutBorders"
+              url: "https://www.youtube.com/@NeurodataWithoutBorders"
 
 ### Choosing Tools
 choosing_tools:
