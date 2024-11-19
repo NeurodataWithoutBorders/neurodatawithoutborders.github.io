@@ -43,12 +43,9 @@ jobs:
         run: |
           hugo --minify
 
-      - name: Install lychee
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y curl
-          curl -sSfL https://raw.githubusercontent.com/lycheeverse/lychee/main/install.sh | bash
-
-      - name: Run lychee
-        run: |
-          ./lychee --verbose --exclude "https://example.com" public
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: false
+          args: --verbose --exclude "https://example.com" public
