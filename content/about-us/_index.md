@@ -1,9 +1,8 @@
 ---
-title: About Us
+title: About NWB
 about_section:
   enable: true
   image: /images/about-nwb.png
-  title: About NWB
   content: Progress in modern science is enabled by data sharing. There are major
     obstacles, however, that limit the open exchange of data particularly in
     neuroscience, a field where many small laboratories are pursuing diverse
