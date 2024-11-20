@@ -8,8 +8,14 @@ on:
       - reopened
       - synchronize
       - closed
+  workflow_dispatch:
 
 concurrency: preview-${{ github.ref }}
+
+permissions:
+  contents: read
+  pages: write
+  actions: write
 
 jobs:
   deploy-preview:
