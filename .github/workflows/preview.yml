@@ -38,7 +38,14 @@ jobs:
         env:
           HUGO_ENVIRONMENT: preview
         run: |
-          hugo --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.repository }}/pr-preview/pr-${{ github.event.number }}/" --minify -d public
+          echo "Building site with baseURL: https://${{ github.repository_owner }}.github.io/${{ github.repository }}/pr-preview/pr-${{ github.event.number }}/"
+          hugo --environment preview --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.repository }}/pr-preview/pr-${{ github.event.number }}/" --minify -d public
+
+      - name: List Public Directory
+        if: github.event.action != 'closed'
+        run: |
+          echo "Contents of the public directory:"
+          ls -R public
 
       - name: Deploy PR Preview
         uses: rossjrw/pr-preview-action@v1
