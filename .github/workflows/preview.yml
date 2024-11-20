@@ -31,7 +31,8 @@ jobs:
         if: github.event.action != 'closed'
         env:
           HUGO_ENVIRONMENT: preview
-        run: hugo --minify -d public
+        run: |
+          hugo --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.repository }}/pr-preview/pr-${{ github.event.number }}/" --minify -d public
 
       - name: Deploy PR Preview
         uses: rossjrw/pr-preview-action@v1
