@@ -47,6 +47,12 @@ jobs:
           echo "Contents of the public directory:"
           ls -R public
 
+      - name: Check Base URL in Generated HTML
+        if: github.event.action != 'closed'
+        run: |
+          echo "Checking base URL in generated HTML files:"
+          grep -r "https://${{ github.repository_owner }}.github.io/${{ github.repository }}/pr-preview/pr-${{ github.event.number }}/" public || echo "Base URL not found in some files"
+
       - name: Deploy PR Preview
         uses: rossjrw/pr-preview-action@v1
         with:
