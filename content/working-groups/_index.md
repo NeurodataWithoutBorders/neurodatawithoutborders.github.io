@@ -20,7 +20,7 @@ sections:
       characterize the experimental animals. <br><br>
       <a href='https://docs.google.com/document/d/12EVToclVEKXF8OP5hd6eaTYT6vj-ewhHYVM54u7h-tU/edit#heading=h.xk81rob2tb1l'>
       [NDX Proposal]</a>
-    image: /images/genotype.png
+    image: /images/aibs_genotype_example.png
   - title: Spatial coordinates representation
     content: Reporting of spatial coordinates within the brain is a complex problem,
       requiring registration between data collected with multiple recording
@@ -35,7 +35,7 @@ sections:
       coordinate system. <br><br>
       <a href='https://docs.google.com/document/u/0/d/13frfqavbj4e0T-cmR3B8zGanrEe-f74Sa_s1yp_0LcI/edit'>
       [NDX Proposal]</a>
-    image: /images/spatial.png
+    image: /images/spatial_coordinates_wg_example.png
   - title: Behavioral task representation
     content: Behavioral tasks are an increasingly important component in
       neurophysiology experiments, and can have considerably more complex
@@ -51,7 +51,7 @@ sections:
       emulation of tasks from these machine-readable descriptions. <br><br>
       <a href='https://docs.google.com/document/d/1QQLbon-29Td5SblvB2AdWlGzCzgG7MNHloUD8C3tNdc/edit#heading=h.xk81rob2tb1l'>
       [NDX Proposal]</a>
-    image: /images/behavioral.png
+    image: /images/behavior_task_wg_example.png
   - title: External Working Groups
     bg_white: true
     content: NWB team members also participate in numerous external working groups.
@@ -59,7 +59,6 @@ sections:
       NWB,  they all involve components that are relevant to NWB and commonly
       use NWB or are creating a Neurodata Extension (NDX) as part of their
       charge.
-    image: /images/external-group.png
   - title: INCF Working Group on standardization of a directory structure containing
       neurophysiology data
     bg_white: true
@@ -74,7 +73,6 @@ sections:
       discuss what experimental metadata is essential, and which formats and
       structures are appropriate for different metadata types. <br><br>
       <a href='https://github.com/INCF/neuroscience-data-structure/'>Working Group Page</a>
-    image: /images/incf-group.png
   - title: INCF Electrophysiology Stimulation Ontology Working Group
     bg_white: true
     content: Stimulus protocols are an essential component of neurophysiological
@@ -94,7 +92,6 @@ sections:
       beyond 1-D waveforms. <br><br>
       <a href='https://www.incf.org/sig/electrophysiology-stimulation-ontology-working-group'>
       Working Group Page</a>
-    image: /images/incf-ontology-group.png
   - title: Standardization of data/file formats for simulation outputs in
       computational neuroscience
     bg_white: true
@@ -110,7 +107,6 @@ sections:
       formats, and identifying avenues for improving interoperability. <br><br>
       <a href='https://github.com/catalystneuro/ndx-simulation-output'>Source</a>,
       <a href='https://github.com/nwb-extensions/ndx-simulation-output-record'>NDX</a>
-    image: /images/simulation.png
 past_groups:
   enable: true
   sections:
@@ -125,7 +121,7 @@ past_groups:
         users. Using intracellular electrophysiology as a first use case, the
         working group implemented a hierarchical table structure that
         facilitates grouping of data and metadata by experimental condition."
-      image: /images/hierarchical-diagram.png
+      image: /images/icephys_extension_illustration.png
   outcomes:
     title: Outcomes
     content: The working group drafted an extension for the NWB schema that
