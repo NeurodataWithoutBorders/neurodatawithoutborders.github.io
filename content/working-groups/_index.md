@@ -20,7 +20,7 @@ sections:
       characterize the experimental animals. <br><br>
       <a href='https://docs.google.com/document/d/12EVToclVEKXF8OP5hd6eaTYT6vj-ewhHYVM54u7h-tU/edit#heading=h.xk81rob2tb1l'>
       [NDX Proposal]</a>
-    image: /images/aibs_genotype_example.png
+    image: /images/genotype.png
   - title: Spatial coordinates representation
     content: Reporting of spatial coordinates within the brain is a complex problem,
       requiring registration between data collected with multiple recording
@@ -35,7 +35,7 @@ sections:
       coordinate system. <br><br>
       <a href='https://docs.google.com/document/u/0/d/13frfqavbj4e0T-cmR3B8zGanrEe-f74Sa_s1yp_0LcI/edit'>
       [NDX Proposal]</a>
-    image: /images/spatial_coordinates_wg_example.png
+    image: /images/spatial.png
   - title: Behavioral task representation
     content: Behavioral tasks are an increasingly important component in
       neurophysiology experiments, and can have considerably more complex
@@ -51,7 +51,7 @@ sections:
       emulation of tasks from these machine-readable descriptions. <br><br>
       <a href='https://docs.google.com/document/d/1QQLbon-29Td5SblvB2AdWlGzCzgG7MNHloUD8C3tNdc/edit#heading=h.xk81rob2tb1l'>
       [NDX Proposal]</a>
-    image: /images/behavior_task_wg_example.png
+    image: /images/behavioral.png
   - title: External Working Groups
     bg_white: true
     content: NWB team members also participate in numerous external working groups.
@@ -121,7 +121,7 @@ past_groups:
         users. Using intracellular electrophysiology as a first use case, the
         working group implemented a hierarchical table structure that
         facilitates grouping of data and metadata by experimental condition."
-      image: /images/icephys_extension_illustration.png
+      image: /images/hierarchical-diagram.png
   outcomes:
     title: Outcomes
     content: The working group drafted an extension for the NWB schema that
