@@ -73,6 +73,7 @@ sections:
       discuss what experimental metadata is essential, and which formats and
       structures are appropriate for different metadata types. <br><br>
       <a href='https://github.com/INCF/neuroscience-data-structure/'>Working Group Page</a>
+    image: /images/incf-wg-genaral-image.jpg
   - title: INCF Electrophysiology Stimulation Ontology Working Group
     bg_white: true
     content: Stimulus protocols are an essential component of neurophysiological
@@ -92,6 +93,7 @@ sections:
       beyond 1-D waveforms. <br><br>
       <a href='https://www.incf.org/sig/electrophysiology-stimulation-ontology-working-group'>
       Working Group Page</a>
+    image: /images/incf-wg-genaral-image.jpg
   - title: Standardization of data/file formats for simulation outputs in
       computational neuroscience
     bg_white: true
@@ -107,6 +109,7 @@ sections:
       formats, and identifying avenues for improving interoperability. <br><br>
       <a href='https://github.com/catalystneuro/ndx-simulation-output'>Source</a>,
       <a href='https://github.com/nwb-extensions/ndx-simulation-output-record'>NDX</a>
+    image: /images/simulation.png
 past_groups:
   enable: true
   sections:
