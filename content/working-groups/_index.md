@@ -17,8 +17,9 @@ sections:
       NWB standard to integrate and leverage these resources for storing
       relevant metadata on the genotypes and genetic backgrounds of individual
       mice, linking neurophysiological data to the databases and literature that
-      characterize the experimental animals. <br><br> <a href=''>[NDX
-      Proposal]</a>
+      characterize the experimental animals. <br><br>
+      <a href='https://docs.google.com/document/d/12EVToclVEKXF8OP5hd6eaTYT6vj-ewhHYVM54u7h-tU/edit#heading=h.xk81rob2tb1l'>
+      [NDX Proposal]</a>
     image: /images/genotype.png
   - title: Spatial coordinates representation
     content: Reporting of spatial coordinates within the brain is a complex problem,
@@ -31,7 +32,9 @@ sections:
       stimuli) within a spatial coordinate system. This type of standardization
       will facilitate the programmatic integration and comparison of data
       represented in NWB with other datasets that have been mapped to the same
-      coordinate system. <br><br> <a href=''>[NDX Proposal]</a>
+      coordinate system. <br><br>
+      <a href='https://docs.google.com/document/u/0/d/13frfqavbj4e0T-cmR3B8zGanrEe-f74Sa_s1yp_0LcI/edit'>
+      [NDX Proposal]</a>
     image: /images/spatial.png
   - title: Behavioral task representation
     content: Behavioral tasks are an increasingly important component in
@@ -45,22 +48,10 @@ sections:
       building a standard markup language (BEADL) to build state machine
       descriptions of task logic and control flow within a trial and across
       trials in a session, including tools for visualization, construction, and
-      emulation of tasks from these machine-readable descriptions. <br><br> <a
-      href=''>[NDX Proposal]</a>
+      emulation of tasks from these machine-readable descriptions. <br><br>
+      <a href='https://docs.google.com/document/d/1QQLbon-29Td5SblvB2AdWlGzCzgG7MNHloUD8C3tNdc/edit#heading=h.xk81rob2tb1l'>
+      [NDX Proposal]</a>
     image: /images/behavioral.png
-  - title: Spatial coordinates representation
-    content: Reporting of spatial coordinates within the brain is a complex problem,
-      requiring registration between data collected with multiple recording
-      modalities (imaging, probes) and across brain preparations (in vivo whole
-      brain, slice) with common reference atlases and controlled vocabularies.
-      The focus of this working group is to create an NWB extension to capture
-      spatial coordinate systems, spatial mappings between two systems, and the
-      representation of objects (e.g. cells, probes, injections, and optogenetic
-      stimuli) within a spatial coordinate system. This type of standardization
-      will facilitate the programmatic integration and comparison of data
-      represented in NWB with other datasets that have been mapped to the same
-      coordinate system. <br><br> <a href=''>[NDX Proposal]</a>
-    image: /images/spatial.png
   - title: External Working Groups
     bg_white: true
     content: NWB team members also participate in numerous external working groups.
@@ -68,7 +59,6 @@ sections:
       NWB,  they all involve components that are relevant to NWB and commonly
       use NWB or are creating a Neurodata Extension (NDX) as part of their
       charge.
-    image: /images/external-group.png
   - title: INCF Working Group on standardization of a directory structure containing
       neurophysiology data
     bg_white: true
@@ -81,9 +71,9 @@ sections:
       facilitate obtaining reproducible research and data sharing following the
       FAIR principles. In addition to data structures, the working group will
       discuss what experimental metadata is essential, and which formats and
-      structures are appropriate for different metadata types. <br><br> <a
-      href=''>Working Groups Page</a>
-    image: /images/incf.png
+      structures are appropriate for different metadata types. <br><br>
+      <a href='https://github.com/INCF/neuroscience-data-structure/'>Working Group Page</a>
+    image: /images/incf-wg-genaral-image.jpg
   - title: INCF Electrophysiology Stimulation Ontology Working Group
     bg_white: true
     content: Stimulus protocols are an essential component of neurophysiological
@@ -100,8 +90,10 @@ sections:
       protocols use very similar protocols with waveforms that have stereotyped
       profiles (e.g., long steps, ramps, chirps). This working group will also
       draft recommendations for representation in NWB of parameterized stimuli
-      beyond 1-D waveforms. <br><br> <a href=''>Working Groups Page</a>
-    image: /images/incf-ontology-group.png
+      beyond 1-D waveforms. <br><br>
+      <a href='https://www.incf.org/sig/electrophysiology-stimulation-ontology-working-group'>
+      Working Group Page</a>
+    image: /images/incf-wg-genaral-image.jpg
   - title: Standardization of data/file formats for simulation outputs in
       computational neuroscience
     bg_white: true
@@ -115,7 +107,8 @@ sections:
       data. Tasks for this working group include compiling a list of existing
       formats, defining evaluation criteria and evaluating the different
       formats, and identifying avenues for improving interoperability. <br><br>
-      <a href=''>Source</a>, <a href=''>NDX</a>
+      <a href='https://github.com/catalystneuro/ndx-simulation-output'>Source</a>,
+      <a href='https://github.com/nwb-extensions/ndx-simulation-output-record'>NDX</a>
     image: /images/simulation.png
 past_groups:
   enable: true
@@ -136,13 +129,23 @@ past_groups:
     title: Outcomes
     content: The working group drafted an extension for the NWB schema that
       implements these tables for testing and evaluation of the proposed changes
-      (see “<a href=''>Source</a>” “<a href=''>NDX</a>” “<a href=''>NDX
-      Proposal</a>” “<a href=''>YouTube</a>”). The proposed extension underwent
+      (see <a href='https://github.com/oruebel/ndx-icephys-meta'>Source</a>, 
+      <a href='https://github.com/nwb-extensions/ndx-icephys-meta-record'>NDX</a>,
+      <a href='https://docs.google.com/document/d/1cAgsXv26BmQoVfa7Greyxs0oc4IGH-t5aJsm-AwUAAE/edit'>
+      NDX Proposal</a>, <a href='https://www.youtube.com/watch?v=TClUoKA1pEU'>YouTube</a>
+      ). The proposed extension underwent
       community review and has been merged with NWB after completion of the
       review. The new structures developed by this working group have been
-      released as part of <a href=''>NWB Schema version 2.4</a> and
+      released as part of
+      <a href='https://nwb-schema.readthedocs.io/en/latest/format_release_notes.html#aug-11-2021'>
+      NWB Schema version 2.4</a> and
       corresponding PyNWB 2.0 and MatNWB 2.4.0.0. These new features are
-      documented in the <a href=''>Intracellular electrophysiology tutorial</a>
-      as part o PyNWB and <a href=''>AlignedDynamicTable tutorial</a> and <a
-      href=''>AlignedDynmaicTable</a> schema as part of HDMF.
+      documented in the
+      <a href='https://pynwb.readthedocs.io/en/stable/tutorials/domain/plot_icephys.html#sphx-glr-tutorials-domain-plot-icephys-py'>
+      Intracellular electrophysiology tutorial</a>
+      as part of PyNWB and the
+      <a href='https://hdmf.readthedocs.io/en/stable/tutorials/plot_aligneddynamictable.html#sphx-glr-tutorials-plot-aligneddynamictable-py'>
+      AlignedDynamicTable tutorial</a> and
+      <a href='https://hdmf-common-schema.readthedocs.io/en/latest/format.html#aligneddynamictable'>AlignedDynmaicTable</a>
+      schema as part of HDMF.
 ---
