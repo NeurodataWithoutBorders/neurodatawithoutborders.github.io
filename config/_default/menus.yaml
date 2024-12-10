@@ -51,6 +51,10 @@ main:
     weight: 6
     url: "working-groups/"
     parent: Community
+  - name: "MatNWB"
+    weight: 4
+    url: "matnwb/"
+    parent: The Software Ecosystem
 
   - name: "Using NWB"
     weight: 3
