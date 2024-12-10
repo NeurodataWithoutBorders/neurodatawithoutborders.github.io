@@ -2,7 +2,7 @@ baseURL: https://neurodatawithoutborders.github.io/
 languageCode: en
 title: Neurodata Without Borders
 paginate: 6
-# Markup 
+# Markup
 markup:
   goldmark:
     renderer:
@@ -12,3 +12,8 @@ module:
   mounts:
     - source: assets
       target: assets
+
+# Environment-specific settings
+environments:
+  preview:
+    baseURL: https://neurodatawithoutborders.github.io/pr-preview/
