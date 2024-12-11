@@ -51,7 +51,6 @@ main:
     weight: 6
     url: "working-groups/"
     parent: Community
-
   - name: "Using NWB"
     weight: 3
     url: "https://nwb-overview.readthedocs.io"
