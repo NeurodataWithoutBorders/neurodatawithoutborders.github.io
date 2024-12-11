@@ -73,6 +73,8 @@ available_tools_section:
           resources:
             - text: "GitHub Repository"
               url: "https://github.com/NeurodataWithoutBorders/matnwb"
+            - text: "Documentation"
+              url: "https://matnwb.readthedocs.io"
             - text: "Tutorials"
               url: "https://github.com/NeurodataWithoutBorders/matnwb?tab=readme-ov-file#tutorials"
             - text: "NWB YouTube Channel"
