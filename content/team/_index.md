@@ -37,7 +37,7 @@ current_team_section:
     - image: /images/loren.png
       name: Loren Frank
     - image: /images/satrajit.png
-      name: Satrajit Ghost
+      name: Satrajit Ghosh
     - image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSL6eKXnOefpwg9BUB1OfL4mHHx9Vbii1pUhuBb61RiyEtY3zM7"
       name: Adam Kepecs
     - image: /images/mala.png
