@@ -30,20 +30,28 @@ current_team_section:
   team_members:
     - image: /images/bing.png
       name: Bing Brunton
+      post: Professor at University of Washington
     - image: /images/elizabeth.png
       name: Elizabeth Buffalo
+      post: Professor at University of Washington
     - image: /images/anne.png
       name: Anne Churchland
+      post: Professor at UCLA
     - image: /images/loren.png
       name: Loren Frank
+      post: Professor at UCSF
     - image: /images/satrajit.png
       name: Satrajit Ghosh
+      post: Principal Research Scientist at MIT
     - image: /images/adam-kepecs.png
       name: Adam Kepecs
+      post: Professor at Washington University in St. Louis
     - image: /images/mala.png
       name: Mala Murthy
+      post: Professor at Princeton University
     - image: /images/kris.png
       name: Kris Bouchard
+      post: Staff Scientist at Lawrence Berkeley National Laboratory
 alumni_section:
   enable: true
   alumni:
@@ -68,18 +76,24 @@ technical_team_section:
   team_members:
     - image: /images/alessio.png
       name: Alessio Buccino
+      post: Researcher at Allen Institute for Neural Dynamics & Research Software Engineer at CatalystNeuro
     - image: /images/saskia.png
       name: Saskia de Vries
+      post: Senior Scientist at Allen Institute for Neural Dynamics
     - image: /images/yaroslav.png
       name: Yaroslav Halchenko
+      post: Research Associate Professor at Dartmouth College
     - image: /images/ryan-ly.png
       name: Ryan Ly
+      post: Scientific Data Engineer at Berkeley Lab
     # - image: /images/lawrence-niu.png
     #   name: Lawrence Niu
     - image: /images/kushal.png
       name: Kushal Bakshi
+      post: Neuroscience Data Engineer II at DataJoint
     - image: /images/szonja-weigl.jpeg
       name: Anna (Szonja) Weigl
+      post: Research Software Engineer at CatalystNeuro
 core_dev_section:
   pynwb_section:
     enable: true
