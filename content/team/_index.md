@@ -51,7 +51,7 @@ current_team_section:
       post: Professor at Princeton University
     - image: /images/kris.png
       name: Kris Bouchard
-      post: Staff Scientist at Lawrence Livermore National Laboratory
+      post: Staff Scientist at Lawrence Berkeley National Laboratory
 alumni_section:
   enable: true
   alumni:
