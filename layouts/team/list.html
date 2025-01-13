@@ -34,42 +34,39 @@
             {{ end }}
         </ol>
         {{ end }}
-    </div>
-</section>
-{{ end }}
-{{/* End Executive Board Section */}}
-
-{{/* Current Team Section */}}
-{{ with .Params.current_team_section }}
-  {{ if .enable }}
-  <section class="section bg-dark-100 pt-0">
-    <div class="container-lg">
-      <h3 class="inter-700 dark-900 text-40 pb-5">Current Membership of the Executive Board</h3>
-      <div class="row g-2 g-md-4" id="team-members">
-        {{ range $index, $element := .team_members }}
-        <div class="col-6 col-sm-4 col-md-3 team-member {{ if gt $index 7 }}d-none{{ end }}" data-index="{{ $index }}">
-          <div class="h-100 bg-white rounded-3 p-md-4 p-2 shadow-sm pb-md-3">
-            <img src="{{ $element.image }}" alt="" class="img-fluid rounded-3">
-            <h5 class="inter-700 text-20 dark-900 pt-4">{{ $element.name | markdownify }}</h5>
+        {{/* Current Team Section */}}
+        {{ with $.Params.current_team_section }}
+          {{ if .enable }}
+          <div class="container-lg pt-5">
+            <h4 class="inter-600 dark-900 text-32 pb-5">Current Membership of the Executive Board</h4>
+            <div class="row g-2 g-md-4" id="team-members">
+              {{ range $index, $element := .team_members }}
+              <div class="col-6 col-sm-4 col-md-3 team-member {{ if gt $index 7 }}d-none{{ end }}" data-index="{{ $index }}">
+                <div class="h-100 bg-white rounded-3 p-md-4 p-2 shadow-sm pb-md-3">
+                  <img src="{{ $element.image }}" alt="" class="img-fluid rounded-3">
+                  <h5 class="inter-700 text-20 dark-900 pt-4">{{ $element.name | markdownify }}</h5>
+                  {{ if $element.post }}<p class="inter-400 text-14 dark-900">{{ $element.post | markdownify }}</p>{{ end }}
+                </div>
+              </div>
+              {{ end }}
+            </div>
+            {{ if gt (len .team_members) 8 }}
+            <div class="d-flex justify-content-center align-items-center pt-4 flex-column flex-sm-row gap-2 mt-5">
+              <a href="javascript:void(0);" id="show-more" class="btn btn-lg border shadow-sm bg-white dark-900 inter-500 text-16">
+                <span>Show More</span>
+                <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20">
+              </a>
+              <a href="javascript:void(0);" id="show-less" class="btn btn-lg border shadow-sm bg-white dark-900 inter-500 text-16 d-none">
+                <span>Show Less</span>
+                <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20" class="rotatedIcon">
+              </a>
+            </div>
+            {{ end }}
           </div>
-        </div>
+          {{ end }}
         {{ end }}
       </div>
-      {{ if gt (len .team_members) 8 }}
-      <div class="d-flex justify-content-center align-items-center pt-4 flex-column flex-sm-row gap-2 mt-5">
-        <a href="javascript:void(0);" id="show-more" class="btn btn-lg border shadow-sm bg-white dark-900 inter-500 text-16">
-          <span>Show More</span>
-          <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20">
-        </a>
-        <a href="javascript:void(0);" id="show-less" class="btn btn-lg border shadow-sm bg-white dark-900 inter-500 text-16 d-none">
-          <span>Show Less</span>
-          <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20" class="rotatedIcon">
-        </a>
-      </div>
-      {{ end }}
-    </div>
-  </section>
-  {{ end }}
+    </section>
 {{ end }}
 {{/* End Current Team Section */}}
 
@@ -109,42 +106,41 @@
             {{ end }}
         </ol>
     </div>
-</section>
-{{ end }}
-{{ end }}
-{{/* End Technical Board Section */}}
 
-{{/* Current Members of Technical Board Section */}}
-{{ with .Params.technical_team_section }}
-  {{ if .enable }}
-  <section class="section bg-dark-100">
-    <div class="container-lg">
-      <h3 class="inter-700 dark-900 text-40 pb-5">Current Membership of the Technical Advisory Board</h3>
-      <div class="row g-2 g-md-4" id="team-members-tech">
-        {{ range $i, $p := .team_members }}
-        <div class="col-12 col-sm-4 col-md-3 team-member-tech {{ if gt $i 7 }}d-none{{ end }}" data-index="{{ $i }}">
-          <div class="h-100 bg-white rounded-3 p-2 p-md-4 shadow-sm pb-md-3">
-            <img src="{{ $p.image }}" alt="" class="img-fluid rounded-3">
-            <h5 class="inter-700 text-20 dark-900 pt-4">{{ $p.name | markdownify }}</h5>
+    {{/* Current Members of Technical Board Section */}}
+    {{ with $.Params.technical_team_section }}
+      {{ if .enable }}
+      <div class="container-lg pt-5">
+        <h4 class="inter-600 dark-900 text-32 pb-5">Current Membership of the Technical Advisory Board</h4>
+        <div class="row g-2 g-md-4" id="team-members-tech">
+          {{ range $i, $p := .team_members }}
+          <div class="col-12 col-sm-4 col-md-3 team-member-tech {{ if gt $i 7 }}d-none{{ end }}" data-index="{{ $i }}">
+            <div class="h-100 bg-white rounded-3 p-2 p-md-4 shadow-sm pb-md-3">
+              <img src="{{ $p.image }}" alt="" class="img-fluid rounded-3">
+              <h5 class="inter-700 text-20 dark-900 pt-4">{{ $p.name | markdownify }}</h5>
+              {{ if $p.post }}<p class="inter-400 text-14 dark-900">{{ $p.post | markdownify }}</p>{{ end }}
+            </div>
           </div>
+          {{ end }}
+        </div>
+        {{ if gt (len .team_members) 8 }}
+        <div class="d-flex justify-content-center align-items-center pt-4 flex-column flex-sm-row gap-2">
+          <a href="javascript:void(0);" id="show-more-tech" class="btn btn-lg shadow-sm bg-white dark-900 inter-500 text-16">
+            <span>Show More</span>
+            <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20">
+          </a>
+          <a href="javascript:void(0);" id="show-less-tech" class="btn btn-lg shadow-sm bg-white dark-900 inter-500 text-16 d-none">
+            <span>Show Less</span>
+            <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20" class="rotatedIcon">
+          </a>
         </div>
         {{ end }}
       </div>
-      {{ if gt (len .team_members) 8 }}
-      <div class="d-flex justify-content-center align-items-center pt-4 flex-column flex-sm-row gap-2">
-        <a href="javascript:void(0);" id="show-more-tech" class="btn btn-lg shadow-sm bg-white dark-900 inter-500 text-16">
-          <span>Show More</span>
-          <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20">
-        </a>
-        <a href="javascript:void(0);" id="show-less-tech" class="btn btn-lg shadow-sm bg-white dark-900 inter-500 text-16 d-none">
-          <span>Show Less</span>
-          <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20" class="rotatedIcon">
-        </a>
-      </div>
       {{ end }}
+    {{ end }}
     </div>
-  </section>
-  {{ end }}
+</section>
+{{ end }}
 {{ end }}
 {{/* End Current Members of Technical Board Section */}}
 
