@@ -112,6 +112,26 @@
 {{ end }}
 {{/* End Portfolio Section */}}
 
+{{/* Video Section */}}
+{{ with .Params.video_section }}
+{{ if .enable }}
+<section class="section w-100 h-100 bg-light">
+  <div class="container-lg">
+    <h2 class="text-center inter-700 text-40 mb-4">{{ .title | markdownify }}</h2>
+    <div class="ratio ratio-16x9">
+      <iframe 
+        src="https://www.youtube.com/embed/{{ .video_id }}" 
+        title="YouTube video" 
+        allowfullscreen
+        class="rounded-3 shadow"
+      ></iframe>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Video Section */}}
+
 {{/* News And Updates Section */}}
 {{ with .Params.news_section }}
 {{ if .enable }}
