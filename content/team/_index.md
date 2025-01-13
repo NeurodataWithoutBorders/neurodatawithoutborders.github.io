@@ -38,7 +38,7 @@ current_team_section:
       name: Loren Frank
     - image: /images/satrajit.png
       name: Satrajit Ghosh
-    - image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSL6eKXnOefpwg9BUB1OfL4mHHx9Vbii1pUhuBb61RiyEtY3zM7"
+    - image: /images/adam-kepecs.png
       name: Adam Kepecs
     - image: /images/mala.png
       name: Mala Murthy
@@ -72,10 +72,10 @@ technical_team_section:
       name: Saskia de Vries
     - image: /images/yaroslav.png
       name: Yaroslav Halchenko
-    - image: /images/RyanLy.png
+    - image: /images/ryan-ly.png
       name: Ryan Ly
-    - image: /images/lawrence-niu.png
-      name: Lawrence Niu
+    # - image: /images/lawrence-niu.png
+    #   name: Lawrence Niu
     - image: /images/kushal.png
       name: Kushal Bakshi
     - image: /images/szonja-weigl.jpeg
@@ -84,28 +84,28 @@ core_dev_section:
   pynwb_section:
     enable: true
     team_members:
-      - image: /images/oliver.png
+      - image: /images/oliver-ruebel.png
         name: Oliver Ruebel
         post: Staff Scientist at Berkeley Lab
-      - image: /images/RyanLy.png
+      - image: /images/ryan-ly.png
         name: Ryan Ly
         post: Scientific Data Engineer at Berkeley Lab
-      - image: /images/AndrewTritt.png
+      - image: /images/andrew-tritt.png
         name: Andrew Tritt
         post: Computer Systems Engineer at Berkeley Lab
-      - image: /images/MatthewAvaylon.jpg
+      - image: /images/matthew-avaylon.png
         name: Matthew Avaylon
         post: Staff Software Engineer at Berkeley Lab
   matnwb_section:
     enable: true
-    image: /images/lawrence-niu.png
-    name: Lawrence Niu
-    post: Principal Engineer at MBF Biosciences
+    image: /images/eivind-hennestad.png
+    name: Eivind Hennestad
+    post: Lead developer of MatNWB
   nwb_community_section:
     enable: true
-    image: /images/oliver.png
-    name: Oliver Ruebel
-    post: Staff Scientist at Berkeley Lab
+    image: /images/ben-dichter.jpeg
+    name: Ben Dichter
+    post: Founder and CEO, CatalystNeuro
 dev_community_section:
   enable: true
   title: Developer Community
