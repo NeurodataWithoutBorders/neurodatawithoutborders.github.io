@@ -51,11 +51,22 @@ main:
     weight: 6
     url: "working-groups/"
     parent: Community
-  - name: "Using NWB"
+  - name: "NWB Tools"
     weight: 3
+    hasChildren: true
+  - name: "Acquisition Tools"
+    weight: 1
+    url: "tools/acquisition/"
+    parent: "NWB Tools"
+  - name: "Analysis Tools"
+    weight: 2
+    url: "tools/analysis/"
+    parent: "NWB Tools"
+  - name: "Using NWB"
+    weight: 4
     url: "https://nwb-overview.readthedocs.io"
   - name: "Policies"
-    weight: 4
+    weight: 5
     url: "policies/"
 
 # Footer
