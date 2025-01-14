@@ -1,0 +1,28 @@
+<div class="tool-grid">
+  {{ $category := .Get "category" }}
+  {{ range where .Site.RegularPages "Section" "tools" }}
+    {{ if eq .Params.category $category }}
+    <div class="tool-card">
+      {{ if .Params.image }}
+      <div class="tool-image">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+      </div>
+      {{ end }}
+      <div class="tool-content">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ .Params.description }}
+        {{ if or .Params.source_url .Params.docs_url }}
+        <div class="tool-links">
+          {{ if .Params.source_url }}
+          <a href="{{ .Params.source_url }}" class="btn btn-primary" target="_blank">Source</a>
+          {{ end }}
+          {{ if .Params.docs_url }}
+          <a href="{{ .Params.docs_url }}" class="btn btn-primary" target="_blank">Docs</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  {{ end }}
+</div>
