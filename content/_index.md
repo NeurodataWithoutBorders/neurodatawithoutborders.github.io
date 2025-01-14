@@ -52,6 +52,11 @@ portfolio_section:
   logos:
     - logo: /images/portfolio-logo.png
     - logo: /images/incf.png
+video_section:
+  enable: true
+  title: "Learn More About NWB"
+  video_id: "PMzrIOo0lQs"
+
 news_section:
   enable: true
   btn_text: See All New
