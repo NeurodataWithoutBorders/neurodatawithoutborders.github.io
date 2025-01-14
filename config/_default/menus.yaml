@@ -1,99 +1,115 @@
-# Main
+# Main Navigation
 main:
-  - name: "About"
+  # Get Started
+  - name: "Get Started"
     weight: 1
     hasChildren: true
-  - name: "About NWB"
+  - name: "Overview"
     weight: 1
     url: "about-us/"
-    parent: About
-  - name: "The Software Ecosystem"
-    weight: 2
-    url: "nwb-software/"
-    parent: About
-  - name: "Team"
-    weight: 3
-    url: "team/"
-    parent: About
-  - name: "Publications"
-    weight: 4
-    url: "publications/"
-    parent: About
-  - name: "Contact Us"
-    weight: 5
-    url: "contact-us/"
-    parent: About
-  
-  - name: "Community"
-    weight: 2
-    hasChildren: true
-  - name: "News"
-    weight: 1
-    url: "https://us3.campaign-archive.com/home/?u=eacaccc485a4e5f36034bbdbd&id=a9718ab27f"
-    parent: Community
-  - name: "Events"
-    weight: 2
-    url: "https://neurodatawithoutborders.github.io/nwb_hackathons/"
-    parent: Community
-  - name: "NWB Enhancement Proposals"
-    weight: 3
-    url: "https://github.com/nwb-extensions/nwbep-review/blob/main/README.md"
-    parent: Community
+    parent: "Get Started"
   - name: "Converting Data to NWB"
-    weight: 4
+    weight: 2
     url: "converting-data-to-nwb/"
-    parent: Community  
-  - name: "Grants and Projects"
-    weight: 5
-    url: "grants-and-projects/"
-    parent: Community
-  - name: "Working Groups"
-    weight: 6
-    url: "working-groups/"
-    parent: Community
-  - name: "Using NWB"
+    parent: "Get Started"
+  - name: "Documentation"
     weight: 3
     url: "https://nwb-overview.readthedocs.io"
-  - name: "Policies"
+    parent: "Get Started"
+  
+  # Software & Tools
+  - name: "Software & Tools"
+    weight: 2
+    hasChildren: true
+  - name: "NWB Software Ecosystem"
+    weight: 1
+    url: "nwb-software/"
+    parent: "Software & Tools"
+  - name: "Enhancement Proposals"
+    weight: 2
+    url: "https://github.com/nwb-extensions/nwbep-review/blob/main/README.md"
+    parent: "Software & Tools"
+  
+  # Community
+  - name: "Community"
+    weight: 3
+    hasChildren: true
+  - name: "News & Updates"
+    weight: 1
+    url: "news/"
+    parent: "Community"
+  - name: "Events"
+    weight: 2
+    url: "events/"
+    parent: "Community"
+  - name: "Working Groups"
+    weight: 3
+    url: "working-groups/"
+    parent: "Community"
+  - name: "Team"
     weight: 4
+    url: "team/"
+    parent: "Community"
+  
+  # Resources
+  - name: "Resources"
+    weight: 4
+    hasChildren: true
+  - name: "Publications"
+    weight: 1
+    url: "publications/"
+    parent: "Resources"
+  - name: "Grants & Projects"
+    weight: 2
+    url: "grants-and-projects/"
+    parent: "Resources"
+  - name: "Policies"
+    weight: 3
     url: "policies/"
+    parent: "Resources"
+  
+  # Contact
+  - name: "Contact"
+    weight: 5
+    url: "contact-us/"
 
 # Footer
-### About
-about:
-  - name: "About NWB"  
+# Footer Menus
+quick_links:
+  - name: "Get Started"
     weight: 1
     url: "/about-us"
-  - name: "The Software Ecosystem"
+  - name: "Documentation"
     weight: 2
+    url: "https://nwb-overview.readthedocs.io"
+  - name: "Software"
+    weight: 3
     url: "/nwb-software"
   - name: "Team"
-    weight: 3
-    url: "/team"
-  - name: "Publications"
     weight: 4
-    url: "/publications"
-  - name: "Contact Us"
-    weight: 5
-    url: "/contact-us"
+    url: "/team"
 
-### Community
-community:
-  - name: "News"
+community_links:
+  - name: "News & Updates"
     weight: 1
     url: "/news"
   - name: "Events"
     weight: 2
-    url: "/event-cards"
-  - name: "NWB Enhancement Proposals"
-    weight: 3
-    url: "https://github.com/nwb-extensions/nwbep-review/blob/main/README.md"
-  - name: "Converting Data to NWB"
-    weight: 4
-    url: "/converting-data-to-nwb"
-  - name: "Grants and Projects"
-    weight: 5
-    url: "/grants-and-projects"
+    url: "/events"
   - name: "Working Groups"
-    weight: 6
+    weight: 3
     url: "/working-groups"
+  - name: "Contact Us"
+    weight: 4
+    url: "/contact-us"
+
+resources:
+  - name: "Publications"
+    weight: 1
+    url: "/publications"
+  - name: "Grants & Projects"
+    weight: 2
+    url: "/grants-and-projects"
+  - name: "Policies"
+    weight: 3
+    url: "/policies"
