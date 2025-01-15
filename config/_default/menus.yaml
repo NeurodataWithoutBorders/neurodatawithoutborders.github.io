@@ -25,10 +25,6 @@ main:
     weight: 1
     url: "nwb-software/"
     parent: "Software & Tools"
-  - name: "Enhancement Proposals"
-    weight: 2
-    url: "https://github.com/nwb-extensions/nwbep-review/blob/main/README.md"
-    parent: "Software & Tools"
   
   # Community
   - name: "Community"
