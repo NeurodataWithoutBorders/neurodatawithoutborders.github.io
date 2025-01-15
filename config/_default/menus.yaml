@@ -38,12 +38,16 @@ main:
     weight: 2
     url: "events/"
     parent: "Community"
-  - name: "Working Groups"
+  - name: "Enhancement Proposals"
     weight: 3
+    url: "https://github.com/nwb-extensions/nwbep-review/"
+    parent: "Community"
+  - name: "Working Groups"
+    weight: 4
     url: "working-groups/"
     parent: "Community"
   - name: "Team"
-    weight: 4
+    weight: 5
     url: "team/"
     parent: "Community"
   
