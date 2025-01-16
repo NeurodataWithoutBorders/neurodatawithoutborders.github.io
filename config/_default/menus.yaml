@@ -25,6 +25,17 @@ main:
     weight: 1
     url: "nwb-software/"
     parent: "Software & Tools"
+  - name: "Community NWB Tools"
+    weight: 3
+    hasChildren: true
+  - name: "Acquisition Tools"
+    weight: 1
+    url: "tools/acquisition/"
+    parent: "Community NWB Tools"
+  - name: "Analysis Tools"
+    weight: 2
+    url: "tools/analysis/"
+    parent: "Community  NWB Tools"
   
   # Community
   - name: "Community"
