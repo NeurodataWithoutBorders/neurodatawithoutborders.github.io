@@ -13,7 +13,7 @@ hero_section:
       btn_link: /
     - title: Neurodata Without Borders
       subtitle: Version 2.0 FINAL Now Available
-      btn_text: Read More
+      btn_text: This is a test
       btn_link: /
 banner_section:
   enable: true
