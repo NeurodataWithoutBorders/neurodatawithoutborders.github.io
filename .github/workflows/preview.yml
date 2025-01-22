@@ -13,7 +13,7 @@ on:
 concurrency: preview-${{ github.ref }}
 
 permissions:
-  contents: read
+  contents: write  # TODO: do we want this?
   pages: write
   actions: write
 
