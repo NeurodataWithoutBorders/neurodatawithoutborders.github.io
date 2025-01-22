@@ -58,5 +58,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           source-dir: ./public
-          pages-base-url: https://${{ github.repository_owner }}.github.io/
+          pages-base-url: ${{ github.repository_owner }}.github.io
           action: auto
