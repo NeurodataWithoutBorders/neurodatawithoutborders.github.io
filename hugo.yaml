@@ -1,12 +1,17 @@
 baseURL: https://neurodatawithoutborders.github.io/
 languageCode: en
 title: Neurodata Without Borders
-paginate: 6
-# Markup 
+
+# Pagination
+pagination:
+  pagerSize: 10
+
+# Markup
 markup:
   goldmark:
     renderer:
       unsafe: true
+
 # Modules
 module:
   mounts:
