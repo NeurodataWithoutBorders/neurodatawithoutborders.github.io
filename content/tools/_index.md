@@ -1,9 +1,6 @@
 ---
 title: "NWB Tools"
 description: "A collection of tools for working with NWB data"
-menu:
-  main:
-    weight: 40
 ---
 
 This page is a collection of tools we are cataloging as a convenience reference for NWB users. This is not a comprehensive list of NWB tools. Many of these tools are built and supported by other groups, and are in active development.
