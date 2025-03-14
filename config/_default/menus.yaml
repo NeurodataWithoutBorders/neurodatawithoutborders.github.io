@@ -29,12 +29,16 @@ main:
     weight: 2
     url: "tools/"
     parent: "Software & Tools"
-  - name: "Acquisition Tools"
+  - name: "Core Tools"
     weight: 3
+    url: "tools/core/"
+    parent: "Software & Tools"
+  - name: "Acquisition Tools"
+    weight: 4
     url: "tools/acquisition/"
     parent: "Software & Tools"
   - name: "Analysis Tools"
-    weight: 4
+    weight: 5
     url: "tools/analysis/"
     parent: "Software & Tools"
   

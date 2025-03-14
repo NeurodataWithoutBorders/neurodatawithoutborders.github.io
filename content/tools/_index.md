@@ -7,6 +7,7 @@ This page is a collection of tools we are cataloging as a convenience reference 
 
 ## Tool Categories
 
+- [Core NWB Tools]({{< ref "tools/core" >}}) - Key software packages of the core NWB software stack
 - [Acquisition and Control Tools]({{< ref "tools/acquisition" >}}) - Tools for data acquisition and experimental control
 - [Analysis and Visualization Tools]({{< ref "tools/analysis" >}}) - Tools for data analysis, visualization, and exploration
 
