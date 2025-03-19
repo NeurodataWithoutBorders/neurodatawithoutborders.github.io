@@ -50,16 +50,20 @@ main:
     weight: 1
     url: "news/"
     parent: "Community"
-  - name: "Enhancement Proposals"
+  - name: "Events"
     weight: 2
+    url: "events/"
+    parent: "Community"
+  - name: "Enhancement Proposals"
+    weight: 3
     url: "https://github.com/nwb-extensions/nwbep-review/"
     parent: "Community"
   - name: "Working Groups"
-    weight: 3
+    weight: 4
     url: "working-groups/"
     parent: "Community"
   - name: "Team"
-    weight: 4
+    weight: 5
     url: "team/"
     parent: "Community"
   
@@ -105,11 +109,14 @@ community_links:
   - name: "News & Updates"
     weight: 1
     url: "/news"
-  - name: "Working Groups"
+  - name: "Events"
     weight: 2
+    url: "/events"
+  - name: "Working Groups"
+    weight: 3
     url: "/working-groups"
   - name: "Contact Us"
-    weight: 3
+    weight: 4
     url: "/contact-us"
 
 resources:
