@@ -2,6 +2,9 @@ baseURL: https://neurodatawithoutborders.github.io/
 languageCode: en
 title: Neurodata Without Borders
 
+# Build Settings
+buildFuture: true
+
 # Pagination
 pagination:
   pagerSize: 10

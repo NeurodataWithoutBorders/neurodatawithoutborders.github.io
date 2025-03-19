@@ -22,12 +22,14 @@
 {{ end }}
 {{/* End Hero Section */}}
 
-<div class="container mt-5 mb-5">
-  {{/* Upcoming Events Section - Hardcoded */}}
-  <div class="bg-white rounded-3 shadow-sm p-4 mb-5">
-    <h3 class="inter-600 text-24 dark-900 mb-4">Upcoming Events</h3>
+<div class="container mt-3 mb-4">
+  {{/* Upcoming Events Section */}}
+  <div class="bg-white rounded-3 shadow-sm p-3 mb-4">
+    <h2 class="inter-700 text-32 dark-900 mb-4 pb-2 border-bottom border-primary">Upcoming Events</h2>
+    {{ $upcomingEvents := where (where .Site.RegularPages "Section" "events") "Date" "ge" now }}
+    {{ if $upcomingEvents }}
     <ul class="list-group list-group-flush">
-      {{ range where .Pages "File.Path" "in" (slice "content/events/workshop-2025-unam.md" "content/events/cosyne-2025.md" "content/events/workshop-2025-uwashington.md" "content/events/hck22-2025-dataconversion-remote.md" "content/events/hck24-2025-janelia-ndrh.md") }}
+      {{ range sort $upcomingEvents ".Params.date" "asc" }}
       <li class="list-group-item py-3 px-0 border-bottom">
         <div class="d-flex justify-content-between align-items-center">
           <div>
@@ -63,15 +65,19 @@
       </li>
       {{ end }}
     </ul>
+    {{ else }}
+    <p class="inter-400 text-16 dark-600">No upcoming events scheduled at this time. Check back soon!</p>
+    {{ end }}
   </div>
   {{/* End Upcoming Events Section */}}
 
-  {{/* All Events Section */}}
-  <div class="bg-white rounded-3 shadow-sm p-4">
-    <h3 class="inter-600 text-24 dark-900 mb-4">All Events</h3>
+  {{/* Previous Events Section */}}
+  <div class="bg-white rounded-3 shadow-sm p-3">
+    <h2 class="inter-700 text-32 dark-900 mb-4 pb-2 border-bottom border-primary">Previous Events</h2>
+    {{ $previousEvents := where (where .Site.RegularPages "Section" "events") "Date" "lt" now }}
+    {{ if $previousEvents }}
     <ul class="list-group list-group-flush">
-      {{ $paginator := .Paginate .Pages.ByDate.Reverse 25 }}
-      {{ range $paginator.Pages }}
+      {{ range sort $previousEvents ".Params.date" "desc" }}
       <li class="list-group-item py-3 px-0 border-bottom">
         <div class="d-flex justify-content-between align-items-center">
           <div>
@@ -107,46 +113,10 @@
       </li>
       {{ end }}
     </ul>
-    
-    <!-- Pagination -->
-    {{ if gt $paginator.TotalPages 1 }}
-    <div class="d-flex justify-content-center mt-4">
-      <nav aria-label="Page navigation">
-        <ul class="pagination">
-          {{ if $paginator.HasPrev }}
-          <li class="page-item">
-            <a class="page-link" href="{{ $paginator.Prev.URL }}" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          {{ else }}
-          <li class="page-item disabled">
-            <span class="page-link">&laquo;</span>
-          </li>
-          {{ end }}
-          
-          {{ range $paginator.Pagers }}
-          <li class="page-item {{ if eq . $paginator }}active{{ end }}">
-            <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
-          </li>
-          {{ end }}
-          
-          {{ if $paginator.HasNext }}
-          <li class="page-item">
-            <a class="page-link" href="{{ $paginator.Next.URL }}" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-          {{ else }}
-          <li class="page-item disabled">
-            <span class="page-link">&raquo;</span>
-          </li>
-          {{ end }}
-        </ul>
-      </nav>
-    </div>
+    {{ else }}
+    <p class="inter-400 text-16 dark-600">No previous events to display.</p>
     {{ end }}
   </div>
-  {{/* End All Events Section */}}
+  {{/* End Previous Events Section */}}
 </div>
 {{ end }}
