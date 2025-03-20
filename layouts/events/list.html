@@ -27,10 +27,10 @@
   <div class="bg-light rounded-3 shadow-sm p-3 mb-4">
     <div class="d-flex align-items-center">
       <div class="flex-grow-1">
-        <h3 class="inter-600 text-20 dark-900 mb-2">About NWB Hackathons</h3>
+        <h3 class="inter-600 text-20 dark-900 mb-2">About NWB Events</h3>
         <p class="inter-400 text-16 dark-700 mb-0">Learn more about the different types of NWB events, their purpose, and history.</p>
       </div>
-      <a href="/about-us/hackathons/" class="btn btn-primary ms-3">Learn More</a>
+      <a href="/about-events/" class="btn btn-primary ms-3">Learn More</a>
     </div>
   </div>
   
@@ -44,7 +44,7 @@
       <li class="list-group-item py-3 px-0 border-bottom">
         <div class="d-flex justify-content-between align-items-center">
           <div>
-            <h4 class="inter-600 text-18 dark-900 mb-1">{{ .Title }}</h4>
+            <h4 class="inter-600 text-18 dark-900 mb-1"><a href="{{ .Permalink }}" class="text-decoration-none dark-900 hover-primary">{{ .Title }}</a></h4>
             <div class="d-flex flex-wrap gap-3">
               <p class="inter-400 text-14 dark-600 mb-0">
                 <i class="fas fa-calendar-alt text-primary me-1"></i>
@@ -92,7 +92,7 @@
       <li class="list-group-item py-3 px-0 border-bottom">
         <div class="d-flex justify-content-between align-items-center">
           <div>
-            <h4 class="inter-600 text-18 dark-900 mb-1">{{ .Title }}</h4>
+            <h4 class="inter-600 text-18 dark-900 mb-1"><a href="{{ .Permalink }}" class="text-decoration-none dark-900 hover-primary">{{ .Title }}</a></h4>
             <div class="d-flex flex-wrap gap-3">
               <p class="inter-400 text-14 dark-600 mb-0">
                 <i class="fas fa-calendar-alt text-primary me-1"></i>
