@@ -4,6 +4,7 @@ bg_image: "/images/events/default-event-banner.png"
 image: "/images/events/default-event-banner.png"
 summary: "Information about Neurodata Without Borders (NWB) events, including their purpose, types, and history."
 draft: false
+type: "page"
 ---
 
 ## What are NWB events?
