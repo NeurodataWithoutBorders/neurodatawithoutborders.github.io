@@ -1,7 +1,7 @@
 ---
 title: "NWB & DANDI Tutorial at COSYNE 2025"
 date: 2025-03-27
-location: "Fairmont Queen Elizabeth, Montreal, QC, Canada"
+location: "Agora-Centreville Room, Fairmont Queen Elizabeth, Montreal, QC, Canada"
 eventType: "Tutorial"
 image: "/images/events/cosyne-2025/nwb+dandi_logo.png"
 weight: 20250327
