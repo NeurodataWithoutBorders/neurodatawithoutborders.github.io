@@ -44,7 +44,7 @@
       <li class="list-group-item py-3 px-0 border-bottom">
         <div class="d-flex justify-content-between align-items-center">
           <div>
-            <h4 class="inter-600 text-18 dark-900 mb-1"><a href="{{ .Permalink }}" class="text-decoration-none dark-900 hover-primary">{{ .Title }}</a></h4>
+            <h4 class="inter-600 text-18 dark-900 mb-1"><a href="{{ .RelPermalink }}" class="text-decoration-none dark-900 hover-primary">{{ .Title }}</a></h4>
             <div class="d-flex flex-wrap gap-3">
               <p class="inter-400 text-14 dark-600 mb-0">
                 <i class="fas fa-calendar-alt text-primary me-1"></i>
@@ -71,7 +71,7 @@
               {{ end }}
             </div>
           </div>
-          <a href="{{ .Permalink }}" class="btn btn-outline-primary btn-sm">View Details</a>
+          <a href="{{ .RelPermalink }}" class="btn btn-outline-primary btn-sm">View Details</a>
         </div>
       </li>
       {{ end }}
