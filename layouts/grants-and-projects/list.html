@@ -69,16 +69,13 @@
                             data-index="{{ $index }}">
                             <li class="myLi">
                                 <span class="text-16 inter-400 dark-700 negMargin">
-                                    {{ range $i, $p := $params.sponser_name }}
-                                    {{ if eq $i 0 }}
-                                    <a
-                                        class="inter-700 blue link-offset-2 animate">{{$p.name|markdownify}}</a>
-                                    {{ else }}, and
-                                    <a class="inter-700 blue link-offset-2 animate">
-                                        {{$p.name|markdownify}}
-                                    </a>
-                                    {{ end }}
-                                    {{ end }}
+                                    {{- range $i, $p := $params.sponser_name -}}
+                                    {{- if eq $i 0 -}}
+                                    <span class="inter-700 blue">{{- $p.name|markdownify -}}</span>
+                                    {{- else -}}, and
+                                    <span class="inter-700 blue">{{- $p.name|markdownify -}}</span>
+                                    {{- end -}}
+                                    {{- end -}}
                                     {{ with .institute }},
                                     <span class="inter-500">{{.}}</span>
                                     {{ end }}

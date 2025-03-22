@@ -1,0 +1,153 @@
+<!-- 
+  NWB Modern Card Examples
+  Part of the design system implementation
+  These templates demonstrate how to use the new card components
+-->
+
+<!-- Basic Card -->
+<div class="card mb-4">
+  <div class="card-body">
+    <h3 class="card-title">Basic Card</h3>
+    <p class="card-text">A simple card with title and text content. Good for general purpose use.</p>
+    <a href="#" class="btn-text">Learn more</a>
+  </div>
+</div>
+
+<!-- Card with Header -->
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="mb-0">Card with Header</h4>
+  </div>
+  <div class="card-body">
+    <p class="card-text">This card includes a header section that can be used for titles or other content that should be visually separated.</p>
+    <a href="#" class="btn btn-outline-primary">View Details</a>
+  </div>
+</div>
+
+<!-- Feature Card -->
+<div class="card card-feature mb-4">
+  <div class="feature-icon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z" fill="currentColor"/>
+      <path d="M7 12H9V17H7V12Z" fill="currentColor"/>
+      <path d="M11 7H13V17H11V7Z" fill="currentColor"/>
+      <path d="M15 9H17V17H15V9Z" fill="currentColor"/>
+    </svg>
+  </div>
+  <h3 class="card-title">Feature Title</h3>
+  <p class="card-text">Used for highlighting features or services. Includes centered content with an icon.</p>
+</div>
+
+<!-- Image Card -->
+<div class="card mb-4">
+  <img src="https://via.placeholder.com/400x200" alt="Card image" class="card-img-top">
+  <div class="card-body">
+    <h3 class="card-title">Image Card</h3>
+    <p class="card-text">A card with an image at the top. Useful for blog posts, events, or any content with visual elements.</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+  </div>
+</div>
+
+<!-- News Card -->
+<div class="card card-news mb-4">
+  <div class="card-img-container">
+    <img src="https://via.placeholder.com/400x200" alt="News image" class="card-img-top">
+  </div>
+  <div class="card-body">
+    <div class="card-date">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 3H18V1H16V3H8V1H6V3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V8H19V19Z" fill="currentColor"/>
+      </svg>
+      March 15, 2025
+    </div>
+    <h3 class="card-title">News Article Title</h3>
+    <p class="card-text">Specialized card for news items with date display and hover effects on the image.</p>
+    <a href="#" class="link-arrow">
+      Read Full Article
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="currentColor"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<!-- Highlighted Card -->
+<div class="card card-highlight mb-4">
+  <div class="card-body">
+    <h3 class="card-title">Highlighted Card</h3>
+    <p class="card-text">Uses a colored top border to draw attention to important content or featured items.</p>
+    <a href="#" class="btn btn-primary">Action</a>
+  </div>
+</div>
+
+<!-- Highlighted Secondary Card -->
+<div class="card card-highlight-secondary mb-4">
+  <div class="card-body">
+    <h3 class="card-title">Secondary Highlight</h3>
+    <p class="card-text">Another variant with a secondary color top border for visual hierarchy.</p>
+    <a href="#" class="btn btn-secondary">Action</a>
+  </div>
+</div>
+
+<!-- Card with Footer -->
+<div class="card mb-4">
+  <div class="card-body">
+    <h3 class="card-title">Card with Footer</h3>
+    <p class="card-text">Includes a separate footer section for actions, metadata, or additional information.</p>
+  </div>
+  <div class="card-footer">
+    <small>Last updated: 2 days ago</small>
+    <a href="#" class="btn btn-sm btn-outline-primary float-end">Details</a>
+  </div>
+</div>
+
+<!-- Clickable Card -->
+<a href="#" class="card card-link mb-4">
+  <div class="card-body">
+    <h3 class="card-title">Clickable Card</h3>
+    <p class="card-text">The entire card is a clickable link, making it easier for users to interact with.</p>
+    <span class="link-arrow">
+      Click for details
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="currentColor"/>
+      </svg>
+    </span>
+  </div>
+</a>
+
+<!-- Card Grid Example -->
+<h2 class="mb-4">Card Grid Example</h2>
+<div class="card-grid">
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Grid Card 1</h3>
+      <p class="card-text">Cards in a responsive grid layout that adjust based on screen size.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Grid Card 2</h3>
+      <p class="card-text">Equal height cards maintain a clean, consistent appearance.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Grid Card 3</h3>
+      <p class="card-text">Automatic responsiveness for different screen sizes.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Usage Notes -->
+<div class="alert alert-info mt-5">
+  <div class="alert-icon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 7H13V9H11V7ZM11 11H13V17H11V11Z" fill="currentColor"/>
+    </svg>
+  </div>
+  <div class="alert-content">
+    <h4 class="alert-title">Implementation Notes</h4>
+    <p>These card examples use the new design system classes. To use them, make sure you've included the <code>design-system.css</code> and <code>components.css</code> files in your page's <code>&lt;head&gt;</code>.</p>
+    <p>Cards can be combined with other components and utility classes to achieve different layouts and styles.</p>
+  </div>
+</div>

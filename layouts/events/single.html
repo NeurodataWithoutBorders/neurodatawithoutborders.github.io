@@ -1,32 +1,32 @@
 {{ define "main" }}
 {{/* Hero Section */}}
-<section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
-    style="background: radial-gradient(#063053e5, #062e52e5);">
-    <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
+<section class="hero d-flex justify-content-center align-items-center position-relative bg-primary-800 py-xl py-2xl">
+    <div class="position-absolute w-100 h-100 hero-pattern"></div>
+    <h1 class="text-white text-center z-4 mb-0">{{ .Title | markdownify }}</h1>
     <div class="position-absolute ellipses">
-        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW opacity-25">
     </div>
 </section>
 {{/* End Hero Section */}}
 
 {{/* Main Section */}}
-<section class="section bg-dark-100">
+<section class="section bg-neutral-50">
     <div class="container-lg">
         <div class="row justify-content-between">
             <div class="col-lg-8">
-                <div class="bg-white p-4 rounded-3 shadow-sm">
+                <div class="card p-lg">
                     {{ if .Params.image }}
                     <div class="mb-4">
                         <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid rounded-3 w-100">
                     </div>
                     {{ end }}
-                    <div class="d-flex flex-wrap gap-4 mb-4">
+                    <div class="d-flex flex-wrap gap-4 mb-lg">
                         {{ with .Date }}
                         <div class="d-flex gap-2 align-items-center">
                             <div class="icons">
-                                <i class="fas fa-calendar-alt text-primary" style="font-size: 1.2rem;"></i>
+                                <i class="fas fa-calendar-alt text-primary"></i>
                             </div>
-                            <p class="inter-400 text-16 dark-600 mb-0 pt-1">
+                            <p class="text-neutral-600 mb-0">
                                 {{ . | time.Format "January 02, 2006" }}
                                 {{ if $.Params.endDate }}
                                   {{ $startDate := . | time.Format "2006-01-02" }}
@@ -41,25 +41,25 @@
                         {{ with .Params.location }}
                         <div class="d-flex gap-2 align-items-center">
                             <div class="icons">
-                                <i class="fas fa-map-marker-alt text-primary" style="font-size: 1.2rem;"></i>
+                                <i class="fas fa-map-marker-alt text-primary"></i>
                             </div>
-                            <p class="inter-400 text-16 dark-600 mb-0 pt-1">{{ . }}</p>
+                            <p class="text-neutral-600 mb-0">{{ . }}</p>
                         </div>
                         {{ end }}
                         {{ with .Params.eventType }}
                         <div class="d-flex gap-2 align-items-center">
                             <div class="icons">
-                                <i class="fas fa-tag text-primary" style="font-size: 1.2rem;"></i>
+                                <i class="fas fa-tag text-primary"></i>
                             </div>
-                            <p class="inter-400 text-16 dark-600 mb-0 pt-1">{{ . }}</p>
+                            <p class="text-neutral-600 mb-0">{{ . }}</p>
                         </div>
                         {{ end }}
                     </div>
                     
                     {{ with .Params.summary }}
-                    <div class="mb-4">
-                        <h3 class="inter-600 text-24 dark-900 mb-2">Summary</h3>
-                        <p class="inter-400 text-16 dark-700">{{ . | markdownify }}</p>
+                    <div class="mb-lg">
+                        <h3 class="mb-sm">Summary</h3>
+                        <p class="text-neutral-700">{{ . | markdownify }}</p>
                     </div>
                     {{ end }}
                     
@@ -70,12 +70,15 @@
             </div>
 
             <div class="col-lg-4 mt-5 mt-lg-0">
-                <div class="bg-white p-4 rounded-3 shadow-sm mb-4">
-                    <h3 class="inter-600 text-24 dark-900 mb-3">Event Details</h3>
+                <div class="card card-highlight mb-lg">
+                    <div class="card-header">
+                        <h3 class="card-title mb-0">Event Details</h3>
+                    </div>
+                    <div class="card-body">
                     
-                    <div class="mb-3">
-                        <h4 class="inter-600 text-18 dark-900 mb-2">Date & Time</h4>
-                        <p class="inter-400 text-16 dark-700 mb-1">
+                    <div class="mb-md">
+                        <h4 class="font-semibold text-lg mb-sm">Date & Time</h4>
+                        <p class="text-neutral-700 mb-1">
                             <i class="fas fa-calendar-alt text-primary me-2"></i>
                             {{ .Date.Format "January 2, 2006" }}
                             {{ if .Params.endDate }}
@@ -89,9 +92,9 @@
                     </div>
                     
                     {{ with .Params.location }}
-                    <div class="mb-3">
-                        <h4 class="inter-600 text-18 dark-900 mb-2">Location</h4>
-                        <p class="inter-400 text-16 dark-700 mb-1">
+                    <div class="mb-md">
+                        <h4 class="font-semibold text-lg mb-sm">Location</h4>
+                        <p class="text-neutral-700 mb-1">
                             <i class="fas fa-map-marker-alt text-primary me-2"></i>
                             {{ . }}
                         </p>
@@ -99,9 +102,9 @@
                     {{ end }}
                     
                     {{ with .Params.eventType }}
-                    <div class="mb-3">
-                        <h4 class="inter-600 text-18 dark-900 mb-2">Event Type</h4>
-                        <p class="inter-400 text-16 dark-700 mb-1">
+                    <div class="mb-md">
+                        <h4 class="font-semibold text-lg mb-sm">Event Type</h4>
+                        <p class="text-neutral-700 mb-1">
                             <i class="fas fa-tag text-primary me-2"></i>
                             {{ . }}
                         </p>
@@ -109,43 +112,45 @@
                     {{ end }}
                     
                     {{ with .Params.organizers }}
-                    <div class="mb-3">
-                        <h4 class="inter-600 text-18 dark-900 mb-2">Organizers</h4>
+                    <div class="mb-md">
+                        <h4 class="font-semibold text-lg mb-sm">Organizers</h4>
                         <ul class="list-unstyled">
                             {{ range . }}
-                            <li class="inter-400 text-16 dark-700 mb-1">{{ . }}</li>
+                            <li class="text-neutral-700 mb-1">{{ . }}</li>
                             {{ end }}
                         </ul>
                     </div>
                     {{ end }}
                     
                     {{ with .Params.registration }}
-                    <div class="mb-3">
-                        <h4 class="inter-600 text-18 dark-900 mb-2">Registration</h4>
-                        <p class="inter-400 text-16 dark-700">{{ . | markdownify }}</p>
+                    <div class="mb-md">
+                        <h4 class="font-semibold text-lg mb-sm">Registration</h4>
+                        <p class="text-neutral-700">{{ . | markdownify }}</p>
                     </div>
                     {{ end }}
                     
                     {{ with .Params.resources }}
-                    <div class="mb-3">
-                        <h4 class="inter-600 text-18 dark-900 mb-2">Resources</h4>
+                    <div class="mb-md">
+                        <h4 class="font-semibold text-lg mb-sm">Resources</h4>
                         <ul class="list-unstyled">
                             {{ range $key, $value := . }}
-                            <li class="inter-400 text-16 dark-700 mb-1">
-                                <a href="{{ $value }}" target="_blank" class="text-decoration-none">{{ $key }}</a>
+                            <li class="text-neutral-700 mb-1">
+                                <a href="{{ $value }}" target="_blank" class="link-primary">{{ $key }}</a>
                             </li>
                             {{ end }}
                         </ul>
                     </div>
                     {{ end }}
+                    </div>
+                </div>
                 </div>
                 
                 <!-- Related Events section removed as requested -->
             </div>
         </div>
         <div class="text-center mt-5">
-            <a href="/events/" class="btn btn-primary">
-                <i class="fas fa-arrow-left me-2"></i>Back to All Events
+            <a href="/events/" class="btn btn-primary btn-icon">
+                <i class="fas fa-arrow-left"></i>Back to All Events
             </a>
         </div>
     </div>

@@ -1,0 +1,25 @@
+/* 
+ * External Link Icon Styling
+ * This file styles the external link icons in the navigation
+ */
+
+/* Make the icon smaller and more subtle */
+.external-link-icon {
+  font-size: 0.7em;
+  opacity: 0.8;
+  position: relative;
+  top: -1px;
+}
+
+/* Add a subtle animation on hover */
+a:hover .external-link-icon {
+  opacity: 1;
+  transform: translateY(-1px);
+  transition: all var(--transition-fast);
+}
+
+/* Make the icons in the dropdown more visible since they're on a darker background */
+.dropdown-menu .external-link-icon,
+.megamenu .external-link-icon {
+  opacity: 0.9;
+}

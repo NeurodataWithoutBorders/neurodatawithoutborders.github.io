@@ -1,13 +1,13 @@
-<div class="position-relative">
-    <div class="position-absolute w-100 h-100 overflow-hidden z-n1 bg-darken-main">
+<footer class="position-relative bg-primary-900">
+    <div class="position-absolute w-100 h-100 overflow-hidden z-n1">
         <div class="position-absolute">
-            <img src="/images/essentials/footer-dots-t.png" alt="" class="w-50">
+            <img src="/images/essentials/footer-dots-t.png" alt="" class="w-50 opacity-25">
         </div>
         <div class="position-absolute footer-dots">
-            <img src="/images/essentials/footer-dots.png" alt="" class="w-50">
+            <img src="/images/essentials/footer-dots.png" alt="" class="w-50 opacity-25">
         </div>
     </div>
-    <div class="container-lg footer-padi z-3">
+    <div class="container-lg py-3xl z-3">
         <div class="row g-4 justify-content-between">
             <div class="col-10 col-sm-5 col-md-3">
                 <div class="d-flex flex-column row-gap-4">
@@ -17,17 +17,17 @@
                     </a>
                     {{ end }}
                     {{ with site.Params.copyright_text }}
-                    <p class="inter-400 text-16 dark-300">{{ . }}</p>
+                    <p class="text-neutral-300">{{ . }}</p>
                     {{ end }}
                 </div>
             </div>
 
             <div class="col-10 col-sm-5 col-md-3">
                 <div class="d-flex flex-column row-gap-4">
-                    <strong class="inter-500 text-18 dark-50">Quick Links</strong>
-                    <ul class="list-unstyled d-flex flex-column row-gap-3">
+                    <h4 class="footer-heading text-light font-semibold mb-lg">Quick Links</h4>
+                    <ul class="footer-links list-unstyled">
                         {{ range site.Menus.quick_links }}
-                        <li><a href="{{ .URL }}" class="inter-400 nav-link underline-hover animate dark-300 text-16">{{ .Name | markdownify }}</a></li>
+                        <li class="footer-link mb-sm"><a href="{{ .URL }}">{{ .Name | markdownify }}</a></li>
                         {{ end }}
                     </ul>
                 </div>
@@ -35,10 +35,10 @@
 
             <div class="col-10 col-sm-5 col-md-3">
                 <div class="d-flex flex-column row-gap-4">
-                    <strong class="inter-500 text-18 dark-50">Community</strong>
-                    <ul class="list-unstyled d-flex flex-column row-gap-3">
+                    <h4 class="footer-heading text-light font-semibold mb-lg">Community</h4>
+                    <ul class="footer-links list-unstyled">
                         {{ range site.Menus.community_links }}
-                        <li><a href="{{ .URL }}" class="inter-400 nav-link underline-hover animate dark-300 text-16">{{ .Name | markdownify }}</a></li>
+                        <li class="footer-link mb-sm"><a href="{{ .URL }}">{{ .Name | markdownify }}</a></li>
                         {{ end }}
                     </ul>
                 </div>
@@ -46,14 +46,20 @@
 
             <div class="col-10 col-sm-5 col-md-3">
                 <div class="d-flex flex-column row-gap-4">
-                    <strong class="inter-500 text-18 dark-50">Resources</strong>
-                    <ul class="list-unstyled d-flex flex-column row-gap-3">
+                    <h4 class="footer-heading text-light font-semibold mb-lg">Resources</h4>
+                    <ul class="footer-links list-unstyled">
                         {{ range site.Menus.resources }}
-                        <li><a href="{{ .URL }}" class="inter-400 nav-link underline-hover animate dark-300 text-16">{{ .Name | markdownify }}</a></li>
+                        <li class="footer-link mb-sm"><a href="{{ .URL }}">{{ .Name | markdownify }}</a></li>
                         {{ end }}
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    
+    <div class="py-md border-top border-secondary-700 border-opacity-50">
+        <div class="container-lg">
+            <p class="mb-0 text-neutral-300 text-sm">© {{ now.Format "2006" }} Neurodata Without Borders</p>
+        </div>
+    </div>
+</footer>

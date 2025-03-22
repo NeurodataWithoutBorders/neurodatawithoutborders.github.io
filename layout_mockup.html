@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NWB Redesign Mockup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #3e4559;
+      line-height: 1.6;
+      background-color: #f7f9fc;
+    }
+    
+    /* Variables */
+    :root {
+      /* Colors - Primary */
+      --color-primary-950: #0a192f;
+      --color-primary-900: #102a43; 
+      --color-primary-800: #153e56;
+      --color-primary-700: #1c506d;
+      --color-primary-600: #246386;
+      
+      /* Colors - Secondary */
+      --color-secondary-600: #c96d26;
+      --color-secondary-500: #d37e3e;
+      --color-secondary-400: #db9153;
+      
+      /* Colors - Neutral */
+      --color-neutral-900: #171b26;
+      --color-neutral-700: #3e4559;
+      --color-neutral-600: #585c67;
+      --color-neutral-300: #c3c9d9;
+      --color-neutral-200: #e1e5ee;
+      --color-neutral-100: #f0f3fa;
+      --color-neutral-50: #f7f9fc;
+      
+      /* Spacing */
+      --space-xs: 0.25rem;
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2rem;
+      --space-2xl: 3rem;
+      --space-3xl: 4rem;
+    }
+    
+    /* Typography */
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+      color: var(--color-neutral-900);
+      margin-bottom: var(--space-lg);
+    }
+    
+    h2 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+      color: var(--color-neutral-900);
+      margin-bottom: var(--space-lg);
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.3;
+      color: var(--color-neutral-900);
+      margin-bottom: var(--space-md);
+    }
+    
+    p {
+      font-size: 1rem;
+      margin-bottom: var(--space-md);
+    }
+    
+    .text-lg {
+      font-size: 1.125rem;
+    }
+    
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--space-md);
+    }
+    
+    /* Header */
+    header {
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--space-md) 0;
+    }
+    
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--color-primary-800);
+    }
+    
+    .nav {
+      display: flex;
+      gap: var(--space-md);
+    }
+    
+    .nav-link {
+      color: var(--color-neutral-700);
+      text-decoration: none;
+      font-weight: 500;
+      padding: var(--space-sm) var(--space-md);
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+    
+    .nav-link:hover {
+      background-color: rgba(0,0,0,0.04);
+    }
+    
+    .nav-link.active {
+      background-color: rgba(209,113,40,0.1);
+      color: var(--color-secondary-600);
+      font-weight: 600;
+    }
+    
+    /* Hero section */
+    .hero {
+      background: linear-gradient(135deg, #102a43 0%, #1c506d 100%);
+      color: white;
+      padding: var(--space-3xl) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-pattern {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+      background-size: 20px 20px;
+      opacity: 0.2;
+    }
+    
+    .hero-content {
+      max-width: 600px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .hero h1 {
+      color: white;
+      margin-bottom: var(--space-md);
+    }
+    
+    .hero-subtitle {
+      font-size: 1.25rem;
+      opacity: 0.9;
+      margin-bottom: var(--space-xl);
+    }
+    
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-weight: 500;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .btn-primary {
+      background-color: var(--color-secondary-500);
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background-color: var(--color-secondary-600);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(201, 109, 38, 0.2);
+    }
+    
+    .btn-secondary {
+      background-color: white;
+      color: var(--color-primary-800);
+    }
+    
+    .btn-secondary:hover {
+      background-color: var(--color-neutral-50);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Features section */
+    .features {
+      padding: var(--space-3xl) 0;
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: var(--space-2xl);
+    }
+    
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-xl);
+    }
+    
+    .feature-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    
+    .feature-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background-color: var(--color-neutral-100);
+      border-radius: 30px;
+      margin-bottom: var(--space-lg);
+    }
+    
+    .feature-content {
+      padding: var(--space-lg);
+    }
+    
+    .feature-title {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: var(--space-sm);
+    }
+    
+    /* About section */
+    .about {
+      padding: var(--space-3xl) 0;
+      background-color: var(--color-neutral-50);
+    }
+    
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-2xl);
+      align-items: center;
+    }
+    
+    .about-img {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    
+    .about-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: var(--space-lg);
+      margin-top: var(--space-xl);
+    }
+    
+    .stat-item {
+      text-align: center;
+    }
+    
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-primary-700);
+      margin-bottom: var(--space-xs);
+    }
+    
+    .stat-label {
+      font-size: 0.875rem;
+      color: var(--color-neutral-600);
+    }
+    
+    /* News section */
+    .news {
+      padding: var(--space-3xl) 0;
+    }
+    
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: var(--space-xl);
+    }
+    
+    .news-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .news-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    
+    .news-img {
+      height: 180px;
+      overflow: hidden;
+    }
+    
+    .news-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .news-content {
+      padding: var(--space-lg);
+    }
+    
+    .news-date {
+      display: flex;
+      align-items: center;
+      font-size: 0.875rem;
+      color: var(--color-neutral-600);
+      margin-bottom: var(--space-sm);
+    }
+    
+    .news-date svg {
+      margin-right: var(--space-xs);
+    }
+    
+    .news-title {
+      font-weight: 600;
+      font-size: 1.125rem;
+      margin-bottom: var(--space-xs);
+    }
+    
+    .news-excerpt {
+      color: var(--color-neutral-700);
+      margin-bottom: var(--space-md);
+      font-size: 0.875rem;
+    }
+    
+    .btn-text {
+      color: var(--color-secondary-500);
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    .btn-text:hover {
+      color: var(--color-secondary-600);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    
+    .btn-text svg {
+      margin-left: var(--space-xs);
+    }
+    
+    /* Footer */
+    footer {
+      background-color: var(--color-primary-950);
+      color: white;
+      padding: var(--space-2xl) 0;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: var(--space-xl);
+    }
+    
+    .footer-logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: var(--space-md);
+    }
+    
+    .footer-description {
+      opacity: 0.8;
+      margin-bottom: var(--space-lg);
+    }
+    
+    .footer-heading {
+      font-weight: 600;
+      font-size: 1.125rem;
+      margin-bottom: var(--space-md);
+    }
+    
+    .footer-links {
+      list-style: none;
+    }
+    
+    .footer-link {
+      margin-bottom: var(--space-sm);
+    }
+    
+    .footer-link a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .footer-link a:hover {
+      color: white;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    
+    .sponsors {
+      margin-top: var(--space-lg);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: var(--space-lg);
+      text-align: center;
+    }
+    
+    .sponsors-title {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: var(--space-md);
+    }
+    
+    .sponsors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: var(--space-lg);
+      align-items: center;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      h2 {
+        font-size: 2rem;
+      }
+      
+      .hero {
+        padding: var(--space-2xl) 0;
+      }
+      
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">Neurodata Without Borders</div>
+        <nav class="nav">
+          <a href="#" class="nav-link active">Home</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Tools</a>
+          <a href="#" class="nav-link">Events</a>
+          <a href="#" class="nav-link">Publications</a>
+          <a href="#" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-pattern"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Standardized neurophysiology data format</h1>
+        <p class="hero-subtitle">A unified data format for neurophysiology to facilitate data sharing and collaborative science.</p>
+        <div>
+          <a href="#" class="btn btn-primary">Get Started</a>
+          <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-title">
+        <h2>Core Components</h2>
+        <p>NWB offers a comprehensive ecosystem for neurophysiology data management</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-content">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z" fill="#1c506d"/>
+                <path d="M7 12H9V17H7V12Z" fill="#1c506d"/>
+                <path d="M11 7H13V17H11V7Z" fill="#1c506d"/>
+                <path d="M15 9H17V17H15V9Z" fill="#1c506d"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Data Format</h3>
+            <p>Standardized schema for storing neurophysiology data with extensible design</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-content">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 7H13V9H17C18.65 9 20 10.35 20 12C20 13.65 18.65 15 17 15H13V17H17C19.76 17 22 14.76 22 12C22 9.24 19.76 7 17 7Z" fill="#1c506d"/>
+                <path d="M11 15H7C5.35 15 4 13.65 4 12C4 10.35 5.35 9 7 9H11V7H7C4.24 7 2 9.24 2 12C2 14.76 4.24 17 7 17H11V15Z" fill="#1c506d"/>
+                <path d="M8 11H16V13H8V11Z" fill="#1c506d"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">API</h3>
+            <p>Programming interfaces in Python, MATLAB, and other languages</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-content">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" fill="#1c506d"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Community</h3>
+            <p>Engage with a growing ecosystem of researchers and developers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="https://via.placeholder.com/600x400" alt="Neurophysiology visualization">
+        </div>
+        <div>
+          <h2>About NWB</h2>
+          <p class="text-lg">Neurodata Without Borders (NWB) is a data standard for neurophysiology, providing neuroscientists with a common standard to share, archive, use, and build analysis tools for neurophysiology data.</p>
+          <p>NWB is designed to store a variety of neurophysiology data, including data from intracellular and extracellular electrophysiology experiments, optical physiology experiments, and tracking and stimulus data.</p>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-value">50+</div>
+              <div class="stat-label">Labs Adopting</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">400+</div>
+              <div class="stat-label">Datasets</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">30+</div>
+              <div class="stat-label">Tools</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News section -->
+  <section class="news">
+    <div class="container">
+      <div class="section-title">
+        <h2>Latest News & Updates</h2>
+      </div>
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="news-img">
+            <img src="https://via.placeholder.com/600x400" alt="News Image">
+          </div>
+          <div class="news-content">
+            <div class="news-date">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 3H18V1H16V3H8V1H6V3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V8H19V19ZM7 10H12V15H7V10Z" fill="currentColor"/>
+              </svg>
+              Mar 15, 2025
+            </div>
+            <h3 class="news-title">NWB 3.0 Release Announcement</h3>
+            <p class="news-excerpt">The latest version includes significant improvements to data handling and extended schemas for new experiment types.</p>
+            <a href="#" class="btn-text">
+              Read More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img">
+            <img src="https://via.placeholder.com/600x400" alt="News Image">
+          </div>
+          <div class="news-content">
+            <div class="news-date">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 3H18V1H16V3H8V1H6V3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V8H19V19ZM7 10H12V15H7V10Z" fill="currentColor"/>
+              </svg>
+              Feb 28, 2025
+            </div>
+            <h3 class="news-title">Upcoming Hackathon in Seattle</h3>
+            <p class="news-excerpt">Join us for our next community hackathon focused on tool development and data conversion workflows.</p>
+            <a href="#" class="btn-text">
+              Read More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img">
+            <img src="https://via.placeholder.com/600x400" alt="News Image">
+          </div>
+          <div class="news-content">
+            <div class="news-date">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 3H18V1H16V3H8V1H6V3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V8H19V19ZM7 10H12V15H7V10Z" fill="currentColor"/>
+              </svg>
+              Jan 10, 2025
+            </div>
+            <h3 class="news-title">New Grants Supporting NWB Development</h3>
+            <p class="news-excerpt">NIH and NSF announce new funding opportunities to enhance the NWB ecosystem and data sharing infrastructure.</p>
+            <a href="#" class="btn-text">
+              Read More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Neurodata Without Borders</div>
+          <p class="footer-description">NWB: A unified data format for neurophysiology to facilitate data sharing and collaborative science.</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Resources</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="#">Documentation</a></li>
+            <li class="footer-link"><a href="#">Tutorials</a></li>
+            <li class="footer-link"><a href="#">API Reference</a></li>
+            <li class="footer-link"><a href="#">Schema</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Community</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="#">GitHub</a></li>
+            <li class="footer-link"><a href="#">Mailing List</a></li>
+            <li class="footer-link"><a href="#">Events</a></li>
+            <li class="footer-link"><a href="#">Working Groups</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">About</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="#">Team</a></li>
+            <li class="footer-link"><a href="#">Publications</a></li>
+            <li class="footer-link"><a href="#">Contact</a></li>
+            <li class="footer-link"><a href="#">Legal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sponsors">
+        <div class="sponsors-title">Current Sponsors</div>
+        <div class="sponsors-grid">
+          <div>
+            <img src="https://via.placeholder.com/100x50" alt="Sponsor Logo">
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/100x50" alt="Sponsor Logo">
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/100x50" alt="Sponsor Logo">
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/100x50" alt="Sponsor Logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

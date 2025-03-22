@@ -1,0 +1,87 @@
+<!-- 
+  NWB Analysis Tools Card Example
+  Demonstrates cards with buttons aligned at the bottom
+  Using the card-actions class to push buttons to the bottom of equal-height cards
+-->
+
+<div class="container py-5">
+  <h2 class="mb-4">Analysis Tools Cards with Bottom-Aligned Buttons</h2>
+  
+  <div class="card-grid">
+    <!-- Tool Card 1 -->
+    <div class="card">
+      <div class="card-body">
+        <div class="feature-icon mb-3">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3 class="card-title">DataJoint NWB</h3>
+        <p class="card-text">A bridge between DataJoint and NWB enabling data-driven analysis of neurophysiology data. Facilitates importing NWB files into DataJoint pipelines and exporting DataJoint data to NWB.</p>
+        
+        <!-- This div pushes the buttons to the bottom -->
+        <div class="card-actions">
+          <a href="#" class="btn btn-primary">View Tool</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Tool Card 2 -->
+    <div class="card">
+      <div class="card-body">
+        <div class="feature-icon mb-3">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 7h2v10h-2V7zm0-4h2v2h-2V3zm1 17c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3 class="card-title">DANDI SDK</h3>
+        <p class="card-text">Python client for interacting with the DANDI Archive. Enables accessing, downloading, and analyzing NWB files directly from the DANDI archive.</p>
+        
+        <!-- This div pushes the buttons to the bottom -->
+        <div class="card-actions">
+          <a href="#" class="btn btn-primary">View Tool</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Tool Card 3 - Intentionally longer description -->
+    <div class="card">
+      <div class="card-body">
+        <div class="feature-icon mb-3">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3 class="card-title">CaImAn</h3>
+        <p class="card-text">A computational toolbox for large scale Calcium Imaging Analysis. CaImAn provides a set of essential computational tools for the analysis of calcium imaging data including motion correction, source extraction, spike deconvolution, and result visualization tools.</p>
+        
+        <!-- This div pushes the buttons to the bottom -->
+        <div class="card-actions">
+          <a href="#" class="btn btn-primary">View Tool</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="alert alert-info mt-5">
+    <div class="alert-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 7H13V9H11V7ZM11 11H13V17H11V11Z" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="alert-content">
+      <h4 class="alert-title">Implementation Notes</h4>
+      <p>To align buttons at the bottom of cards:</p>
+      <ol>
+        <li>Make sure the <code>.card-body</code> has the styles:
+          <pre>display: flex; flex-direction: column; height: 100%;</pre>
+        </li>
+        <li>Wrap your buttons in a <code>.card-actions</code> container:
+          <pre>margin-top: auto; padding-top: var(--space-md);</pre>
+        </li>
+        <li>The <code>margin-top: auto</code> pushes the container to the bottom of the flex container</li>
+        <li>The cards will maintain equal height in the grid while keeping buttons aligned at the bottom</li>
+      </ol>
+    </div>
+  </div>
+</div>

@@ -45,3 +45,38 @@
 {{ end }}
 
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+{{/* Design System */}}
+{{ with resources.Get "css/design-system.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
+{{/* Component Styles */}}
+{{ with resources.Get "css/components.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
+{{/* Tool Alignment CSS */}}
+{{ with resources.Get "css/tool-alignment.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
+{{/* Footer Fix CSS */}}
+{{ with resources.Get "css/footer-fix.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
+{{/* External Link Icons CSS */}}
+{{ with resources.Get "css/external-link-icons.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
+{{/* Grants & Projects Page Fixes CSS */}}
+{{ with resources.Get "css/grants-projects-fix.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
+{{/* News Cards Height Fix CSS */}}
+{{ with resources.Get "css/news-cards-fix.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}

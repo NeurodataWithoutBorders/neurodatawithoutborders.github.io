@@ -1,0 +1,32 @@
+/* 
+ * Footer Background Fix
+ * This file helps ensure the dark background for the footer is applied 
+ * by adding more specific styles to override any existing styles
+ */
+
+/* Apply specific dark background to footer while preserving the spotted texture */
+footer.position-relative {
+  background-color: var(--color-primary-900) !important;
+  background-image: url('/images/essentials/footer-dots-t.png') !important;
+  background-blend-mode: overlay !important;
+  background-size: cover !important;
+}
+
+/* Make the dots in the footer more visible */
+footer .position-absolute img.w-50 {
+  opacity: 0.35 !important; /* Increase from 0.25 */
+}
+
+/* Ensure text colors are correct for dark background */
+footer p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+footer .text-neutral-300 {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Make the border visible */
+footer .border-top {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}

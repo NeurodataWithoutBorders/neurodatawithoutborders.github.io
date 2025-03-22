@@ -1,0 +1,23 @@
+/* 
+ * Tool Button Alignment
+ * This file adds styling to align buttons at the bottom of tool cards
+ * without changing the overall design
+ */
+
+/* Make the tool-card use flexbox to push the links to the bottom */
+.tool-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Push the tool-links to the bottom */
+.tool-links {
+  margin-top: auto;
+  padding-top: 1rem;
+}
