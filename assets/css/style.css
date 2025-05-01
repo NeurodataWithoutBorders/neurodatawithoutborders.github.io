@@ -472,6 +472,23 @@ header {
   color: #d17128 !important;
 }
 
+.navbar-toggler {
+  position: relative !important;
+  right: 0 !important;
+  z-index: 1001 !important;
+  max-width: 50px !important; /* Prevent oversized button */
+  overflow: visible !important; /* Ensure the icon is visible */
+}
+
+/* Specific fix for Android Chrome */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .navbar-toggler {
+    position: fixed !important;
+    top: 15px !important;
+    right: 15px !important;
+  }
+}
+
 .navbar-toggler:focus {
   box-shadow: none !important;
 }
