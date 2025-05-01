@@ -681,7 +681,6 @@ header {
 
 /* Banner */
 .banner {
-  max-width: 750px;
   width: 100%;
   padding: 0 10px;
   word-wrap: break-word;
