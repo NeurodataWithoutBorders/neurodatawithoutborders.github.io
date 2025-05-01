@@ -8,9 +8,8 @@ hero_section:
       btn_text: Read More
       btn_link: "https://github.com/NeurodataWithoutBorders/nwb-schema"
 banner_section:
-  enable: true
-  title: "**This website is under construction.** Please excuse our appearance as we work to improve the site.
-    For feedback, file an issue here: https://github.com/NeurodataWithoutBorders/neurodatawithoutborders.github.io/issues"
+  enable: false
+  title: ""
 card_section:
   enable: true
   cards:
