@@ -3,7 +3,7 @@ title: "Awards"
 weight: 4
 icon: "/images/awards.png"
 list:
-    - content: "2019 R&D 100 winner, Software/Services <a href=''>(Article)</a>"
+    - content: "2019 R&D 100 winner, Software/Services <a href='https://www.rdworldonline.com/2019-rd-100-award-winners-unveiled/'>(Article)</a>"
       image: "/images/rnd.png"
       subtitle:
         - "R&D 100"

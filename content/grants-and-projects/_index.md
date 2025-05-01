@@ -1,5 +1,5 @@
 ---
-title: Grants And Projects
+title: Grants and Projects
 sponsered_projects:
   enable: true
   boxes:
@@ -15,12 +15,24 @@ sponsered_projects:
         support, and coverage of new technologies and 2) neuroscience tools and
         technologies by maintaining core NWB technologies and integrating with a
         wide array of powerful data tools and technologies.
-      image: /images/advanced-nd.png
+      image: /images/nwb_elife_fig1.jpg
+    - title: "DANDI: Distributed Archives for Neurophysiology Data Integration"
+      image: /images/dandi-logo-square_sw.png
+      content: "The National Institutes of Health, through project <a href='https://projectreporter.nih.gov/project_info_description.cfm?aid=9795271&icde=45848280&ddparam=&ddvalue=&ddsub=&cr=2&csb=default&cs=ASC&pball='>1R24MH117295</a>, funded <a href='https://satra.cogitatum.org/'>Satrajit Ghosh</a> (Massachusetts Institute of Technology) and Yaroslav Halchenko (<a href='http://centerforopenneuroscience.org/'>Center for Open Neuroscience</a>) to create the DANDI archive for neurophysiology Data.
+      
+    * Provides a cloud platform for versioned neurophysiology data storage for the purposes of collaboration, archiving, and preservation.
+    
+    * Provide easy to use tools for neurophysiology data submission and access in the archive
+    
+    * Facilitates adoption of NWB via standardized applications for data ingestion, visualization and processing.
+    
+
+See the <a href='https://dandiarchive.org/'> DANDI website</a> and <a href='https://github.com/dandi'>GitHub organization</a> for details. (August 2019-April 2029)."
 intro_section:
   enable: true
   title: Kavli Sponsored Projects
   subtitle: Kavli Sponsored Projects
-  content: <a href=''>The Kavli Foundation</a> has provided seed grants to aid
+  content: <a href='https://www.kavlifoundation.org/'>The Kavli Foundation</a> has provided seed grants to aid
     labs in standardizing their experimental data using the NWB data format.
     Funds were used to support the building and sharing of data or software in
     the NWB ecosystem. We are no longer accepting applications for 2022 and
@@ -130,16 +142,6 @@ sponsers:
         institute: EPFL
         content: Integrate NWB data format within the <a href=''>DeepLabCut</a>
           ecosystem
-      - sponser_name:
-          - name: Alexander Mathis
-        institute: EPFL
-        content: Integrate NWB data format within the <a href=''>DeepLabCut</a>
-          ecosystem
-      - sponser_name:
-          - name: Alexander Mathis
-        institute: EPFL
-        content: Integrate NWB data format within the <a href=''>DeepLabCut</a>
-          ecosystem
   - year: 2019
     boxes:
       - sponser_name:
@@ -181,25 +183,25 @@ sponsers:
 past_projects_section:
   enable: true
   projects:
-    - image: /images/nwbn.png
+    - image: /images/project_components.png
       title: "NWB: A Data Standard and Software Ecosystem for Neurophysiology"
       content: The National Institutes of Health, through project <a
-        href=''>1R24MH116922</a>, funded <a href=''>Oliver Rübel</a> (Lawrence
-        Berkeley National Laboratory) and <a href=''>Lydia Ng</a> (Allen
+        href='https://projectreporter.nih.gov/project_info_description.cfm?aid=9582696&icde=44882289'>1R24MH116922</a>, funded <a href='https://dav.lbl.gov/~oruebel/'>Oliver Rübel</a> (Lawrence
+        Berkeley National Laboratory) and <a href='https://alleninstitute.org/what-we-do/brain-science/about/team/staff-profiles/lydia-ng/'>Lydia Ng</a> (Allen
         Institute for Brain Science) to continue development of the NWB data
         format and software ecosystem to enable standardization, sharing, and
         reuse of neurophysiology data and analyses, enhancing discovery and
         reproducibility. This funding is part of the NIH’s BRAIN Initiative
         support to develop standards.(September 2018-May 2020). For updates on
-        this project see our Progress Reports page.
-    - image: /images/shared-analysis.png
+        this project see our <a href='http://www.nwb.org/progress-reports/'>Progress Reports page</a>.
+    - image: /images/enabling_sharing_nwb.png
       title: Enabling Shared Analysis and Processing of Large Neurophysiology Data
-      content: The National Institutes of Health, through project 1R44MH115731, funded
+      content: The National Institutes of Health, through project <a href='https://projectreporter.nih.gov/project_info_description.cfm?aid=9795271&icde=45848280&ddparam=&ddvalue=&ddsub=&cr=2&csb=default&cs=ASC&pball='>1R44MH115731</a>, funded
         William Schroeder (Kitware, Inc.) to create software tools to browse,
         process, analyze, and visualize NWB data. This funding is part of the
         NIH’s BRAIN Initiative Small Business Innovation Research (SBIR) grant
         program. (July 2017-June 2020).
-    - image: /images/computing-project.png
+    - image: /images/hpc_img.png
       title: High Performance Computing Project at the Lawerence Berkeley National
         Laboratory
       content: The Kavli Foundation provided support (2016-2018) to Kristofer Bouchard
@@ -216,10 +218,10 @@ boxes:
         Rübel at the Lawrence Berkeley National Lab to support community
         engagement, outreach and software development. This program is currently
         supporting Benjamin Dichter as a community liaison for NWB.
-      image: /images/community-liason.png
+      image: /images/community_liaison.png
     - title: Simons Foundation Sponsors Development of MatNWB
       content: The Simons Foundation funds projects (Aug.2017 – present) to develop
         and expand the NWB2.0 Matlab API MatNWB to allow for adoption by a
         larger portion of the neuroscience community.
-      image: /images/simons-foundation.png
+      image: "https://github.com/NeurodataWithoutBorders/matnwb/raw/master/logo/logo_matnwb_small.png"
 ---

@@ -1,101 +1,133 @@
 {{ define "main" }}
-    {{/* Hero Section */}}
-<section class="hero d-flex justify-content-center align-items-center position-relative bg-main overflow-hidden"
-style="background:linear-gradient(to right, #1f4e75, #152f45);">
-<div class="container-xl justify-content-between pt-5 mx-md-0 z-1">
-  <div class="row justify-content-md-between align-items-center gx-xl-5">
-    <div class="col-md-4 px-md-0">
-      <img src="{{ .Params.hero_image }}" alt="" class="img-fluid">
-    </div>
-    <div class="col-md-6 px-md-0 pt-4 pt-md-0">
-      <div class="d-flex flex-column row-gap-3">
-        <h1 class="inter-700 text-70 text-white mb-0">{{ .Title | markdownify }}</h1>
-        <p class="inter-400 text-24 dark-200 mb-0">{{ .Params.subtitle | markdownify }}</p>
-        <p class="inter-500 text-36 text-white mb-0">{{ .Date | time.Format "January,2006" }}</p>
+{{/* Hero Section */}}
+{{ with .Params.banner }}
+{{ if .enable }}
+<section class="hero bg-main aboutSect d-flex justify-content-center align-items-center">
+  <h1 class="inter-700 text-48 text-white text-center">{{ .title | markdownify }}</h1>
+</section>
+
+<section class="section d-flex flex-column aboutOverview">
+  <div class="container-lg mx-auto">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-md-8">
+        <p class="dark-700 text-16 inter-400 lh-md mb-4">{{ .content | markdownify }}</p>
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="{{ .image }}" alt="NWB Events" class="img-fluid">
       </div>
     </div>
   </div>
-  <div class="position-absolute eventsEllipses">
-    <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
-  </div>
-</div>
-<div class="position-absolute end-0 bottom-0">
-  <img src="/images/essentials/eventsHero.png" alt="" width="300">
-</div>
-<div class="position-absolute start-0">
-  <img src="/images/essentials/eventsHeroL.png" alt="" class="opacity-25">
-</div>
 </section>
+{{ end }}
+{{ end }}
 {{/* End Hero Section */}}
 
-{{/* Insights Section */}}
-{{ with .Params.insight_section }}
-{{ if .enable }}
-<section class="section">
-  <div class="container-lg">
-    <div class="pb-5">
-      <div class="">
-          {{ with .list_title }}
-          <h3 class="inter-700 dark-900 text-48-responsive mb-3">{{ . | markdownify }}</h3>
-          {{ end }}
-          <ul>
-            {{ range .insights }}
-            {{ $link := replaceRE " " "" .title }}
-            <li class="inter-400 text-24 second"><a href="#{{ $link }}" class="nav-link">{{ .title | markdownify }}</a></li>
-            {{ end }}
-          </ul>
-        </div>
-    </div>
-    {{ with .title }}
-    <div class="my-5">
-      <h3 class="inter-700 dark-900 text-48-responsive">{{ . | markdownify }}</h3>
-    </div>
-    {{ end }}
-
-    {{ with .insights }}
-    {{ range . }}
-    {{ $link := replaceRE " " "" .title }}
-    <div class="mt-5" id="{{ $link }}">
-      {{ with .title }}
-      <h4 class="inter-700 text-36 dark-900 border-bottom border-2 pb-3">{{ . | markdownify }}</h4>
-      {{ end }}
-      <div class="pt-3 insightsLi inter-400 text-16 dark-700 softwareSectA">
-        {{ with .subtitle }}
-        <p class="inter-600 text-16 dark-700 softwareSectA">{{ . | markdownify }}</p>
-        {{ end }}
-        {{ with .content }}
-        <p class="inter-400 text-16 dark-700 softwareSectA">{{ . | markdownify }}</p>
-        {{ end }}
-        {{ with .pdf }}
-        <div class="ratio ratio-1x1">
-          <object data="{{ . }}" type="application/pdf">
-            <p>404! Check file's path!</p>
-          </object>
-        </div>
-        {{ end }}
+<div class="container mt-3 mb-4">
+  {{/* Info Box with Link to Hackathons Page */}}
+  <div class="bg-light rounded-3 shadow-sm p-3 mb-4">
+    <div class="d-flex align-items-center">
+      <div class="flex-grow-1">
+        <h3 class="inter-600 text-20 dark-900 mb-2">About NWB Events</h3>
+        <p class="inter-400 text-16 dark-700 mb-0">Learn more about the different types of NWB events, their purpose, and history.</p>
       </div>
-    </div>
-    {{ end }}
-    {{ end }}
-  </div>
-</section>
-{{/* End Insights Section */}}
-{{ end }}
-{{ end }}
-
-{{/*  Discalimer  */}}
-{{ with .Params.discalimer }}
-{{ if .enable }}
-<section class="section bg-dark-100">
-  <div class="container-lg">
-    <div>
-      <h3 class="inter-700 dark-900 text-48-responsive mb-5">Disclaimer</h3>
-      <p class="inter-400 text-16 dark-700 softwareSectA">{{ .content | markdownify }}</p>
+      <a href="/about-events/" class="btn btn-primary ms-3">Learn More</a>
     </div>
   </div>
-</section>
-{{ end }}
-{{ end }}
-{{/*  End Discalimer  */}}
+  
+  {{/* Upcoming Events Section */}}
+  <div class="bg-white rounded-3 shadow-sm p-3 mb-4">
+    <h2 class="inter-700 text-32 dark-900 mb-4 pb-2 border-bottom border-primary">Upcoming Events</h2>
+    {{ $upcomingEvents := where (where .Site.RegularPages "Section" "events") "Date" "ge" now }}
+    {{ if $upcomingEvents }}
+    <ul class="list-group list-group-flush">
+      {{ range sort $upcomingEvents ".Params.date" "asc" }}
+      <li class="list-group-item py-3 px-0 border-bottom">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h4 class="inter-600 text-18 dark-900 mb-1"><a href="{{ .RelPermalink }}" class="text-decoration-none dark-900 hover-primary">{{ .Title }}</a></h4>
+            <div class="d-flex flex-wrap gap-3">
+              <p class="inter-400 text-14 dark-600 mb-0">
+                <i class="fas fa-calendar-alt text-primary me-1"></i>
+                {{ .Date.Format "January 2, 2006" }}
+                {{ if .Params.endDate }}
+                  {{ $startDate := .Date.Format "2006-01-02" }}
+                  {{ $endDate := time.AsTime .Params.endDate | time.Format "2006-01-02" }}
+                  {{ if ne $startDate $endDate }}
+                  - {{ time.AsTime .Params.endDate | time.Format "January 2, 2006" }}
+                  {{ end }}
+                {{ end }}
+              </p>
+              {{ with .Params.location }}
+              <p class="inter-400 text-14 dark-600 mb-0">
+                <i class="fas fa-map-marker-alt text-primary me-1"></i>
+                {{ . }}
+              </p>
+              {{ end }}
+              {{ with .Params.eventType }}
+              <p class="inter-400 text-14 dark-600 mb-0">
+                <i class="fas fa-tag text-primary me-1"></i>
+                {{ . }}
+              </p>
+              {{ end }}
+            </div>
+          </div>
+          <a href="{{ .RelPermalink }}" class="btn btn-outline-primary btn-sm">View Details</a>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    {{ else }}
+    <p class="inter-400 text-16 dark-600">No upcoming events scheduled at this time. Check back soon!</p>
+    {{ end }}
+  </div>
+  {{/* End Upcoming Events Section */}}
 
+  {{/* Previous Events Section */}}
+  <div class="bg-white rounded-3 shadow-sm p-3">
+    <h2 class="inter-700 text-32 dark-900 mb-4 pb-2 border-bottom border-primary">Previous Events</h2>
+    {{ $previousEvents := where (where .Site.RegularPages "Section" "events") "Date" "lt" now }}
+    {{ if $previousEvents }}
+    <ul class="list-group list-group-flush">
+      {{ range sort $previousEvents ".Params.date" "desc" }}
+      <li class="list-group-item py-3 px-0 border-bottom">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h4 class="inter-600 text-18 dark-900 mb-1"><a href="{{ .RelPermalink }}" class="text-decoration-none dark-900 hover-primary">{{ .Title }}</a></h4>
+            <div class="d-flex flex-wrap gap-3">
+              <p class="inter-400 text-14 dark-600 mb-0">
+                <i class="fas fa-calendar-alt text-primary me-1"></i>
+                {{ .Date.Format "January 2, 2006" }}
+                {{ if .Params.endDate }}
+                  {{ $startDate := .Date.Format "2006-01-02" }}
+                  {{ $endDate := time.AsTime .Params.endDate | time.Format "2006-01-02" }}
+                  {{ if ne $startDate $endDate }}
+                  - {{ time.AsTime .Params.endDate | time.Format "January 2, 2006" }}
+                  {{ end }}
+                {{ end }}
+              </p>
+              {{ with .Params.location }}
+              <p class="inter-400 text-14 dark-600 mb-0">
+                <i class="fas fa-map-marker-alt text-primary me-1"></i>
+                {{ . }}
+              </p>
+              {{ end }}
+              {{ with .Params.eventType }}
+              <p class="inter-400 text-14 dark-600 mb-0">
+                <i class="fas fa-tag text-primary me-1"></i>
+                {{ . }}
+              </p>
+              {{ end }}
+            </div>
+          </div>
+          <a href="{{ .RelPermalink }}" class="btn btn-outline-primary btn-sm">View Details</a>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    {{ else }}
+    <p class="inter-400 text-16 dark-600">No previous events to display.</p>
+    {{ end }}
+  </div>
+  {{/* End Previous Events Section */}}
+</div>
 {{ end }}

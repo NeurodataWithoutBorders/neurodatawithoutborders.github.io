@@ -1,6 +1,9 @@
 [build]
   publish = 'public'
-  command = 'hugo --gc --minify && npm_config_yes=true npx pagefind --site "public"'
+  command = 'hugo --gc --minify --buildFuture && npm_config_yes=true npx pagefind --site "public"'
+
+[build.environment]
+  HUGO_VERSION = "0.135.0"
 
 #[[plugins]]
 #package = 'netlify-plugin-image-optim'

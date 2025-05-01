@@ -10,12 +10,12 @@
 {{ if .enable }}
 <section class="section d-flex flex-column aboutOverview">
     <div class="d-flex flex-column flex-lg-row gap-4 container-lg mx-auto align-items-center justify-content-center justify-content-md-between">
-        <div class="col-12 col-sm-8 col-lg-6">
+        <div class="col-12 col-sm-4 col-lg-3">
             <div>
                 <img src="{{ .image }}" alt="" class="img-fluid">
             </div>
         </div>
-        <div class="col-12 col-sm-8 col-lg-6">
+        <div class="col-12 col-sm-8 col-lg-8">
             <div class="ps-lg-5">
                 <h3 class="dark-900 inter-700 text-40 mb-4">{{ .title | markdownify }}</h3>
                 {{ with .content }}
@@ -55,7 +55,7 @@
 {{ with .Params.initiatives_section }}
     {{ if .enable }}
 <section class="ctaSect w-100 py-5">
-    <div class="container-sm text-center py-4">
+    <div class="container-sm py-4">
         <h3 class="inter-700 dark-100 text-40 pb-3">{{ .title | markdownify}}</h3>
         <p class="inter-500 text-18 dark-50">{{ .content | markdownify }}</p>
     </div>
@@ -68,7 +68,7 @@
 {{ with .Params.neurophysiology_section }}
     {{ if .enable }}
 <section class="section">
-    <div class="col-sm-9 px-3 px-sm-0 mx-auto text-center d-flex flex-column justify-content-center row-gap-4">
+    <div class="col-sm-9 px-3 px-sm-0 mx-auto d-flex flex-column justify-content-center row-gap-4">
         <h3 class="inter-700 text-40 dark-900">{{ .title | markdownify }}</h3>
         {{ range .content }}
         {{ with .text }}

@@ -1,4 +1,22 @@
 ---
+
+disclaimer: Reference herein to any specific product, process, or service by its trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by the NWB development team, United States Government or any agency thereof, or The Regents of the University of California. Use of the NeurodataWithoutBorders name for endorsements is prohibited.
+# NWB Tools Section Added
+community_tools:
+  enable: true
+  title: Community Tools
+  content: Listed below are tools for working with NWB data. This is not a comprehensive list of NWB tools. Many of these tools are built and supported by other groups, and are in active development.
+  image: /images/nwb-tools-arch.png
+  categories:
+    - title: Core NWB Tools
+      description: Key software packages of the core NWB software stack
+      url: "/tools/core/"
+    - title: Acquisition and Control Tools
+      description: Tools for data acquisition and experimental control
+      url: "/tools/acquisition/"
+    - title: Analysis and Visualization Tools
+      description: Tools for data analysis, visualization, and exploration
+      url: "/tools/analysis/"
 title: The NWB Software <br> Ecosystem
 software_types:
   enable: true
@@ -54,12 +72,12 @@ sections:
       specification, and data storage.
     description: NWB currently provides the following APIs
     list:
-      - title: "PyNWB:"
+      - title: "PyNWB"
         content: "Python reference API for NWB 2  to read, write, use, extend, and
-          analyze data stored in NWB. <a href=''> Documentation . Sources
+          analyze data stored in NWB. <a href='https://pynwb.readthedocs.io/en/stable/'>Documentation</a> <a href='https://github.com/NeurodataWithoutBorders/pynwb'>Source
           (GitHub)</a>"
       - title: MatNWB
-        content: Matlab API for NWB. <a href=''> Documentation . Sources (GitHub)</a>
+        content: Matlab API for NWB. <a href='https://github.com/NeurodataWithoutBorders/matnwb'> Documentation & Source (GitHub)</a>
     community_software: In addition to the core APIs developed by the NWB team,
       there is a growing collection of software tools and libraries that support
       NWB. See our Analysis and Visualization Tools page for a list of tools
@@ -67,7 +85,7 @@ sections:
   - title: Data Storage
     image: /images/storageImg.png
     problem: Storage of large collections of neuroscience data.
-    approach: The NWB format currently uses the <a href=''> Hierarchical Data
+    approach: The NWB format currently uses the <a href='https://www.hdfgroup.org/solutions/hdf5/'> Hierarchical Data
       Format (HDF5)</a> as primary storage mechanism.
     function: Data storage maps NWB primitives (Groups, Datasets, Attributes,
       Links etc.) to storage. In the case of HDF5 this is currently mostly a
@@ -86,7 +104,7 @@ sections:
       (e.g., C, C++, Python, MATLAB, R among others) and tools, such as,
       HDFView, a free, cross-platform application, can be used to open a file
       and browse data. Fifth, the HDF Group, a nonprofit group, ensures the
-      ongoing accessibility of HDF-stored data. <br><br> <a href=''>Data Storage
+      ongoing accessibility of HDF-stored data. <br><br> <a href='https://nwb-storage.readthedocs.io/en/stable/'>Data Storage
       Documentation</a>
   - title: Data Standard Schema
     image: /images/schemaImg.png
@@ -104,20 +122,6 @@ sections:
       specification language. A new schema file will be published for each
       revision of the NWB format standard. Developers can use the schema to
       validate NWB files or create advanced APIs for NWB data. <br><br><a
-      href=''>Data Standard Schema </a> <br><br> <a href=''> Documentation
+      href='http://nwb-schema.readthedocs.io/en/stable'>Data Standard Schema Documentation</a> <br><br> <a href='https://github.com/NeurodataWithoutBorders/nwb-schema'>
       Sources (GitHub)</a>
-community_tools:
-  enable: true
-  title: Community Tools
-  content: Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-    libero et velit interdum, ac aliquet odio mattis.
-  tools:
-    - image: /images/neuropy.png
-      title: NeuroPy
-    - image: /images/datavis.png
-      title: DataVis
-    - image: /images/spikesort.png
-      title: SpikeSort
-    - image: /images/neurograph.png
-      title: NeuroGraph
 ---

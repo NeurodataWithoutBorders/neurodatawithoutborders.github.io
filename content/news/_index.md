@@ -1,3 +1,3 @@
 ---
-title: "News"
+title: "NWB News"
 ---

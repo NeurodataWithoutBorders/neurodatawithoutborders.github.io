@@ -1,0 +1,62 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+<section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
+    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/aboutBg.png');">
+    <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
+    <div class="position-absolute ellipses">
+        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+    </div>
+</section>
+{{/* End Hero Section */}}
+
+{{/* Main Section */}}
+<section class="section bg-dark-100">
+    <div class="container-lg">
+        {{ range .Params.section }}
+        <div class="py-5">
+            {{ with .title }}
+            <h3 class="inter-700 text-36 dark-900">{{ . | markdownify }}</h3>
+            {{ end }}
+            {{ range .list }}
+            <div class="{{ with .subtitle }}pt-4{{ end }}">
+                {{ with .subtitle }}
+                <h4 class="inter-600 text-20 dark-900">{{ . | markdownify }}</h4>
+                {{ end }}
+                {{ range $i, $p := .items }}
+                <div class="d-flex gap-3 ms-1 {{ if eq $i 0 }}pt-4{{ else }}pt-3{{ end }}">
+                    <div>
+                        <img src="{{ .icon }}" alt="" width="20">
+                    </div>
+                    <div>
+                        {{ if .heading }}
+                        <a href="{{ .link }}" class="inter-600 text-16 blue nav-link">{{ .heading | markdownify }}</a>
+                        {{ end }}
+                        <div class="{{ with .content }}pt-1{{ end }}">
+                            <div class="softwareSectA">
+                                {{ with .content }}
+                                <p class="inter-400 text-16 dark-700 mb-0">{{ . | markdownify }}</p>
+                                {{ end }}
+                            </div>
+                            {{ range $index, $params := .nested_list }}
+                            <div class="d-flex gap-3 ms-1 {{ if eq $index 0 }}pt-4{{ else }}pt-3{{ end }}">
+                                <div>
+                                    <img src="{{ .icon }}" alt="" width="20">
+                                </div>
+                                <div>
+                                    <a href="{{ .link }}" class="inter-600 text-16 blue nav-link">{{ .heading | markdownify }}</a>
+                                    <p class="inter-400 text-16 dark-700 mb-0 softwareSectA pt-1">{{ .content | markdownify }}</p>
+                                </div>
+                            </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{/* End Main Section */}}
+{{ end }}

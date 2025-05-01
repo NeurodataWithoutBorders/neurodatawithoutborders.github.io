@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{/* Hero Section */}}
-<section class="hero teamSect d-flex justify-content-center align-items-center position-relative" style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/publicationsBg.png');">
+<section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
+         style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/aboutBg.png');">
     <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
     <div class="position-absolute ellipses">
         <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
@@ -17,7 +18,7 @@
         <p class="inter-400 text-16 dark-700 lh-base">{{ .content | markdownify }}</p>
         <div class="row g-4 justify-content-center pt-4">
             {{ range .boxes }}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a href=" {{ .url }}" class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="bg-white h-100 rounded-3 p-4 shadow-sm">
                     <div class="d-flex flex-column row-gap-4">
                         <img src="{{ .image }}" alt="" width="40">
@@ -27,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
             {{ end }}
         </div>
     </div>
@@ -58,28 +59,6 @@
                             <div>
                                 <p class="inter-400 lighter text-14 mb-2">{{ .title | markdownify }}</p>
                                 <p class="inter-600 dark-900 text-16 mb-0 contactP">{{ .content | markdownify }}</p>
-                            </div>
-                            <div class="mt-3">
-                                <a {{ if eq .title "Number" }} href='tel:{{.link}}' {{ end }} {{ if eq .title "Email Contact" }} href='mailto:{{.link}}' {{ end }} class="btn btn-sm btn-outline-primary border-transparent bg-transparent dark-900 scale animate">
-                                    {{ if eq .title "Number" }}
-                                    {{ if .button.enable }}
-                                    Call Now
-                                    <img src="/images/essentials/contact.png" alt="" width="12">
-                                    {{ end }}
-                                    {{ end }}
-                                    {{ if eq .title "Email Contact" }}
-                                    {{ if .button.enable }}
-                                    Email Now
-                                    <img src="/images/essentials/contact.png" alt="" width="12">
-                                    {{ end }}
-                                    {{ end }}
-                                    {{ if eq .title "Our Address" }}
-                                    {{ if .button.enable }}
-                                    Open Maps
-                                    <img src="/images/essentials/contact.png" alt="" width="12">
-                                    {{ end }}
-                                    {{ end }}
-                                </a>
                             </div>
                         </div>
                     </div>

@@ -1,9 +1,8 @@
 ---
-title: About Us
+title: About NWB
 about_section:
   enable: true
   image: /images/about-nwb.png
-  title: About NWB
   content: Progress in modern science is enabled by data sharing. There are major
     obstacles, however, that limit the open exchange of data particularly in
     neuroscience, a field where many small laboratories are pursuing diverse
@@ -13,7 +12,7 @@ about_section:
     down the obstacles to data sharing.
 overview_section:
   enable: true
-  image: /images/overview.png
+  image: /images/nwb_triangle.png
   title: Overview
   content: The aim of Neurodata Without Borders is to standardize neuroscience
     data on an international scale. Our goal is to break down the geographic,

@@ -60,31 +60,36 @@
                     <div class="inter dark-500 mt-4">
                         {{ .Content }}
                     </div>
+                    {{ with .Params.ext_link }}
+                    <div>
+                        <a href="{{ . }}">See post here</a>
+                    </div>
+                    {{ end }}
                     <div class="mt-4 ">
                         <div class="border-bottom">
                             <p class="inter-700 dark-700 text-20 mb-1">Share</p>
                         </div>
                         <div class="mt-4 pb-5 d-flex flex-wrap gap-3">
                             <div>
-                                <a class="btn btn-primary btn-lg border-0" style="background-color: #55acee;"
+                                <a class="btn btn-primary btn-sm border-0" style="background-color: #55acee;"
                                     target="_blank"
                                     href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink | safeURL }}"
                                     role="button"><i class="bi bi-twitter me-2"></i>Twitter</a>
                             </div>
                             <div>
-                                <a class="btn btn-primary btn-lg border-0" style="background-color: #1b84d4;"
+                                <a class="btn btn-primary btn-sm border-0" style="background-color: #1b84d4;"
                                     target="_blank"
                                     href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | safeURL }}"
                                     role="button"><i class="bi bi-facebook me-2"></i>Facebook</a>
                             </div>
                             <div>
-                                <a class="btn btn-primary btn-lg border-0" style="background-color: #066cb9;"
+                                <a class="btn btn-primary btn-sm border-0" style="background-color: #066cb9;"
                                     target="_blank"
                                     href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink | safeURL }}&title={{ .Title | urlquery }}"
                                     role="button"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
                             </div>
                             <div>
-                                <a class="btn btn-primary btn-lg border-0 bg-secondary" target="_blank"
+                                <a class="btn btn-primary btn-sm border-0 bg-secondary" target="_blank"
                                     href="mailto:?subject={{ .Title | urlquery }}&body=Check out this article: {{ .Permalink | safeURL }}"
                                     role="button"><i class="bi bi-envelope me-2"></i>Email</a>
                             </div>

@@ -1,5 +1,5 @@
 ---
-title: "Team "
+title: "Team"
 governance_section:
   enable: true
   title: Governance Structure
@@ -30,47 +30,45 @@ current_team_section:
   team_members:
     - image: /images/bing.png
       name: Bing Brunton
+      post: Professor at University of Washington
     - image: /images/elizabeth.png
       name: Elizabeth Buffalo
+      post: Professor at University of Washington
     - image: /images/anne.png
       name: Anne Churchland
+      post: Professor at UCLA
     - image: /images/loren.png
       name: Loren Frank
+      post: Professor at UCSF
     - image: /images/satrajit.png
-      name: Satrajit Ghost
-    - image: /images/Adam.png
+      name: Satrajit Ghosh
+      post: Principal Research Scientist at MIT
+    - image: /images/adam-kepecs.png
       name: Adam Kepecs
+      post: Professor at Washington University in St. Louis
     - image: /images/mala.png
       name: Mala Murthy
+      post: Professor at Princeton University
     - image: /images/kris.png
       name: Kris Bouchard
+      post: Staff Scientist at Lawrence Berkeley National Laboratory
 alumni_section:
   enable: true
   alumni:
-    - image: /images/floyd.png
-      name: Floyd Miles
-      date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/courtney.png
-      name: Courtney Henry
-      date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/annette.png
-      name: Annette Black
-      date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/kathryn.png
-      name: Kathryn Murphy
-      date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/darrell.png
-      name: Darrell Steward
-      date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/jerome.png
-      name: Jerome Bell
-      date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/esther.png
-      name: Esther Howard
-      date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/savannah.png
-      name: Savannah Nguyen
-      date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
+    - name: Lydia Ng
+      date: April 2020 – May 2021, Co-PI 1R24MH116922-01
+    - name: Christof Koch
+      date: August 2017 – April 2020, NWB founding member
+    - name: Friedrich Sommer
+      date: August 2017 – August 2019, NWB founding member
+    - name: Karel Svoboda
+      date: August 2017 – 2020, NWB founding member
+    - name: Markus Meister
+      date: ""
+    - name: Katrin Amunts
+      date: ""
+    - name: Huib Mansvelder
+      date: ""
 technical_board:
   enable: true
   title: The Technical Advisory Board
@@ -89,41 +87,55 @@ technical_team_section:
   team_members:
     - image: /images/alessio.png
       name: Alessio Buccino
+      post: Researcher at Allen Institute for Neural Dynamics & Research Software Engineer at CatalystNeuro
     - image: /images/saskia.png
       name: Saskia de Vries
+      post: Senior Scientist at Allen Institute for Neural Dynamics
     - image: /images/yaroslav.png
       name: Yaroslav Halchenko
-    - image: /images/ryan.png
+      post: Research Associate Professor at Dartmouth College
+    - image: /images/ryan-ly.png
       name: Ryan Ly
-    - image: /images/lawrence.png
-      name: Lawrence Niu
+      post: Scientific Data Engineer at Berkeley Lab
     - image: /images/kushal.png
       name: Kushal Bakshi
-    - image: /images/anna.png
+      post: Neuroscience Data Engineer II at DataJoint
+    - image: /images/szonja-weigl.jpeg
       name: Anna (Szonja) Weigl
+      post: Research Software Engineer at CatalystNeuro
+tab_alumni_section:
+  enable: true
+  alumni:
+    - name: Lawrence Niu
+      date: Nov. 2022 - Jan. 2025 (Principal Engineer at MBF Biosciences)
+    - name: Oliver Ruebel
+      date: Nov. 2022 - Jan. 2024
 core_dev_section:
   pynwb_section:
     enable: true
     team_members:
-      - image: /images/oliver.png
+      - image: /images/oliver-ruebel.png
         name: Oliver Ruebel
         post: Staff Scientist at Berkeley Lab
-      - image: /images/ryan.png
+      - image: /images/ryan-ly.png
         name: Ryan Ly
         post: Scientific Data Engineer at Berkeley Lab
-      - image: /images/andrew.png
+      - image: /images/andrew-tritt.png
         name: Andrew Tritt
         post: Computer Systems Engineer at Berkeley Lab
+      - image: /images/matthew-avaylon.png
+        name: Matthew Avaylon
+        post: Staff Software Engineer at Berkeley Lab
   matnwb_section:
     enable: true
-    image: /images/lawrence.png
-    name: Lawrence Niu
-    post: Principal Engineer at MBF Biosciences
+    image: /images/eivind-hennestad.png
+    name: Eivind Hennestad
+    post: Lead developer of MatNWB
   nwb_community_section:
     enable: true
-    image: /images/oliver.png
-    name: Oliver Ruebel
-    post: Staff Scientist at Berkeley Lab
+    image: /images/ben-dichter.jpeg
+    name: Ben Dichter
+    post: Founder and CEO, CatalystNeuro
 dev_community_section:
   enable: true
   title: Developer Community

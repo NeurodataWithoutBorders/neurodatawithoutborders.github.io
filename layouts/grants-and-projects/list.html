@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{/* Hero Section */}}
 <section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
-    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/gnpBg.png');">
+    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/aboutBg.png');">
     <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
     <div class="position-absolute ellipses">
         <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
@@ -21,7 +21,7 @@
                 <h4 class="inter-600 text-32 dark-900 pb-3">{{ .title | markdownify }}</h4>
                 <p class="inter-400 text-16 dark-700">{{ .content | markdownify }}</p>
             </div>
-            <div class="col-sm-10 col-md-6">
+            <div class="col-sm-10 col-md-5">
                 <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
             </div>
         </div>
@@ -71,10 +71,10 @@
                                 <span class="text-16 inter-400 dark-700 negMargin">
                                     {{ range $i, $p := $params.sponser_name }}
                                     {{ if eq $i 0 }}
-                                    <a href=""
-                                        class="inter-700 blue link-offset-2 sponserLink animate">{{$p.name|markdownify}}</a>
+                                    <a
+                                        class="inter-700 blue link-offset-2 animate">{{$p.name|markdownify}}</a>
                                     {{ else }}, and
-                                    <a href="" class="inter-700 blue link-offset-2 sponserLink animate">
+                                    <a class="inter-700 blue link-offset-2 animate">
                                         {{$p.name|markdownify}}
                                     </a>
                                     {{ end }}

@@ -1,0 +1,76 @@
+{{/* Events Section */}}
+{{ with where .Site.RegularPages "Section" "event-cards" }}
+<section class="section">
+  <div class="swiper eventsSwiper container-lg d-flex flex-column gap-5 pb-5">
+
+    <h2 class="inter-700 text-40 text-center mb-0">Upcoming Events</h2>
+
+    <div class="swiper-wrapper">
+      {{ range . }}
+      <div class="swiper-slide">
+        <div class="aboutBox px-3 py-4 animate rounded-3 bg-white">
+          <div class="d-flex flex-sm-row gap-3 pb-4 border-bottom">
+            <div>
+              <div class="bg-blue rounded-3 px-3 py-2 text-white d-inline-block text-center">
+                <h5 class="inter-600 text-24 mb-0 dark-100 lh-0">{{ .Date | time.Format "02" }}</h5>
+                <p class="inter-500 text-14 mb-0 lh-0">{{ .Date | time.Format "January" }}</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column row-gap-1">
+              <h4 class="inter-600 text-20 mb-0">{{ .Title | markdownify }}</h4>
+              <div class="d-flex align-items-center gap-2">
+                <div>
+                  <img src="/images/essentials/calender.png" alt="" width="17">
+                </div>
+                <div>
+                  <p class="inter-400 text-14 mb-0 pt-1 dark-700">{{ with .Date }}<span>{{ . | time.Format ":date_long"
+                      }}</span>{{ end }} to {{ with .Params.lastDate }} <span>{{ . | time.Format ":date_long"
+                      }}</span>{{ end }}</p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="d-flex align-items-center gap-2 me-4">
+                  <div>
+                    <img src="/images/essentials/clock.png" alt="" width="17">
+                  </div>
+                  {{ with .Params.time }}
+                  <p class="inter-400 text-14 mb-0 pt-1 blue">{{ . | markdownify }}</p>
+                  {{ end }}
+                </div>
+                {{ with .Params.comments }}
+                <div class="d-flex align-items-center gap-2">
+                  <div>
+                    <img src="/images/essentials/comments.png" alt="" width="17">
+                  </div>
+                  <p class="inter-400 text-14 mb-0 pt-1 blue">{{ . }}</p>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 d-flex flex-lg-row row-gap-3 justify-content-between">
+            {{ with .Params.register_btn }}
+            <div class="d-flex align-items-center">
+              <a href="{{ . }}"
+                class="btn btn-sm btn-primary bg-yellow border-yellow text-18 px-4 rounded-3 btn-lg scale animate">Register</a>
+            </div>
+            {{ end }}
+            <div class="d-flex align-items-center">
+              <a href="{{ .Permalink }}"
+                class="btn btn-sm btn-outline-primary border-blue blue  text-18 px-4 rounded-3 btn-lg scale eventsBtn animate">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="swiper-button-prev mt-1"></div>
+    <div class="swiper-button-next mt-1"></div>
+    <div class="swiper-pagination" style="bottom: 0px;"></div>
+  </div>
+</section>
+{{ end }}
+{{/* End Events Section */}}
