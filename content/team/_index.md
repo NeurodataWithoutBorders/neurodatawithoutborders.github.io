@@ -56,13 +56,13 @@ alumni_section:
   enable: true
   alumni:
     - name: Lydia Ng
-      date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
+      date: April 2020 – May 2021, Co-PI 1R24MH116922-01
     - name: Christof Koch
-      date: (August 2017 – April 2020, NWB founding member)
+      date: August 2017 – April 2020, NWB founding member
     - name: Friedrich Sommer
-      date: (August 2017 – August 2019, NWB founding member)
+      date: August 2017 – August 2019, NWB founding member
     - name: Karel Svoboda
-      date: (August 2017 – 2020, NWB founding member)
+      date: August 2017 – 2020, NWB founding member
     - name: Markus Meister
       date: ""
     - name: Katrin Amunts
