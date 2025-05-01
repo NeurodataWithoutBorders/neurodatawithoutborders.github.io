@@ -340,6 +340,7 @@
 }
 
 .wide-image {
+  width: 1250px !important;
   scroll-snap-type: x mandatory;
 }
 
