@@ -45,11 +45,32 @@ This virtual event is open to anyone interested in neurophysiology data and tool
 
 **Virtual Data Showcase Schedule (May 13, 2025):**
 
-| Time (Pacific) | Session | Speakers |
-|---------------|---------|----------|
-| 8:55 AM | Gather space opens to participants | |
-| 9:00-9:10 AM | Introduction to the data and tools showcase | Organizers |
-| 9:10-10:30 AM | Virtual poster session | Data Contributors and Tool Developers |
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Time (Pacific)</th>
+      <th>Session</th>
+      <th>Speakers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8:55 AM</td>
+      <td>Gather space opens to participants</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9:00-9:10 AM</td>
+      <td>Introduction to the data and tools showcase</td>
+      <td>Organizers</td>
+    </tr>
+    <tr>
+      <td>9:10-10:30 AM</td>
+      <td>Virtual poster session</td>
+      <td>Data Contributors and Tool Developers</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Registration
 
