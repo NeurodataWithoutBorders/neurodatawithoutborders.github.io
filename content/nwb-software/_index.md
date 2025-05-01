@@ -1,4 +1,22 @@
 ---
+
+disclaimer: Reference herein to any specific product, process, or service by its trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by the NWB development team, United States Government or any agency thereof, or The Regents of the University of California. Use of the NeurodataWithoutBorders name for endorsements is prohibited.
+# NWB Tools Section Added
+community_tools:
+  enable: true
+  title: Community Tools
+  content: Listed below are tools for working with NWB data. This is not a comprehensive list of NWB tools. Many of these tools are built and supported by other groups, and are in active development.
+  image: /images/nwb-tools-arch.png
+  categories:
+    - title: Core NWB Tools
+      description: Key software packages of the core NWB software stack
+      url: "/tools/core/"
+    - title: Acquisition and Control Tools
+      description: Tools for data acquisition and experimental control
+      url: "/tools/acquisition/"
+    - title: Analysis and Visualization Tools
+      description: Tools for data analysis, visualization, and exploration
+      url: "/tools/analysis/"
 title: The NWB Software <br> Ecosystem
 software_types:
   enable: true
@@ -107,4 +125,3 @@ sections:
       href='http://nwb-schema.readthedocs.io/en/stable'>Data Standard Schema Documentation</a> <br><br> <a href='https://github.com/NeurodataWithoutBorders/nwb-schema'>
       Sources (GitHub)</a>
 ---
-
