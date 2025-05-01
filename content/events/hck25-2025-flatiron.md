@@ -44,7 +44,7 @@ The NWB Community Hackathon will bring neuroscientists, tool builders, and resea
 ## Logistics
 
 ### Housing
-Housing support is not provided. Housing options near the hackathon will be suggested in April.
+Housing support is not provided. Housing options near the hackathon will be suggested in May.
 
 ### Travel
 Travel support is not provided.
