@@ -72,12 +72,16 @@ main:
     weight: 1
     url: "publications/"
     parent: "Resources"
-  - name: "Grants & Projects"
+  - name: "Online Resources"
     weight: 2
+    url: "online-resources/"
+    parent: "Resources"
+  - name: "Grants & Projects"
+    weight: 3
     url: "grants-and-projects/"
     parent: "Resources"
   - name: "Policies"
-    weight: 3
+    weight: 4
     url: "policies/"
     parent: "Resources"
   
@@ -123,9 +127,12 @@ resources:
   - name: "Publications"
     weight: 1
     url: "/publications"
-  - name: "Grants & Projects"
+  - name: "Online Resources"
     weight: 2
+    url: "/online-resources"
+  - name: "Grants & Projects"
+    weight: 3
     url: "/grants-and-projects"
   - name: "Policies"
-    weight: 3
+    weight: 4
     url: "/policies"
