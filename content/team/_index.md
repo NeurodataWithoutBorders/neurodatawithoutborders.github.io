@@ -107,7 +107,9 @@ tab_alumni_section:
   enable: true
   alumni:
     - name: Lawrence Niu
-      date: Principal Engineer at MBF Biosciences
+      date: Nov. 2022 - Jan. 2025 (Principal Engineer at MBF Biosciences)
+    - name: Oliver Ruebel
+      date: Nov. 2022 - Jan. 2024
 core_dev_section:
   pynwb_section:
     enable: true
