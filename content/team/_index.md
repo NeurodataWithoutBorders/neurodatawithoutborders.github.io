@@ -55,9 +55,20 @@ current_team_section:
 alumni_section:
   enable: true
   alumni:
-    - image: /images/floyd.png
-      name: Floyd Miles
-      date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
+    - name: Lydia Ng
+      date: April 2020 – May 2021, Co-PI 1R24MH116922-01
+    - name: Christof Koch
+      date: August 2017 – April 2020, NWB founding member
+    - name: Friedrich Sommer
+      date: August 2017 – August 2019, NWB founding member
+    - name: Karel Svoboda
+      date: August 2017 – 2020, NWB founding member
+    - name: Markus Meister
+      date: ""
+    - name: Katrin Amunts
+      date: ""
+    - name: Huib Mansvelder
+      date: ""
 technical_board:
   enable: true
   title: The Technical Advisory Board
@@ -86,14 +97,19 @@ technical_team_section:
     - image: /images/ryan-ly.png
       name: Ryan Ly
       post: Scientific Data Engineer at Berkeley Lab
-    # - image: /images/lawrence-niu.png
-    #   name: Lawrence Niu
     - image: /images/kushal.png
       name: Kushal Bakshi
       post: Neuroscience Data Engineer II at DataJoint
     - image: /images/szonja-weigl.jpeg
       name: Anna (Szonja) Weigl
       post: Research Software Engineer at CatalystNeuro
+tab_alumni_section:
+  enable: true
+  alumni:
+    - name: Lawrence Niu
+      date: Nov. 2022 - Jan. 2025 (Principal Engineer at MBF Biosciences)
+    - name: Oliver Ruebel
+      date: Nov. 2022 - Jan. 2024
 core_dev_section:
   pynwb_section:
     enable: true

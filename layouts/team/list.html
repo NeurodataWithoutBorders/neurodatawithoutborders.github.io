@@ -73,17 +73,16 @@
 
 
 {{/* Alumni Section */}}
-{{/*  {{ with .Params.alumni_section }}
+{{ with .Params.alumni_section }}
 {{ if .enable }}
 <section class="section bg-dark-100 pt-0">
     <div class="container-lg">
-        <h3 class="inter-700 dark-900 text-40 pb-5">Executive Board Alumni</h3>
+        <h4 class="inter-600 dark-900 text-32 pb-5">Executive Board Alumni</h4>
         <div class="row g-2 g-md-4">
             {{ range .alumni }}
             <div class="col-6 col-sm-3">
                 <div class="h-100 bg-white rounded-3 p-md-4 p-2 shadow-sm pb-md-2">
-                    <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
-                    <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name }}</h5>
+                    <h5 class="inter-700 text-20 dark-900">{{ .name }}</h5>
                     <p class="inter-400 text-14 dark-900">{{ .date }}</p>
                 </div>
             </div>
@@ -92,7 +91,7 @@
     </div>
 </section>
 {{ end }}
-{{ end }}  */}}
+{{ end }}
 {{/* End Alumni Section */}}
 
 {{/* Technical Board Section */}}
@@ -144,6 +143,28 @@
 {{ end }}
 {{ end }}
 {{/* End Technical Board Section */}}
+
+{{/* TAB Alumni Section */}}
+{{ with .Params.tab_alumni_section }}
+{{ if .enable }}
+<section class="section pt-0">
+    <div class="container-lg">
+        <h4 class="inter-600 dark-900 text-32 pb-5">Technical Advisory Board Alumni</h4>
+        <div class="row g-2 g-md-4">
+            {{ range .alumni }}
+            <div class="col-6 col-sm-3">
+                <div class="h-100 bg-white rounded-3 p-md-4 p-2 shadow-sm pb-md-2">
+                    <h5 class="inter-700 text-20 dark-900">{{ .name }}</h5>
+                    <p class="inter-400 text-14 dark-900">{{ .date }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End TAB Alumni Section */}}
 
 {{/* Core Development Team Section */}}
 {{ with .Params.core_dev_section }}

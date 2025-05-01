@@ -422,6 +422,21 @@ h6 {
   width: 100% !important;
 }
 
+/* Limit the maximum size of images in the about page */
+section img[src*="Neurophysiology-min.png"] {
+  width: 100% !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
+/* Ensure the image is responsive on smaller screens */
+@media (max-width: 900px) {
+  section img[src*="Neurophysiology-min.png"] {
+    max-width: 95% !important;
+  }
+}
+
 .content li::marker {
   color: #374151 !important;
 }
