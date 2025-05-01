@@ -11,16 +11,17 @@
       <div class="tool-content">
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         {{ .Params.description }}
-        {{ if or .Params.source_url .Params.docs_url }}
-        <div class="tool-links">
-          {{ if .Params.source_url }}
-          <a href="{{ .Params.source_url }}" class="btn btn-primary" target="_blank">Source</a>
-          {{ end }}
-          {{ if .Params.docs_url }}
-          <a href="{{ .Params.docs_url }}" class="btn btn-primary" target="_blank">Docs</a>
-          {{ end }}
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <div class="tool-links" style="display: flex; align-items: center; gap: 0.5rem;">
+            {{ if .Params.source_url }}
+            <a href="{{ .Params.source_url }}" class="btn btn-primary" style="display: flex; align-items: center;" target="_blank">Source</a>
+            {{ end }}
+            {{ if .Params.docs_url }}
+            <a href="{{ .Params.docs_url }}" class="btn btn-primary" style="display: flex; align-items: center;" target="_blank">Docs</a>
+            {{ end }}
+          </div>
+          <a href="{{ .RelPermalink }}" class="btn" style="background-color: #d17128; color: #ffffff !important; display: flex; align-items: center; width: fit-content; font-weight: 500;">Learn More →</a>
         </div>
-        {{ end }}
       </div>
     </div>
     {{ end }}
