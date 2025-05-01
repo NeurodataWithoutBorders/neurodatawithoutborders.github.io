@@ -136,17 +136,23 @@
         <div class="text-center">
             <h3 class="inter-700 text-40 dark-900 mb-3">{{ .title | markdownify }}</h3>
             <p class="inter-400 text-16 dark-700 lh-base">{{ .content | markdownify }}</p>
+            
+            {{ if .image }}
+            <div class="mt-4">
+                <img src="{{ .image }}" alt="NWB Tools Architecture" class="img-fluid" style="max-width: 90%;">
+            </div>
+            {{ end }}
         </div>
-        {{ with .tools }}
-        <div class="pt-4 row g-4">
+        
+        {{ with .categories }}
+        <div class="row g-4 justify-content-center mt-5">
             {{ range . }}
-            <div class="col-sm-6 col-md-3">
-                <div class="rouned-3 shadow-sm py-2">
-                    <div class="mx-auto d-flex flex-column justify-content-center align-items-center">
-                        <div class="col-3">
-                            <img src="{{ .image }}" alt="" class="img-fluid">
-                        </div>
-                        <p class="inter-400 text-20 dark-700 pt-4 mb-0">{{ .title | markdownify }}</p>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title inter-600 text-20 dark-900">{{ .title | markdownify }}</h4>
+                        <p class="card-text inter-400 text-16 dark-700 mt-2">{{ .description | markdownify }}</p>
+                        <a href="{{ .url }}" class="btn btn-primary mt-3">View Tools</a>
                     </div>
                 </div>
             </div>

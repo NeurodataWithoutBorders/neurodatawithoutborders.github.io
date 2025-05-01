@@ -16,17 +16,6 @@
                 <div class="content">
                     {{ .Content }}
                 </div>
-                {{/* Tool Links */}}
-                {{ if or .Params.source_url .Params.docs_url }}
-                <div class="mt-4">
-                    {{ if .Params.source_url }}
-                    <a href="{{ .Params.source_url }}" class="btn btn-primary me-2" target="_blank">Source Code</a>
-                    {{ end }}
-                    {{ if .Params.docs_url }}
-                    <a href="{{ .Params.docs_url }}" class="btn btn-primary" target="_blank">Documentation</a>
-                    {{ end }}
-                </div>
-                {{ end }}
             </div>
         </div>
     </div>
