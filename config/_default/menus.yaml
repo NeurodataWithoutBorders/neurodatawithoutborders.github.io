@@ -4,9 +4,9 @@ main:
   - name: "Get Started"
     weight: 1
     hasChildren: true
-  - name: "Overview"
+  - name: "About NWB"
     weight: 1
-    url: "about-us/"
+    url: "about-nwb/"
     parent: "Get Started"
   - name: "Converting Data to NWB"
     weight: 2
@@ -95,7 +95,7 @@ main:
 quick_links:
   - name: "Get Started"
     weight: 1
-    url: "/about-us"
+    url: "/about-nwb"
   - name: "Documentation"
     weight: 2
     url: "https://nwb-overview.readthedocs.io"
