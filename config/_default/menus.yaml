@@ -78,7 +78,7 @@ main:
     parent: "Resources"
   - name: "FAQ"
     weight: 3
-    url: "online-resources/faq/"
+    url: "faq/"
     parent: "Resources"
   - name: "Grants & Projects"
     weight: 4
@@ -136,7 +136,7 @@ resources:
     url: "/online-resources"
   - name: "FAQ"
     weight: 3
-    url: "/online-resources/faq"
+    url: "/faq"
   - name: "Grants & Projects"
     weight: 4
     url: "/grants-and-projects"

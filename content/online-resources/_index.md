@@ -65,7 +65,7 @@ training_section:
     - title: "Frequently Asked Questions"
       content: "Common questions about NWB and their answers"
       image: "/images/code.png"
-      url: "/online-resources/faq/"
+      url: "/faq/"
 
 docs_section:
   enable: true
