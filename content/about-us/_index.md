@@ -87,43 +87,68 @@ nwb_goals_section:
         - check: Support custom extensions when the standard is lacking
 history_section:
   enable: true
-  title: History
+  title: "History of Neurodata Without Borders (NWB)"
   content:
-    - text: "Launched in mid 2014,  Neurodata Without Borders: Neurophysiology began
-        as a pilot project to produce a unified data format for cellular-based
-        neurophysiology data. NWB 1.0 was based on representative use case
-        studies from four laboratories, and the project included a vetting phase
-        for assessing whether other data models can also be used in the new
-        common format. The initial development of NWB 1.0 was funded by
-        industry and private foundations. Scientific partners include the Allen
-        Institute for Brain Science (AIBS), the Svoboda Lab (Janelia), the
-        Meister Lab (Caltech), the Buzsáki Lab (NYU), and Fritz Sommer/Jeff
-        Teeters (UCB, maintainers of CRCNS.org). This one-year pilot project
-        resulted in NWB 1.0."
-    - text: Building on the success of NWB 1.0, the project entered a second phase,
-        with additional leadership by Dr. Kris Bouchard, Dr. Oliver Rübel
-        (Lawrence Berkeley National Laboratory, LBNL), Dr. Loren Frank (UCSF)
-        and Dr. Edward Chang (UCSF). One main goal was to develop the next
-        version of NWB and to enhance its adoption, through development of an
-        advanced software architecture for NWB, a well-articulated data
-        standards ecosystem, an open community software strategy, and
-        advancements to the NWB data standard itself. NWB 2.0 was
-        redeveloped by scientific software engineers/computer scientists at
-        LBNL, Dr. Oliver Rübel and Mr. Andrew Tritt, in close collaboration with
-        neuroscience laboratories and the broader NWB community. NWB 2.0 was
-        released in February 2019 and new features continue to be added to the
-        software ecosystem surrounding NWB 2.0.
-    - text: The NWB project has also created a governance structure. An Executive
-        Board (EB) decides the vision and roadmap for NWB and manages
-        fundraising and outreach. The EB also works closely with a Technical
-        Advisory Board (TAB), which makes technical decisions and maintains the
-        software ecosystem.
-    - text: We continue to see steady adoption of NWB:B by neuroscience labs,
-        including the Allen Institute for Brain Science (AIBS), Bouchard lab
-        (LBNL/UCB), Svoboda lab, Meister lab, Frank lab (UCSF), Chang lab (UCSF)
-        and others. As labs adopt the format we also continue to see growing
-        sets of data published in NWB. E.g, the AIBS has adopted the use of this
-        format and to date has released numerous NWB files assaying mouse
-        visual cortex.
+    - text: "## Origins and NWB 1.0 (2014-2016)
+    
+    Neurodata Without Borders: Neurophysiology was launched in mid-2014 as a collaborative initiative to develop a unified data format for cellular-based neurophysiology data. The Kavli Foundation played an important role in initiating this movement, bringing together key stakeholders to address the growing challenge of data interchange between laboratories.
+    
+    
+    The initial development of NWB 1.0 was funded by the Kavli Foundation along with other industry partners and private foundations, with scientific leadership from key neuroscience laboratories: the Allen Institute for Brain Science (AIBS), the Svoboda Lab (Janelia Research Campus), the Meister Lab (Caltech), the Buzsáki Lab (NYU), and Fritz Sommer/Jeff Teeters (UC Berkeley, maintainers of CRCNS.org). This consortium approach ensured the format addressed real-world use cases from diverse experimental paradigms. The [first hackathon](/events/hck01-2014-janelia/) at Janelia initiated this collaborative effort.
+    
+    
+    After an intensive one-year development cycle that included extensive testing with representative datasets, NWB 1.0 was released in 2015 as the first standardized format specifically designed for neurophysiology data. This work was showcased at the [second hackathon](/events/hck02-2015-janelia/) at Janelia.
+    
+    ## Evolution to NWB 2.0 (2017-2019)
+    
+    
+    Building on lessons learned from NWB 1.0 adoption, the project entered a second phase with expanded leadership including Dr. Kris Bouchard, Dr. Oliver Rübel (Lawrence Berkeley National Laboratory, LBNL), Dr. Loren Frank (UCSF), and Dr. Edward Chang (UCSF). This phase began with the [third hackathon](/events/hck03-2017-janelia/) at Janelia and marked a significant shift in the project's approach, focusing on:
+    
+    1. Creating a robust software architecture to support the data standard
+    
+    2. Developing a comprehensive standards ecosystem rather than just a file format
+    
+    3. Establishing an open community development model
+    
+    4. Refining the core data standard based on community feedback
+    
+    
+    The technical redevelopment of NWB 2.0 was led by scientific software engineers at LBNL, principally Dr. Oliver Rübel and Andrew Tritt, working in close collaboration with neuroscience laboratories and the broader community. This collaboration ensured the format remained scientifically relevant while gaining stronger software engineering foundations. A series of hackathons ([Seattle 2018](/events/hck04-2018-seattle/), [Berkeley 2018](/events/hck05-2018-berkeley/)) helped drive this development.
+    
+    
+    NWB 2.0 was officially released in February 2019, featuring a completely redesigned architecture based on modern software development practices, enhanced extensibility through schema language, improved storage efficiency, and a comprehensive [Python API (PyNWB)](/tools/core/pynwb/) and [MATLAB API (MatNWB)](/tools/core/matnwb/) for programmatic interaction with NWB files. The [Janelia 2019 hackathon](/events/hck06-2019-janelia/) celebrated this milestone release.
+    
+    ## Community Growth and Governance (2019-Present)
+    
+    
+    Following the release of NWB 2.0, the project established a formal [governance structure](/team/) to ensure sustainability and community-driven development. This structure consists of:
+    
+    - An [Executive Board (EB)](/team/) that guides the overall vision, strategic roadmap, fundraising, and outreach
+    
+    - A [Technical Advisory Board (TAB)](/team/) that makes technical decisions and maintains the software ecosystem
+    
+    - [Working groups](/working-groups/) focused on specific aspects of the standard and its implementation
+    
+    
+    The NWB ecosystem has continued to expand with additional tools including:
+    
+    - [Neurosift](/tools/analysis/neurosift), [NWB Widgets](/tools/analysis/nwbwidgets) and [NWB Explorer](/tools/analysis/nwbexplorer) for interactive visualizations of NWB data
+    
+    - Integration with analysis frameworks like [CaImAn](/tools/analysis/caiman), [suite2p](/tools/analysis/suite2p), and [SpikeInterface](/tools/analysis/spikeinterface)
+    
+    - Data validation tools such as [NWB Inspector](/tools/core/nwbinspector) to ensure format compliance
+    
+    - [Extensions](/nwb-software/) for specialized modalities and experimental paradigms
+    
+    
+    ## Adoption and Impact
+    
+    NWB has gained steady adoption across the neuroscience community. Notable users include the Allen Institute for Brain Science (which has released extensive datasets in NWB format), as well as the Bouchard lab (LBNL/UCB), Svoboda lab, Meister lab, Frank lab (UCSF), Chang lab (UCSF), and many others.
+    
+    
+    The format now serves as the foundation for major data sharing initiatives, including the BRAIN Initiative archives and the [DANDI (Distributed Archives for Neurophysiology Data Integration)](/online-resources/) project, which leverages NWB as its primary data format. This adoption has facilitated unprecedented data sharing across laboratories, accelerating discovery and collaboration in neurophysiology research. For more information, see our [publications](/publications/papers/) and [grants and projects](/grants-and-projects/).
+    
+    
+    As the community continues to grow, NWB remains under active development, with regular releases addressing new use cases, experimental modalities, and integration with emerging technologies in neuroscience research. Join us at our [upcoming events](/events/) to learn more and contribute to the project."
     - wide_image: /images/history.png
 ---
