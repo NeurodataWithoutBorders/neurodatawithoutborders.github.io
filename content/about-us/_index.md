@@ -52,9 +52,9 @@ neurophysiology_section:
     - text: Neurodata Without Borders is intended to serve the broad neuroscience
         community and encourage the sharing of data by scientists worldwide. NWB
         2.0 was released in February 2019. Please give it a try. Join our
-        mailing list for updates or ask questions on our Slack channel.
+        [mailing list](https://mailchi.mp/fe2a9bc55a1a/nwb-signup) for updates or ask questions on our [Slack channel](https://nwb-users.slack.com/join/shared_invite/zt-9bsx3xdj-wtUILLNzM8a0mOV_RywS~Q#/shared-invite/email).
     - text: To learn more about the approach taken to develop the NWB Format, please
-        read our open access eLife article.
+        read our open access [eLife article](https://doi.org/10.7554/eLife.78362).
 nwb_goals_section:
   enable: ture
   title: "Technical Design Goals of the NWB Format"
