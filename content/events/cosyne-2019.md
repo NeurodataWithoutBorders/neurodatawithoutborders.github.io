@@ -29,9 +29,9 @@ resources:
 
 ## Overview
 
-The [Neurodata Without Borders: Neurophysiology (NWB:N)](https://neurodatawithoutborders.github.io/) team held a tutorial on the NWB:N data standard and on using [PyNWB](https://neurodatawithoutborders.github.io/pynwb) and [MatNWB](https://neurodatawithoutborders.github.io/matnwbemb) at the Cosyne 2019 Workshops.
+The [Neurodata Without Borders: Neurophysiology (NWB:N)](https://neurodatawithoutborders.github.io/) team held a tutorial on the NWB:N data standard and on using [PyNWB](https://pynwb.readthedocs.io/en/latest/) and [MatNWB](https://neurodatawithoutborders.github.io/matnwb) at the Cosyne 2019 Workshops.
 
-The [NWB:N project](https://neurodatawithoutborders.github.io/) is an effort to standardize the description and storage of neurophysiology data and metadata. NWB:N enables data sharing and reuse and reduces the energy-barrier to applying data analytics both within and across labs. NWB:N is more than just a file format but it defines an [ecosystem](https://neurodatawithoutborders.github.io/overview) of tools, methods, and standards for storing, sharing, and analyzing complex neurophysiology data.
+The [NWB:N project](https://neurodatawithoutborders.github.io/) is an effort to standardize the description and storage of neurophysiology data and metadata. NWB:N enables data sharing and reuse and reduces the energy-barrier to applying data analytics both within and across labs. NWB:N is more than just a file format but it defines an [ecosystem](https://neurodatawithoutborders.github.io/about-us/) of tools, methods, and standards for storing, sharing, and analyzing complex neurophysiology data.
 
 The team had recently released [NWB:N 2.0](https://neurodatawithoutborders.github.io/news), and was excited to teach the user-base and potential new users about NWB:N and the software tools.
 
