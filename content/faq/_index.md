@@ -32,9 +32,9 @@ See the [MatNWB documentation](https://matnwb.readthedocs.io/en/latest/pages/get
 
 ### How do I read NWB files in different programming languages? {#read-nwb-files}
 
-For Python and Matlab we recommend using the [PyNWB](https://pynwb.readthedocs.io/en/stable/) and [MatNWB](https://matnwb.readthedocs.io/en/latest/) reference APIs. To get started see also the [Reading NWB Files](https://nwb-overview.readthedocs.io/en/latest/file_read/file_read.html) page.
+For Python and Matlab we recommend using the [PyNWB](https://pynwb.readthedocs.io/en/stable/) and [MatNWB](https://matnwb.readthedocs.io/en/latest/) reference APIs. For C++ you can use [AqNWB](https://neurodatawithoutborders.github.io/aqnwb/read_page.html). To get started see also the [Reading NWB Files](https://nwb-overview.readthedocs.io/en/latest/file_read/file_read.html) page.
 
-If you are using other programming languages (such as R, C/C++, Julia, Java, or Javascript) you can use the standard HDF5 readers that are available for these languages. In contrast to the NWB native API (PyNWB, MatNWB), the HDF5 readers are not aware of NWB schema details. This can make writing valid NWB files in other languages (without PyNWB and MatNWB) tricky, but for read they nonetheless provide access to the full data. For write, applications (e.g., MIES written in Igor) often chose to implement only the parts of the NWB standard that are relevant to the particular application.
+If you are using other programming languages (such as R, Julia, Java, or Javascript) you can use the standard HDF5 readers that are available for these languages. In contrast to the NWB native API (PyNWB, MatNWB, AqNWB), the HDF5 readers are not aware of NWB schema details. This can make writing valid NWB files in other languages (without PyNWB, MatNWB, or AqNWB) tricky, but for read they nonetheless provide access to the full data. For write, applications (e.g., MIES written in Igor) often chose to implement only the parts of the NWB standard that are relevant to the particular application.
 
 ### Where should I publish my NWB files? {#publish-nwb-files}
 

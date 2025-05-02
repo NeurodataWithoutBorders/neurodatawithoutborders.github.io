@@ -76,17 +76,17 @@ main:
     weight: 2
     url: "online-resources/"
     parent: "Resources"
-  - name: "FAQ"
-    weight: 3
-    url: "faq/"
-    parent: "Resources"
   - name: "Grants & Projects"
-    weight: 4
+    weight: 3
     url: "grants-and-projects/"
     parent: "Resources"
   - name: "Policies"
-    weight: 5
+    weight: 4
     url: "policies/"
+    parent: "Resources"
+  - name: "FAQ"
+    weight: 5
+    url: "faq/"
     parent: "Resources"
   
   # Contact
@@ -134,12 +134,12 @@ resources:
   - name: "Online Resources"
     weight: 2
     url: "/online-resources"
-  - name: "FAQ"
-    weight: 3
-    url: "/faq"
   - name: "Grants & Projects"
-    weight: 4
+    weight: 3
     url: "/grants-and-projects"
   - name: "Policies"
-    weight: 5
+    weight: 4
     url: "/policies"
+  - name: "FAQ"
+    weight: 5
+    url: "/faq"
