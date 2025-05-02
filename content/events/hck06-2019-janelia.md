@@ -16,7 +16,7 @@ organizers:
 registration: "Registration is now closed."
 resources:
   "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK06_2019_Janelia/report/Report___6th_NWB_N_Hackathon.pdf"
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK06_2019_Janelia"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK06_2019_Janelia"
   "Slides": "https://drive.google.com/drive/folders/18oG1rRJpluXQJJQaH4xbz6u58LXPiZbI?usp=sharing"
 ---
 
@@ -45,8 +45,8 @@ The slides for the talks presented during the User Days are available [here.](ht
 
 Ben Dichter's electrophysiology tutorial (Day 1):
 
-* [python jupyter notebook](http://htmlpreview.github.io/?https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/master/HCK06_2019_Janelia/NWB_tutorial_2019_python.html)
-* [matlab code](http://htmlpreview.github.io/?https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/master/HCK06_2019_Janelia/NWB_tutorial_2019_matlab.html)
+* [python jupyter notebook](http://htmlpreview.github.io/?https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK06_2019_Janelia/NWB_tutorial_2019_python.html)
+* [matlab code](http://htmlpreview.github.io/?https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK06_2019_Janelia/NWB_tutorial_2019_matlab.html)
 
 Tom Davidson's 'early adopter experiences' talk (Day 1):
 

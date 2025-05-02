@@ -16,9 +16,9 @@ registration: "Registration is now closed."
 resources:
   "NWB:N 2.0: Overview": "https://drive.google.com/open?id=1Dq7zhQ4weiGv-3m6zD11ZrHQcObuddik"
   "Electrophysiology tutorial slides": "https://docs.google.com/presentation/d/1Q03wU6NzMTOwuWaZIANtldNT-8ZKeM0fk3b0mEI-JFc/edit?usp=sharing"
-  "Python jupyter notebook": "http://htmlpreview.github.io/?https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/master/Cosyne_2019/cosyne_NWB_tutorial_2019_python.html"
-  "MATLAB code": "http://htmlpreview.github.io/?https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/master/Cosyne_2019/cosyne_NWB_tutorial_2019_matlab.html"
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/Cosyne_2019"
+  "Python jupyter notebook": "http://htmlpreview.github.io/?https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/Cosyne_2019/cosyne_NWB_tutorial_2019_python.html"
+  "MATLAB code": "http://htmlpreview.github.io/?https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/Cosyne_2019/cosyne_NWB_tutorial_2019_matlab.html"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/Cosyne_2019"
 ---
 
 ## Dates and Location

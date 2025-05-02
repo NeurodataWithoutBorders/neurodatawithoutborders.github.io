@@ -17,7 +17,7 @@ organizers:
 registration: "Registration is now closed."
 resources:
   "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK09_2020_Remote/report/Report___9th_NWB_Hackathon.pdf"
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK09_2020_Remote"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK09_2020_Remote"
 ---
 
 ## Dates and Location

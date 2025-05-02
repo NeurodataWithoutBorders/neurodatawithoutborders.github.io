@@ -33,8 +33,8 @@ Note: This event was meant to foster community and collaboration around NWB, not
 
 ## Tutorial Materials
 
-* [BEADL Tutorial](https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK13_2022_Janelia/projects/beadl_tutorial)
-* [NeuroConv Tutorial](https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK13_2022_Janelia/projects/neuroconv_tutorial)
+* [BEADL Tutorial](https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK13_2022_Janelia/projects/beadl_tutorial)
+* [NeuroConv Tutorial](https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK13_2022_Janelia/projects/neuroconv_tutorial)
 
 ## Resources
 
