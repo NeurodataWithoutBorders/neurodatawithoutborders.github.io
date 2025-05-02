@@ -1,6 +1,12 @@
 ---
 title: "Converting Data To NWB"
 
+### What is NWB?
+about_nwb:
+    enable: true
+    content: "The goal of NWB is to package experiment data with the metadata necessary to analyze the data. All of the data in a particular session goes into a single file. This includes the neurophysiology data itself, but also includes other data such as information about the data acquisition, experiment design, experimental subject, and behavior of that subject. The NWB core schema defines data containers for common data objects in neurophysiology data, including: intracellular electrophysiology (e.g. patch clamping), extracellular electrophysiology (e.g. Neuropixel probes), and optical physiology (e.g. two-photon imaging), and behavior."
+    additional_info: "All of these data types and relationships are defined in the [NWB Schema](https://nwb-schema.readthedocs.io/) using the [HDMF specification language](https://hdmf-schema-language.readthedocs.io/en/latest/). NWB is faced with the challenge of supporting a large variety of different experiment types, so the data types and relationships can get quite complex. For this reason the NWB development team provides APIs to help users easily and efficiently read and write NWB files."
+
 ### List 
 list:
     enable: true
@@ -11,6 +17,11 @@ list:
         - item: "Writing data and metadata to NWB following best practices"
         - item: "Packaging large datasets for optimal cloud deployment"
     content: "The NWB ecosystem offers various solutions, ranging from automated no-code tools to fine-grained programmatic options. Below we provide an overview of the main tools. For a more detailed introduction to data conversion please see the [data conversion user guide](https://nwb-overview.readthedocs.io/en/latest/conversion_tutorial/user_guide.html)."
+
+### Conversion Approaches
+conversion_approaches:
+    enable: true
+    content: "The following sections start with the most automated and convenient approaches and proceed to more involved and customizable solutions. Each tool offers different levels of flexibility and control, allowing you to choose the right approach for your specific needs."
 
 ### Available Tools
 available_tools_section:
