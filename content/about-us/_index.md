@@ -121,7 +121,7 @@ history_section:
     ## Community Growth and Governance (2019-Present)
     
     
-    Following the release of NWB 2.0, the project established a formal [governance structure](/working-groups/) to ensure sustainability and community-driven development. This structure consists of:
+    Following the release of NWB 2.0, the project established a formal [governance structure](/team/) to ensure sustainability and community-driven development. This structure consists of:
     
     - An [Executive Board (EB)](/team/) that guides the overall vision, strategic roadmap, fundraising, and outreach
     
