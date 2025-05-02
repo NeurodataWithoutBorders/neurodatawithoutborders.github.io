@@ -50,6 +50,9 @@ main:
     weight: 2
     url: "events/"
     parent: "Community"
+  - name: "Community Gallery"
+    weight: 3
+    url: "community/gallery/"
     parent: "Community"
   - name: "Enhancement Proposals"
     weight: 4
@@ -113,14 +116,17 @@ community_links:
   - name: "Events"
     weight: 2
     url: "/events"
-  - name: "About Events"
+  - name: "Community Gallery"
     weight: 3
+    url: "/community/gallery"
+  - name: "About Events"
+    weight: 4
     url: "/about-events"
   - name: "Working Groups"
-    weight: 4
+    weight: 5
     url: "/working-groups"
   - name: "Contact Us"
-    weight: 5
+    weight: 6
     url: "/contact-us"
 
 resources:
