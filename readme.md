@@ -9,6 +9,7 @@ To run the website locally, clone the repo and run the following commands:
 ```bash
 git clone https://github.com/NeurodataWithoutBorders/neurodatawithoutborders.github.io.git
 cd neurodatawithoutborders.github.io 
+```
 
 Run hugo
 
