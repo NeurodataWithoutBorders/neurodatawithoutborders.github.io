@@ -605,7 +605,7 @@ header {
   border-radius: 50%;
 }
 
-.heroSwiper 
+.heroSwiper
 .swiper-pagination {
   bottom: 20px !important;
 }
@@ -642,7 +642,7 @@ header {
     width: 250px !important;
   }
 
-  .swiper-button-next, 
+  .swiper-button-next,
   .swiper-button-prev {
     display: none !important;
   }
@@ -681,8 +681,10 @@ header {
 
 /* Banner */
 .banner {
-  width: 750px;
+  width: 1000px;
   padding: 0 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 750px) {
