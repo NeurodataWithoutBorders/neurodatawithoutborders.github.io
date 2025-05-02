@@ -50,6 +50,13 @@ main:
     weight: 2
     url: "events/"
     parent: "Community"
+  - name: "About Events"
+    weight: 3
+    url: "about-events/"
+    parent: "Community"
+  - name: "Organizing NWB Events"
+    weight: 4
+    url: "organizing-nwb-events/"
     parent: "Community"
   - name: "Enhancement Proposals"
     weight: 4
@@ -84,6 +91,10 @@ main:
     weight: 4
     url: "policies/"
     parent: "Resources"
+  - name: "Training Materials"
+    weight: 5
+    url: "training-materials/"
+    parent: "Resources"
   
   # Contact
   - name: "Contact"
@@ -116,11 +127,14 @@ community_links:
   - name: "About Events"
     weight: 3
     url: "/about-events"
-  - name: "Working Groups"
+  - name: "Organizing Events"
     weight: 4
+    url: "/organizing-nwb-events"
+  - name: "Working Groups"
+    weight: 5
     url: "/working-groups"
   - name: "Contact Us"
-    weight: 5
+    weight: 6
     url: "/contact-us"
 
 resources:
@@ -136,3 +150,6 @@ resources:
   - name: "Policies"
     weight: 4
     url: "/policies"
+  - name: "Training Materials"
+    weight: 5
+    url: "/training-materials"
