@@ -1,0 +1,21 @@
+/* Fix for numeric list alignment */
+.content ol {
+  padding-left: 3rem;
+}
+
+.content ol li {
+  position: relative;
+  padding-left: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Ensure the same alignment for both ordered and unordered lists */
+.content ul {
+  padding-left: 2rem;
+}
+
+.content ul li {
+  position: relative;
+  padding-left: 0.5rem;
+  margin-bottom: 0.75rem;
+}
