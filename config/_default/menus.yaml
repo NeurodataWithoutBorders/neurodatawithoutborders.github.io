@@ -50,10 +50,6 @@ main:
     weight: 2
     url: "events/"
     parent: "Community"
-  - name: "About Events"
-    weight: 3
-    url: "about-events/"
-    parent: "Community"
   - name: "Organizing NWB Events"
     weight: 4
     url: "organizing-nwb-events/"
