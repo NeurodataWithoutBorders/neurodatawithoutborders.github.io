@@ -15,7 +15,7 @@ organizers:
   - "Administrative Support: Janine Stevens"
 registration: "Registration is now closed."
 resources:
-  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/raw/master/HCK06_2019_Janelia/report/Report___6th_NWB_N_Hackathon.pdf"
+  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK06_2019_Janelia/report/Report___6th_NWB_N_Hackathon.pdf"
   "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK06_2019_Janelia"
   "Slides": "https://drive.google.com/drive/folders/18oG1rRJpluXQJJQaH4xbz6u58LXPiZbI?usp=sharing"
 ---
