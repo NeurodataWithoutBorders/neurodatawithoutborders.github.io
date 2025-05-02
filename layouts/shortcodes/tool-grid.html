@@ -2,16 +2,16 @@
   {{ $category := .Get "category" }}
   {{ range where .Site.RegularPages "Section" "tools" }}
     {{ if eq .Params.category $category }}
-    <div class="tool-card">
+    <div class="tool-card" style="display: flex; flex-direction: column;">
       {{ if .Params.image }}
       <div class="tool-image">
         <img src="{{ .Params.image }}" alt="{{ .Title }}" />
       </div>
       {{ end }}
-      <div class="tool-content">
+      <div class="tool-content" style="display: flex; flex-direction: column; flex-grow: 1;">
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        {{ .Params.description }}
-        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <div style="flex-grow: 1;">{{ .Params.description }}</div>
+        <div style="margin-top: auto; padding-top: 1rem;">
           <div class="tool-links" style="display: flex; align-items: center; gap: 0.5rem;">
             {{ if .Params.source_url }}
             <a href="{{ .Params.source_url }}" class="btn btn-primary" style="display: flex; align-items: center;" target="_blank">Source</a>
@@ -20,7 +20,9 @@
             <a href="{{ .Params.docs_url }}" class="btn btn-primary" style="display: flex; align-items: center;" target="_blank">Docs</a>
             {{ end }}
           </div>
-          <a href="{{ .RelPermalink }}" class="btn" style="background-color: #d17128; color: #ffffff !important; display: flex; align-items: center; width: fit-content; font-weight: 500;">Learn More →</a>
+          <a href="{{ .RelPermalink }}" class="btn btn-main text-18 yellow bg-transparent border-transparent inter-400 scale animate p-0 border-0">
+            Learn More →
+          </a>
         </div>
       </div>
     </div>
