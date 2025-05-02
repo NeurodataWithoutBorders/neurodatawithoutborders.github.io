@@ -4,9 +4,9 @@ hero_section:
   enable: true
   slides:
     - title: Neurodata Without Borders
-      subtitle: Version 2.0 FINAL Now Available
+      subtitle: A data standard and software ecosystem for neurophysiology and behavioral data
       btn_text: Read More
-      btn_link: "https://github.com/NeurodataWithoutBorders/nwb-schema"
+      btn_link: "/about-nwb/"
 banner_section:
   enable: false
   title: ""
