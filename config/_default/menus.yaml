@@ -123,7 +123,7 @@ community_links:
   - name: "About Events"
     weight: 3
     url: "/about-events"
-  - name: "Organizing Events"
+  - name: "Organizing NWB Events"
     weight: 4
     url: "/organizing-nwb-events"
   - name: "Working Groups"
