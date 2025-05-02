@@ -148,9 +148,9 @@ collections:
             }
                 
 
-      - name: "about-us"
-        label: "About Us"
-        file: "content/about-us/_index.md"
+      - name: "about-nwb"
+        label: "About NWB"
+        file: "content/about-nwb/_index.md"
         fields:
           - label: "Title"
             name: "title"
