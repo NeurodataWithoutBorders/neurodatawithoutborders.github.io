@@ -53,20 +53,6 @@
 {{ end }}
 {{/* End List Section */}}
 
-{{/* Conversion Approaches Section */}}
-{{ with .Params.conversion_approaches }}
-{{ if .enable }}
-<section class="py-5 bg-dark-100">
-    <div class="container-lg d-flex flex-column row-gap-4">
-        {{ with .content }}
-        <p class="inter-400 text-16 dark-700 mb-0">{{ . | markdownify }}</p>
-        {{ end }}
-    </div>
-</section>
-{{ end }}
-{{ end }}
-{{/* End Conversion Approaches Section */}}
-
 {{/* Available Tools Section */}}
 {{ with .Params.available_tools_section }}
 {{ if .enable }}
