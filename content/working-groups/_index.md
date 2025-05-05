@@ -113,6 +113,18 @@ sections:
 past_groups:
   enable: true
   sections:
+    - title: Events (NWBEP001)
+      content: Event data are extremely common in neurophysiology experiments; however,
+        before NWBEP001 was merged into the core NWB schema, there were no dedicated
+        neurodata types for storing event data in NWB. Data curators were using overly
+        generic or overly complex neurodata types to store event data and used multiple
+        different approaches. NWBEP001 proposed adding a standardized, unified, and
+        simple approach for storing event data in NWB. The NWBEP001 Review Working
+        Group (Josh Siegle, Kay Robbins, Chris Rodgers, Alessandra Trapani), as well
+        as the NWB Technical Advisory Board, reviewed NWBEP001
+        <a href="https://github.com/nwb-extensions/nwbep-review/issues/4">here</a>
+        and approved the proposal in December 2024.
+      image: /images/ndx-events-wg.png
     - title: Hierarchical structures for intracellular electrophysiology
       content: "Goal: In a neurophysiological experiment, individual recordings from a
         session are typically related by experimental design or condition, e.g.
