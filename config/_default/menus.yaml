@@ -4,9 +4,9 @@ main:
   - name: "Get Started"
     weight: 1
     hasChildren: true
-  - name: "Overview"
+  - name: "About NWB"
     weight: 1
-    url: "about-us/"
+    url: "about-nwb/"
     parent: "Get Started"
   - name: "Converting Data to NWB"
     weight: 2
@@ -50,6 +50,9 @@ main:
     weight: 2
     url: "events/"
     parent: "Community"
+  - name: "Organizing NWB Events"
+    weight: 4
+    url: "organizing-nwb-events/"
     parent: "Community"
   - name: "Enhancement Proposals"
     weight: 4
@@ -84,8 +87,12 @@ main:
     weight: 4
     url: "policies/"
     parent: "Resources"
-  - name: "FAQ"
+  - name: "Training Materials"
     weight: 5
+    url: "training-materials/"
+    parent: "Resources"
+  - name: "FAQ"
+    weight: 6
     url: "faq/"
     parent: "Resources"
   
@@ -99,7 +106,7 @@ main:
 quick_links:
   - name: "Get Started"
     weight: 1
-    url: "/about-us"
+    url: "/about-nwb"
   - name: "Documentation"
     weight: 2
     url: "https://nwb-overview.readthedocs.io"
@@ -120,11 +127,14 @@ community_links:
   - name: "About Events"
     weight: 3
     url: "/about-events"
-  - name: "Working Groups"
+  - name: "Organizing NWB Events"
     weight: 4
+    url: "/organizing-nwb-events"
+  - name: "Working Groups"
+    weight: 5
     url: "/working-groups"
   - name: "Contact Us"
-    weight: 5
+    weight: 6
     url: "/contact-us"
 
 resources:
@@ -140,6 +150,10 @@ resources:
   - name: "Policies"
     weight: 4
     url: "/policies"
-  - name: "FAQ"
+  - name: "Training Materials"
     weight: 5
+    url: "/training-materials"
+  - name: "FAQ"
+    weight: 6
     url: "/faq"
+  
