@@ -53,6 +53,7 @@ main:
   - name: "Community Gallery"
     weight: 3
     url: "community/gallery/"
+    parent: "Community"
   - name: "Organizing NWB Events"
     weight: 4
     url: "organizing-nwb-events/"
