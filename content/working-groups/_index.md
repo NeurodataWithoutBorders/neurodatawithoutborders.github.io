@@ -124,7 +124,7 @@ past_groups:
         as the NWB Technical Advisory Board, reviewed NWBEP001
         <a href="https://github.com/nwb-extensions/nwbep-review/issues/4">here</a>
         and approved the proposal in December 2024.
-      image: /images/ndx-events.png
+      image: /images/ndx-events-wg.png
     - title: Hierarchical structures for intracellular electrophysiology
       content: "Goal: In a neurophysiological experiment, individual recordings from a
         session are typically related by experimental design or condition, e.g.
