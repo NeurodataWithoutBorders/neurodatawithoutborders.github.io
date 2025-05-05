@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+<section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
+         style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/aboutBg.png');">
+    <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
+    <div class="position-absolute ellipses">
+        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+    </div>
+</section>
+{{/* End Hero Section */}}
+
+<section class="section bg-white">
+    <div class="container-lg">
+        <link rel="stylesheet" href="/css/toc.css">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="toc-container">
+                    <h2>Table of Contents</h2>
+                    <div id="toc" class="toc-list"></div>
+                </div>
+                
+                <div id="content-container" class="faq-content">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+        
+        <script src="/js/toc.js"></script>
+    </div>
+</section>
+{{ end }}

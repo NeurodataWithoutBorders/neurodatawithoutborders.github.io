@@ -91,6 +91,10 @@ main:
     weight: 5
     url: "training-materials/"
     parent: "Resources"
+  - name: "FAQ"
+    weight: 6
+    url: "faq/"
+    parent: "Resources"
   
   # Contact
   - name: "Contact"
@@ -149,3 +153,7 @@ resources:
   - name: "Training Materials"
     weight: 5
     url: "/training-materials"
+  - name: "FAQ"
+    weight: 6
+    url: "/faq"
+  
