@@ -39,7 +39,7 @@ publications_section:
   content: "The NWB team maintains a running database of publications that reuse publicly available NWB data, particularly from the DANDI Archive."
   boxes:
     - title: "NWB Data Reuse Publications"
-      content: "A comprehensive database of publications that reuse publicly available NWB data."
+      content: "A collection of publications that reuse publicly available NWB data."
       image: "/images/publications-citing.png"
       url: "https://www.notion.so/rly1/8b1d1f08841e41b89fdd9ab21d486d31?v=99f8e0f855a5486b8fc521066b34d4b3"
 
