@@ -18,7 +18,7 @@ resources:
   "MatNWB (Matlab)": "https://neurodatawithoutborders.github.io/matnwb/"
   "NWB Overview Docs": "https://nwb-overview.readthedocs.io"
 aliases:
-  - /nwb_hackathons/hck22-2025-dataconversion-remote
+  - /nwb_hackathons/hck22_2025_dataconversion_remote
 ---
 
 ## Objective
