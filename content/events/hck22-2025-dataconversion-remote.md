@@ -1,7 +1,7 @@
 ---
 title: "NWB Data Conversion Workshop 2025"
 date: 2025-05-12
-endDate: 2025-05-14
+endDate: 2025-05-13
 location: "Virtual"
 eventType: "Workshop"
 image: "/images/events/hck22-2025-dataconversion-remote/logo_brain_text_white_hor.png"
@@ -52,7 +52,143 @@ We will be using Gather and Zoom for the meeting and will send an email in the d
 
 ## Agenda
 
-The agenda will be shared at a later date.
+All times are in Pacific Time (PT, UTC-7). 
+
+### Day 1 (Monday, May 12)
+
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th style="width: 10%">Time</th>
+      <th style="width: 10%">Duration</th>
+      <th style="width: 35%">Topic</th>
+      <th style="width: 15%">Speaker(s)</th>
+      <th style="width: 10%">Location</th>
+      <th style="width: 15%">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9:00 - 9:15 AM</td>
+      <td>15 min</td>
+      <td>Welcome to the Data Conversion Workshop</td>
+      <td>Steph Prince</td>
+      <td>Gather</td>
+      <td><kbd style="background-color: #F75C81; color: white; border-radius: 4px; padding: 3px 6px;">Talk</kbd></td>
+    </tr>
+    <tr>
+      <td>9:15 - 10:00 AM</td>
+      <td>45 min</td>
+      <td>Overview of NWB</td>
+      <td>Oliver Ruebel</td>
+      <td>Zoom</td>
+      <td><kbd style="background-color: #F75C81; color: white; border-radius: 4px; padding: 3px 6px;">Talk</kbd></td>
+    </tr>
+    <tr>
+      <td>10:00 - 10:45 AM</td>
+      <td>45 min</td>
+      <td>NWB GUIDE</td>
+      <td>Ryan Ly</td>
+      <td>Zoom</td>
+      <td><kbd style="background-color: #64C0FF; color: white; border-radius: 4px; padding: 3px 6px;">Tutorial</kbd></td>
+    </tr>
+    <tr>
+      <td>10:45 - 11:45 AM</td>
+      <td>1 hour</td>
+      <td>NeuroConv, PyNWB, MatNWB</td>
+      <td>Ben Dichter</td>
+      <td>Zoom</td>
+      <td><kbd style="background-color: #64C0FF; color: white; border-radius: 4px; padding: 3px 6px;">Tutorial</kbd></td>
+    </tr>
+    <tr>
+      <td>11:45 AM - 12:15 PM</td>
+      <td>30 min</td>
+      <td>Project sharing</td>
+      <td>Steph Prince</td>
+      <td>Zoom</td>
+      <td><kbd style="background-color: #8974D6; color: white; border-radius: 4px; padding: 3px 6px;">Discussion</kbd></td>
+    </tr>
+    <tr>
+      <td>12:15 - 5:00 PM</td>
+      <td>4.75 hours</td>
+      <td>Data conversion hacking</td>
+      <td></td>
+      <td>Gather</td>
+      <td><kbd style="background-color: #59D382; color: white; border-radius: 4px; padding: 3px 6px;">Hack</kbd></td>
+    </tr>
+  </tbody>
+</table>
+
+### Day 2 (Tuesday, May 13)
+
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th style="width: 10%">Time</th>
+      <th style="width: 10%">Duration</th>
+      <th style="width: 35%">Topic</th>
+      <th style="width: 15%">Speaker(s)</th>
+      <th style="width: 10%">Location</th>
+      <th style="width: 15%">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9:00 - 9:10 AM</td>
+      <td>10 min</td>
+      <td>Welcome to the workshop</td>
+      <td>Steph Prince, Oliver Ruebel</td>
+      <td>Gather</td>
+      <td><kbd style="background-color: #F75C81; color: white; border-radius: 4px; padding: 3px 6px;">Talk</kbd></td>
+    </tr>
+    <tr>
+      <td>9:10 - 10:40 AM</td>
+      <td>1.5 hours</td>
+      <td>Tools and data showcase</td>
+      <td>Alessandra Trapani, Steph Prince</td>
+      <td>Gather</td>
+      <td><kbd style="background-color: #8974D6; color: white; border-radius: 4px; padding: 3px 6px;">Discussion</kbd></td>
+    </tr>
+    <tr>
+      <td>10:45 - 11:15 AM</td>
+      <td>30 min</td>
+      <td>Extensions and TAB discussion</td>
+      <td>Alessio Buccino, Yaroslav Halchenko</td>
+      <td>Zoom</td>
+      <td><kbd style="background-color: #8974D6; color: white; border-radius: 4px; padding: 3px 6px;">Discussion</kbd></td>
+    </tr>
+    <tr>
+      <td>11:15 AM - 12:00 PM</td>
+      <td>45 min</td>
+      <td>Publishing data and using the DANDI Archive</td>
+      <td>Ben Dichter</td>
+      <td>Zoom</td>
+      <td><kbd style="background-color: #64C0FF; color: white; border-radius: 4px; padding: 3px 6px;">Tutorial</kbd></td>
+    </tr>
+    <tr>
+      <td>12:00 - 12:45 PM</td>
+      <td>45 min</td>
+      <td>How to organize community NWB events</td>
+      <td>Steph Prince</td>
+      <td>Zoom</td>
+      <td><kbd style="background-color: #64C0FF; color: white; border-radius: 4px; padding: 3px 6px;">Tutorial</kbd></td>
+    </tr>
+    <tr>
+      <td>12:45 - 4:00 PM</td>
+      <td>3.25 hours</td>
+      <td>Data conversion hacking</td>
+      <td></td>
+      <td>Gather</td>
+      <td><kbd style="background-color: #59D382; color: white; border-radius: 4px; padding: 3px 6px;">Hack</kbd></td>
+    </tr>
+  </tbody>
+</table>
+
+### Legend
+<kbd style="background-color:#F75C81; color: white; border-radius: 4px; padding: 3px 6px; margin: 0 3px;">Talk</kbd> Presentation sessions  
+<kbd style="background-color: #59D382; color: white; border-radius: 4px; padding: 3px 6px; margin: 0 3px;">Hack</kbd> Hands-on coding sessions  
+<kbd style="background-color: #64C0FF; color: white; border-radius: 4px; padding: 3px 6px; margin: 0 3px;">Tutorial</kbd> Tutorials with hacking exercises  
+<kbd style="background-color: #8974D6; color: white; border-radius: 4px; padding: 3px 6px; margin: 0 3px;">Discussion</kbd> Group conversations and networking
 
 ## Code of Conduct
 
