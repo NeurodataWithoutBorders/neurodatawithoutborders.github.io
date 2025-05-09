@@ -17,6 +17,8 @@ resources:
   "Slides from the 2024 NeuroDataReHack": "https://drive.google.com/drive/folders/1DAmQr4qWCamhj_2Zyke0kkHGvV8Kyq13?usp=sharing"
   "PyNWB Documentation": "https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb"
   "MatNWB Documentation": "https://github.com/NeurodataWithoutBorders/matnwb/blob/master/README.md"
+aliases:
+  - nwb_hackathons/HCK24_2025_Janelia_NDRH
 ---
 
 ## Objective

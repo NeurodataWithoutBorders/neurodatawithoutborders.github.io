@@ -15,6 +15,8 @@ registration: "Register for the event [here](https://docs.google.com/forms/d/e/1
 resources:
   "Event Page": "https://neurodatawithoutborders.github.io/nwb_hackathons/HCK25_2025_Community_Hackathon_Flatiron/"
   "Code of Conduct": "https://neurodatawithoutborders.github.io/nwb_hackathons/code_of_conduct"
+aliases:
+  - nwb_hackathons/HCK25_2025_Community_Hackathon_Flatiron
 ---
 
 ## Dates and Location

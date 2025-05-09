@@ -19,6 +19,8 @@ resources:
   "Event Page": "https://neurodatawithoutborders.github.io/nwb_hackathons/HCK23_2025_OpenNeurodataShowcase/"
   "DANDI Archive": "https://dandiarchive.org"
   "Data Conversion Workshop": "https://neurodatawithoutborders.github.io/nwb_hackathons/HCK22_2025_DataConversion_Remote/"
+aliases:
+  - /nwb_hackathons/HCK23_2025_OpenNeurodataShowcase
 ---
 
 ## Dates and Location
