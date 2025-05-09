@@ -18,7 +18,7 @@ resources:
   "PyNWB Documentation": "https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb"
   "MatNWB Documentation": "https://github.com/NeurodataWithoutBorders/matnwb/blob/master/README.md"
 aliases:
-  - nwb_hackathons/HCK24_2025_Janelia_NDRH
+  - /nwb_hackathons/HCK24_2025_Janelia_NDRH
 ---
 
 ## Objective
