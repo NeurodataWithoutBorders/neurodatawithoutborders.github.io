@@ -18,7 +18,7 @@ registration: "Register as an attendee [here](https://forms.gle/rj8gYB92guBMcQZN
 resources:
   "Event Page": "https://neurodatawithoutborders.github.io/nwb_hackathons/HCK23_2025_OpenNeurodataShowcase/"
   "DANDI Archive": "https://dandiarchive.org"
-  "Data Conversion Workshop": "https://neurodatawithoutborders.github.io/nwb_hackathons/HCK22_2025_DataConversion_Remote/"
+  "Data Conversion Workshop": "/events/hck22-2025-dataconversion-remote.md"
 ---
 
 ## Dates and Location
@@ -96,7 +96,7 @@ This virtual event is open to anyone interested in neurophysiology data and tool
 
 ## Related Events
 
-The Neurodata and Tools Showcase is also part of a multi-day NWB Data Conversion workshop. If you are interested in attending these additional sessions to learn more about converting your own data to NWB and publishing on DANDI, please see the [Data Conversion Workshop page](https://neurodatawithoutborders.github.io/nwb_hackathons/HCK22_2025_DataConversion_Remote/) for more details.
+The Neurodata and Tools Showcase is also part of a multi-day NWB Data Conversion workshop. If you are interested in attending these additional sessions to learn more about converting your own data to NWB and publishing on DANDI, please see the [Data Conversion Workshop page](/events/hck22-2025-dataconversion-remote.md) for more details.
 
 ## Organizing Committee
 
@@ -108,4 +108,4 @@ The Neurodata and Tools Showcase is also part of a multi-day NWB Data Conversion
 
 ## Code of Conduct
 
-Please see the [Code of Conduct](https://neurodatawithoutborders.github.io/nwb_hackathons/code_of_conduct) for all NWB events.
+Please see the [Code of Conduct](/code_of_conduct) for all NWB events.
