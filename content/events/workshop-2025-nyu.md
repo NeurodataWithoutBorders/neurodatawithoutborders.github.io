@@ -15,6 +15,8 @@ resources:
   "Event Page": "https://neurodatawithoutborders.github.io/nwb_hackathons/Workshop_2025_NYU/"
   "NWB Overview": "https://nwb.org"
   "DANDI Archive": "https://dandiarchive.org"
+aliases:
+  - /nwb_hackathons/Workshop_2025_NYU
 ---
 
 ## Dates and Location

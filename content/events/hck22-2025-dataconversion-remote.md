@@ -17,6 +17,8 @@ resources:
   "PyNWB (Python)": "https://pynwb.readthedocs.io/en/stable/install_users.html"
   "MatNWB (Matlab)": "https://matnwb.readthedocs.io/en/latest/pages/getting_started/installation_users.html"
   "NWB Overview Docs": "https://nwb-overview.readthedocs.io"
+aliases:
+  - /nwb_hackathons/hck22_2025_dataconversion_remote
 ---
 
 ## Objective
@@ -26,13 +28,13 @@ data and metadata. NWB enables data sharing and reuse and reduces the energy bar
 and across labs. NWB has seen wide adoption in the neurophysiology community, and there are now over 100 datasets on the
 DANDI Archive in NWB, including data from the Allen Institute and the International Brain Laboratory.
 
-The NWB Data Conversion Workshop will train members of the neuroscience community on how to convert their data to NWB and 
-publish it on the DANDI Archive. We will train attendees starting from the basics of the NWB format and proceeding to 
-domain-specific tutorials and advanced data engineering techniques to maximally utilize the features of the HDF5 and Zarr 
+The NWB Data Conversion Workshop will train members of the neuroscience community on how to convert their data to NWB and
+publish it on the DANDI Archive. We will train attendees starting from the basics of the NWB format and proceeding to
+domain-specific tutorials and advanced data engineering techniques to maximally utilize the features of the HDF5 and Zarr
 backends. During this workshop, we will introduce multiple sets of tools with varying levels of flexibility for converting
 your data, including NWB GUIDE, a new no-code user interface for data conversion.
 
-**Note:** All levels of experience are welcome! We will have tutorials ranging from no-code, automated data conversion to 
+**Note:** All levels of experience are welcome! We will have tutorials ranging from no-code, automated data conversion to
 more advanced, custom code conversion.
 
 ## Logistics
