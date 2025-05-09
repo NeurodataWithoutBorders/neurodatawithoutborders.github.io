@@ -16,8 +16,8 @@ organizers:
   - "Stephanie Albin"
 registration: "Registration is now closed."
 resources:
-  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/raw/master/HCK14_2022_Seattle_RH/report/Report_Neurodata_Rehack_v2.pdf"
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK14_2022_Seattle_RH"
+  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK14_2022_Seattle_RH/report/Report_Neurodata_Rehack_v2.pdf"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK14_2022_Seattle_RH"
   "Allen Institute Event Page": "https://alleninstitute.org/what-we-do/brain-science/events-training/2022-neurodatarehack-hackathon/"
 ---
 
@@ -71,7 +71,7 @@ Recordings of talks were made available on the [NWB Youtube channel](https://www
 ## What to bring?
 
 * Create the outline for your project at the hackathon.
-* Bring your laptop with appropriate software installed. For instructions on how to install PyNWB, see [the PyNWB documentation](http://pynwb.readthedocs.io/en/latest/getting_started.html#installation). For instructions on how to install MatNWB, see [the MatNWB documentation](https://github.com/NeurodataWithoutBorders/matnwb/blob/master/README.md)
+* Bring your laptop with appropriate software installed. For instructions on how to install PyNWB, see [the PyNWB documentation](https://pynwb.readthedocs.io/en/latest/install_users.html). For instructions on how to install MatNWB, see [the MatNWB documentation](https://matnwb.readthedocs.io/en/latest/)
 
 ## Additional Organizational Support
 

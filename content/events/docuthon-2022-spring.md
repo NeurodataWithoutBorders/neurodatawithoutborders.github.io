@@ -15,7 +15,7 @@ organizers:
   - "Matthew Avaylon"
 registration: "Registration is now closed."
 resources:
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/Docuthon_2022"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/Docuthon_2022"
   "NWB Documentation Survey": "https://forms.gle/TadZBRKJpwEWeErv8"
 ---
 

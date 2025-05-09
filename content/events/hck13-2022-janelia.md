@@ -13,9 +13,9 @@ organizers:
   - "Administrative Support: Janine Stevens"
 registration: "Registration is now closed."
 resources:
-  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/raw/master/HCK13_2022_Janelia/report/Report___13th_NWB_and_User_Days_at_HHMI_Janelia.pdf"
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK13_2022_Janelia"
-  "Tutorial Materials": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK13_2022_Janelia/projects"
+  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK13_2022_Janelia/report/Report___13th_NWB_and_User_Days_at_HHMI_Janelia.pdf"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK13_2022_Janelia"
+  "Tutorial Materials": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK13_2022_Janelia/projects"
 ---
 
 ## Dates and Location
@@ -33,8 +33,8 @@ Note: This event was meant to foster community and collaboration around NWB, not
 
 ## Tutorial Materials
 
-* [BEADL Tutorial](https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK13_2022_Janelia/projects/beadl_tutorial)
-* [NeuroConv Tutorial](https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK13_2022_Janelia/projects/neuroconv_tutorial)
+* [BEADL Tutorial](https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK13_2022_Janelia/projects/beadl_tutorial)
+* [NeuroConv Tutorial](https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK13_2022_Janelia/projects/neuroconv_tutorial)
 
 ## Resources
 
@@ -45,7 +45,7 @@ Recordings of talks were made available on the [NWB Youtube channel](https://www
 
 * Create the outline for your project at the hackathon.
 * Bring any example data sets needed for your project with you to the hackathon. For any lab-specific data (i.e., data not in NWB) you should know how to read the data using Python or MATLAB and ideally have scripts ready for reading the data.
-* Bring your laptop with appropriate software installed. For instructions on how to install PyNWB see [http://pynwb.readthedocs.io/en/latest/getting_started.html#installation](http://pynwb.readthedocs.io/en/latest/getting_started.html#installation)
+* Bring your laptop with appropriate software installed. For instructions on how to install PyNWB see [https://pynwb.readthedocs.io/en/latest/install_users.html](https://pynwb.readthedocs.io/en/latest/install_users.html)
 
 ## Additional Organizational Support
 

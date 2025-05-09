@@ -16,8 +16,8 @@ organizers:
   - "Oliver Rübel"
 registration: "Registration is now closed."
 resources:
-  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/raw/master/HCK08_2020_Remote/report/Report___8th_NWB_Hackathon.pdf"
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK08_2020_Remote"
+  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK08_2020_Remote/report/Report___8th_NWB_Hackathon.pdf"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK08_2020_Remote"
 ---
 
 ## Dates and Location

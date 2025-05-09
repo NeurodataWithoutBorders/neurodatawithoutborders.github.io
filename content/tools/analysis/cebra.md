@@ -26,6 +26,6 @@ CEBRA is a machine-learning method that can be used to compress time series in a
 
 - [Website](https://cebra.ai)
 - [Documentation](https://cebra.ai/docs/)
-- [NWB Tutorial](https://stes.io/NeuroDataReHack2023/)
+- [NWB Tutorial](https://cebra.ai/docs/demo_notebooks/Demo_dandi_NeuroDataReHack_2023.html)
 - [Publication](https://www.nature.com/articles/s41586-023-06031-6)
 - [Source Code](https://github.com/AdaptiveMotorControlLab/cebra)

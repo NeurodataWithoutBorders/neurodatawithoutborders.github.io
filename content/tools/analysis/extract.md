@@ -23,5 +23,5 @@ EXTRACT (Tractable and Robust Automated Cell extraction Tool) is designed for ca
 ## Resources
 
 - [Source Code](https://github.com/schnitzer-lab/EXTRACT-public)
-- [NWB Tutorials](https://github.com/schnitzer-lab/EXTRACT-public/tree/master/Learning%20materials/NWB%20Tutorials)
+- [NWB Tutorials](https://github.com/schnitzer-lab/EXTRACT-public/tree/master/Learning-materials/Additional%20demos/NWB%20Demos)
 - [Publication](https://www.biorxiv.org/content/10.1101/2021.03.24.436279v2)

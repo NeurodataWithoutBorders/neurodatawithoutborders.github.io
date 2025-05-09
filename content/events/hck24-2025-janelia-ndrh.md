@@ -16,7 +16,7 @@ resources:
   "Event Flyer": "https://drive.google.com/file/d/1ptsGRa1sEMh-je7L_ff3CgtRTj-X11lO/view?usp=sharing"
   "Slides from the 2024 NeuroDataReHack": "https://drive.google.com/drive/folders/1DAmQr4qWCamhj_2Zyke0kkHGvV8Kyq13?usp=sharing"
   "PyNWB Documentation": "https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb"
-  "MatNWB Documentation": "https://github.com/NeurodataWithoutBorders/matnwb/blob/master/README.md"
+  "MatNWB Documentation": "https://matnwb.readthedocs.io/en/latest/"
 ---
 
 ## Objective
@@ -79,7 +79,7 @@ Bring a laptop with appropriate software installed. Python should be installed a
 instructions on how to install PyNWB, see 
 [the PyNWB documentation](https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb). For instructions
 on how to install MatNWB, see
-[the MatNWB documentation](https://github.com/NeurodataWithoutBorders/matnwb/blob/master/README.md)
+[the MatNWB documentation](https://matnwb.readthedocs.io/en/latest/)
 
 ## Testimonials from NeuroDataReHack 2024
 
