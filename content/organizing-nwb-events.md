@@ -40,7 +40,7 @@ We provide the following resources to assist you as you organize your event:
 - <a href="/training-materials/" target="_blank">Training Materials</a>: slides and example video recordings of different lectures  
 - <a href="https://drive.google.com/drive/folders/1HhLAJZkEFM39JoVjnWuhIDb34sh17-gX?usp=share_link" target="_blank">Example Agendas</a>: example agendas for different types of workshops  
 - <a href="https://drive.google.com/drive/folders/1do1xmzc8-sPm5ioGMvOuOcfyYULCF9dT?usp=share_link" target="_blank">Registration Forms</a>: registration form templates
-- <a href="https://drive.google.com/drive/folders/14Xr_xEkortDRDA6tQOP0E-XyCd1HwEvc?usp=share_link" target="_blank">Email Templates</a>: example emails to send to instructors and attendees
+- <a href="/email-templates/" target="_blank">Email Templates</a>: example emails to send to instructors and attendees
 - <a href="/create-event-website/" target="_blank">Creating an Event Website</a>: how to setup an event website
 - <a href="/organizing-events-faq/" target="_blank">Organizing Events FAQ</a>: answers to common questions about organizing NWB events
 
