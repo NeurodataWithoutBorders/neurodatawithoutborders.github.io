@@ -7,7 +7,7 @@ draft: false
 type: "page"
 ---
 
-Organizing an NWB event is a great way to contribute to the neurophysiology community and help researchers learn about the NWB format, data conversion, and analysis tools. This page provides guidelines and resources for planning and executing successful NWB events.
+Organizing an NWB event is a great way to contribute to the neurophysiology community and help researchers learn about the NWB format, data conversion, and analysis tools. This page provides guidelines and resources for planning and executing successful NWB events in your community.
 
 ## Types of NWB events
 
@@ -37,10 +37,11 @@ For a complete overview of all available training materials including descriptio
 
 We provide the following resources to assist you as you organize your event: 
 
-- <a href="https://drive.google.com/drive/folders/1HhLAJZkEFM39JoVjnWuhIDb34sh17-gX?usp=share_link" target="_blank">Agenda Templates</a>: example agendas   
-- <a href="https://drive.google.com/drive/folders/1do1xmzc8-sPm5ioGMvOuOcfyYULCF9dT?usp=share_link" target="_blank">Registration Form Templates</a>: to setup registration forms  
-- <a href="https://drive.google.com/drive/folders/1iiw9N0qeyklDU4W_55DuAAKaLCsG0wOl?usp=share_link" target="_blank">Training Materials</a>: slides and example video recordings of different lectures  
-- <a href="https://drive.google.com/drive/folders/14Xr_xEkortDRDA6tQOP0E-XyCd1HwEvc?usp=share_link" target="_blank">Email Templates</a>: example emails to send for initial event invites, registration, and pre-workshop preparation  
-- <a href="/create-event-website/" target="_blank">How to Create an Event Website</a>: to setup an event website
+- <a href="/training-materials/" target="_blank">Training Materials</a>: slides and example video recordings of different lectures  
+- <a href="/agenda-templates/" target="_blank">Agenda Templates</a>: example agenda templates for different types of workshops  
+- <a href="https://drive.google.com/drive/folders/1do1xmzc8-sPm5ioGMvOuOcfyYULCF9dT?usp=share_link" target="_blank">Registration Forms</a>: registration form templates
+- <a href="/email-templates/" target="_blank">Email Templates</a>: example emails to send to instructors and attendees
+- <a href="/create-event-website/" target="_blank">Creating an Event Website</a>: how to setup an event website
+- <a href="/organizing-events-faq/" target="_blank">Organizing Events FAQ</a>: answers to common questions about organizing NWB events
 
-If you have any questions when considering self-organizing an event, please contact us using the <a href="https://github.com/NeurodataWithoutBorders/helpdesk/discussions" target="_blank">NWB helpdesk</a> or on <a href="https://join.slack.com/t/nwb-users/shared_invite/enQtNzMwOTcwNzQ2MDM3LTY5NDk5YjA5Y2RhNTJlZWQzYWM3MmQyNTVhZDQyNDA5ZGViYWE5N2NlMzc4YjQzODZkMGVhZjFiYTZhNGNmY2U" target="_blank">Slack</a>.
+If you have any questions when considering self-organizing an event, please contact us using the <a href="https://github.com/NeurodataWithoutBorders/helpdesk/discussions" target="_blank">NWB Help Desk</a> or on <a href="https://join.slack.com/t/nwb-users/shared_invite/enQtNzMwOTcwNzQ2MDM3LTY5NDk5YjA5Y2RhNTJlZWQzYWM3MmQyNTVhZDQyNDA5ZGViYWE5N2NlMzc4YjQzODZkMGVhZjFiYTZhNGNmY2U" target="_blank">Slack</a>.
