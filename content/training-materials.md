@@ -104,7 +104,7 @@ The following table provides an overview of training materials for NWB workshops
       <td>Introduction to advanced data I/O methods and different NWB backends (Zarr, HDF5)</td>
       <td class="duration">30 min</td>
       <td><a href="https://www.youtube.com/watch?v=f47yZxJ1w5k&list=PL5wPNhoBP0ZB2sLuRKWqwgXf9V3FRl1bw&index=6" target="_blank" class="resource-link">Introduction to Advanced Data I/O</a></td>
-      <td>&mdash;</td>
+      <td><a href="https://docs.google.com/presentation/d/1scbnjqkV3BaYxgv8b2IwFOH5VUXri2E5_oXuV97SFoo/edit?usp=share_link" target="_blank" class="resource-link">NWB Backends and Advanced Data I/O</a></td>
     </tr>
     <tr>
       <td><strong>Extensions in NWB</strong></td>
@@ -118,7 +118,7 @@ The following table provides an overview of training materials for NWB workshops
       <td>Introduction to terminologies and the HDMF External Resources Data in NWB</td>
       <td class="duration">15 min</td>
       <td><a href="https://www.youtube.com/watch?v=ILfPrV_8Zns&list=PL5wPNhoBP0ZB2sLuRKWqwgXf9V3FRl1bw&index=7" target="_blank" class="resource-link">Introduction to Terminologies and HERD</a></td>
-      <td>&mdash;</td>
+      <td>Walk through <a href="https://drive.google.com/file/d/1DwDxjnQJMlz4sU3FsLwKKGbZtO4huH9B/view?usp=share_link" target="_blank" class="resource-link">Defining Terminologies Notebook</a></td>
     </tr>
     <tr>
       <td><strong>Reading and Streaming NWB Files</strong></td>
