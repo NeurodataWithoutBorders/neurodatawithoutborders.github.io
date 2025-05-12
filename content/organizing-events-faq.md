@@ -23,4 +23,4 @@ Virtual workshops offer the advantage of being more broadly accessible to indivi
 
 # Does my workshop need to follow the timeline in the agenda template?
 
-We encourage you to structure your workshop in whatever manner best suits your institution or audience's needs. We have run workshops ranging from a couple of hours (for an introduction to NW workshop) to up to 5 days long (for data reuse workshops and hackathons). The agenda templates provide a rough guideline to how our events have been structured historically, but feel free to experiment with timelines depending on the needs of your group.
+We encourage you to structure your workshop in whatever manner best suits your institution or audience's needs. We have run workshops ranging from a couple of hours (for an introduction to NWB workshop) to up to 5 days long (for data reuse workshops and hackathons). The agenda templates provide a rough guideline to how our events have been structured historically, but feel free to experiment with timelines depending on the needs of your group.

@@ -11,13 +11,13 @@ This page provides example agenda templates for different types of NWB workshops
 
 ## NWB \+ DANDI Overview Workshop Template
 
-**Learning objective:** Attendees will learn about the NWB and DANDI software ecosystem, from data conversion and data publication to data reuse.
+- **Learning objective:** Attendees will learn about the NWB and DANDI software ecosystem, from data conversion and data publication to data reuse.
 
-**Estimated duration:** 1 day. The talks can be covered in a half day, and the remaining time can be used for conversion projects, discussion, or 1:1 support.
+- **Estimated duration:** 1 day. The talks can be covered in a half day, and the remaining time can be used for conversion projects, discussion, or 1:1 support.
 
-**Prerequisites / requirements:** None, this workshop is intended for people new to the NWB ecosystem.
+- **Prerequisites / requirements:** None, this workshop is intended for people new to the NWB ecosystem.
 
-**Previous examples:** [NWB and DANDI Workshop at University of Washington](http://nwb.org/events/workshop-2025-uwashington/), [NWB and DANDI Workshop at CoSyNe 2025](http://nwb.org/events/cosyne-2025/), [NWB and DANDI Workshop at UNAM](http://nwb.org/events/workshop-2025-unam/)
+- **Previous examples:** [NWB and DANDI Workshop at University of Washington](http://nwb.org/events/workshop-2025-uwashington/), [NWB and DANDI Workshop at CoSyNe 2025](http://nwb.org/events/cosyne-2025/), [NWB and DANDI Workshop at UNAM](http://nwb.org/events/workshop-2025-unam/)
 
 ### Example Agenda
 
@@ -30,13 +30,13 @@ This page provides example agenda templates for different types of NWB workshops
 
 ## Community Hackathon Template
 
-**Learning objective:** Attendees will conduct development projects to contribute to the NWB software ecosystem.
+- **Learning objective:** Attendees will conduct development projects to contribute to the NWB software ecosystem.
 
-**Estimated duration:** 3 days. Most of the time is spent on hacking. Depending on the group, it can be helpful to host breakout discussions for specific topics of interest. The hackathon concludes with final project presentations.
+- **Estimated duration:** 3 days. Most of the time is spent on hacking. Depending on the group, it can be helpful to host breakout discussions for specific topics of interest. The hackathon concludes with final project presentations.
 
-**Prerequisites / requirements:** This is not a training event, so some level of familiarity with NWB is helpful though not required. 
+- **Prerequisites / requirements:** This is not a training event, so some level of familiarity with NWB is helpful though not required. 
 
-**Previous examples:** [NWB Developer Hackathon 2024](http://nwb.org/events/hck18-2024-dev-hackathon-datajoint/), [Developer Days 2023](http://nwb.org/events/hck15-2023-janelia/), [Developer Days 2022](http://nwb.org/events/hck12-2022-remote/)
+- **Previous examples:** [NWB Developer Hackathon 2024](http://nwb.org/events/hck18-2024-dev-hackathon-datajoint/), [Developer Days 2023](http://nwb.org/events/hck15-2023-janelia/), [Developer Days 2022](http://nwb.org/events/hck12-2022-remote/)
 
 ### Example Agenda
 
@@ -81,13 +81,13 @@ The first day provides an overview of the hackathon and highlights planned break
 
 ## Data Reuse Workshop Template
 
-**Learning objective:** Attendees will learn how to work with data on DANDI and will conduct a data reuse project to re-analyze existing data on NWB.
+- **Learning objective:** Attendees will learn how to work with data on DANDI and will conduct a data reuse project to re-analyze existing data on NWB.
 
-**Estimated duration:** 5 days. The first day covers the core material about working with data on DANDI. The second day can focus on additional guest lectures to introduce attendees to different tools and datasets on DANDI. The remaining time can be spent on project hacking / analysis, with the workshop concluding in project presentations.
+- **Estimated duration:** 5 days. The first day covers the core material about working with data on DANDI. The second day can focus on additional guest lectures to introduce attendees to different tools and datasets on DANDI. The remaining time can be spent on project hacking / analysis, with the workshop concluding in project presentations.
 
-**Prerequisites / requirements:** In previous workshops, we have required participants to propose a project with specific dandisets as part of their application. These projects can change throughout the course of the workshop.
+- **Prerequisites / requirements:** In previous workshops, we have required participants to propose a project with specific dandisets as part of their application. These projects can change throughout the course of the workshop.
 
-**Previous examples:** [NeuroDataReHack 2024](http://nwb.org/events/hck21-2024-janelia-ndrh/), [NeuroDataReHack 2023](http://nwb.org/events/hck16-2023-granada-rh/), [NeuroDataReHack 2022](http://nwb.org/events/hck14-2022-seattle-rh/)
+- **Previous examples:** [NeuroDataReHack 2024](http://nwb.org/events/hck21-2024-janelia-ndrh/), [NeuroDataReHack 2023](http://nwb.org/events/hck16-2023-granada-rh/), [NeuroDataReHack 2022](http://nwb.org/events/hck14-2022-seattle-rh/)
 
 ### Example Agenda
 
@@ -139,13 +139,13 @@ discussion and feedback on the workshop and next steps.
 
 ## Data Conversion Workshop Template
 
-**Learning objective:** Attendees will learn how to convert their data to NWB and publish it on the DANDI Archive. 
+- **Learning objective:** Attendees will learn how to convert their data to NWB and publish it on the DANDI Archive. 
 
-**Estimated duration:** 2-3 days. The core material on data conversion can be covered on the first day. Depending on the interests of the audience, additional lectures can be given on domain specific topics or advanced data I/O.  
+- **Estimated duration:** 2-3 days. The core material on data conversion can be covered on the first day. Depending on the interests of the audience, additional lectures can be given on domain specific topics or advanced data I/O.  
    
-**Prerequisites / requirements:** Data for conversion.
+- **Prerequisites / requirements:** Data for conversion.
 
-**Previous examples:** [NWB Data Conversion Workshop 2025](http://www.nwb.org/events/hck22-2025-dataconversion-remote/), [NWB Data Conversion Workshop 2024](http://www.nwb.org/events/hck19-2024-remote/), [NWB User Days 2023](http://www.nwb.org/events/hck15-2023-janelia/)
+- **Previous examples:** [NWB Data Conversion Workshop 2025](http://www.nwb.org/events/hck22-2025-dataconversion-remote/), [NWB Data Conversion Workshop 2024](http://www.nwb.org/events/hck19-2024-remote/), [NWB User Days 2023](http://www.nwb.org/events/hck15-2023-janelia/)
 
 ### Example Agenda
 
