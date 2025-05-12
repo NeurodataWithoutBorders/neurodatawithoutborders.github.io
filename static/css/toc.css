@@ -1,0 +1,80 @@
+/* Table of Contents styling */
+.toc-container {
+    background: #f8f9fa !important;
+    border: 1px solid #e9ecef !important;
+    border-radius: 5px !important;
+    padding: 1.5rem !important;
+    margin-bottom: 2rem !important;
+}
+.toc-container h2 {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    font-size: 1.25rem !important;
+    display: block !important;
+    border-bottom: none !important;
+}
+.toc-list {
+    list-style-type: none !important;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+.toc-list ul {
+    list-style-type: none !important;
+    padding-left: 1.5rem !important;
+}
+.toc-list li {
+    margin-bottom: 0.5rem !important;
+}
+.toc-list a {
+    text-decoration: none !important;
+    color: #007bff !important;
+}
+.toc-list a:hover {
+    text-decoration: underline !important;
+}
+
+/* Styling for FAQ main page */
+/* These are direct selectors that don't rely on class nesting */
+#content-container.faq-content h2 {
+    margin-top: 3rem !important;
+    margin-bottom: 2rem !important;
+    padding-bottom: 0.5rem !important;
+    border-bottom: 2px solid #007bff !important;
+    display: inline-block !important;
+}
+
+#content-container.faq-content h3 {
+    margin-top: 2.5rem !important;
+    padding-top: 1.5rem !important;
+    border-top: 1px solid #f0f0f0 !important;
+}
+
+#content-container.faq-content h3:first-of-type {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border-top: none !important;
+}
+
+/* Styling for FAQ detail pages */
+#content-container.faq-detail h2 {
+    margin-top: 2.5rem !important;
+    padding-bottom: 0.5rem !important;
+    border-bottom: 2px solid #007bff !important;
+    display: inline-block !important;
+}
+
+#content-container.faq-detail h3 {
+    margin-top: 2rem !important;
+    padding-top: 1rem !important;
+}
+
+#content-container.faq-detail p {
+    margin-bottom: 1.25rem !important;
+}
+
+/* Universal styles for better text selection */
+#content-container h2, 
+#content-container h3, 
+#content-container p {
+    user-select: auto !important;
+}
