@@ -2,7 +2,7 @@
 title: "Training Materials"
 summary: "Overview of training materials available for NWB workshops and events."
 draft: false
-type: "page"
+type: "training-and-event-resources"
 ---
 
 # Training Materials Overview

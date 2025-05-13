@@ -2,7 +2,7 @@
 title: "Creating an Event Website"
 summary: "Instructions for creating a website for your NWB event."
 draft: false
-type: "page"
+type: "training-and-event-resources"
 ---
 
 # Creating an Event Website

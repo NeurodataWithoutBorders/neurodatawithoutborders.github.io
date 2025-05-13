@@ -4,8 +4,10 @@ bg_image: "/images/events/default-event-banner.png"
 image: "/images/events/default-event-banner.png"
 summary: "Example agenda templates for organizing Neurodata Without Borders (NWB) events."
 draft: false
-type: "page"
+type: "training-and-event-resources"
 ---
+
+# Agenda Templates
 
 This page provides example agenda templates for different types of NWB workshops. These templates can be customized to fit your specific event needs.
 

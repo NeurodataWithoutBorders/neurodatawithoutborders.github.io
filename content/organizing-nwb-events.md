@@ -4,8 +4,10 @@ bg_image: "/images/events/default-event-banner.png"
 image: "/images/events/default-event-banner.png"
 summary: "Guidelines and resources for organizing Neurodata Without Borders (NWB) events."
 draft: false
-type: "page"
+type: "training-and-event-resources"
 ---
+
+# Organizing NWB events
 
 Organizing an NWB event is a great way to contribute to the neurophysiology community and help researchers learn about the NWB format, data conversion, and analysis tools. This page provides guidelines and resources for planning and executing successful NWB events in your community.
 
