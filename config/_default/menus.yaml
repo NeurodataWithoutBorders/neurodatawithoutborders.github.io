@@ -50,10 +50,6 @@ main:
     weight: 2
     url: "events/"
     parent: "Community"
-  - name: "Organizing NWB Events"
-    weight: 4
-    url: "organizing-nwb-events/"
-    parent: "Community"
   - name: "Enhancement Proposals"
     weight: 4
     url: "https://github.com/nwb-extensions/nwbep-review/"
@@ -87,7 +83,7 @@ main:
     weight: 4
     url: "policies/"
     parent: "Resources"
-  - name: "Training Materials"
+  - name: "Training & Event Materials"
     weight: 5
     url: "training-materials/"
     parent: "Resources"
@@ -127,14 +123,11 @@ community_links:
   - name: "About Events"
     weight: 3
     url: "/about-events"
-  - name: "Organizing NWB Events"
-    weight: 4
-    url: "/organizing-nwb-events"
   - name: "Working Groups"
-    weight: 5
+    weight: 4
     url: "/working-groups"
   - name: "Contact Us"
-    weight: 6
+    weight: 5
     url: "/contact-us"
 
 resources:
@@ -150,10 +143,9 @@ resources:
   - name: "Policies"
     weight: 4
     url: "/policies"
-  - name: "Training Materials"
+  - name: "Training & Event Materials"
     weight: 5
     url: "/training-materials"
   - name: "FAQ"
     weight: 6
     url: "/faq"
-  
