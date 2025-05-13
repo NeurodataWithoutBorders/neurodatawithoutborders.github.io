@@ -22,13 +22,13 @@
       <!-- Side Navigation -->
       <div id="eventResourcesSidebar" class="d-lg-block event-resources-nav sidebar-container" style="width: 280px !important;">
         <div class="d-flex flex-column row-gap-3 my-2">
+          <a href="/training-materials/" 
+          class="bg-white rounded-3 shadow-sm px-3 py-2 d-flex align-items-center gap-2 nav-link sideLink {{ if eq .RelPermalink "/training-materials/" }}active{{ end }}">
+            <span class="inter-400 dark-700 text-16 mb-0 pt-1 filter-icon animate {{ if eq .RelPermalink "/training-materials/" }}active-text{{ end }}">Training Materials</span>
+          </a>
           <a href="/organizing-nwb-events/" 
              class="bg-white rounded-3 shadow-sm px-3 py-2 d-flex align-items-center gap-2 nav-link sideLink {{ if eq .RelPermalink "/organizing-nwb-events/" }}active{{ end }}">
             <span class="inter-400 dark-700 text-16 mb-0 pt-1 filter-icon animate {{ if eq .RelPermalink "/organizing-nwb-events/" }}active-text{{ end }}">Organizing NWB Events</span>
-          </a>
-          <a href="/training-materials/" 
-             class="bg-white rounded-3 shadow-sm px-3 py-2 d-flex align-items-center gap-2 nav-link sideLink {{ if eq .RelPermalink "/training-materials/" }}active{{ end }}">
-            <span class="inter-400 dark-700 text-16 mb-0 pt-1 filter-icon animate {{ if eq .RelPermalink "/training-materials/" }}active-text{{ end }}">Training Materials</span>
           </a>
           <a href="/agenda-templates/" 
              class="bg-white rounded-3 shadow-sm px-3 py-2 d-flex align-items-center gap-2 nav-link sideLink {{ if eq .RelPermalink "/agenda-templates/" }}active{{ end }}">

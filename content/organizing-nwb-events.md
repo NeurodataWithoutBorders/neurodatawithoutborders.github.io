@@ -2,14 +2,14 @@
 title: "Organizing NWB Events"
 bg_image: "/images/events/default-event-banner.png"
 image: "/images/events/default-event-banner.png"
-summary: "Guidelines and resources for organizing Neurodata Without Borders (NWB) events."
+summary: "Training materials and resources for organizing Neurodata Without Borders (NWB) events."
 draft: false
 type: "training-and-event-resources"
 ---
 
-# Organizing NWB events
+# Organizing NWB Events
 
-Organizing an NWB event is a great way to contribute to the neurophysiology community and help researchers learn about the NWB format, data conversion, and analysis tools. This page provides guidelines and resources for planning and executing successful NWB events in your community.
+Organizing an NWB event is a great way to contribute to the neurophysiology community and help researchers learn about the NWB format, data conversion, and analysis tools. This page provides training materials from previous NWB events and resources for planning and executing successful NWB events in your community.
 
 ## Types of NWB events
 
