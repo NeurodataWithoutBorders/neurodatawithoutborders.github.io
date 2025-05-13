@@ -1,0 +1,62 @@
+{{ define "main" }}
+<!-- Include sidebar.js for mobile navigation -->
+<script src="/js/sidebar.js"></script>
+{{/* Hero Section */}}
+<section class="hero aboutSect d-flex justify-content-center align-items-center position-relative">
+  <div class="col-md-6">
+    <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
+  </div>
+</section>
+{{/* End Hero Section */}}
+
+{{/*  Main Section with Side Navigation  */}}
+<section class="section">
+  <div class="container-lg">
+    <!-- Mobile Toggle Button (visible only on small screens) -->
+    <button class="d-lg-none btn btn-primary position-fixed sidebar-toggle" 
+            style="top: 70px; right: 20px; z-index: 1000;">
+      <i class="fas fa-bars"></i> Menu
+    </button>
+    
+    <div class="row gy-5 justify-content-center justify-content-lg-between">
+      <!-- Side Navigation -->
+      <div id="eventResourcesSidebar" class="d-lg-block event-resources-nav sidebar-container" style="width: 280px !important;">
+        <div class="d-flex flex-column row-gap-3 my-2">
+          <a href="/organizing-nwb-events/" 
+             class="bg-white rounded-3 shadow-sm px-3 py-2 d-flex align-items-center gap-2 nav-link sideLink {{ if eq .RelPermalink "/organizing-nwb-events/" }}active{{ end }}">
+            <span class="inter-400 dark-700 text-16 mb-0 pt-1 filter-icon animate {{ if eq .RelPermalink "/organizing-nwb-events/" }}active-text{{ end }}">Organizing NWB Events</span>
+          </a>
+          <a href="/training-materials/" 
+             class="bg-white rounded-3 shadow-sm px-3 py-2 d-flex align-items-center gap-2 nav-link sideLink {{ if eq .RelPermalink "/training-materials/" }}active{{ end }}">
+            <span class="inter-400 dark-700 text-16 mb-0 pt-1 filter-icon animate {{ if eq .RelPermalink "/training-materials/" }}active-text{{ end }}">Training Materials</span>
+          </a>
+          <a href="/agenda-templates/" 
+             class="bg-white rounded-3 shadow-sm px-3 py-2 d-flex align-items-center gap-2 nav-link sideLink {{ if eq .RelPermalink "/agenda-templates/" }}active{{ end }}">
+            <span class="inter-400 dark-700 text-16 mb-0 pt-1 filter-icon animate {{ if eq .RelPermalink "/agenda-templates/" }}active-text{{ end }}">Agenda Templates</span>
+          </a>
+          <a href="/email-templates/" 
+             class="bg-white rounded-3 shadow-sm px-3 py-2 d-flex align-items-center gap-2 nav-link sideLink {{ if eq .RelPermalink "/email-templates/" }}active{{ end }}">
+            <span class="inter-400 dark-700 text-16 mb-0 pt-1 filter-icon animate {{ if eq .RelPermalink "/email-templates/" }}active-text{{ end }}">Email Templates</span>
+          </a>
+          <a href="/create-event-website/" 
+             class="bg-white rounded-3 shadow-sm px-3 py-2 d-flex align-items-center gap-2 nav-link sideLink {{ if eq .RelPermalink "/create-event-website/" }}active{{ end }}">
+            <span class="inter-400 dark-700 text-16 mb-0 pt-1 filter-icon animate {{ if eq .RelPermalink "/create-event-website/" }}active-text{{ end }}">Creating an Event Website</span>
+          </a>
+          <a href="/organizing-events-faq/" 
+             class="bg-white rounded-3 shadow-sm px-3 py-2 d-flex align-items-center gap-2 nav-link sideLink {{ if eq .RelPermalink "/organizing-events-faq/" }}active{{ end }}">
+            <span class="inter-400 dark-700 text-16 mb-0 pt-1 filter-icon animate {{ if eq .RelPermalink "/organizing-events-faq/" }}active-text{{ end }}">Organizing Events FAQ</span>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Main Content -->
+      <div class="col-12 col-sm-11 col-lg-8 col-xl-9">
+        <div class="content inter-400 text-18 dark-700 rounded-3 p-2 p-sm-5 shadow-sm bg-white"> 
+          {{ .Content | markdownify }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{/*  End Main Section  */}}
+{{ end }}
