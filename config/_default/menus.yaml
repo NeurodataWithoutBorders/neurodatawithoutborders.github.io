@@ -123,14 +123,11 @@ community_links:
   - name: "About Events"
     weight: 3
     url: "/about-events"
-  - name: "Training & Event Materials"
-    weight: 4
-    url: "/training-materials"
   - name: "Working Groups"
-    weight: 5
+    weight: 4
     url: "/working-groups"
   - name: "Contact Us"
-    weight: 6
+    weight: 5
     url: "/contact-us"
 
 resources:
