@@ -71,7 +71,7 @@ Recordings of talks were made available on the [NWB Youtube channel](https://www
 ## What to bring?
 
 * Create the outline for your project at the hackathon.
-* Bring your laptop with appropriate software installed. For instructions on how to install PyNWB, see [the PyNWB documentation](https://pynwb.readthedocs.io/en/latest/install_users.html). For instructions on how to install MatNWB, see [the MatNWB documentation](https://matnwb.readthedocs.io/en/latest/)
+* Bring your laptop with appropriate software installed. For instructions on how to install PyNWB, see [the PyNWB documentation](https://pynwb.readthedocs.io/en/latest/install_users.html). For instructions on how to install MatNWB, see [the MatNWB documentation](https://matnwb.readthedocs.io)
 
 ## Additional Organizational Support
 
