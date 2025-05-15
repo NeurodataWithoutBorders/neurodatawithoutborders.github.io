@@ -81,7 +81,7 @@ Bring a laptop with appropriate software installed. Python should be installed a
 instructions on how to install PyNWB, see 
 [the PyNWB documentation](https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb). For instructions
 on how to install MatNWB, see
-[the MatNWB documentation](https://matnwb.readthedocs.io/en/latest/)
+[the MatNWB documentation](https://matnwb.readthedocs.io)
 
 ## Testimonials from NeuroDataReHack 2024
 
