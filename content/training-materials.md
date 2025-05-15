@@ -2,10 +2,10 @@
 title: "Training Materials"
 summary: "Overview of training materials available for NWB workshops and events."
 draft: false
-type: "page"
+type: "training-and-event-resources"
 ---
 
-# Training Materials Overview
+# Training Materials
 
 The following table provides an overview of training materials for NWB workshops and events. For more information about the different types of NWB events and how these materials are used, please see the <a href="/organizing-nwb-events/" target="_blank">Organizing NWB events</a> page.
 
@@ -157,22 +157,3 @@ The following table provides an overview of training materials for NWB workshops
     </tr>
   </tbody>
 </table>
-
-## Related Lectures and Invited Speakers
-
-<style>
-.speakers-list {
-  margin: 2rem 0;
-}
-.speakers-list li {
-  margin-bottom: 0.75rem;
-}
-</style>
-
-<ul class="speakers-list">
-  <li><strong>Introduction to OpenScope and DataBook</strong>: Contacts: Jerome Lecoq and Carter Peene</li>
-  <li><strong>SpikeInterface</strong>: Contact: Alessio Buccino</li>
-  <li><strong>Neural Data Analysis with Pynapple</strong>: Contact: Guillaume Viejo</li>
-  <li><strong>Calcium Imaging Processing with Suite2P</strong>: Contact: Carsen Stringer</li>
-  <li><strong>NeuroSift, Dendro, and LINDI</strong>: Contact: Jeremy Magland</li>
-</ul>

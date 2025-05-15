@@ -6,6 +6,18 @@
     padding: 1.5rem !important;
     margin-bottom: 2rem !important;
 }
+
+/* Event Resources Navigation styling */
+.event-resources-nav {
+    position: -webkit-sticky !important; /* Safari */
+    position: sticky !important;
+    top: 100px !important; /* Adjust based on header height */
+    max-height: calc(100vh - 120px) !important; /* Ensure it fits in viewport */
+    overflow-y: auto !important; /* Allow scrolling if nav is taller than viewport */
+    z-index: 100 !important; /* Ensure it appears above other content */
+}
+
+
 .toc-container h2 {
     margin-top: 0 !important;
     margin-bottom: 1rem !important;
@@ -28,9 +40,19 @@
 .toc-list a {
     text-decoration: none !important;
     color: #007bff !important;
+    display: block !important;
+    padding: 0.5rem 0.75rem !important;
+    border-radius: 4px !important;
+    transition: background-color 0.2s ease !important;
 }
 .toc-list a:hover {
-    text-decoration: underline !important;
+    text-decoration: none !important;
+    background-color: #e9ecef !important;
+}
+.toc-list a.active {
+    background-color: #007bff !important;
+    color: white !important;
+    font-weight: 500 !important;
 }
 
 /* Styling for FAQ main page */

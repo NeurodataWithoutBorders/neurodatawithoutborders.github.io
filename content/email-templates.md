@@ -4,7 +4,7 @@ bg_image: "/images/events/default-event-banner.png"
 image: "/images/events/default-event-banner.png"
 summary: "Email templates for organizing Neurodata Without Borders (NWB) events."
 draft: false
-type: "page"
+type: "training-and-event-resources"
 ---
 
 <style>
@@ -41,6 +41,8 @@ type: "page"
   margin-top: 10px;
 }
 </style>
+
+# Email Templates
 
 This page provides email templates that can be used when organizing NWB events. These templates can be customized to fit your specific event needs. Click the "Copy" button to copy the entire template to your clipboard.
 
