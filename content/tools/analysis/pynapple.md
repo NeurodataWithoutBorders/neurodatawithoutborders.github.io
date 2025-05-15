@@ -31,6 +31,6 @@ Pynapple is a unified toolbox for integrated analysis of multiple data sources. 
 ## Resources
 
 - [Documentation](https://pynapple-org.github.io/pynapple/)
-- [DANDI Demo](https://pynapple-org.github.io/pynapple/generated/gallery/tutorial_pynapple_dandi/)
+- [DANDI Demo](https://pynapple.org/examples/tutorial_pynapple_dandi.html)
 - [Source Code](https://github.com/pynapple-org/pynapple)
 - [Twitter](https://twitter.com/thepynapple)

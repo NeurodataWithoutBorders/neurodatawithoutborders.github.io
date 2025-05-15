@@ -15,7 +15,7 @@ organizers:
   - "Justin Kiggins"
 registration: "Registration is now closed."
 resources:
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK04_2018_Seattle"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK04_2018_Seattle"
 ---
 
 ## Dates and Location
