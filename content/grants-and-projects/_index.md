@@ -18,7 +18,7 @@ sponsered_projects:
       image: /images/nwb_elife_fig1.jpg
     - title: "DANDI: Distributed Archives for Neurophysiology Data Integration"
       image: /images/dandi-logo-square_sw.png
-      content: "The National Institutes of Health, through project <a href='https://projectreporter.nih.gov/project_info_description.cfm?aid=9795271&icde=45848280&ddparam=&ddvalue=&ddsub=&cr=2&csb=default&cs=ASC&pball='>1R24MH117295</a>, funded <a href='https://satra.cogitatum.org/'>Satrajit Ghosh</a> (Massachusetts Institute of Technology) and Yaroslav Halchenko (<a href='http://centerforopenneuroscience.org/'>Center for Open Neuroscience</a>) to create the DANDI archive for neurophysiology Data.
+      content: "The National Institutes of Health, through project <a href='https://reporter.nih.gov/search/saUqMstUpUOyrCHz_4rakA/project-details/9795271'>1R24MH117295</a>, funded <a href='https://satra.cogitatum.org/'>Satrajit Ghosh</a> (Massachusetts Institute of Technology) and Yaroslav Halchenko (<a href='http://centerforopenneuroscience.org/'>Center for Open Neuroscience</a>) to create the DANDI archive for neurophysiology Data.
       
     * Provides a cloud platform for versioned neurophysiology data storage for the purposes of collaboration, archiving, and preservation.
     

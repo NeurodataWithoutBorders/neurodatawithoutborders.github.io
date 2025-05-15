@@ -26,7 +26,7 @@ The [Neurodata Without Borders (NWB)](https://www.nwb.org/) team is holding a tu
 
 The DANDI Archive now has 100+ publicly available neurophysiology datasets stored using the NWB data standard.
 
-The NWB project is an effort to standardize the description and storage of neurophysiology data and metadata. NWB enables data sharing and reuse and reduces the energy-barrier to applying data analytics both within and across labs. NWB is more than just a file format but it defines an [ecosystem](https://nwb-overview.readthedocs.io/en/latest/tools/tools_home.html) of tools, methods, and standards for storing, sharing, and analyzing complex neurophysiology data.
+The NWB project is an effort to standardize the description and storage of neurophysiology data and metadata. NWB enables data sharing and reuse and reduces the energy-barrier to applying data analytics both within and across labs. NWB is more than just a file format but it defines an [ecosystem](https://nwb.org/nwb-software/) of tools, methods, and standards for storing, sharing, and analyzing complex neurophysiology data.
 
 ## What You'll Learn
 
@@ -48,7 +48,7 @@ Bring your laptop to work along with the demonstration. To get familiar with NWB
 - **9:20 - 9:50**: How to analyze NWB data using popular data processing and visualization tools
   - Using [SpikeInterface](https://github.com/SpikeInterface/spikeinterface#spikeinterface-a-unified-framework-for-spike-sorting) to sort raw extracellular electrophysiology recording data streamed from DANDI & write the output back to NWB
   - Storing [DeepLabCut](http://www.mackenziemathislab.org/deeplabcut) and [SLEAP](https://sleap.ai/) pose estimation data in NWB
-  - Using calcium imaging analysis tools, such as [CaImAn](https://github.com/flatironinstitute/CaImAn#caiman) and [suite2p](https://www.suite2p.org/) to process and segment raw imaging data and write the output to NWB
+  - Using calcium imaging analysis tools, such as [CaImAn](https://github.com/flatironinstitute/CaImAn#caiman) and [suite2p](https://suite2p.readthedocs.io) to process and segment raw imaging data and write the output to NWB
 
 ## Survey
 
