@@ -5,7 +5,7 @@ sponsered_projects:
   boxes:
     - title: Advancing Standardization of Neurophysiology Data Through Dissemination
         of NWB
-      content: The National Institute of Health, through project 5U24NS120057, funded
+      content: The National Institute of Health, through project <a href='https://reporter.nih.gov/search/TZAZm50FMEia3LL8sRu9xw/project-details/11031355'>5U24NS120057</a>, funded
         Oliver Rübel (Lawrence Berkeley National Laboratory) and Benjamin
         Dichter (CatalystNeuro) to disseminate Neurodata Without Borders (NWB)
         neurophysiology technologies developed as part of the NIH BRAIN
@@ -186,7 +186,7 @@ past_projects_section:
     - image: /images/project_components.png
       title: "NWB: A Data Standard and Software Ecosystem for Neurophysiology"
       content: The National Institutes of Health, through project <a
-        href='https://projectreporter.nih.gov/project_info_description.cfm?aid=9582696&icde=44882289'>1R24MH116922</a>, funded <a href='https://dav.lbl.gov/~oruebel/'>Oliver Rübel</a> (Lawrence
+        href='https://reporter.nih.gov/search/39Cu1-L5zUap7i3X41dBTA/project-details/9582696'>1R24MH116922</a>, funded <a href='https://dav.lbl.gov/~oruebel/'>Oliver Rübel</a> (Lawrence
         Berkeley National Laboratory) and <a href='https://alleninstitute.org/what-we-do/brain-science/about/team/staff-profiles/lydia-ng/'>Lydia Ng</a> (Allen
         Institute for Brain Science) to continue development of the NWB data
         format and software ecosystem to enable standardization, sharing, and
@@ -196,7 +196,7 @@ past_projects_section:
         this project see our <a href='http://www.nwb.org/progress-reports/'>Progress Reports page</a>.
     - image: /images/enabling_sharing_nwb.png
       title: Enabling Shared Analysis and Processing of Large Neurophysiology Data
-      content: The National Institutes of Health, through project <a href='https://projectreporter.nih.gov/project_info_description.cfm?aid=9795271&icde=45848280&ddparam=&ddvalue=&ddsub=&cr=2&csb=default&cs=ASC&pball='>1R44MH115731</a>, funded
+      content: The National Institutes of Health, through project <a href='https://reporter.nih.gov/search/MrtOAMt7skGS5bbZADQBMQ/project-details/9409114'>1R44MH115731</a>, funded
         William Schroeder (Kitware, Inc.) to create software tools to browse,
         process, analyze, and visualize NWB data. This funding is part of the
         NIH’s BRAIN Initiative Small Business Innovation Research (SBIR) grant
