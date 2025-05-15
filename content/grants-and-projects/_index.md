@@ -223,5 +223,5 @@ boxes:
       content: The Simons Foundation funds projects (Aug.2017 – present) to develop
         and expand the NWB2.0 Matlab API MatNWB to allow for adoption by a
         larger portion of the neuroscience community.
-      image: "https://github.com/NeurodataWithoutBorders/matnwb/raw/master/logo/logo_matnwb_small.png"
+      image: "https://github.com/NeurodataWithoutBorders/matnwb/raw/main/logo/logo_matnwb_small.png"
 ---
