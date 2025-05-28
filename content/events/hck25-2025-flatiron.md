@@ -22,7 +22,7 @@ aliases:
 ## Dates and Location
 
 - **Dates:** Monday, August 4, 2025, 9 AM to Wednesday, August 6, 2025, 5:30 PM
-- **Location:** Flatiron Institute, [162 5th Ave, New York, NY 10010, USA](https://www.google.com/maps/place/Flatiron+Institute/data=!4m2!3m1!1s0x0:0x8849799a20fe5d4a?sa=X&ved=1t:2428&ictx=111)
+- **Location:** Flatiron Institute, [160 5th Ave, New York, NY 10010, USA](https://www.google.com/maps/place/160+5th+Ave,+New+York,+NY+10010/data=!4m2!3m1!1s0x89c259a397dc84eb:0x7cc3edc894776bb6?sa=X&ved=1t:242&ictx=111)
 
 ## Overview
 
