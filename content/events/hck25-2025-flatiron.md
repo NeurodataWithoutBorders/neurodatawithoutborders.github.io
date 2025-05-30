@@ -46,7 +46,11 @@ The NWB Community Hackathon will bring neuroscientists, tool builders, and resea
 ## Logistics
 
 ### Housing
-Housing support is not provided. Housing options near the hackathon will be suggested in May.
+Housing support is not provided. Here are some low-cost hotels that are near the venue.
+
+- [Freehand New York](https://freehandhotels.com/) - approx. $768 for 3 nights
+- [Fairfield Inn & Suites New York Manhattan/Chelsea](https://www.marriott.com/en-us/hotels/nyctw-fairfield-inn-and-suites-new-york-manhattan-chelsea/overview/) - approx. $800 for 3 nights
+- [Motto by Hilton](https://www.hilton.com/en/brands/motto-by-hilton/) - approximately $900 for 3 nights with The Hilton Sale Honors, great reviews
 
 ### Travel
 Travel support is not provided.
@@ -57,7 +61,7 @@ Continental breakfast and boxed lunches will be provided, courtesy of the Simons
 ## Organizing Committee
 
 - **Program chairs:** Ryan Ly and Matthew Avalyon
-- **Site Chair:** To be determined
+- **Site Chair:** Edoardo Balzani, Jessica Hauser, Alicja Jankowska, Tori Hall
 
 ## Code of Conduct
 
