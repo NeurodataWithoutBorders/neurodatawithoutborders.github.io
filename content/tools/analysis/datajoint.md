@@ -28,5 +28,5 @@ DataJoint Elements support automatic conversion to NWB format. For example, the 
 
 ## Resources
 
-- [DataJoint Elements](https://datajoint.com/elements)
+- [DataJoint Elements](https://docs.datajoint.com/elements/)
 - [NWB Export Documentation](https://github.com/datajoint/element-array-ephys/blob/main/element_array_ephys/export/nwb/README.md)
