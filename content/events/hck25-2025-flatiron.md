@@ -48,14 +48,6 @@ The NWB Community Hackathon will bring neuroscientists, tool builders, and resea
 ### Housing
 Housing support is not provided. Here are some low-cost hotels that are near the venue.
 
-Freehand New York
-$768 for queen bed, 3 nights, with code SUMMERCITY
-Springhill Suites New York Manhattan/Chelsea
-$834 for studio king bed, 3 nights, Stay Longer Save rate
-Motto by Hilton New York City Chelsea
-$898 for king bed, 3 nights, The Hilton Sale with Honors Discount, great reviews
-
-
 - [Freehand New York](https://freehandhotels.com/summer-in-the-city/) - approx. $768 for queen bed, 3 nights, with code SUMMERCITY
 - [Springhill Suites New York Manhattan/Chelsea](https://www.marriott.com/en-us/hotels/nycsl-springhill-suites-new-york-manhattan-chelsea/overview/) - approx. $834 for studio king bed, 3 nights, Stay Longer Save rate
 - [Motto by Hilton New York City Chelsea](https://www.hilton.com/en/brands/motto-by-hilton/) - approximately $898 for king bed, 3 nights, The Hilton Sale with Honors Discount, great reviews
