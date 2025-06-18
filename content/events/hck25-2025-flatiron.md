@@ -11,7 +11,7 @@ draft: false
 organizers:
   - "Ryan Ly"
   - "Matthew Avalyon"
-registration: "Register for the event [here](https://docs.google.com/forms/d/e/1FAIpQLScGO7ljpLWACStymeJU4wBSgNhNCyUN4H5xfQN32M_8qMriBg/viewform?usp=dialog)."
+registration: "Register for the event [here] by July 16 (https://docs.google.com/forms/d/e/1FAIpQLScGO7ljpLWACStymeJU4wBSgNhNCyUN4H5xfQN32M_8qMriBg/viewform?usp=dialog)."
 resources:
   "Event Page": "https://neurodatawithoutborders.github.io/nwb_hackathons/HCK25_2025_Community_Hackathon_Flatiron/"
   "Code of Conduct": "https://neurodatawithoutborders.github.io/nwb_hackathons/code_of_conduct"
@@ -42,6 +42,7 @@ The NWB Community Hackathon will bring neuroscientists, tool builders, and resea
 - If you are new to NWB but still interested in attending, the NWB team provides many [video tutorials](https://www.youtube.com/watch?v=xZiSesEVA3o&list=PL5wPNhoBP0ZB2sLuRKWqwgXf9V3FRl1bw) and [online documentation](https://nwb-overview.readthedocs.io/en/latest/intro_to_nwb/1_intro_to_nwb.html).
 - If you want to learn how to convert your data to NWB, consider attending the [virtual NWB Data Conversion Workshop](https://neurodatawithoutborders.github.io/nwb_hackathons/HCK22_2025_DataConversion_Remote/) in May 2025.
 - We encourage participants to stay at the hackathon until the very end - Wednesday at 5:30 PM - to participate in the final project presentations.
+- The deadline to register is July 16.
 
 ## Logistics
 
