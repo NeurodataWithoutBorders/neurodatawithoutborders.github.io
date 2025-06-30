@@ -111,7 +111,7 @@ tab_alumni_section:
     - name: Oliver Ruebel
       date: Nov. 2022 - Jan. 2024
 core_dev_section:
-  pynwb_section:
+  nwb_core_section:
     enable: true
     team_members:
       - image: /images/oliver-ruebel.png
@@ -120,22 +120,26 @@ core_dev_section:
       - image: /images/ryan-ly.png
         name: Ryan Ly
         post: Scientific Data Engineer at Berkeley Lab
-      - image: /images/andrew-tritt.png
-        name: Andrew Tritt
-        post: Computer Systems Engineer at Berkeley Lab
+      - image: /images/stephanie-prince.png
+        name: Stephanie Prince
+        post: Scientific Data Engineer at Berkeley Lab
       - image: /images/matthew-avaylon.png
         name: Matthew Avaylon
         post: Staff Software Engineer at Berkeley Lab
-  matnwb_section:
-    enable: true
-    image: /images/eivind-hennestad.png
-    name: Eivind Hennestad
-    post: Lead developer of MatNWB
+      - image: /images/eivind-hennestad.png
+        name: Eivind Hennestad
+        post: Lead developer of MatNWB
   nwb_community_section:
     enable: true
     image: /images/ben-dichter.jpeg
     name: Ben Dichter
     post: Founder and CEO, CatalystNeuro
+  previous_members_section:
+    enable: true
+    members:
+      - image: /images/andrew-tritt.png
+        name: Andrew Tritt
+        post: Computer Systems Engineer at Berkeley Lab
 dev_community_section:
   enable: true
   title: Developer Community
