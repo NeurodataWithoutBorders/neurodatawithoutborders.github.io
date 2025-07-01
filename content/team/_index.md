@@ -146,8 +146,8 @@ dev_community_section:
   enable: true
   title: Developer Community
   content: "NWB values open source software and practices. Many users
-    anddevelopers from our community have contributed to NWB as part of
-    hackthons, bug fixes, new features, andtools. Details about the contributors
+    and [developers](https://nwb-overview.readthedocs.io/en/latest/nwb-project-analytics/docs/source/code_stat_pages/code_stats_main.html#contributors) from our community have contributed to NWB as part of
+    hackthons, bug fixes, new features, and tools. Details about the contributors
     to our various software are available on our NWB GitHub Organization and the
     different GitHub repositories: NWB Schema, PyNWB, MatNWB, HDMF among many
     others."
