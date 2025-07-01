@@ -41,6 +41,12 @@ Example projects include but are not limited to:
 This event will primarily focus on analyzing existing data in NWB and on DANDI, **not** converting data to NWB. If 
 you are interested in learning how to convert data, consider signing up for an NWB Data Conversion Workshop.
 
+## Schedule
+
+<img src="/images/events/hck24-2025-janelia-ndrh/Agenda -- NeuroDataReHack 2025.png" alt="Agenda NeuroDataReHack 2025" class="img-fluid">
+
+[Download Agenda PDF](/images/events/hck24-2025-janelia-ndrh/Agenda%20--%20NeuroDataReHack%202025.pdf)
+
 ## Kavli Neurodata Discovery Award
 
 Following the event, participants will be invited to apply for a Kavli Foundation Neurodata Discovery Awards, which awards $50,000 (USD) of funding to continue data reanalysis projects that come out of the NeuroDataReHack event. This is a funding opportunity exclusive to NeuroDataReHack participants.
