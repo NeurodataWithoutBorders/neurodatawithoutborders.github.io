@@ -140,6 +140,8 @@ core_dev_section:
       - image: /images/andrew-tritt.png
         name: Andrew Tritt
         post: Computer Systems Engineer at Berkeley Lab
+      - name: Lawrence Niu
+        post: Principal Engineer at MBF Biosciences 
 dev_community_section:
   enable: true
   title: Developer Community
