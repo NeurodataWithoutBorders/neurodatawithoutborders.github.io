@@ -11,7 +11,7 @@ draft: false
 organizers:
   - "Ryan Ly"
   - "Matthew Avalyon"
-registration: "Register for the event [here] by July 16 (https://docs.google.com/forms/d/e/1FAIpQLScGO7ljpLWACStymeJU4wBSgNhNCyUN4H5xfQN32M_8qMriBg/viewform?usp=dialog)."
+registration: "Register for the event [here](https://docs.google.com/forms/d/e/1FAIpQLScGO7ljpLWACStymeJU4wBSgNhNCyUN4H5xfQN32M_8qMriBg/viewform?usp=dialog) by July 16 ."
 resources:
   "Event Page": "https://neurodatawithoutborders.github.io/nwb_hackathons/HCK25_2025_Community_Hackathon_Flatiron/"
   "Code of Conduct": "https://neurodatawithoutborders.github.io/nwb_hackathons/code_of_conduct"
