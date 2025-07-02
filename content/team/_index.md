@@ -103,6 +103,9 @@ technical_team_section:
     - image: /images/szonja-weigl.jpeg
       name: Anna (Szonja) Weigl
       post: Research Software Engineer at CatalystNeuro
+    - image: /images/heberto.jpg
+      name: Heberto Mayorquin
+      post: Sr. Research Software Engineer at CatalystNeuro
 tab_alumni_section:
   enable: true
   alumni:
