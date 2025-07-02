@@ -69,11 +69,11 @@ resources:
   data not in NWB), you should know how to read the data using Python or MATLAB and ideally have scripts ready for 
   reading the data.
 * Bring your laptop with appropriate software installed. For installation instructions see:
-  * [**PyNWB (Python)**](https://pynwb.readthedocs.io/en/stable/install_users.html). If you are a developer and want to contribute to PyNWB see the [**Installing PyNWB for Developers**](https://pynwb.readthedocs.io/en/stable/install_developers.html) instructions. 
-  * [**MatNWB (Matlab)**](https://neurodatawithoutborders.github.io/matnwb/)
+  * [**PyNWB (Python)**](https://pynwb.readthedocs.io). If you are a developer and want to contribute to PyNWB see the [**Installing PyNWB for Developers**](https://pynwb.readthedocs.io/en/stable/install_developers.html) instructions. 
+  * [**MatNWB (Matlab)**](https://matnwb.readthedocs.io)
 * For an overview of NWB software, see also: 
-  * [**Glossary of Core NWB Tools**](https://nwb-overview.readthedocs.io/en/latest/core_tools/core_tools_home.html) 
-  * [**Glossary of Analysis and Visualization Tools**](https://nwb-overview.readthedocs.io/en/latest/tools/tools_home.html)
+  * [**Glossary of Core NWB Tools**](https://nwb.org/tools/core/) 
+  * [**Glossary of Analysis and Visualization Tools**](https://nwb.org/tools/analysis/)
 * For an overview of NWB see the [**NWB Overview Docs**](https://nwb-overview.readthedocs.io)
 
 ## Objective

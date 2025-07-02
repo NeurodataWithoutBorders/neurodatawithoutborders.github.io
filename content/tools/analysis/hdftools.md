@@ -29,7 +29,7 @@ HDFView uses the Java HDF Object Package, which implements HDF4 and HDF5 data ob
 
 ## HDF5 Command-line Tools
 
-The HDF5 software distribution ships with a broad range of [HDF5 command-line utilities](https://docs.hdfgroup.org/hdf5/v1_14/_view_tools_command.html) that cover various tasks useful for debugging and inspecting HDF5 files.
+The HDF5 software distribution ships with a broad range of [HDF5 command-line utilities](https://support.hdfgroup.org/documentation/hdf5/latest/_view_tools_view.html) that cover various tasks useful for debugging and inspecting HDF5 files.
 
 ### CLI tools for inspecting HDF5 files:
 
