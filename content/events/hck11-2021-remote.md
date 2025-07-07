@@ -16,8 +16,8 @@ organizers:
   - "Oliver Ruebel"
 registration: "Registration is now closed."
 resources:
-  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/raw/master/HCK11_2021_Remote/report/Report___11th_NWB_User_Days_at_INCF.pdf"
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK11_2021_Remote"
+  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK11_2021_Remote/report/Report___11th_NWB_User_Days_at_INCF.pdf"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK11_2021_Remote"
   "INCF Event Page": "https://www.incf.org/neurodata-without-borders-nwb-user-training-workshop"
 ---
 

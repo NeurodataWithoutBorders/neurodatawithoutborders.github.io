@@ -16,6 +16,10 @@ main:
     weight: 3
     url: "https://nwb-overview.readthedocs.io"
     parent: "Get Started"
+  - name: "Specification"
+    weight: 4
+    url: "https://nwb-schema.readthedocs.io/en/latest/format.html"
+    parent: "Get Started"
   
   # Software & Tools
   - name: "Software & Tools"
@@ -91,7 +95,7 @@ main:
     weight: 4
     url: "policies/"
     parent: "Resources"
-  - name: "Training Materials"
+  - name: "Training & Event Materials"
     weight: 5
     url: "training-materials/"
     parent: "Resources"
@@ -157,10 +161,10 @@ resources:
   - name: "Policies"
     weight: 4
     url: "/policies"
-  - name: "Training Materials"
+  - name: "Training & Event Materials"
     weight: 5
     url: "/training-materials"
   - name: "FAQ"
     weight: 6
     url: "/faq"
-  
+

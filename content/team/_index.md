@@ -103,6 +103,9 @@ technical_team_section:
     - image: /images/szonja-weigl.jpeg
       name: Anna (Szonja) Weigl
       post: Research Software Engineer at CatalystNeuro
+    - image: /images/heberto.jpg
+      name: Heberto Mayorquin
+      post: Sr. Research Software Engineer at CatalystNeuro
 tab_alumni_section:
   enable: true
   alumni:
@@ -111,7 +114,7 @@ tab_alumni_section:
     - name: Oliver Ruebel
       date: Nov. 2022 - Jan. 2024
 core_dev_section:
-  pynwb_section:
+  nwb_core_section:
     enable: true
     team_members:
       - image: /images/oliver-ruebel.png
@@ -120,28 +123,34 @@ core_dev_section:
       - image: /images/ryan-ly.png
         name: Ryan Ly
         post: Scientific Data Engineer at Berkeley Lab
-      - image: /images/andrew-tritt.png
-        name: Andrew Tritt
-        post: Computer Systems Engineer at Berkeley Lab
+      - image: /images/stephanie-prince.png
+        name: Stephanie Prince
+        post: Scientific Data Engineer at Berkeley Lab
       - image: /images/matthew-avaylon.png
         name: Matthew Avaylon
         post: Staff Software Engineer at Berkeley Lab
-  matnwb_section:
-    enable: true
-    image: /images/eivind-hennestad.png
-    name: Eivind Hennestad
-    post: Lead developer of MatNWB
+      - image: /images/eivind-hennestad.png
+        name: Eivind Hennestad
+        post: Lead developer of MatNWB
   nwb_community_section:
     enable: true
     image: /images/ben-dichter.jpeg
     name: Ben Dichter
     post: Founder and CEO, CatalystNeuro
+  previous_members_section:
+    enable: true
+    members:
+      - image: /images/andrew-tritt.png
+        name: Andrew Tritt
+        post: Computer Systems Engineer at Berkeley Lab
+      - name: Lawrence Niu
+        post: Principal Engineer at MBF Biosciences 
 dev_community_section:
   enable: true
   title: Developer Community
   content: "NWB values open source software and practices. Many users
-    anddevelopers from our community have contributed to NWB as part of
-    hackthons, bug fixes, new features, andtools. Details about the contributors
+    and [developers](https://nwb-overview.readthedocs.io/en/latest/nwb-project-analytics/docs/source/code_stat_pages/code_stats_main.html#contributors) from our community have contributed to NWB as part of
+    hackthons, bug fixes, new features, and tools. Details about the contributors
     to our various software are available on our NWB GitHub Organization and the
     different GitHub repositories: NWB Schema, PyNWB, MatNWB, HDMF among many
     others."

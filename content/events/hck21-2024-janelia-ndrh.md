@@ -60,7 +60,7 @@ Resources to help participants prepare for the event:
 
 ## What to Bring
 
-Bring a laptop with appropriate software installed. Python should be installed and MATLAB is optional. For instructions on how to install PyNWB, see [the PyNWB documentation](https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb). For instructions on how to install MatNWB, see [the MatNWB documentation](https://github.com/NeurodataWithoutBorders/matnwb/blob/master/README.md).
+Bring a laptop with appropriate software installed. Python should be installed and MATLAB is optional. For instructions on how to install PyNWB, see [the PyNWB documentation](https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb). For instructions on how to install MatNWB, see [the MatNWB documentation](https://matnwb.readthedocs.io/en/latest/).
 
 ## Past Events
 

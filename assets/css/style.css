@@ -1149,3 +1149,15 @@ ol.custom-ordered-list li::before {
     grid-template-columns: 1fr;
   }
 }
+
+/* Training Materials pages */
+a.next-page-btn {
+  background-color: white;
+  border: 2px solid #114b7c;
+  transition: all 0.3s ease;
+}
+a.next-page-btn:hover {
+  background-color: #e6f0f9;
+  border: 2px solid #114b7c;
+  text-decoration: none !important;
+}

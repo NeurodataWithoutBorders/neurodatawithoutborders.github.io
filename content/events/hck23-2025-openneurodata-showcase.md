@@ -18,7 +18,9 @@ registration: "Register as an attendee [here](https://forms.gle/rj8gYB92guBMcQZN
 resources:
   "Event Page": "https://neurodatawithoutborders.github.io/nwb_hackathons/HCK23_2025_OpenNeurodataShowcase/"
   "DANDI Archive": "https://dandiarchive.org"
-  "Data Conversion Workshop": "https://neurodatawithoutborders.github.io/nwb_hackathons/HCK22_2025_DataConversion_Remote/"
+  "Data Conversion Workshop": "/events/hck22-2025-dataconversion-remote/"
+aliases:
+  - /nwb_hackathons/HCK23_2025_OpenNeurodataShowcase
 ---
 
 ## Dates and Location
@@ -77,9 +79,26 @@ This virtual event is open to anyone interested in neurophysiology data and tool
 - If you are interested in **attending** the event, register using the attendee registration link above.
 - If you are interested in **presenting** a dandiset or tool, register as a presenter using the presenter registration link above.
 
+## Presenters
+
+- Spyglass: a NWB-based framework for reproducible and shareable neuroscience research. *Eric Denovellis*.
+- Reading and writing NWB files with the Open Ephys GUI. *Anjal Doshi*.
+- CEBRA: a self-supervised learning algorithm for obtaining interpretable, Consistent EmBeddings of high-dimensional Recordings using Auxiliary variables. *Steffen Schneider*.
+- ElecFeX: a user-friendly toolbox for efficient feature extraction from single-cell electrophysiological recordings. *Xinyue Ma*.
+- ROICaT: Region of Interest Classification and Tracking. *Richard Hakim*, *David Feng*.
+- Multichannel Igor Electrophysiology Suite (MIES). *Thomas Braun*.
+- Pynapple and NeMoS: Standardizing Systems Neuroscience Analyses with Open Source Software. *Sarah Jo Venditto*.
+- Neo: a python package for working with electrophysiology data. *Andrew Davison*, *Zach McKenzie*.
+- Visualizing and analyzing DANDI datasets with NWB Explorer and Open Source Brain. *Padraig Gleeson*.
+- AqNWB: enabling acquisition of neurophysiology data in NWB. *Steph Prince*, *Oliver Ruebel*.
+- GuPPy: a Python toolbox for the analysis of fiber photometry data. *Venus N Sherathiya*.
+- Esr1+ hypothalamic-habenula neurons shape aversive states (DANDI:000473). *Pierre Le Merre*.
+- Presenting the IBL brain wide map dataset (DANDI:000409). *Mayo Faulkner*.
+- GLO: A dataset for investigating detection global and local oddballs in mouse visual cortex (DANDI:000253). *Jacob Westerberg*.
+
 ## Related Events
 
-The Neurodata and Tools Showcase is also part of a multi-day NWB Data Conversion workshop. If you are interested in attending these additional sessions to learn more about converting your own data to NWB and publishing on DANDI, please see the [Data Conversion Workshop page](https://neurodatawithoutborders.github.io/nwb_hackathons/HCK22_2025_DataConversion_Remote/) for more details.
+The Neurodata and Tools Showcase is also part of a multi-day NWB Data Conversion workshop. If you are interested in attending these additional sessions to learn more about converting your own data to NWB and publishing on DANDI, please see the [Data Conversion Workshop page](/events/hck22-2025-dataconversion-remote/) for more details.
 
 ## Organizing Committee
 
@@ -91,4 +110,4 @@ The Neurodata and Tools Showcase is also part of a multi-day NWB Data Conversion
 
 ## Code of Conduct
 
-Please see the [Code of Conduct](https://neurodatawithoutborders.github.io/nwb_hackathons/code_of_conduct) for all NWB events.
+Please see the [Code of Conduct](/code_of_conduct) for all NWB events.
