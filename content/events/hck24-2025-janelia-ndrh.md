@@ -11,7 +11,6 @@ draft: false
 organizers:
   - "Benjamin Dichter, Ph.D. (Program Chair)"
   - "Stephanie Prince, Ph.D. (Program Chair)"
-registration: "Space for the event is limited. Apply to attend NeuroDataReHack 2025 [here](https://forms.gle/cR9sm5wjAt8oqTaT7). Application deadline: Feb 12. Notification of admission decisions: March 15."
 resources:
   "Event Flyer": "https://drive.google.com/file/d/1ptsGRa1sEMh-je7L_ff3CgtRTj-X11lO/view?usp=sharing"
   "Slides from the 2024 NeuroDataReHack": "https://drive.google.com/drive/folders/1DAmQr4qWCamhj_2Zyke0kkHGvV8Kyq13?usp=sharing"
