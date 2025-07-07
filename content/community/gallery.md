@@ -9,7 +9,7 @@ gallery_section:
     - title: "NeuroConv Catalog"
       content: "Real-world examples of labs using NeuroConv to convert their data to NWB files. Each project listed contains a description and a link to an open GitHub repository. Many of the projects listed use advanced customization features beyond what is demonstrated in the core NeuroConv conversion gallery."
       image: "/images/community_gallery/neuroconv_gallery.png"
-      url: "https://neuroconv.readthedocs.io/en/main/catalogue/index.html"
+      url: "https://neuroconv.readthedocs.io/en/stable/conversion_examples_gallery/index.html"
     - title: "Bristol Neuroscience Data Guide"
       content: "The Bristol Neuroscience Data Guide includes tutorials for converting data to NWB for extracellular electrophysiology data and optical physiology data using both the PyNWB and MatNWB APIs for NWB."
       image: "/images/community_gallery/bristol_neuroscience_data_guide.png"
