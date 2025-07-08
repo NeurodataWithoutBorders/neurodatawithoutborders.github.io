@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div class="community-gallery">
 {{/* Hero Section */}}
 <section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
          style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/aboutBg.png');">
@@ -31,11 +32,13 @@
             <div class="col-12 col-md-6">
                 <div class="bg-white h-100 rounded-3 p-4 shadow-sm">
                     <div class="d-flex flex-row">
-                        <div class="me-4">
+                        {{ if .image }}
+                        <div class="me-4 flex-shrink-0">
                             <a href="{{ .url }}" target="_blank">
-                                <img src="{{ .image }}" alt="{{ .title }}" class="rounded-3" style="width: 100px; height: 100px; object-fit: cover;">
+                                <img src="{{ .image }}" alt="{{ .title }}" class="rounded-3 gallery-card-image" style="width: 100px; height: 100px; object-fit: cover;" onerror="this.parentElement.parentElement.style.display='none';">
                             </a>
                         </div>
+                        {{ end }}
                         <div class="flex-grow-1">
                             <a href="{{ .url }}" class="text-decoration-none" target="_blank">
                                 <h5 class="inter-700 text-18 dark-900 mb-2 text-decoration-underline">{{ .title | markdownify }}</h5>
@@ -65,11 +68,13 @@
             <div class="col-12 col-md-6">
                 <div class="bg-dark-100 h-100 rounded-3 p-4 shadow-sm">
                     <div class="d-flex flex-row">
-                        <div class="me-4">
+                        {{ if .image }}
+                        <div class="me-4 flex-shrink-0">
                             <a href="{{ .url }}" target="_blank">
-                                <img src="{{ .image }}" alt="{{ .title }}" class="rounded-3" style="width: 100px; height: 100px; object-fit: cover;">
+                                <img src="{{ .image }}" alt="{{ .title }}" class="rounded-3 gallery-card-image" style="width: 100px; height: 100px; object-fit: cover;" onerror="this.parentElement.parentElement.style.display='none';">
                             </a>
                         </div>
+                        {{ end }}
                         <div class="flex-grow-1">
                             <a href="{{ .url }}" class="text-decoration-none" target="_blank">
                                 <h5 class="inter-700 text-18 dark-900 mb-2 text-decoration-underline">{{ .title | markdownify }}</h5>
@@ -139,4 +144,5 @@
 {{ end }}
 {{/* End Disclaimer Section */}}
 
+</div>
 {{ end }}

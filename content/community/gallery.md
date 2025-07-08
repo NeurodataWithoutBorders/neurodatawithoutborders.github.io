@@ -7,7 +7,7 @@ gallery_section:
   content: "Tools and resources for converting data to NWB format"
   boxes:
     - title: "NeuroConv Catalog"
-      content: "Real-world examples of labs using NeuroConv to convert their data to NWB files. Each project listed contains a description and a link to an open GitHub repository. Many of the projects listed use advanced customization features beyond what is demonstrated in the core NeuroConv conversion gallery."
+      content: "A collection of real-world examples of labs using NeuroConv to convert their data to NWB files. Each project listed contains a description and a link to an open GitHub repository. Many of the projects listed use advanced customization features beyond what is demonstrated in the core NeuroConv conversion gallery."
       image: "/images/community_gallery/neuroconv_gallery.png"
       url: "https://neuroconv.readthedocs.io/en/stable/conversion_examples_gallery/index.html"
     - title: "Bristol Neuroscience Data Guide"
@@ -32,6 +32,12 @@ analysis_section:
       content: "The International Brain Laboratory (IBL) released a Brainwide Map of neural activity during decision-making, consisting of 547 Neuropixel recordings of 32,784 neurons across 194 regions of the mouse brain. The IBL team provides tutorials on Using IBL data with NWB."
       image: "/images/community_gallery/ibl_brainmap.png"
       url: "https://colab.research.google.com/drive/1zr6lP_zzRgPZuHs3nB5oGnFtPKrduQ3L"
+    - title: "INCF MATLAB Examples"
+      content: "The INCF working group on NWB has created a library of MATLAB examples using DANDI datasets authored as MATLAB live scripts."
+      url: "https://github.com/INCF/example-live-scripts"
+    - title: "Neuromatch-AJILE12"
+      content: "A package for exploratory analysis of long-term naturalistic human intracranial neural recordings and pose data as part of Dandiset 000055."
+      url: "https://github.com/neurovium/Neuromatch-AJILE12"
 
 publications_section:
   enable: true
@@ -48,4 +54,4 @@ disclaimer:
   content: "**Disclaimer:** Reference herein to any specific product, process, or service by its trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by the NWB development team, United States Government or any agency thereof, or The Regents of the University of California. Use of the NeurodataWithoutBorders name for endorsements is prohibited."
 ---
 
-This page is a collection of community conversion, analysis, and reuse projects cataloged here as a convenient reference for NWB users. This list is not comprehensive. Many of the projects and resources are built and supported by other groups.
+This page is a collection of community conversion and analysis projects cataloged here as a convenient reference for NWB users. This list is not comprehensive and many of the projects and resources are built and supported by other groups, and are in active development.
