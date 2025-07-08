@@ -25,7 +25,7 @@ resources:
 
 ## Objective
 
-The [Neurodata Without Borders: Neurophysiology](http://www.nwb.org/nwb-neurophysiology/) (NWB:N) Hackathon is a hands-on activity lasting several days in which neurophysiology researchers create solutions using the open source NWB:N software packages.
+The [Neurodata Without Borders: Neurophysiology](http://www.nwb.org) (NWB:N) Hackathon is a hands-on activity lasting several days in which neurophysiology researchers create solutions using the open source NWB:N software packages.
 
 Participants work collaboratively on solutions that use the NWB unified data format for cellular-based neurophysiology data, which is focused on the dynamics of groups of neurons measured under a large range of experimental conditions. In contrast to conferences and workshops where the primary focus is to report results, the objective of the Hackathon is to provide a venue for creators and users of neurophysiology open-source software to collaboratively work on any related research projects.
 
