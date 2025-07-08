@@ -1161,3 +1161,30 @@ a.next-page-btn:hover {
   border: 2px solid #114b7c;
   text-decoration: none !important;
 }
+
+/* Community Gallery - Reduced spacing */
+.community-gallery .section {
+  padding: 60px 0 !important;
+}
+
+.community-gallery .hero {
+  height: 300px !important;
+}
+
+.community-gallery .section:first-of-type {
+  padding: 40px 0 !important;
+}
+
+@media (max-width: 768px) {
+  .community-gallery .section {
+    padding: 40px 0 !important;
+  }
+  
+  .community-gallery .hero {
+    height: 250px !important;
+  }
+  
+  .community-gallery .section:first-of-type {
+    padding: 30px 0 !important;
+  }
+}
