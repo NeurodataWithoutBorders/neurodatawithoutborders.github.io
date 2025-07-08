@@ -13,7 +13,7 @@ organizers:
   - "Program Chair: Oliver Ruebel (Lawrence Berkeley National Laboratory)"
 registration: "Registration for this event is closed."
 resources:
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK07_2020_Seattle"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK07_2020_Seattle"
 ---
 
 ## Dates and Location

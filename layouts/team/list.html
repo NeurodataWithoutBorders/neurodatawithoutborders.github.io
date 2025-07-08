@@ -172,11 +172,11 @@
     <div class="container-lg">
         <h2 class="inter-700 text-40 dark-900">Core Development Team</h2>
 
-        {{/* PyNWB Section */}}
-        {{ with .pynwb_section }}
+        {{/* NWB Core Software Section */}}
+        {{ with .nwb_core_section }}
         {{ if .enable }}
         <div class="pt-5">
-            <h3 class="inter-600 dark-900 text-36">PyNWB</h3>
+            <h3 class="inter-600 dark-900 text-36">NWB Core Software</h3>
             <div class="row gy-2 g-md-3 g-lg-5 pt-4">
                 {{ range .team_members }}
                 <div class="col-6 col-sm-4 col-md-3">
@@ -195,39 +195,55 @@
         </div>
         {{ end }}
         {{ end }}
-        {{/* End PyNWB Section */}}
+        {{/* End NWB Core Software Section */}}
 
-        {{/* MatNWB Section */}}
+        {{/* Community Section */}}
         <div class="pt-5">
-            <div class="row g-2 g-md-4 pt-4 justify-content-center justify-content-md-between">
-                {{ with .matnwb_section }}
-                {{ if .enable }}
-                <div class="col-sm-6 col-md-4">
-                    <h3 class="inter-600 dark-900 text-36 pb-4 titleHeight">MatNWB</h3>
-                    <div class="bg-white rounded-3 p-4 shadow-sm boxHeight">
-                        <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
-                        <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>
-                        <p class="inter-400 text-14 dark-900">{{ .post | markdownify }}</p>
-                    </div>
-                </div>
-                {{ end }}
-                {{ end }}
-
+            <h3 class="inter-600 dark-900 text-36">NWB Community Liaison</h3>
+            <div class="row gy-2 g-md-3 g-lg-5 pt-4">
                 {{ with .nwb_community_section }}
                 {{ if .enable }}
-                <div class="col-sm-6 col-md-4 pt-5 pt-sm-0">
-                    <h3 class="inter-600 dark-900 text-36 pb-4 titleHeight">NWB Community Liaison</h3>
-                    <div class="bg-white rounded-3 p-4 shadow-sm boxHeight">
-                        <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
-                        <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>
-                        <p class="inter-400 text-14 dark-900">{{ .post | markdownify }}</p>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="h-100 bg-white rounded-3 p-4 shadow-sm pb-2 d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                        </div>
+                        <div>
+                            <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>
+                            <p class="inter-400 text-14 dark-900">{{ .post | markdownify }}</p>
+                        </div>
                     </div>
                 </div>
                 {{ end }}
                 {{ end }}
             </div>
         </div>
-        {{/* End MatNWB Section */}}
+        {{/* End Community Section */}}
+
+        {{/* Previous Members Section */}}
+        {{ with .previous_members_section }}
+        {{ if .enable }}
+        <div class="pt-5">
+            <h3 class="inter-600 dark-900 text-36">Previous Members</h3>
+            <div class="row gy-2 g-md-3 g-lg-5 pt-4">
+                {{ range .members }}
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="h-100 bg-white rounded-3 p-4 shadow-sm pb-2 d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                        </div>
+                        <div>
+                          <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>
+                          <p class="inter-400 text-14 dark-900">{{ .post | markdownify }}</p>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+        {{/* End Previous Members Section */}}
     </div>
 </section>
 {{ end }}

@@ -11,12 +11,13 @@ draft: false
 organizers:
   - "Benjamin Dichter, Ph.D. (Program Chair)"
   - "Stephanie Prince, Ph.D. (Program Chair)"
-registration: "Space for the event is limited. Apply to attend NeuroDataReHack 2025 [here](https://forms.gle/cR9sm5wjAt8oqTaT7). Application deadline: Feb 12. Notification of admission decisions: March 15."
 resources:
   "Event Flyer": "https://drive.google.com/file/d/1ptsGRa1sEMh-je7L_ff3CgtRTj-X11lO/view?usp=sharing"
   "Slides from the 2024 NeuroDataReHack": "https://drive.google.com/drive/folders/1DAmQr4qWCamhj_2Zyke0kkHGvV8Kyq13?usp=sharing"
   "PyNWB Documentation": "https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb"
-  "MatNWB Documentation": "https://github.com/NeurodataWithoutBorders/matnwb/blob/master/README.md"
+  "MatNWB Documentation": "https://matnwb.readthedocs.io"
+aliases:
+  - /nwb_hackathons/HCK24_2025_Janelia_NDRH
 ---
 
 ## Objective
@@ -38,6 +39,12 @@ Example projects include but are not limited to:
 
 This event will primarily focus on analyzing existing data in NWB and on DANDI, **not** converting data to NWB. If 
 you are interested in learning how to convert data, consider signing up for an NWB Data Conversion Workshop.
+
+## Schedule
+
+<img src="/images/events/hck24-2025-janelia-ndrh/Agenda -- NeuroDataReHack 2025.png" alt="Agenda NeuroDataReHack 2025" class="img-fluid">
+
+[Download Agenda PDF](/images/events/hck24-2025-janelia-ndrh/Agenda%20--%20NeuroDataReHack%202025.pdf)
 
 ## Kavli Neurodata Discovery Award
 
@@ -79,7 +86,7 @@ Bring a laptop with appropriate software installed. Python should be installed a
 instructions on how to install PyNWB, see 
 [the PyNWB documentation](https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb). For instructions
 on how to install MatNWB, see
-[the MatNWB documentation](https://github.com/NeurodataWithoutBorders/matnwb/blob/master/README.md)
+[the MatNWB documentation](https://matnwb.readthedocs.io)
 
 ## Testimonials from NeuroDataReHack 2024
 
