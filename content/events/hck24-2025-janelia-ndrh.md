@@ -11,6 +11,7 @@ draft: false
 organizers:
   - "Benjamin Dichter, Ph.D. (Program Chair)"
   - "Stephanie Prince, Ph.D. (Program Chair)"
+  - "Ryan Ly, Ph.D. (Program Chair)"
 resources:
   "Event Flyer": "https://drive.google.com/file/d/1ptsGRa1sEMh-je7L_ff3CgtRTj-X11lO/view?usp=sharing"
   "Slides from the 2024 NeuroDataReHack": "https://drive.google.com/drive/folders/1DAmQr4qWCamhj_2Zyke0kkHGvV8Kyq13?usp=sharing"
@@ -58,12 +59,16 @@ The event will feature a distinguished team of instructors, including:
 
 - **Benjamin Dichter, Ph.D.** - Program Chair, CatalystNeuro
 - **Stephanie Prince, Ph.D.** - Program Chair, Lawrence Berkeley National Laboratory
+- **Ryan Ly, Ph.D.** - Program Chair, Lawrence Berkeley National Laboratory
 - **Jeremy Magland, Ph.D.** - Senior Data Scientist, Flatiron Institute (Lead developer of Neurosift, FigURL, Dendro)
-- **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of rastermap, suite2p, facemap, cellpose)
-- **Guillaume Viejo, Ph.D.** - Data Scientist, Flatiron Institute (Lead developer of pynapple)
+- **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
+- **Alessio Buccino, Ph.D.** - Electrophysiology Pipeline Engineer, Allen Institute for Neural Dynamics (Lead developer of SpikeInterface)
+- **Guillaume Viejo, Ph.D.** - Data Scientist, Flatiron Institute (Lead developer of Pynapple)
 - **Carter Peene** - Data Analyst I, Allen Institute for Neural Dynamics (Lead developer of OpenScope Databook)
+- **Mayo Faulkner, Ph.D.** - Senior Software Engineer, International Brain Lab
 - **Misha Ahrens, Ph.D.** - Group Leader, HHMI Janelia Research Campus
 - **Jakob Voigts, Ph.D.** - Group Leader, HHMI Janelia Research Campus
+- **Alison Comrie, Ph.D.** - Postdoctoral Scientist, HHMI Janelia Research Campus
 
 ## Eligibility
 
