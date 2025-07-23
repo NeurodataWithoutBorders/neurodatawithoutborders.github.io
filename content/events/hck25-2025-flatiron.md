@@ -36,6 +36,13 @@ The Neurodata Without Borders project is an effort to standardize the descriptio
 
 The NWB Community Hackathon will bring neuroscientists, tool builders, and research software engineers together to further the development of the NWB software ecosystem, including the data standard, core software packages, official tools, and community tools. Members of the community will exchange ideas and best practices for using NWB and the libraries, share NWB-based tools, surface common needs, solve bugs, make feature requests, brainstorm about future funding and collaboration, and make progress on current blockages.
 
+## Schedule
+
+<img src="/images/events/hck25-2025-flatiron/2025 Community Hackathon Agenda.png" alt="2025 Community Hackathon Schedule" class="img-fluid">
+
+[Download Schedule PDF](/images/events/hck25-2025-flatiron/2025%20Community%20Hackathon%20Agenda.pdf)
+
+
 ## Important Notes
 
 - This community hackathon is not a training event. There will be no introductory-level talks or lessons on how to use NWB.
