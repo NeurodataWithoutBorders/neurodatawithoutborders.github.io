@@ -40,7 +40,7 @@ The NWB Community Hackathon will bring neuroscientists, tool builders, and resea
 
 <img src="/images/events/hck25-2025-flatiron/2025 Community Hackathon Agenda.png" alt="2025 Community Hackathon Schedule" class="img-fluid">
 
-[Download Schedule PDF](/images/events/hck25-2025-flatiron/2025 Community Hackathon Agenda.pdf)
+[Download Schedule PDF](/images/events/hck25-2025-flatiron/2025%20Community%20Hackathon%20Agenda.pdf)
 
 
 ## Important Notes
