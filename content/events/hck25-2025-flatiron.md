@@ -21,7 +21,7 @@ aliases:
 
 ## Dates and Location
 
-- **Dates:** Monday, August 4, 2025, 9 AM to Wednesday, August 6, 2025, 5:30 PM
+- **Dates:** Monday, August 4, 2025, 9 AM to Wednesday, August 6, 2025, 6 PM
 - **Location:** Flatiron Institute, [160 5th Ave, New York, NY 10010, USA](https://www.google.com/maps/place/160+5th+Ave,+New+York,+NY+10010/data=!4m2!3m1!1s0x89c259a397dc84eb:0x7cc3edc894776bb6?sa=X&ved=1t:242&ictx=111)
 
 ## Overview
@@ -35,6 +35,13 @@ This is the first NWB hackathon event hosted by the Flatiron Institute, which is
 The Neurodata Without Borders project is an effort to standardize the description and storage of neurophysiology data and metadata. NWB enables data sharing and reuse and reduces the energy barrier to applying data analytics both within and across labs. NWB has seen wide adoption in the neurophysiology community, and there are now over 300 datasets on the DANDI Archive in NWB, including data from the Allen Institute and the International Brain Laboratory.
 
 The NWB Community Hackathon will bring neuroscientists, tool builders, and research software engineers together to further the development of the NWB software ecosystem, including the data standard, core software packages, official tools, and community tools. Members of the community will exchange ideas and best practices for using NWB and the libraries, share NWB-based tools, surface common needs, solve bugs, make feature requests, brainstorm about future funding and collaboration, and make progress on current blockages.
+
+## Schedule
+
+<img src="/images/events/hck25-2025-flatiron/2025 Community Hackathon Agenda.png" alt="2025 Community Hackathon Schedule" class="img-fluid">
+
+[Download Schedule PDF](/images/events/hck25-2025-flatiron/2025 Community Hackathon Agenda.pdf)
+
 
 ## Important Notes
 
