@@ -62,9 +62,9 @@ main:
     weight: 4
     url: "organizing-nwb-events/"
     parent: "Community"
-  - name: "Enhancement Proposals"
+  - name: "Extending NWB"
     weight: 5
-    url: "https://github.com/nwb-extensions/nwbep-review/"
+    url: "extending-nwb/"
     parent: "Community"
   - name: "Working Groups"
     weight: 6
@@ -138,9 +138,9 @@ community_links:
   - name: "Organizing NWB Events"
     weight: 4
     url: "/organizing-nwb-events"
-  - name: "Enhancement Proposals"
+  - name: "Extending NWB"
     weight: 5
-    url: "https://github.com/nwb-extensions/nwbep-review/"
+    url: "/extending-nwb"
   - name: "Working Groups"
     weight: 6
     url: "/working-groups"
@@ -167,4 +167,3 @@ resources:
   - name: "FAQ"
     weight: 6
     url: "/faq"
-
