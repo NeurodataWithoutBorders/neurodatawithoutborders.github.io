@@ -58,3 +58,7 @@ After creating your extension using the template, follow the instructions in the
 5. Publish your extension to the NDX Catalog
 
 The NDX Template is essential for maintaining consistency across the NWB extension ecosystem and making it easier for researchers to develop and share extensions.
+
+## Resources
+
+* [Source](https://github.com/nwb-extensions/ndx-template)

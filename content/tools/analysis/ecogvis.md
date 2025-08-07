@@ -20,3 +20,7 @@ EcogVIS is a Python-based, time series visualizer for Electrocorticography (ECoG
 - Create annotations
 - Mark intervals of interest
 - Built-in support for NWB files
+
+## Resources
+
+* [Source](https://github.com/catalystneuro/ecogVIS)

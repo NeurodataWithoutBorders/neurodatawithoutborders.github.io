@@ -42,3 +42,8 @@ The NWB GUIDE provides a step-by-step workflow for converting data to NWB:
 ## Additional Information
 
 The NWB GUIDE leverages NeuroConv behind the scenes, making it easier for researchers to adopt the NWB standard without writing code. It provides a user-friendly alternative for data conversion while maintaining the robustness and flexibility of the underlying conversion tools.
+
+## Resources
+
+* [Source](https://github.com/NeurodataWithoutBorders/nwb-guide)
+* [Docs](https://nwb-guide.readthedocs.io/en/stable/)
