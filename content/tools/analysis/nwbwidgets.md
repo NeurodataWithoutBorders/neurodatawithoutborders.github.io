@@ -47,3 +47,8 @@ Instead of supplying a function for the value of the neurodata_vis_spec dict, yo
 ## Extending
 
 To extend NWBWidgets, all you need to a function that takes as input an instance of a specific neurodata_type class, and outputs a matplotlib figure or a jupyter widget.
+
+## Resources
+
+* [Source](https://github.com/NeurodataWithoutBorders/nwbwidgets)
+* [Docs](https://nwb-widgets.readthedocs.io)

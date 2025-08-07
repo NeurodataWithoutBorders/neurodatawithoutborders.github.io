@@ -16,3 +16,7 @@ NWB Explorer is a web application developed by MetaCell for reading, visualizing
 ![NWB Explorer Demo](/images/tools/nwbexplorer/nwbexplorer.gif)
 
 You can try NWB Explorer online at [https://nwbexplorer.v2.opensourcebrain.org](https://nwbexplorer.v2.opensourcebrain.org).
+
+## Resources
+
+* [Docs](https://nwbexplorer.v2.opensourcebrain.org)

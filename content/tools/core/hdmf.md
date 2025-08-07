@@ -70,3 +70,8 @@ HDMF is primarily of interest to developers who need to:
 5. Create validation tools
 
 Understanding HDMF is helpful for advanced NWB users who want to contribute to the core NWB ecosystem or develop sophisticated extensions and tools.
+
+## Resources
+
+* [Source](https://github.com/hdmf-dev/hdmf)
+* [Docs](https://hdmf.readthedocs.io/en/stable/)

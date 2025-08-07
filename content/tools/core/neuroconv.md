@@ -55,3 +55,8 @@ converter.run_conversion(
 ## Additional Information
 
 NeuroConv is developed by CatalystNeuro and the NWB community to streamline the process of standardizing neurophysiology data to NWB format. It is designed to be modular and extensible, allowing for easy integration of new data formats.
+
+## Resources
+
+* [Source](https://github.com/catalystneuro/neuroconv)
+* [Resources](https://neuroconv.readthedocs.io/en/main/index.html")

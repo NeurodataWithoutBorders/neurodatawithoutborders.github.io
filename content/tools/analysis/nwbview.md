@@ -59,3 +59,8 @@ cargo run --release
 ```
 
 The release flag builds the artifacts with optimizations. Do not specify it when you need to debug.
+
+## Resources
+
+* [Source](https://github.com/brainhack-ch/nwbview)
+* [Docs](https://crates.io/crates/nwbview)

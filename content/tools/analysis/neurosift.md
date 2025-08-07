@@ -30,3 +30,7 @@ https://flatironinstitute.github.io/neurosift/#/nwb?url=https://dandiarchive.s3.
 ```
 
 Replace the url query parameter with the appropriate URL for your NWB file on DANDI or anywhere else on the web.
+
+## Resources
+
+* [Source](https://github.com/flatironinstitute/neurosift)
