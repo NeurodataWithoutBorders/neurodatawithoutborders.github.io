@@ -19,16 +19,16 @@ section:
             content: Requirements and strategy for versioning namespaces for the NWB core
               schema and extensions
             link: "https://docs.google.com/document/d/19G5LKFsIPS4tiS5uaXKI5EOVVcdO91i5DCTQWLccyWI/edit?usp=sharing"
-      - subtitle: NWB Extension Proposal (NEP) process
+      - subtitle: NWB Enhancement Proposal (NWBEP) process
         items:
           - heading: Proposal Review Process
             icon: /images/p-process.png
             content: Process by which extensions to the NWB core standard are proposed,
               evaluated, reviewed, and accepted
             link: "https://docs.google.com/document/d/1GbqDdsDsfJMkVGyzQUZwQKX6EOiA2IBEkgd2LtMK_Ik/edit?usp=sharing"
-          - heading: Working Groups for Evaluating NEPs Policy
+          - heading: Working Groups for Evaluating NWBEPs Policy
             icon: /images/wg-policy.png
-            content: process for evaluation and review of NWB Extension Proposals (NEPs) by
+            content: process for evaluation and review of NWB Enhancement Proposal (NWBEP) by
               a review working group (RWG) to provide guidance and a formal
               framework for RWG members.
             link: "https://docs.google.com/document/d/1XflTt24Sutf4EbIxGk2h0o5i5U3WBDXR5nr_Mju-LkM/edit?usp=sharing"
