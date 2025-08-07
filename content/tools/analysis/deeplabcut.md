@@ -28,3 +28,8 @@ While ndx-pose was developed initially to store the output of DeepLabCut in NWB,
 - Versatile tracking of body parts across species
 - NWB export support through DLC2NWB
 - Integration with ndx-pose extension for standardized data storage
+
+## Resources
+
+* [Source](https://github.com/DeepLabCut/DeepLabCut)
+* [Docs](http://www.mackenziemathislab.org/deeplabcut)

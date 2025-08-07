@@ -31,3 +31,8 @@ This adaptor uses the NWB extension [ndx-pose](https://github.com/rly/ndx-pose),
 - Active learning capabilities
 - Proofreading tools
 - NWB import/export support
+
+## Resources
+
+* [Source](https://github.com/talmolab/sleap)
+* [Docs](https://sleap.ai)

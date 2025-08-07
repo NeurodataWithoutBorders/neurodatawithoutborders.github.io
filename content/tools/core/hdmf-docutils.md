@@ -39,3 +39,7 @@ html_content = rst_to_html('my_documentation.rst')
 HDMF Documentation Utilities help ensure that extension documentation follows consistent formatting and includes all necessary information. This consistency improves the usability of extensions and helps users understand how to properly use them in their workflows.
 
 The tools can generate documentation from YAML schema files, create diagrams of data structures, and produce HTML and PDF documentation outputs.
+
+## Resources
+
+* [Source](https://github.com/hdmf-dev/hdmf-docutils)

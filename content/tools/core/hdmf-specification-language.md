@@ -46,3 +46,8 @@ groups:
 ## Additional Information
 
 Understanding the HDMF Specification Language is essential for developers who want to create extensions to the NWB format. It provides the foundation for defining structured, self-describing data models that can be used across different programming languages and storage backends.
+
+## Resources
+
+* [Sources](https://github.com/hdmf-dev/hdmf-schema-language)
+* [Docs](https://hdmf-schema-language.readthedocs.io/en/latest/)
