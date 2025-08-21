@@ -9,7 +9,7 @@ hero_section:
       btn_link: "/about-nwb/"
 banner_section:
   enable: true
-  title: "NWB needs your urgent help! <a href='/support-for-nwb/' style='color: #114b7c; font-weight: 600;'>Learn how you can support NWB</a>"
+  title: "NWB needs your urgent help! <a href='/support-for-nwb/' style='color: #664d03; font-weight: 600;'>Learn how you can support NWB</a>"
 card_section:
   enable: true
   cards:
