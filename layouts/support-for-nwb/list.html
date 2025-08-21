@@ -15,7 +15,7 @@
 {{/* Urgency Section */}}
 {{ with .Params.urgency_section }}
 {{ if .enable }}
-<section class="section pb-2">
+<section class="section-reduced">
     <div class="container-lg">
         <div class="alert alert-warning border-0 p-4 rounded-4">
             <div class="row align-items-center">
@@ -33,6 +33,52 @@
 {{ end }}
 {{ end }}
 {{/* End Urgency Section */}}
+
+
+
+{{/* Action Section */}}
+{{ with .Params.action_section }}
+{{ if .enable }}
+<section class="section bg-light"> # TODO - slightly darker, adjust text color
+    <div class="container-lg">
+        <div class="text-center mb-5">
+            <h2 class="inter-700 text-40 text-white mb-4">{{ .title | markdownify }}</h2>
+        </div>
+        <div class="row g-4 justify-content-center mb-5">
+            {{ range .actions }}
+            <div class="col-12 col-md-6">
+                <div class="bg-white p-4 rounded-4 text-center h-100">
+                    <img src="{{ .icon }}" alt="" width="64" class="mb-3">
+                    <h3 class="inter-600 text-24 dark-900 mb-3">{{ .title | markdownify }}</h3>
+                    <p class="inter-400 text-16 dark-700 mb-0">{{ .description | markdownify }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        
+        {{/* Talking Points Subsection */}}
+        {{ with $.Params.social_sharing }}
+        {{ if .enable }}
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="bg-white p-5 rounded-4 shadow-sm">
+                    <h3 class="inter-600 text-28 dark-900 mb-3 text-center">{{ .title | markdownify }}</h3>
+                    <p class="inter-400 text-16 dark-700 mb-4 text-center">{{ .content | markdownify }}</p>
+                    <ul class="inter-400 text-16 dark-700 mb-0">
+                        {{ range .points }}
+                        <li class="mb-3">{{ . | markdownify }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Action Section */}}
 
 {{/* Combined Impact Section */}}
 {{ with .Params.combined_impact_section }}
@@ -86,13 +132,11 @@
 <section class="section bg-light">
     <div class="container-lg">
         <h2 class="inter-700 text-40 dark-900 mb-4 text-center">{{ .title | markdownify }}</h2>
-        <div class="row align-items-center mb-5">
-            <div class="col-lg-8">
-                <p class="inter-400 text-18 dark-700">{{ .intro | markdownify }}</p>
-            </div>
-            <div class="col-lg-4 text-center">
-                <img src="{{ .growth_image }}" alt="NWB Exponential Growth" class="img-fluid">
-            </div>
+        <div class="text-center mb-4">
+            <p class="inter-400 text-18 dark-700">{{ .intro | markdownify }}</p>
+        </div>
+        <div class="text-center mb-5">
+            <img src="{{ .growth_image }}" alt="NWB Exponential Growth" class="img-fluid" style="max-width: 60%;">
         </div>
         
         {{/* Research Activities Subsection */}}
@@ -148,49 +192,5 @@
 {{/* End Combined Foundation Section */}}
 
 
-
-{{/* Action Section */}}
-{{ with .Params.action_section }}
-{{ if .enable }}
-<section class="section bg-main">
-    <div class="container-lg">
-        <div class="text-center mb-5">
-            <h2 class="inter-700 text-40 text-white mb-4">{{ .title | markdownify }}</h2>
-        </div>
-        <div class="row g-4 justify-content-center mb-5">
-            {{ range .actions }}
-            <div class="col-12 col-md-6">
-                <div class="bg-white p-4 rounded-4 text-center h-100">
-                    <img src="{{ .icon }}" alt="" width="64" class="mb-3">
-                    <h3 class="inter-600 text-24 dark-900 mb-3">{{ .title | markdownify }}</h3>
-                    <p class="inter-400 text-16 dark-700 mb-0">{{ .description | markdownify }}</p>
-                </div>
-            </div>
-            {{ end }}
-        </div>
-        
-        {{/* Talking Points Subsection */}}
-        {{ with $.Params.social_sharing }}
-        {{ if .enable }}
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="bg-white p-5 rounded-4 shadow-sm">
-                    <h3 class="inter-600 text-28 dark-900 mb-3 text-center">{{ .title | markdownify }}</h3>
-                    <p class="inter-400 text-16 dark-700 mb-4 text-center">{{ .content | markdownify }}</p>
-                    <ul class="inter-400 text-16 dark-700 mb-0">
-                        {{ range .points }}
-                        <li class="mb-3">{{ . | markdownify }}</li>
-                        {{ end }}
-                    </ul>
-                </div>
-            </div>
-        </div>
-        {{ end }}
-        {{ end }}
-    </div>
-</section>
-{{ end }}
-{{ end }}
-{{/* End Action Section */}}
 
 {{ end }}
