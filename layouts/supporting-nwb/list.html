@@ -39,7 +39,7 @@
 {{/* Action Section */}}
 {{ with .Params.action_section }}
 {{ if .enable }}
-<section class="section bg-light"> # TODO - slightly darker, adjust text color
+<section class="section bg-light">
     <div class="container-lg">
         <div class="text-center mb-5">
             <h2 class="inter-700 text-40 text-white mb-4">{{ .title | markdownify }}</h2>
@@ -80,8 +80,8 @@
 {{ end }}
 {{/* End Action Section */}}
 
-{{/* Combined Impact Section */}}
-{{ with .Params.combined_impact_section }}
+{{/* Impact Section */}}
+{{ with .Params.impact_section }}
 {{ if .enable }}
 <section class="section">
     <div class="container-lg">
@@ -124,10 +124,10 @@
 </section>
 {{ end }}
 {{ end }}
-{{/* End Combined Impact Section */}}
+{{/* End Impact Section */}}
 
-{{/* Combined Foundation Section */}}
-{{ with .Params.combined_foundation_section }}
+{{/* Foundation Section */}}
+{{ with .Params.foundation_section }}
 {{ if .enable }}
 <section class="section bg-light">
     <div class="container-lg">
@@ -189,7 +189,7 @@
 </section>
 {{ end }}
 {{ end }}
-{{/* End Combined Foundation Section */}}
+{{/* End Foundation Section */}}
 
 
 
