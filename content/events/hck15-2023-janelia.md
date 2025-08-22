@@ -78,7 +78,7 @@ resources:
 
 ## Objective
 
-The [Neurodata Without Borders](nwb.org) project is an effort to standardize the description and storage of neurophysiology
+The [Neurodata Without Borders](https://nwb.org) project is an effort to standardize the description and storage of neurophysiology
 data and metadata. NWB enables data sharing and reuse and reduces the energy barrier to applying data analytics both within
 and across labs. NWB has seen wide adoption in the neurophysiology community, and there are now over 100 datasets on the
 DANDI Archive in NWB, including data from the Allen Institute and the International Brain Laboratory.
