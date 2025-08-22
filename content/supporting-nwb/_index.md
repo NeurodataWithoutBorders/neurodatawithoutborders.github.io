@@ -8,7 +8,6 @@ urgency_section:
   enable: true
   title: "Critical Funding Need"
   content: "The primary source of funding support for NWB is ending in March 2026. Loss in funding will result in dissolution of the team that develops and maintains NWB. This team is critical to ensure NWB software keeps working and is up-to-date with the latest methods in neuroscience research and advances in data science. We are working diligently to explore all options for funding NWB. **We need your help advocating for NWB!**"
-  centered: true
   alert_type: "warning"
 action_section:
   enable: true
@@ -16,16 +15,16 @@ action_section:
   actions:
     - title: "Advocate for Funding"
       description: "Advocate for funding of data standards and infrastructure during conversations with private and public funders."
-      icon: /images/help.png
+      icon: /images/megaphone.png
     - title: "Spread the Word"
       description: "Help build awareness of NWB's impact and funding needs through your social networks, in discussions with colleagues, and in articles and publications."
-      icon: /images/community.png
+      icon: /images/community_dark.png
     - title: "Add Your Testimonial"
       description: "What impact has open neurophysiology data had on your science? Share your experience [here](https://docs.google.com/forms/d/e/1FAIpQLSfQuVJDganf6EZFD-KoaJUZ9r6q2r6XHy4xIwi6GVRSaYwsXw/viewform)."
       icon: /images/testimonial.png
     - title: "Give Credit"
       description: When using open data, make sure to cite the standards, datasets, software, and related data papers in your publications.
-      icon: /images/citation.png
+      icon: /images/credit.png
 impact_section:  # TODO - add graphs within these boxes for the different metrics (reuse, events, etc.)
   enable: true
   title: "Impact of NWB on Neuroscience"
@@ -65,7 +64,7 @@ impact_section:  # TODO - add graphs within these boxes for the different metric
       additional_image: "/images/nwb_consultations_growth.png" 
   research_activities:
     title: "NWB is Foundational to Neuroscience Research"
-    content: "NWB is foundational digital infrastructure for several ongoing large-scale, coordinated neuroscience research activities:"
+    content: "NWB is foundational digital infrastructure for several ongoing large-scale, coordinated neuroscience research activities, including:"
     activities:
       - name: "[NIH BBQS and EMBER Archive](https://brain-bbqs.org/)"
         image: "/images/ember-logo.png"
