@@ -30,7 +30,7 @@
 {{/* Urgency Section */}}
 {{ with .Params.urgency_section }}
 {{ if .enable }}
-<section class="section-reduced">
+<section class="section-reduced-more">
     <div class="container-lg">
         <div class="alert alert-warning border-0 p-4 rounded-4 text-center">
             <div class="row align-items-center">
@@ -54,7 +54,7 @@
 {{/* Action Section */}}
 {{ with .Params.action_section }}
 {{ if .enable }}
-<section class="section">
+<section class="section-reduced-more">
     <div class="container-lg">
         <div class="text-center mb-5">
             <h2 class="inter-700 text-40 dark-900 mb-4">{{ .title | markdownify }}</h2>
@@ -79,7 +79,7 @@
 {{/* Impact Section */}}
 {{ with .Params.impact_section }}
 {{ if .enable }}
-<section class="section bg-light">
+<section class="section-reduced bg-light">
     <div class="container-lg">
         <div class="text-center mb-5">
             <h2 class="inter-700 text-40 dark-900 mb-4">{{ .title | markdownify }}</h2>
