@@ -18,10 +18,10 @@ action_section:
       description: "Advocate for funding of data standards and infrastructure during conversations with private and public funders."
       icon: /images/help.png
     - title: "Spread the Word"
-      description: "Help build awareness of NWB's impact and funding needs through your social networks, in discussions with colleagues, and in articles and publications"
+      description: "Help build awareness of NWB's impact and funding needs through your social networks, in discussions with colleagues, and in articles and publications."
       icon: /images/community.png
     - title: "Add Your Testimonial"
-      description: "What impact has open neurophysiology data had on your science? Share your experience [here](https://docs.google.com/forms/d/e/1FAIpQLSfQuVJDganf6EZFD-KoaJUZ9r6q2r6XHy4xIwi6GVRSaYwsXw/viewform)"
+      description: "What impact has open neurophysiology data had on your science? Share your experience [here](https://docs.google.com/forms/d/e/1FAIpQLSfQuVJDganf6EZFD-KoaJUZ9r6q2r6XHy4xIwi6GVRSaYwsXw/viewform)."
       icon: /images/testimonial.png
     - title: "Give Credit"
       description: When using open data, make sure to cite the standards, datasets, software, and related data papers in your publications.
@@ -41,22 +41,26 @@ impact_section:  # TODO - add graphs within these boxes for the different metric
       icon: /images/paper.png
     - number: "35+"
       label: "community tools"
-      description: "creating a vibrant community software ecosystem around NWB. See a list of these tools [here](http://nwb.org/tools/analysis/)."
+      description: "creating a vibrant community software ecosystem around NWB. See a list of these tools [here](/tools/analysis/)."
       icon: /images/code.png
   transition_text: "This impact is the result of extensive community engagement and technical development over more than 10 years. This engagement has included:"
   metrics:
     - number: "60+"
       label: "Outreach events"
-      description: "reaching 2,844 total registrants from 63 countries. [See all events](/events/)"
+      description: "reaching 2,844 total registrants from 63 countries. [See all events](/events/)."
       icon: /images/community.png
     - number: "750K+"
       label: "Lines of code"
-      description: "across 23 [software repositories](https://nwb-overview.readthedocs.io/en/latest/nwb-project-analytics/docs/source/index.html) with 127 unique contributors."
+      description: "across 23 [software repositories](https://nwb-overview.readthedocs.io/en/latest/nwb-project-analytics/) with 127 unique contributors."
       icon: /images/github.png
     - number: "139+"
       label: "Consultations"
       description: "with 71 institutions and companies"
       icon: /images/help.png
+foundation_section:
+  enable: true
+  title: "NWB Foundation and Future"
+  intro: "NWB is foundational digital infrastructure for neuroscience research and is positioned to enable the future of AI in neuroscience."
   growth_image: /images/nwb_exponential_growth.png
   research_activities:
     title: "NWB is Foundational to Neuroscience Research"

@@ -1,4 +1,17 @@
 {{ define "main" }}
+{{/* Custom CSS for orange links without affecting images */}}
+<style>
+.supporting-nwb-page a {
+    color: #d17128 !important;
+    text-decoration: none !important;
+}
+.supporting-nwb-page a:hover {
+    color: #d17128 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+}
+</style>
+
 {{/* Hero Section */}}
 {{ with .Params.hero_section }}
 {{ if .enable }}
@@ -11,6 +24,8 @@
 {{ end }}
 {{ end }}
 {{/* End Hero Section */}}
+
+<div class="supporting-nwb-page">
 
 {{/* Urgency Section */}}
 {{ with .Params.urgency_section }}
@@ -39,15 +54,15 @@
 {{/* Action Section */}}
 {{ with .Params.action_section }}
 {{ if .enable }}
-<section class="section bg-light">
+<section class="section">
     <div class="container-lg">
         <div class="text-center mb-5">
-            <h2 class="inter-700 text-40 text-white mb-4">{{ .title | markdownify }}</h2>
+            <h2 class="inter-700 text-40 dark-900 mb-4">{{ .title | markdownify }}</h2>
         </div>
         <div class="row g-4 justify-content-center mb-5">
             {{ range .actions }}
             <div class="col-12 col-md-6">
-                <div class="bg-white p-4 rounded-4 text-center h-100">
+                <div class="bg-light p-4 rounded-4 text-center h-100">
                     <img src="{{ .icon }}" alt="" width="64" class="mb-3">
                     <h3 class="inter-600 text-24 dark-900 mb-3">{{ .title | markdownify }}</h3>
                     <p class="inter-400 text-16 dark-700 mb-0">{{ .description | markdownify }}</p>
@@ -83,7 +98,7 @@
 {{/* Impact Section */}}
 {{ with .Params.impact_section }}
 {{ if .enable }}
-<section class="section">
+<section class="section bg-light">
     <div class="container-lg">
         <div class="text-center mb-5">
             <h2 class="inter-700 text-40 dark-900 mb-4">{{ .title | markdownify }}</h2>
@@ -115,7 +130,7 @@
                     <img src="{{ .icon }}" alt="" width="48" class="mb-3">
                     <h3 class="inter-700 text-32 text-second mb-2">{{ .number }}</h3>
                     <h4 class="inter-600 text-18 dark-900 mb-2">{{ .label }}</h4>
-                    <p class="inter-400 text-14 dark-700 mb-0">{{ .description }}</p>
+                    <p class="inter-400 text-14 dark-700 mb-0">{{ .description | markdownify }}</p>
                 </div>
             </div>
             {{ end }}
@@ -129,7 +144,7 @@
 {{/* Foundation Section */}}
 {{ with .Params.foundation_section }}
 {{ if .enable }}
-<section class="section bg-light">
+<section class="section">
     <div class="container-lg">
         <h2 class="inter-700 text-40 dark-900 mb-4 text-center">{{ .title | markdownify }}</h2>
         <div class="text-center mb-4">
@@ -191,6 +206,6 @@
 {{ end }}
 {{/* End Foundation Section */}}
 
-
+</div>
 
 {{ end }}
