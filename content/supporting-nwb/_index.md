@@ -11,7 +11,7 @@ urgency_section:
   alert_type: "warning"
 action_section:
   enable: true
-  title: "How You Can Help" # TODO - update all icons
+  title: "How You Can Help"
   actions:
     - title: "Advocate for Funding"
       description: "Advocate for funding of data standards and infrastructure during conversations with private and public funders."
@@ -25,7 +25,7 @@ action_section:
     - title: "Give Credit"
       description: When using open data, make sure to cite the standards, datasets, software, and related data papers in your publications.
       icon: /images/credit.png
-impact_section:  # TODO - add graphs within these boxes for the different metrics (reuse, events, etc.)
+impact_section:
   enable: true
   title: "Impact of NWB on Neuroscience"
   subtitle: "NWB is a language for neurophysiology data and experiments that connects a vibrant digital ecosystem. This ecosystem enables meaningful sharing of neurophysiology data across the neuroscience community. The impact of NWB has been profound, and we are at an inflection point of exponential growth in openly available data in NWB. So far, NWB  has enabled:"

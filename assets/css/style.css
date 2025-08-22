@@ -691,10 +691,6 @@ header {
   overflow-wrap: break-word;
 }
 
-.bg-light-sky {
-  background-color: #aec5e4 !important;
-}
-
 @media (max-width: 750px) {
   .banner {
     width: 100%;
