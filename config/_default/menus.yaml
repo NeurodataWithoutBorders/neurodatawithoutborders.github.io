@@ -70,7 +70,7 @@ main:
     weight: 6
     url: "working-groups/"
     parent: "Community"
-  - name: "Support for NWB"
+  - name: "Supporting NWB"
     weight: 7
     url: "supporting-nwb/"
     parent: "Community"
@@ -148,7 +148,7 @@ community_links:
   - name: "Working Groups"
     weight: 6
     url: "/working-groups"
-  - name: "Support for NWB"
+  - name: "Supporting NWB"
     weight: 7
     url: "/supporting-nwb"
   - name: "Contact Us"
