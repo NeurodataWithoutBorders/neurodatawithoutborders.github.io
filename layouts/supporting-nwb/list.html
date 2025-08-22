@@ -1,0 +1,186 @@
+{{ define "main" }}
+{{/* Custom CSS for orange links without affecting images */}}
+<style>
+.supporting-nwb-page a {
+    color: #d17128 !important;
+    text-decoration: none !important;
+}
+.supporting-nwb-page a:hover {
+    color: #d17128 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+}
+</style>
+
+{{/* Hero Section */}}
+{{ with .Params.hero_section }}
+{{ if .enable }}
+<section class="hero bg-main aboutSect d-flex justify-content-center align-items-center">
+    <div class="text-center">
+        <h1 class="inter-700 text-48 text-white mb-3">{{ .title | markdownify }}</h1>
+        <p class="inter-500 text-20 text-white opacity-75">{{ .subtitle | markdownify }}</p>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Hero Section */}}
+
+<div class="supporting-nwb-page">
+
+{{/* Urgency Section */}}
+{{ with .Params.urgency_section }}
+{{ if .enable }}
+<section class="section-reduced-more">
+    <div class="container-lg">
+        <div class="alert alert-warning border-0 p-4 rounded-4 text-center">
+            <div class="row align-items-center">
+                <div class="col-lg-2 text-center mb-3 mb-lg-0">
+                    <i class="fas fa-exclamation-triangle fa-3x text-warning"></i>
+                </div>
+                <div class="col-lg-10">
+                    <h2 class="inter-700 text-32 mb-3">{{ .title | markdownify }}</h2>
+                    <p class="inter-400 text-18 mb-0">{{ .content | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Urgency Section */}}
+
+
+
+{{/* Action Section */}}
+{{ with .Params.action_section }}
+{{ if .enable }}
+<section class="section-reduced-more">
+    <div class="container-lg">
+        <div class="text-center mb-5">
+            <h2 class="inter-700 text-40 dark-900 mb-4">{{ .title | markdownify }}</h2>
+        </div>
+        <div class="row g-4 justify-content-center mb-5">
+            {{ range .actions }}
+            <div class="col-12 col-md-6">
+                <div class="bg-light p-4 rounded-4 text-center h-100">
+                    <img src="{{ .icon }}" alt="" width="64" class="mb-3">
+                    <h3 class="inter-600 text-24 dark-900 mb-3">{{ .title | markdownify }}</h3>
+                    <p class="inter-400 text-16 dark-700 mb-0">{{ .description | markdownify }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Action Section */}}
+
+{{/* Impact Section */}}
+{{ with .Params.impact_section }}
+{{ if .enable }}
+<section class="section-reduced bg-light">
+    <div class="container-lg">
+        <div class="text-center mb-5">
+            <h2 class="inter-700 text-40 dark-900 mb-4">{{ .title | markdownify }}</h2>
+            <p class="inter-400 text-18 dark-700 col-lg-8 mx-auto">{{ .subtitle | markdownify }}</p>
+        </div>
+        <div class="row g-4 justify-content-center mb-5">
+            {{ range .stats }}
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="bg-white p-4 rounded-4 text-center h-100 shadow-sm d-flex flex-column justify-content-between">
+                    <div>
+                        <img src="{{ .icon }}" alt="" width="48" class="mb-3">
+                        <h3 class="inter-700 text-32 text-main mb-2">{{ .number }}</h3>
+                        <h4 class="inter-600 text-20 dark-900 mb-2">{{ .label }}</h4>
+                        <div class="text-center mb-3">
+                            <img src="{{ .additional_image }}" alt="" class="img-fluid rounded-4">
+                        </div>
+                        <p class="inter-400 text-16 dark-700 mb-0">{{ .description | markdownify }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        
+        <div class="text-center mb-5">
+            <p class="inter-400 text-18 dark-700 col-lg-8 mx-auto">{{ .transition_text | markdownify }}</p>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+            {{ range .metrics }}
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="bg-white p-4 rounded-4 text-center h-100 shadow-sm">
+                    <img src="{{ .icon }}" alt="" width="48" class="mb-3">
+                    <h3 class="inter-700 text-32 text-second mb-2">{{ .number }}</h3>
+                    <h4 class="inter-600 text-20 dark-900 mb-2">{{ .label }}</h4>
+                    <div class="text-center mb-3">
+                        <img src="{{ .additional_image }}" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <p class="inter-400 text-16 dark-700 mb-0">{{ .description | markdownify }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+
+
+        {{/* Research Activities Subsection */}}
+        {{ with .research_activities }}
+        <div class="mb-5 mt-5 text-center">
+            <h3 class="inter-600 text-28 dark-900 mb-3">{{ .title | markdownify }}</h3>
+            <p class="inter-400 text-18 dark-700 mb-4 col-lg-10 mx-auto">{{ .content | markdownify }}</p>
+            <div class="row g-3">
+                {{ range .activities }}
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="bg-white p-3 rounded-3 shadow-sm h-100 d-flex align-items-center">
+                        {{ if .image }}
+                        <img src="{{ .image }}" alt="{{ .name }}" width="40" height="40" class="me-3 flex-shrink-0">
+                        {{ else }}
+                        <div class="bg-main rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 40px; height: 40px;">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        {{ end }}
+                        <span class="inter-500 text-14 dark-900">{{ .name | markdownify }}</span>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        
+        {{/* Data Reuse Section */}}
+        {{ with .data_reuse_section }}
+        <div class="mb-5 text-center">
+            <h3 class="inter-600 text-28 dark-900 mb-3">{{ .title | markdownify }}</h3>
+            <div class="bg-white p-4 rounded-4 shadow-sm">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <p class="inter-400 text-18 dark-700">{{ .content | markdownify }}</p>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <video class="img-fluid rounded-4" autoplay muted loop playsinline>
+                            <source src="{{ .image }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        
+        
+        {{/* AI and Future Subsection */}}
+        {{ with .ai_future }}
+        <div class="mb-4 text-center">
+            <h3 class="inter-600 text-28 dark-900 mb-3">{{ .title | markdownify }}</h3>
+            <p class="inter-400 text-18 dark-700 col-lg-10 mx-auto">{{ .content | markdownify }}</p>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Impact Section */}}
+</div>
+
+{{ end }}
