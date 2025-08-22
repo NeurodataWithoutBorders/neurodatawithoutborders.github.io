@@ -186,7 +186,7 @@ past_projects_section:
     - image: /images/project_components.png
       title: "NWB: A Data Standard and Software Ecosystem for Neurophysiology"
       content: The National Institutes of Health, through project <a
-        href='https://reporter.nih.gov/search/39Cu1-L5zUap7i3X41dBTA/project-details/9582696'>1R24MH116922</a>, funded <a href='https://dav.lbl.gov/~oruebel/'>Oliver Rübel</a> (Lawrence
+        href='https://reporter.nih.gov/search/39Cu1-L5zUap7i3X41dBTA/project-details/9582696'>1R24MH116922</a>, funded <a href='https://crd.lbl.gov/divisions/scidata/mla/staff/oliver-ruebel/'>Oliver Rübel</a> (Lawrence
         Berkeley National Laboratory) and <a href='https://alleninstitute.org/what-we-do/brain-science/about/team/staff-profiles/lydia-ng/'>Lydia Ng</a> (Allen
         Institute for Brain Science) to continue development of the NWB data
         format and software ecosystem to enable standardization, sharing, and

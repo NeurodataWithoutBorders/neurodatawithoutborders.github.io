@@ -59,4 +59,4 @@ NeuroConv is developed by CatalystNeuro and the NWB community to streamline the 
 ## Resources
 
 * [Source](https://github.com/catalystneuro/neuroconv)
-* [Resources](https://neuroconv.readthedocs.io/en/main/index.html")
+* [Resources](https://neuroconv.readthedocs.io/en/main/index.html)
