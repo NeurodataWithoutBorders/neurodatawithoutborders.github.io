@@ -36,3 +36,4 @@ This adaptor uses the NWB extension [ndx-pose](https://github.com/rly/ndx-pose),
 
 * [Source](https://github.com/talmolab/sleap)
 * [Docs](https://sleap.ai)
+* [NWB Example](https://io.sleap.ai/latest/examples/#nwb-format-operations)
