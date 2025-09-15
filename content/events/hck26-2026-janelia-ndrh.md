@@ -6,7 +6,7 @@ location: "HHMI Janelia Research Campus, Ashburn, VA"
 eventType: "Hackathon"
 image: "/images/events/hck_2x_2026-janelia-ndrh/ndrh_2026_banner.png"
 weight: 20260713
-summary: "Generate new insights from existing neurophysiology data through secondary analysis."
+summary: "Unlock new discoveries in neurophysiology through secondary analysis."
 draft: false
 organizers:
   - "Benjamin Dichter, Ph.D. (Program Chair)"
