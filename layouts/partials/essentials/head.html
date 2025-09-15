@@ -30,7 +30,7 @@
 {{ $plugin := $plugin | resources.Concat "/css/plugins.css" }}
 
 {{ if hugo.IsProduction }}
-  {{ $plugin = $plugin | resources.PostCSS | fingerprint "sha256" }}
+  {{ $plugin = $plugin | fingerprint "sha256" }}
   {{ $plugin = $plugin | resources.PostProcess }}
 {{ end }}
 <link rel="stylesheet" href="{{ $plugin.RelPermalink }}" />
