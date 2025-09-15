@@ -54,7 +54,7 @@ impact_section:
       additional_image: "/images/nwb_events_growth.png" 
     - number: "750K+"
       label: "Lines of code"
-      description: "across 23 [software repositories](https://nwb-overview.readthedocs.io/en/latest/nwb-project-analytics/) with 127 unique contributors."
+      description: "across 23 [software repositories](https://nwb-overview.readthedocs.io/en/latest/nwb-project-analytics/docs/source/index.html) with 127 unique contributors."
       icon: /images/github.png
       additional_image: "/images/nwb_code_growth.png" 
     - number: "139+"
