@@ -35,7 +35,7 @@ At this tutorial, we will teach attendees how to:
 
 ## Tutorial Program
 
-TDB
+TBD
 
 <!-- 8:00 - 8:30: Lecture: Introduction to the NWB data standard and DANDI Archive
 
