@@ -37,6 +37,10 @@ your data, including NWB GUIDE, a new no-code user interface for data conversion
 **Note:** All levels of experience are welcome! We will have tutorials ranging from no-code, automated data conversion to
 more advanced, custom code conversion.
 
+## Report
+
+The combined report for the NWB Data Conversion Workshop 2025 and the Open Neurodata and Tools Showcase 2025 is available online at [[PDF](https://drive.google.com/file/d/13S7hgWwk2QgcwMpNh-VeFU0JJcN2lxKa/view?usp=sharing)].
+
 ## Logistics
 
 We will be using Gather and Zoom for the meeting and will send an email in the days before the workshop with links.
