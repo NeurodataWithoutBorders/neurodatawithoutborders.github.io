@@ -14,6 +14,7 @@ organizers:
   - "Ryan Ly, Ph.D. (Program Chair)"
 resources:
   "Event Flyer": "https://drive.google.com/file/d/1ptsGRa1sEMh-je7L_ff3CgtRTj-X11lO/view?usp=sharing"
+  "Recorded Talks": "https://www.youtube.com/playlist?list=PL5wPNhoBP0ZDrMitdDwIsgV67xumuaP3G"
   "Slides from the 2024 NeuroDataReHack": "https://drive.google.com/drive/folders/1DAmQr4qWCamhj_2Zyke0kkHGvV8Kyq13?usp=sharing"
   "PyNWB Documentation": "https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb"
   "MatNWB Documentation": "https://matnwb.readthedocs.io"

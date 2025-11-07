@@ -34,6 +34,10 @@ aliases:
 
 The Open Neurodata and Tools Showcase is a free virtual event in Gather where attendees can meet data contributors and tool developers, explore publicly available neurophysiology datasets in DANDI, and discover open-source tools integrated with the NWB ecosystem. This event provides an opportunity to connect with both dataset creators and tool developers to discuss their work, including open research questions and potential applications.
 
+## Report
+
+The combined report for the NWB Data Conversion Workshop 2025 and the Open Neurodata and Tools Showcase 2025 is available online at [[PDF](https://drive.google.com/file/d/13S7hgWwk2QgcwMpNh-VeFU0JJcN2lxKa/view?usp=sharing)].
+
 ## Target Audience
 
 This virtual event is open to anyone interested in neurophysiology data and tools, including but not limited to:

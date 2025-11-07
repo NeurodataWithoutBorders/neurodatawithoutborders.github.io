@@ -37,24 +37,29 @@ current_team_section:
     - image: /images/anne.png
       name: Anne Churchland
       post: Professor at UCLA
-    - image: /images/loren.png
-      name: Loren Frank
-      post: Professor at UCSF
+    - image: /images/eva-dyer.jpg
+      name: Eva Dyer 
+      post: Professor at the University of Pennsylvania
     - image: /images/satrajit.png
       name: Satrajit Ghosh
       post: Principal Research Scientist at MIT
     - image: /images/adam-kepecs.png
       name: Adam Kepecs
       post: Professor at Washington University in St. Louis
-    - image: /images/mala.png
-      name: Mala Murthy
-      post: Professor at Princeton University
     - image: /images/kris.png
       name: Kris Bouchard
       post: Staff Scientist at Lawrence Berkeley National Laboratory
 alumni_section:
   enable: true
   alumni:
+    - image: /images/loren.png
+      name: Loren Frank
+      post: Professor at UCSF
+      date: 2021 - August, 2025
+    - image: /images/mala.png
+      name: Mala Murthy
+      post: Professor at Princeton University
+      date: 2021 - August, 2025
     - name: Lydia Ng
       date: April 2020 – May 2021, Co-PI 1R24MH116922-01
     - name: Christof Koch
