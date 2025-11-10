@@ -14,17 +14,9 @@ The Neurodata Extensions Catalog (NDX Catalog) is a community-led catalog of Neu
 
 Neurodata Extensions (NDX) are used to extend the NWB data standard, for example, to integrate new data types with NWB or define standards for lab- or project-specific metadata.
 
-## Installation
-
-The NDX Catalog is a web-based resource that can be accessed at:
-
-```
-https://nwb-extensions.github.io/
-```
-
 ## Usage
 
-The NDX Catalog allows users to:
+The NDX Catalog is a web-based resource that can be accessed at [nwb-extensions.github.io](https://nwb-extensions.github.io). The NDX Catalog allows users to:
 
 - Browse available extensions by category
 - Search for extensions based on keywords
@@ -33,6 +25,10 @@ The NDX Catalog allows users to:
 - Submit new extensions for inclusion in the catalog
 
 To use a specific extension from the catalog, follow the installation instructions provided on the extension's page.
+
+## Publishing your Extension on the NDX Catalog
+
+See the [publishing extensions](https://nwb-overview.readthedocs.io/en/latest/extensions_tutorial/7_publishing_extensions.html#publishing-extensions) tutorial for details on how to publish an extension on the catalog. 
 
 ## Additional Information
 
