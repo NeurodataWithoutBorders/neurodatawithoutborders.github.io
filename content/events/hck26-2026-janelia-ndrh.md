@@ -41,6 +41,18 @@ Example projects include but are not limited to:
 This event will primarily focus on analyzing existing data in NWB and on DANDI, **not** converting data to NWB. If 
 you are interested in learning how to convert data, consider signing up for an NWB Data Conversion Workshop.
 
+## Application
+
+**Applications are now open!**
+
+Apply to participate in NeuroDataReHack 2026 by completing the application form:
+
+**[Apply Here](https://forms.gle/6uird2uknZeJbmPr7)**
+
+Space is limited, so we encourage you to apply early. Applications will be reviewed on a rolling basis.
+
+Applications close March 24, 2026.
+
 ## Schedule
 
 Schedule details will be posted closer to the event date.
