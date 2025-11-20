@@ -1,6 +1,7 @@
 ---
 title: "Community Gallery"
 weight: 1
+layout: "gallery"
 gallery_section:
   enable: true
   title: "Data Conversion"
