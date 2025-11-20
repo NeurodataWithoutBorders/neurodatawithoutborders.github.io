@@ -19,3 +19,13 @@
   padding-left: 0.5rem;
   margin-bottom: 0.75rem;
 }
+
+/* Prevent decorative hero ellipses from blocking clicks/selecting content */
+section.hero {
+  overflow: hidden;
+}
+
+.hero .ellipses,
+.hero .eventsEllipses {
+  pointer-events: none;
+}
