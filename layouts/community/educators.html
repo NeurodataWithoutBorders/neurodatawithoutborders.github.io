@@ -120,41 +120,6 @@
 {{ end }}
 {{/* End Resources: Teach FAIR + Software Practices */}}
 
-{{/* Additional Resources Section */}}
-{{ with .Params.additional_resources }}
-{{ if .enable }}
-<section class="section bg-dark-100">
-    <div class="container-lg">
-        <h3 class="inter-700 text-40 dark-900 mb-3">{{ .title | markdownify }}</h3>
-        <p class="inter-400 text-16 dark-700 lh-base">{{ .content | markdownify }}</p>
-        <div class="row g-4 justify-content-center pt-4">
-            {{ range .boxes }}
-            <div class="col-12 col-md-6">
-                <div class="bg-white h-100 rounded-3 p-4 shadow-sm">
-                    <div class="d-flex flex-row">
-                        {{ if .image }}
-                        <div class="me-4 flex-shrink-0">
-                            <a href="{{ .url }}" target="_blank">
-                                <img src="{{ .image }}" alt="{{ .title }}" class="rounded-3 gallery-card-image" style="width: 100px; height: 100px; object-fit: cover;" onerror="this.parentElement.parentElement.style.display='none';">
-                            </a>
-                        </div>
-                        {{ end }}
-                        <div class="flex-grow-1">
-                            <a href="{{ .url }}" class="text-decoration-none" target="_blank">
-                                <h5 class="inter-700 text-18 dark-900 mb-2 text-decoration-underline">{{ .title | markdownify }}</h5>
-                            </a>
-                            <p class="inter-400 text-14 dark-700">{{ .content | markdownify }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {{ end }}
-        </div>
-    </div>
-</section>
-{{ end }}
-{{ end }}
-{{/* End Additional Resources Section */}}
 
 {{/* Disclaimer Section */}}
 {{ with .Params.disclaimer }}
