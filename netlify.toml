@@ -3,7 +3,7 @@
   command = 'hugo --gc --minify --buildFuture && npm_config_yes=true npx pagefind --site "public"'
 
 [build.environment]
-  HUGO_VERSION = "0.135.0"
+  HUGO_VERSION = "0.152.2"
 
 #[[plugins]]
 #package = 'netlify-plugin-image-optim'
