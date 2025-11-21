@@ -62,20 +62,24 @@ main:
     weight: 4
     url: "organizing-nwb-events/"
     parent: "Community"
-  - name: "Extending NWB"
+  - name: "Teaching with NWB"
     weight: 5
+    url: "community/educators/"
+    parent: "Community"
+  - name: "Extending NWB"
+    weight: 6
     url: "extending-nwb/"
     parent: "Community"
   - name: "Working Groups"
-    weight: 6
+    weight: 7
     url: "working-groups/"
     parent: "Community"
   - name: "Supporting NWB"
-    weight: 7
+    weight: 8
     url: "supporting-nwb/"
     parent: "Community"
   - name: "Team"
-    weight: 8
+    weight: 9
     url: "team/"
     parent: "Community"
   
@@ -142,17 +146,20 @@ community_links:
   - name: "Organizing NWB Events"
     weight: 4
     url: "/organizing-nwb-events"
-  - name: "Extending NWB"
+  - name: "Teaching with NWB"
     weight: 5
+    url: "/community/educators"
+  - name: "Extending NWB"
+    weight: 6
     url: "/extending-nwb"
   - name: "Working Groups"
-    weight: 6
+    weight: 7
     url: "/working-groups"
   - name: "Supporting NWB"
-    weight: 7
+    weight: 8
     url: "/supporting-nwb"
   - name: "Contact Us"
-    weight: 8
+    weight: 9
     url: "/contact-us"
 
 resources:
