@@ -22,6 +22,10 @@ aliases:
   - /nwb_hackathons/HCK24_2025_Janelia_NDRH
 ---
 
+## Report
+
+See the [NeuroDataReHack 2025 Report](https://drive.google.com/file/d/1ho5Ebao4kTWk8eElpeYZ_fFYEjStzP0L/view) for a summary of the event, projects completed, and feedback from participants.
+
 ## Objective
 
 [The DANDI Archive](http://dandiarchive.org) now has 300+ neurophysiology datasets in the 
