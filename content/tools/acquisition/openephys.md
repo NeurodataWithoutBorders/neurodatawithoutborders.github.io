@@ -27,7 +27,7 @@ Open Ephys GUI is a modular, open-source software for extracellular electrophysi
 Using the NWB format plugin, users can record data directly in NWB format via the OpenEphys GUI. The plugin provides seamless integration with the NWB ecosystem.
 
 ### NWB Plugin Resources
-- [Plugin Documentation](https://open-ephys.github.io/gui-docs/User-Manual/Recording-data/NWB-format.html)
+- [Plugin Documentation](https://open-ephys.github.io/gui-docs/User-Manual/Data-formats/NWB-format.html)
 - [Plugin Source Code](https://github.com/open-ephys-plugins/nwb-format)
 
 ## Resources
