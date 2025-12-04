@@ -11,11 +11,8 @@ community_tools:
     - title: Core NWB Tools
       description: Key software packages of the core NWB software stack
       url: "/tools/core/"
-    - title: Acquisition and Control Tools
-      description: Tools for data acquisition and experimental control
-      url: "/tools/acquisition/"
-    - title: Analysis and Visualization Tools
-      description: Tools for data analysis, visualization, and exploration
+    - title: Community Tools
+      description: Tools for data acquisition, analysis, visualization, and exploration
       url: "/tools/analysis/"
 title: The NWB Software <br> Ecosystem
 software_types:
