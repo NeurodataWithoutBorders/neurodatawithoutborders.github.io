@@ -3,7 +3,7 @@ title: "Community Tools"
 description: "Tools for data acquisition, analysis, visualization, and exploration"
 ---
 
-This page provides a curated collection of tools for working with NWB data, maintained as a convenience reference for the NWB community. Please note that this is not an exhaustive list of all available NWB tools. Many of these tools are developed and maintained by independent research groups and are actively evolving. If you would like to contribute a tool to this catalog, please visit our [Contact Us](/contact-us/) page for information on how to get involved.
+This page provides a curated collection of tools for working with NWB data, maintained as a convenience reference for the NWB community. Please note that this is not an exhaustive list of all available NWB tools. Many of these tools are developed and maintained by independent research groups and are actively evolving. If you would like to contribute a tool to this catalog, please see our [Contributing Community Tools](/contributing-tools/) guide for information on NWB integration best practices and how to add your tool to this page.
 
 ## Analysis & Visualization Tools
 
