@@ -42,7 +42,7 @@ Some software will be data modality specific and other software will want to sup
 - **Intracellular electrophysiology** (icephys): Patch clamp recordings, current/voltage traces
 - **Behavior**: Behavioral timeseries, spatial tracking, task events
 
- Several example files can be found on the [DANDI Archive](https://www.dandiarchive.org/) and we encourage testing with multiple files as they may be structured differently depending on the experiment.
+ Several example files can be found on the [DANDI Archive](https://dandiarchive.org/) and we encourage testing with multiple files as they may be structured differently depending on the experiment.
 
 ### Robustness Considerations
 
