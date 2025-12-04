@@ -21,7 +21,7 @@ pip install nwbinspector
 nwbinspector path/to/your/file.nwb
 ```
 
-NWBInspector checks for common issues and ensures your files comply the the NWB schema and follow NWB best practices. Address any warnings or errors in the inspector report.
+NWBInspector checks for common issues and ensures your files comply with the NWB schema and follow NWB best practices. Address any warnings or errors in the inspector report.
 
 ### Documentation and Examples
 
@@ -55,7 +55,7 @@ Some software will be data modality specific and other software will want to sup
 
 ## Part 2: Adding Your Tool to the Catalog
 
-Once your have a documented your integration, follow these steps to add it to the community tools catalog.
+Once you have documented your integration, follow these steps to add it to the community tools catalog.
 
 ### Step 1: Fork and Clone the Repository
 
@@ -156,7 +156,7 @@ Once you've tested your changes, create a pull request on GitHub with a clear ti
 
 ## Questions or Issues?
 
-If you have questions or need assistanc during the development process:
+If you have questions or need assistance during the development process:
 
 - Visit the [NWB Help Desk](https://github.com/NeurodataWithoutBorders/helpdesk/discussions)
 - Join the [NWB Slack workspace](https://nwb-users.slack.com/)
