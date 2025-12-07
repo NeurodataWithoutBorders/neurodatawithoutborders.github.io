@@ -10,7 +10,7 @@ main:
     parent: "Get Started"
   - name: "Converting Data to NWB"
     weight: 2
-    url: "converting-data-to-nwb/"
+    url: "convert/"
     parent: "Get Started"
   - name: "Documentation"
     weight: 3

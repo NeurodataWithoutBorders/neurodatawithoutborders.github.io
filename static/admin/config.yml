@@ -718,9 +718,9 @@ collections:
                 widget: "markdown"
 
 
-      - name: "converting-data-to-nwb"
+      - name: "convert"
         label: "Converting Data To NWB"
-        file: "content/converting-data-to-nwb/_index.md"
+        file: "content/convert/_index.md"
         create: true
         fields:
           - label: "Title"
