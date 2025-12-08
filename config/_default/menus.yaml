@@ -16,14 +16,31 @@ main:
     weight: 3
     url: "https://nwb-overview.readthedocs.io"
     parent: "Get Started"
+  
+  # The Standard
+  - name: "The Standard"
+    weight: 2
+    hasChildren: true
   - name: "Specification"
-    weight: 4
+    weight: 1
     url: "https://nwb-schema.readthedocs.io/en/latest/format.html"
-    parent: "Get Started"
+    parent: "The Standard"
+  - name: "Policies"
+    weight: 2
+    url: "policies/"
+    parent: "The Standard"
+  - name: "Enhancement Proposals"
+    weight: 3
+    url: "enhancement-proposals/"
+    parent: "The Standard"
+  - name: "Extensions (NDX Catalog)"
+    weight: 4
+    url: "https://nwb-extensions.github.io"
+    parent: "The Standard"
   
   # Software & Tools
   - name: "Software & Tools"
-    weight: 2
+    weight: 3
     hasChildren: true
   - name: "NWB Software Ecosystem"
     weight: 1
@@ -44,7 +61,7 @@ main:
   
   # Community
   - name: "Community"
-    weight: 3
+    weight: 4
     hasChildren: true
   - name: "News & Updates"
     weight: 1
@@ -85,7 +102,7 @@ main:
   
   # Resources
   - name: "Resources"
-    weight: 4
+    weight: 5
     hasChildren: true
   - name: "Publications"
     weight: 1
@@ -99,22 +116,18 @@ main:
     weight: 3
     url: "grants-and-projects/"
     parent: "Resources"
-  - name: "Policies"
-    weight: 4
-    url: "policies/"
-    parent: "Resources"
   - name: "Training & Event Materials"
-    weight: 5
+    weight: 4
     url: "training-materials/"
     parent: "Resources"
   - name: "FAQ"
-    weight: 6
+    weight: 5
     url: "faq/"
     parent: "Resources"
   
   # Contact
   - name: "Contact"
-    weight: 5
+    weight: 6
     url: "contact-us/"
 
 # Footer
@@ -172,12 +185,23 @@ resources:
   - name: "Grants & Projects"
     weight: 3
     url: "/grants-and-projects"
-  - name: "Policies"
-    weight: 4
-    url: "/policies"
   - name: "Training & Event Materials"
-    weight: 5
+    weight: 4
     url: "/training-materials"
   - name: "FAQ"
-    weight: 6
+    weight: 5
     url: "/faq"
+
+the_standard:
+  - name: "Specification"
+    weight: 1
+    url: "https://nwb-schema.readthedocs.io/en/latest/format.html"
+  - name: "Policies"
+    weight: 2
+    url: "/policies"
+  - name: "Enhancement Proposals"
+    weight: 3
+    url: "/enhancement-proposals"
+  - name: "Extensions (NDX Catalog)"
+    weight: 4
+    url: "https://nwb-extensions.github.io"
