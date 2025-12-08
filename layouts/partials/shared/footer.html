@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <div class="col-10 col-sm-5 col-md-3">
+            <div class="col-10 col-sm-5 col-md-2">
                 <div class="d-flex flex-column row-gap-4">
                     <strong class="inter-500 text-18 dark-50">Quick Links</strong>
                     <ul class="list-unstyled d-flex flex-column row-gap-3">
@@ -33,7 +33,18 @@
                 </div>
             </div>
 
-            <div class="col-10 col-sm-5 col-md-3">
+            <div class="col-10 col-sm-5 col-md-2">
+                <div class="d-flex flex-column row-gap-4">
+                    <strong class="inter-500 text-18 dark-50">The Standard</strong>
+                    <ul class="list-unstyled d-flex flex-column row-gap-3">
+                        {{ range site.Menus.the_standard }}
+                        <li><a href="{{ .URL }}" class="inter-400 nav-link underline-hover animate dark-300 text-16">{{ .Name | markdownify }}</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-10 col-sm-5 col-md-2">
                 <div class="d-flex flex-column row-gap-4">
                     <strong class="inter-500 text-18 dark-50">Community</strong>
                     <ul class="list-unstyled d-flex flex-column row-gap-3">
@@ -44,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="col-10 col-sm-5 col-md-3">
+            <div class="col-10 col-sm-5 col-md-2">
                 <div class="d-flex flex-column row-gap-4">
                     <strong class="inter-500 text-18 dark-50">Resources</strong>
                     <ul class="list-unstyled d-flex flex-column row-gap-3">
