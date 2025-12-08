@@ -12,7 +12,7 @@ Yes! NWB 2.0 was officially released in January 2019, and the schema is stable. 
 
 ### I would like to use NWB. How do I get started? {#how-to-get-started}
 
-See the [Converting neurophysiology data to NWB](/converting-data-to-nwb/) page for more information.
+See the [Converting neurophysiology data to NWB](/convert/) page for more information.
 
 ### How do I cite NWB 2 in my research? {#how-to-cite}
 
