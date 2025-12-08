@@ -38,26 +38,30 @@ main:
     url: "https://nwb-extensions.github.io"
     parent: "The Standard"
   
-  # Software & Tools
-  - name: "Software & Tools"
+  # Tools & Archives
+  - name: "Tools & Archives"
     weight: 3
     hasChildren: true
   - name: "NWB Software Ecosystem"
     weight: 1
     url: "nwb-software/"
-    parent: "Software & Tools"
+    parent: "Tools & Archives"
   - name: "Core Tools"
     weight: 2
     url: "tools/core/"
-    parent: "Software & Tools"
+    parent: "Tools & Archives"
   - name: "Acquisition Tools"
     weight: 3
     url: "tools/acquisition/"
-    parent: "Software & Tools"
+    parent: "Tools & Archives"
   - name: "Analysis Tools"
     weight: 4
     url: "tools/analysis/"
-    parent: "Software & Tools"
+    parent: "Tools & Archives"
+  - name: "Data Archives"
+    weight: 5
+    url: "archives/"
+    parent: "Tools & Archives"
   
   # Community
   - name: "Community"
