@@ -1,11 +1,10 @@
 ---
-title: "Public Data Repositories"
+title: "Public Data Archives"
 weight: 3
 description: "Discover public data repositories that host NWB datasets"
 
 repositories_section:
   enable: true
-  title: "NWB Data Repositories"
   content: "The following public data repositories host datasets in NWB format, making neurophysiology data accessible to the research community."
   boxes:
     - title: "DANDI Archive"
