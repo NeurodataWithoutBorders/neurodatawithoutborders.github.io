@@ -50,16 +50,12 @@ main:
     weight: 2
     url: "tools/core/"
     parent: "Tools & Archives"
-  - name: "Acquisition Tools"
+  - name: "Community Tools"
     weight: 3
-    url: "tools/acquisition/"
-    parent: "Tools & Archives"
-  - name: "Analysis Tools"
-    weight: 4
-    url: "tools/analysis/"
+    url: "tools/community/"
     parent: "Tools & Archives"
   - name: "Data Archives"
-    weight: 5
+    weight: 4
     url: "archives/"
     parent: "Tools & Archives"
   

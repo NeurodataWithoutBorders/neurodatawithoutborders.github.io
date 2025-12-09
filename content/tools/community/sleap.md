@@ -16,9 +16,9 @@ SLEAP is an open source deep-learning based framework for multi-animal pose trac
 
 ## NWB Integration
 
-SLEAP has developed [NDXPoseAdaptor](https://sleap.ai/api/sleap.io.format.ndx_pose.html#module-sleap.io.format.ndx_pose), an adaptor class within SLEAP for importing and exporting NWB files. Users can either:
+SLEAP has developed an [NWB harmonization layer](https://io.sleap.ai/latest/reference/sleap_io/io/nwb/), for importing and exporting NWB files. Users can either:
 - Use the SLEAP GUI to import/export NWB files
-- Use the high-level API [Labels.export_nwb](https://sleap.ai/api/sleap.io.dataset.html#sleap.io.dataset.Labels.export_nwb) to programmatically export to the NWB format
+- Use the high-level API [sleap_io.save_nwb](https://io.sleap.ai/latest/formats/#sleap_io.save_nwb) to programmatically export to the NWB format
 
 This adaptor uses the NWB extension [ndx-pose](https://github.com/rly/ndx-pose), which provides a standardized format for storing pose estimation data in NWB.
 
@@ -36,4 +36,4 @@ This adaptor uses the NWB extension [ndx-pose](https://github.com/rly/ndx-pose),
 
 * [Source](https://github.com/talmolab/sleap)
 * [Docs](https://sleap.ai)
-* [NWB Example](https://io.sleap.ai/latest/examples/#nwb-format-operations)
+* [NWB Example](https://io.sleap.ai/latest/examples/#working-with-nwb-files)

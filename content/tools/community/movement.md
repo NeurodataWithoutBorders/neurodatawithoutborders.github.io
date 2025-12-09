@@ -17,7 +17,7 @@ weight: 200
 
 ## NWB Integration
 
-`movement` pose datasets can be loaded from and saved to NWB files. The pose tracks are formatted according to the [ndx-pose](https://github.com/rly/ndx-pose) extension. See the NWB tab in the [movement I/O docs](https://movement.neuroinformatics.dev/user_guide/input_output.html).
+`movement` pose datasets can be loaded from and saved to NWB files. The pose tracks are formatted according to the [ndx-pose](https://github.com/rly/ndx-pose) extension. See the NWB tab in the [movement I/O docs](https://movement.neuroinformatics.dev/latest/user_guide/input_output.html).
 
 ## Resources
 

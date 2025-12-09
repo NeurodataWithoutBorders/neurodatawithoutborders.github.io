@@ -4,7 +4,7 @@ description: "The NIH BRAIN Initiative archive for publishing and sharing neurop
 category: "data-management"
 image: "/images/tools/dandi/dandi_screenshot_07_24_2022.png"
 source_url: "https://github.com/dandi"
-docs_url: "https://www.dandiarchive.org/handbook"
+docs_url: "https://docs.dandiarchive.org"
 weight: 240
 ---
 
@@ -42,5 +42,5 @@ DANDI (Distributed Archives for Neurophysiology Data Integration) is the NIH BRA
 ## Resources
 
 - [Online Archive](https://dandiarchive.org/)
-- [Documentation](https://www.dandiarchive.org/handbook)
+- [Documentation](https://docs.dandiarchive.org)
 - [Source Code](https://github.com/dandi)

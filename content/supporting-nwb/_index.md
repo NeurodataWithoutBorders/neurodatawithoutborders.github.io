@@ -42,7 +42,7 @@ impact_section:
       additional_image: "/images/nwb_data_reuse_growth.png" 
     - number: "35+"
       label: "community tools"
-      description: "creating a vibrant community software ecosystem around NWB. See a list of these tools [here](/tools/analysis/)."
+      description: "creating a vibrant community software ecosystem around NWB. See a list of these tools [here](/tools/community/)."
       icon: /images/code.png
       additional_image: "/images/nwb_community_tools_growth.png" 
   transition_text: "This impact is the result of extensive community engagement and technical development over more than 10 years. This engagement has included:"
