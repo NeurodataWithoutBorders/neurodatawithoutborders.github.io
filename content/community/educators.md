@@ -57,9 +57,9 @@ resources_teaching_fair:
     - title: "Core Tools"
       content: "A list of core NWB tools and libraries for working with NWB data in Python and MATLAB. These tools provide the necessary functionality for reading, writing, and analyzing NWB files. Useful for setting up course environments and student projects."
       url: "/tools/core/"
-    - title: "Analysis Tools"
+    - title: "Community Tools"
       content: "A list of analysis tools that support NWB data. These tools can be used to perform various types of data analysis and visualization on NWB files and are useful for advanced analysis projects and demonstrations."
-      url: "/tools/analysis/"
+      url: "/tools/community/"
 
 disclaimer:
   enable: true

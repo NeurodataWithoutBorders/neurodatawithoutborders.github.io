@@ -68,10 +68,9 @@ cd neurodatawithoutborders.github.io
 
 ### Step 2: Create Your Tool's Markdown File
 
-Create a new markdown file in the appropriate directory based on your tool's primary function:
+Create a new markdown file in the community tools directory:
 
-- **Analysis/Visualization Tools**: `content/tools/analysis/your-tool-name.md`
-- **Acquisition/Control Tools**: `content/tools/acquisition/your-tool-name.md`
+- **All Community Tools**: `content/tools/community/your-tool-name.md`
 
 ### Step 3: Add Metadata and Content
 
