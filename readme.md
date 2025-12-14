@@ -5,7 +5,7 @@ This website uses HUGO. See more starters at https://github.com/hugo-starters/
 To run the website locally, clone the repo and run the following commands:
 
 ```bash
-git clone https://github.com/NeurodataWithoutBorders/nwb.org
+git clone https://github.com/NeurodataWithoutBorders/nwb.org.git
 cd nwb.org
 ```
 
