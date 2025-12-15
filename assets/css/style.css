@@ -438,10 +438,21 @@ section img[src*="Neurophysiology-min.png"] {
   display: block !important;
 }
 
+/* Limit the maximum size of pynapple graphic abstract image */
+.content img[src*="pynapple/GraphicAbstract.png"] {
+  width: 100% !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
 /* Ensure the image is responsive on smaller screens */
 @media (max-width: 900px) {
   section img[src*="Neurophysiology-min.png"] {
     max-width: 95% !important;
+  }
+  .content img[src*="pynapple/GraphicAbstract.png"] {
+    max-width: 90% !important;
   }
 }
 
