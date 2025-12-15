@@ -40,7 +40,9 @@ analysis_section:
       content: "A package for exploratory analysis of long-term naturalistic human intracranial neural recordings and pose data as part of Dandiset 000055."
       url: "https://github.com/neurovium/Neuromatch-AJILE12"
     - title: "NWB4EDU: Teaching and Learning with NWB Datasets"
-      content: "NWB4EDU is an online book aimed at educators and students, providing a collection of Jupyter notebooks and teaching materials to learn about the NWB data standard and how to work with NWB files."
+      content: "NWB4EDU is an online book aimed at educators and students, providing a collection of Jupyter notebooks and teaching materials to learn about the NWB data standard and how to work with NWB files. \n
+
+      Juavinett & Magdaleno-Garcia (2025). nwb4edu: an Online Textbook for Teaching and Learning with NWB Datasets. *Journal of Open Source Education*, 8(94), 309. [DOI: 10.21105/jose.00309](https://doi.org/10.21105/jose.00309)"
       image: "/images/community_gallery/nwb4edu.png"
       url: "https://nwb4edu.github.io/"
 

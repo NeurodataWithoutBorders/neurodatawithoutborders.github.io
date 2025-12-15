@@ -14,7 +14,9 @@ resources_teaching_data:
     4. **Share Your Experience**: Contribute your teaching materials back to the community to help other educators.
   boxes:
     - title: "NWB4EDU: Teaching and Learning with NWB Datasets"
-      content: "NWB4EDU is an online book aimed at educators and students, providing a collection of Jupyter notebooks and teaching materials to learn about the NWB data standard and how to work with NWB files. Useful for introductory courses, labs, and self-paced learning."
+      content: "NWB4EDU is an online book aimed at educators and students, providing a collection of Jupyter notebooks and teaching materials to learn about the NWB data standard and how to work with NWB files. Useful for introductory courses, labs, and self-paced learning.\n 
+      
+      Juavinett & Magdaleno-Garcia (2025). nwb4edu: an Online Textbook for Teaching and Learning with NWB Datasets. *Journal of Open Source Education*, 8(94), 309. [DOI: 10.21105/jose.00309](https://doi.org/10.21105/jose.00309)"
       image: "/images/community_gallery/nwb4edu.png"
       url: "https://nwb4edu.github.io/"
     - title: "OpenScope Databook"
