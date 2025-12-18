@@ -79,7 +79,6 @@ The event will feature a distinguished team of instructors, including:
 - **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
 - **Alessio Buccino, Ph.D.** - Electrophysiology Pipeline Engineer, Allen Institute for Neural Dynamics (Lead developer of SpikeInterface)
 - **Carter Peene** - Data Analyst I, Allen Institute for Neural Dynamics (Lead developer of OpenScope Databook)
-- **Mayo Faulkner, Ph.D.** - Senior Software Engineer, International Brain Lab
 - **Misha Ahrens, Ph.D.** - Group Leader, HHMI Janelia Research Campus
 - **Jakob Voigts, Ph.D.** - Group Leader, HHMI Janelia Research Campus
 - **Alison Comrie, Ph.D.** - Postdoctoral Scientist, HHMI Janelia Research Campus -->
