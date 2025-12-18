@@ -68,8 +68,13 @@ Following the event, participants will be invited to apply for a Kavli Foundatio
 The event will feature a distinguished team of instructors, including:
 
 - **Benjamin Dichter, Ph.D.** - Program Chair, CatalystNeuro
-<!-- - **Stephanie Prince, Ph.D.** - Program Chair, Lawrence Berkeley National Laboratory
-- **Ryan Ly, Ph.D.** - Program Chair, Lawrence Berkeley National Laboratory
+- **Ryan Ly, Ph.D.** - Lawrence Berkeley National Laboratory
+- **Oliver Rübel, Ph.D.** - Lawrence Berkeley National Laboratory
+- **Misha Ahrens, Ph.D.** - Group Leader, HHMI Janelia Research Campus
+
+and more!
+
+<!-- 
 - **Jeremy Magland, Ph.D.** - Senior Data Scientist, Flatiron Institute (Lead developer of Neurosift, FigURL, Dendro)
 - **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
 - **Alessio Buccino, Ph.D.** - Electrophysiology Pipeline Engineer, Allen Institute for Neural Dynamics (Lead developer of SpikeInterface)
