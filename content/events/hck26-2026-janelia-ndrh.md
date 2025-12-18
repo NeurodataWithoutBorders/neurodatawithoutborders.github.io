@@ -72,8 +72,9 @@ The event will feature a distinguished team of instructors, including:
 - **Oliver Rübel, Ph.D.** - Lawrence Berkeley National Laboratory
 - **Misha Ahrens, Ph.D.** - Group Leader, HHMI Janelia Research Campus
 - **Jeremy Magland, Ph.D.** - Senior Data Scientist, Flatiron Institute (Lead developer of Neurosift, FigURL, Dendro)
+- **Mayo Faulkner, Ph.D.** - Senior Software Engineer, International Brain Lab
 
-and more!
+More to come!
 
 <!-- 
 - **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
