@@ -72,12 +72,12 @@ The event will feature a distinguished team of instructors, including:
 - **Oliver Rübel, Ph.D.** - Lawrence Berkeley National Laboratory
 - **Misha Ahrens, Ph.D.** - Group Leader, HHMI Janelia Research Campus
 - **Jeremy Magland, Ph.D.** - Senior Data Scientist, Flatiron Institute (Lead developer of Neurosift, FigURL, Dendro)
+- **Guillaume Viejo, Ph.D.** - Data Scientist, Flatiron Institute (Lead developer of Pynapple)
 - **Mayo Faulkner, Ph.D.** - Senior Software Engineer, International Brain Lab
 
 <!-- 
 - **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
 - **Alessio Buccino, Ph.D.** - Electrophysiology Pipeline Engineer, Allen Institute for Neural Dynamics (Lead developer of SpikeInterface)
-- **Guillaume Viejo, Ph.D.** - Data Scientist, Flatiron Institute (Lead developer of Pynapple)
 - **Carter Peene** - Data Analyst I, Allen Institute for Neural Dynamics (Lead developer of OpenScope Databook)
 - **Mayo Faulkner, Ph.D.** - Senior Software Engineer, International Brain Lab
 - **Misha Ahrens, Ph.D.** - Group Leader, HHMI Janelia Research Campus
