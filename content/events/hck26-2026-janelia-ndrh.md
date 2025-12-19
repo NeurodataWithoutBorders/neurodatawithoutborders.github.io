@@ -51,7 +51,7 @@ Apply to participate in NeuroDataReHack 2026 by completing the application form:
 
 Space is limited, so we encourage you to apply early. Applications will be reviewed on a rolling basis.
 
-Applications close March 24, 2026.
+Applications close February 20, 2026.
 
 ## Schedule
 
