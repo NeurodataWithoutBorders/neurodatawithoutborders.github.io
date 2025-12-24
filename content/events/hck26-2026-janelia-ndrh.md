@@ -74,11 +74,12 @@ The event will feature a distinguished team of instructors, including:
 - **Jeremy Magland, Ph.D.** - Senior Data Scientist, Flatiron Institute (Lead developer of Neurosift, FigURL, Dendro)
 - **Guillaume Viejo, Ph.D.** - Data Scientist, Flatiron Institute (Lead developer of Pynapple)
 - **Mayo Faulkner, Ph.D.** - Senior Software Engineer, International Brain Lab
+- **Carter Peene** - Data Analyst, Allen Institute for Neural Dynamics (Lead developer of OpenScope Databook)
 
 <!-- 
 - **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
 - **Alessio Buccino, Ph.D.** - Electrophysiology Pipeline Engineer, Allen Institute for Neural Dynamics (Lead developer of SpikeInterface)
-- **Carter Peene** - Data Analyst I, Allen Institute for Neural Dynamics (Lead developer of OpenScope Databook)
+
 - **Misha Ahrens, Ph.D.** - Group Leader, HHMI Janelia Research Campus
 - **Jakob Voigts, Ph.D.** - Group Leader, HHMI Janelia Research Campus
 - **Alison Comrie, Ph.D.** - Postdoctoral Scientist, HHMI Janelia Research Campus -->
@@ -87,10 +88,12 @@ Additional instructors to be announced.
 
 ## Eligibility
 
-This course is intended for PhD students, postdoctoral researchers, principal investigators, or similar.
+Eligibility is broad. This course is intended for PhD students, postdoctoral researchers, principal investigators, or similar.
 Advanced undergraduates may be considered on a case-by-case basis. We welcome applicants from all areas of
 neuroscience, including but not limited to experimentalists, computational neuroscientists, and data scientists.
 Applicants should have basic programming experience in Python or MATLAB and experience with neurophysiology research.
+Preference will be given to applicants who have a specific project in mind that involves reanalyzing existing
+neurophysiology data in NWB format and who has not previously attended a NeuroDataReHack event.
 
 ## Logistics
 
