@@ -76,9 +76,10 @@ The event will feature a distinguished team of instructors, including:
 - **Mayo Faulkner, Ph.D.** - Senior Software Engineer, International Brain Lab
 - **Carter Peene** - Data Analyst, Allen Institute for Neural Dynamics (Lead developer of OpenScope Databook)
 - **Vinam Arora** - Ph.D. candidate in Computer Science, University of Pennsylvania (Developer of torch_brain)
+- **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
 
 <!-- 
-- **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
+
 - **Alessio Buccino, Ph.D.** - Electrophysiology Pipeline Engineer, Allen Institute for Neural Dynamics (Lead developer of SpikeInterface)
 
 - **Jakob Voigts, Ph.D.** - Group Leader, HHMI Janelia Research Campus
