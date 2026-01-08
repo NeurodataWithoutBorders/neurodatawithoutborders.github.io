@@ -77,12 +77,13 @@ The event will feature a distinguished team of instructors, including:
 - **Carter Peene** - Data Analyst, Allen Institute for Neural Dynamics (Lead developer of OpenScope Databook)
 - **Vinam Arora** - Ph.D. candidate in Computer Science, University of Pennsylvania (Developer of torch_brain)
 - **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
+- **Jakob Voigts, Ph.D.** - Group Leader, HHMI Janelia Research Campus
 
 <!-- 
 
 - **Alessio Buccino, Ph.D.** - Electrophysiology Pipeline Engineer, Allen Institute for Neural Dynamics (Lead developer of SpikeInterface)
 
-- **Jakob Voigts, Ph.D.** - Group Leader, HHMI Janelia Research Campus
+- 
 
 Additional instructors to be announced.
 
