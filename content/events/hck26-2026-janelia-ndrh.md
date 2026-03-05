@@ -45,15 +45,9 @@ We will also receive instructions from the [SPARC team](https://sparc.science/) 
 
 ## Application
 
-**Applications are now open!**
+**Applications are now closed.**
 
-Apply to participate in NeuroDataReHack 2026 by completing the application form:
-
-**[Apply Here](https://forms.gle/6uird2uknZeJbmPr7)**
-
-Space is limited, so we encourage you to apply early. Applications will be reviewed on a rolling basis.
-
-Applications close February 20, 2026.
+Thank you for your interest in NeuroDataReHack 2026. Applicants will be notified of decisions soon.
 
 ## Schedule
 
