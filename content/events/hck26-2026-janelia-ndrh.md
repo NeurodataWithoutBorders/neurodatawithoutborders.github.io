@@ -1,11 +1,11 @@
 ---
 title: "NeuroDataReHack 2026"
-date: 2026-07-13
-endDate: 2026-07-17
+date: 2026-07-12
+endDate: 2026-07-18
 location: "HHMI Janelia Research Campus, Ashburn, VA"
 eventType: "Hackathon"
 image: "/images/events/hck_2x_2026-janelia-ndrh/ndrh_2026_banner.png"
-weight: 20260713
+weight: 20260712
 summary: "Unlock new discoveries in neurophysiology through secondary analysis."
 draft: false
 organizers:
@@ -20,6 +20,10 @@ resources:
 aliases:
   - /nwb_hackathons/HCK26_2026_Janelia_NDRH
 ---
+
+## Date Change
+
+**Please note:** The dates for NeuroDataReHack 2026 have been updated. The event has been expanded and will now take place **July 12-18, 2026**.
 
 ## Objective
 
