@@ -131,7 +131,7 @@
 
             <div class="col-lg-4 mt-5 ps-lg-5">
                 <h4 class="inter-600 text-24 dark-900">Recent News</h4>
-                <div class="row g-2" data-pagefind-body>
+                <div class="row g-2">
                     {{ $pages := where .Site.RegularPages "Section" "news" }}
                     {{ range first 4 ($pages.ByDate.Reverse) }}
                     <div class="col-md-6 col-lg-12 col-sm-8 mx-auto">
