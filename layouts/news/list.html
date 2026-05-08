@@ -118,8 +118,10 @@
                     <div class="col-md-6 col-lg-12 col-sm-8 mx-auto">
                         <div class="rounded-3 shadow-sm bg-white p-2">
                             <div class="d-flex  gap-3 align-items-center">
-                                <div>
-                                    <img src="{{ .Params.image }}" alt="" width="90" height="70" class="rounded-3">
+                                <div class="flex-shrink-0">
+                                    <img src="{{ .Params.image }}" alt=""
+                                        class="rounded-3"
+                                        style="width: 120px; height: 75px; object-fit: cover;">
                                 </div>
                                 <div class="w-100 d-flex flex-column row-gap-1">
                                     <div class="d-flex align-items-sm-center gap-1">

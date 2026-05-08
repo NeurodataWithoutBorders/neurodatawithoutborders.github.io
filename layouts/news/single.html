@@ -61,8 +61,17 @@
                         {{ .Content }}
                     </div>
                     {{ with .Params.ext_link }}
-                    <div>
-                        <a href="{{ . }}">See post here</a>
+                    <div class="newsletter-embed mt-4">
+                        <iframe
+                            src="{{ . }}"
+                            title="{{ $.Title | plainify }}"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            style="width: 100%; height: 1600px; border: 1px solid #ebebeb; border-radius: 0.5rem;">
+                        </iframe>
+                        <div class="mt-2 text-end">
+                            <a href="{{ . }}" target="_blank" rel="noopener">Open original ↗</a>
+                        </div>
                     </div>
                     {{ end }}
                     <div class="mt-4 ">
@@ -137,9 +146,10 @@
                     <div class="col-md-6 col-lg-12 col-sm-8 mx-auto">
                         <div class="rounded-3 shadow-sm bg-white p-2">
                             <div class="d-flex  gap-3 align-items-center">
-                                <div>
-                                    <img data-pagefind-meta="image[src]" src="{{ .Params.image }}" alt="" width="90"
-                                        height="70" class="rounded-3">
+                                <div class="flex-shrink-0">
+                                    <img data-pagefind-meta="image[src]" src="{{ .Params.image }}" alt=""
+                                        class="rounded-3"
+                                        style="width: 120px; height: 75px; object-fit: cover;">
                                 </div>
                                 <div class="w-100 d-flex flex-column row-gap-1">
                                     <div class="d-flex align-items-sm-center gap-1">
