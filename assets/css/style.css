@@ -1083,6 +1083,45 @@ ol.custom-ordered-list li::before {
   padding: 0 10px !important;
 }
 
+/* Site-wide search bar in navbar */
+.site-search {
+  position: relative;
+  width: 100%;
+  max-width: 240px;
+}
+.site-search .pagefind-ui__search-input {
+  height: 38px;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 0.5rem;
+  border: 1px solid #d0d4dd;
+  background-color: #fff;
+  width: 100%;
+}
+.site-search .pagefind-ui__search-clear {
+  font-size: 13px;
+}
+.site-search .pagefind-ui__drawer {
+  position: absolute !important;
+  top: 44px !important;
+  right: 0 !important;
+  left: auto !important;
+  width: min(420px, 90vw) !important;
+  max-height: 70vh;
+  overflow-y: auto;
+  z-index: 1050;
+}
+@media (max-width: 991.98px) {
+  .site-search {
+    max-width: 100%;
+  }
+  .site-search .pagefind-ui__drawer {
+    position: static !important;
+    width: 100% !important;
+    max-height: none;
+  }
+}
+
 /* Contact Us */
 .contactP a {
   color: #171b26 !important;

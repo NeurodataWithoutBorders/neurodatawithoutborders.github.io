@@ -108,7 +108,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // PageFind Init
   window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({ element: "#search", showSubResults: true });
+    if (document.getElementById("search")) {
+      new PagefindUI({ element: "#search", showSubResults: true });
+    }
+    if (document.getElementById("site-search")) {
+      new PagefindUI({
+        element: "#site-search",
+        showSubResults: true,
+        showImages: false,
+        resetStyles: false,
+      });
+    }
   });
 
   if (logos) {
