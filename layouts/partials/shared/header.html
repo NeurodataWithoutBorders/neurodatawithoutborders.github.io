@@ -3,7 +3,7 @@
 <header class="header-nav py-3 header">
   <div class="container-lg">
     <div class="row">
-      <div class="col-12 px-0">
+      <div class="col-12 px-3 px-lg-0">
         <nav class="navbar navbar-expand-lg p-0">
           <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
             <img src="{{ site.Params.logo }}" alt="" class="img-fluid" width="200px">
@@ -134,7 +134,18 @@
               {{ end }}
             </ul>
 
-            <div id="site-search" class="site-search ms-lg-3 my-2 my-lg-0"></div>
+            <div class="site-search-wrapper ms-lg-2 my-2 my-lg-0">
+              <button
+                type="button"
+                class="site-search-toggle btn p-0 border-0 bg-transparent"
+                aria-label="Search the site"
+                aria-expanded="false">
+                <i class="bi bi-search dark-300"></i>
+              </button>
+              <div class="site-search-panel" hidden>
+                <div id="site-search"></div>
+              </div>
+            </div>
 
             {{ if $navButton }}
               <div class="navbar-right ms-lg-3">
