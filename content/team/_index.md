@@ -28,6 +28,9 @@ executive_section:
 current_team_section:
   enable: true
   team_members:
+    - image: /images/kris.png
+      name: Kris Bouchard
+      post: Staff Scientist at Lawrence Berkeley National Laboratory
     - image: /images/bing.png
       name: Bing Brunton
       post: Professor at University of Washington
@@ -38,7 +41,7 @@ current_team_section:
       name: Anne Churchland
       post: Professor at UCLA
     - image: /images/eva-dyer.jpg
-      name: Eva Dyer 
+      name: Eva Dyer
       post: Professor at the University of Pennsylvania
     - image: /images/satrajit.png
       name: Satrajit Ghosh
@@ -46,9 +49,9 @@ current_team_section:
     - image: /images/adam-kepecs.png
       name: Adam Kepecs
       post: Professor at Washington University in St. Louis
-    - image: /images/kris.png
-      name: Kris Bouchard
-      post: Staff Scientist at Lawrence Berkeley National Laboratory
+    - image: /images/ueli-rutishauser.png
+      name: Ueli Rutishauser
+      post: Professor at Cedars-Sinai Medical Center
 alumni_section:
   enable: true
   alumni:
