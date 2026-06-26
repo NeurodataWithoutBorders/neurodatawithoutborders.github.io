@@ -52,7 +52,7 @@ resources_teaching_fair:
       url: "https://pynwb.readthedocs.io/en/stable/tutorials/index.html"
     - title: "MatNWB Tutorials"
       content: "MATLAB-based tutorials for working with NWB data. Ideal for courses already using MATLAB as a primary teaching language. Useful for MATLAB-based courses and labs."
-      url: "https://neurodatawithoutborders.github.io/matnwb/"
+      url: "https://matnwb.readthedocs.io/en/latest/pages/tutorials/index.html"
     - title: "NWB YouTube Channel"
       content: "Video tutorials, webinars, and recorded training sessions covering various aspects of NWB. Useful for visual demos and asynchronous learning."
       url: "https://www.youtube.com/@NeurodataWithoutBorders"
