@@ -7,13 +7,13 @@ image: "/images/pynwb_4.0.0_banner.png"
 tags: announcement, software, pynwb, release
 ---
 
-We're excited to announce the release of [**PyNWB 4.0.0**](https://github.com/NeurodataWithoutBorders/pynwb/releases/tag/4.0.0), the latest major version of the Python reference API for reading and writing Neurodata Without Borders files. This release pairs two long-anticipated capabilities — **HERD** external resource annotations and the **NWBEP001 EventsTable** — with the new NWB **2.10.0** schema, alongside expanded Python support and a round of cleanup that removes long-deprecated functionality.
+We're excited to announce the release of [**PyNWB 4.0.0**](https://github.com/NeurodataWithoutBorders/pynwb/releases/tag/4.0.0), the latest major version of the Python reference API for reading and writing Neurodata Without Borders files. This release pairs two long-anticipated capabilities, **HERD** external resource annotations and the **NWBEP001 EventsTable**, with the new NWB **2.10.0** schema, alongside expanded Python support and a round of cleanup that removes long-deprecated functionality.
 
 ## HERD: linking NWB data to external resources
 
 A headline feature of PyNWB 4.0.0 is support for **HERD** (the HDMF External Resources Data structure), exposed as the new `external_resources` field on `NWBFile`.
 
-HERD provides a standardized way to associate **external resource annotations** with the contents of your NWB file. The most common use case is mapping entries in your data — such as species, brain regions, genotypes, or behavioral conditions — to terms in external ontologies and controlled vocabularies. Instead of recording a free-text label like "mouse," you can link that value to a precise, globally resolvable identifier (for example, an NCBI Taxonomy term), making your data more **machine-readable, interoperable, and FAIR**.
+HERD provides a standardized way to associate **external resource annotations** with the contents of your NWB file. The most common use case is mapping entries in your data, such as species, brain regions, genotypes, or behavioral conditions, to terms in external ontologies and controlled vocabularies. Instead of recording a free-text label like "mouse," you can link that value to a precise, globally resolvable identifier (for example, an NCBI Taxonomy term), making your data more **machine-readable, interoperable, and FAIR**.
 
 To get started, see the new tutorials: [Linking to External Resources (HERD)](https://pynwb.readthedocs.io/en/stable/tutorials/general/plot_external_resources.html) and [Annotating Multiple Streamed NWB Files with a Single HERD](https://pynwb.readthedocs.io/en/stable/tutorials/general/resources_streaming.html).
 
@@ -23,21 +23,13 @@ PyNWB 4.0.0 also integrates [**NWBEP001**](https://github.com/nwb-extensions/nwb
 
 This release adds the new neurodata types defined by the proposal:
 
-- **`EventsTable`** — a table for storing events, including a `source_description` attribute documenting where the events came from
-- **`TimestampVectorData`** and **`DurationVectorData`** — column types for event timing and durations
+- **`EventsTable`**: a table for storing events, including a `source_description` attribute documenting where the events came from
+- **`TimestampVectorData`** and **`DurationVectorData`**: column types for event timing and durations
 - A new **`events`** group on `NWBFile` to hold event tables
 
-To make working with events ergonomic, `NWBFile` gains convenience methods for managing multiple event tables:
+`NWBFile` also gains convenience methods for managing multiple event tables, including `merge_events_tables()` to combine event tables and `get_all_events()` to retrieve all events across the file.
 
-```python
-# Combine multiple event tables into one
-nwbfile.merge_events_tables(...)
-
-# Retrieve all events across the file
-nwbfile.get_all_events()
-```
-
-The release builds on [**NWB schema 2.10.0**](https://github.com/NeurodataWithoutBorders/nwb-schema/releases/tag/2.10.0) and [**hdmf-common-schema 1.9.0**](https://github.com/hdmf-dev/hdmf-common-schema/releases/tag/1.9.0), the latter introducing the `MeaningsTable` type for documenting the meaning of categorical column values — a natural companion to richer, more self-describing event data.
+The release builds on [**NWB schema 2.10.0**](https://github.com/NeurodataWithoutBorders/nwb-schema/releases/tag/2.10.0) and [**hdmf-common-schema 1.9.0**](https://github.com/hdmf-dev/hdmf-common-schema/releases/tag/1.9.0), the latter introducing the `MeaningsTable` type for documenting the meaning of categorical column values, a natural companion to richer, more self-describing event data.
 
 ## More new capabilities
 
