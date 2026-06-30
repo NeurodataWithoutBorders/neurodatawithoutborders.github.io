@@ -3,6 +3,7 @@ title: "PyNWB 4.0.0 Released"
 weight: 1
 date: "2026-06-30"
 subtitle: "A major release bringing HERD external resource annotations, the NWBEP001 EventsTable, and the NWB 2.10.0 schema to the Python reference API"
+image: "/images/pynwb_4.0.0_banner.png"
 tags: announcement, software, pynwb, release
 ---
 
