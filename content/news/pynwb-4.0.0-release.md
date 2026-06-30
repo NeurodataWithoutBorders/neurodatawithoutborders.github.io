@@ -6,7 +6,7 @@ subtitle: "A major release bringing HERD external resource annotations, the NWBE
 tags: announcement, software, pynwb, release
 ---
 
-We're excited to announce the release of [**PyNWB 4.0.0**](https://github.com/NeurodataWithoutBorders/pynwb/releases/tag/4.0.0), the latest major version of the Python reference API for reading and writing [Neurodata Without Borders](/) files. This release pairs two long-anticipated capabilities — **HERD** external resource annotations and the **NWBEP001 EventsTable** — with the new NWB **2.10.0** schema, alongside expanded Python support and a round of cleanup that removes long-deprecated functionality.
+We're excited to announce the release of [**PyNWB 4.0.0**](https://github.com/NeurodataWithoutBorders/pynwb/releases/tag/4.0.0), the latest major version of the Python reference API for reading and writing Neurodata Without Borders files. This release pairs two long-anticipated capabilities — **HERD** external resource annotations and the **NWBEP001 EventsTable** — with the new NWB **2.10.0** schema, alongside expanded Python support and a round of cleanup that removes long-deprecated functionality.
 
 ## HERD: linking NWB data to external resources
 
