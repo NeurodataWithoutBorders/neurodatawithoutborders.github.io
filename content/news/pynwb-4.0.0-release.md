@@ -24,7 +24,7 @@ This creates a HERD instance for the file if one does not already exist, or retu
 
 ## NWBEP001 and the EventsTable
 
-PyNWB 4.0.0 also integrates **NWBEP001**, the first [NWB Enhancement Proposal](/enhancement-proposals/) to graduate into the core standard. NWB Enhancement Proposals are the formal mechanism for proposing broadly useful additions to the NWB specification; they are typically prototyped and refined as NWB extensions (NDX) before being folded into the core schema. NWBEP001 followed exactly this path, and its acceptance brings a dedicated, standardized way to represent **events** in NWB.
+PyNWB 4.0.0 also integrates [**NWBEP001**](https://github.com/nwb-extensions/nwbep-review/issues/4), the first [NWB Enhancement Proposal](/enhancement-proposals/) to graduate into the core standard. NWB Enhancement Proposals are the formal mechanism for proposing broadly useful additions to the NWB specification; they are typically prototyped and refined as NWB extensions (NDX) before being folded into the core schema. NWBEP001 followed exactly this path, and its acceptance brings a dedicated, standardized way to represent **events** in NWB.
 
 This release adds the new neurodata types defined by the proposal:
 
@@ -42,7 +42,7 @@ nwbfile.merge_events_tables(...)
 nwbfile.get_all_events()
 ```
 
-The release builds on **NWB schema 2.10.0** and **hdmf-common-schema 1.9.0**, the latter introducing the `MeaningsTable` type for documenting the meaning of categorical column values — a natural companion to richer, more self-describing event data.
+The release builds on [**NWB schema 2.10.0**](https://github.com/NeurodataWithoutBorders/nwb-schema/releases/tag/2.10.0) and [**hdmf-common-schema 1.9.0**](https://github.com/hdmf-dev/hdmf-common-schema/releases/tag/1.9.0), the latter introducing the `MeaningsTable` type for documenting the meaning of categorical column values — a natural companion to richer, more self-describing event data.
 
 ## More new capabilities
 
