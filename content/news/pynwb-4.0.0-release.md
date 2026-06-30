@@ -49,7 +49,6 @@ The release builds on [**NWB schema 2.10.0**](https://github.com/NeurodataWithou
 Beyond the two headline features, PyNWB 4.0.0 adds several quality-of-life improvements:
 
 - New `get_starting_time()` and `get_duration()` methods on `TimeSeries`, `TimeIntervals`, and `Units`
-- A `source_description` attribute on `EventsTable`
 - **Python 3.14** support, and a bump to **HDMF ≥ 6.1.0**
 - **pandas 3.0** compatibility
 
