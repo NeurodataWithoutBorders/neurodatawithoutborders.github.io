@@ -14,6 +14,8 @@ A headline feature of PyNWB 4.0.0 is support for **HERD** (the HDMF External Res
 
 HERD provides a standardized way to associate **external resource annotations** with the contents of your NWB file. The most common use case is mapping entries in your data — such as species, brain regions, genotypes, or behavioral conditions — to terms in external ontologies and controlled vocabularies. Instead of recording a free-text label like "mouse," you can link that value to a precise, globally resolvable identifier (for example, an NCBI Taxonomy term), making your data more **machine-readable, interoperable, and FAIR**.
 
+To get started, see the new tutorials: [Linking to External Resources (HERD)](https://pynwb.readthedocs.io/en/stable/tutorials/general/plot_external_resources.html) and [Annotating Multiple Streamed NWB Files with a Single HERD](https://pynwb.readthedocs.io/en/stable/tutorials/general/resources_streaming.html).
+
 ## NWBEP001 and the EventsTable
 
 PyNWB 4.0.0 also integrates [**NWBEP001**](https://github.com/nwb-extensions/nwbep-review/issues/4), the first [NWB Enhancement Proposal](/enhancement-proposals/) to graduate into the core standard. NWB Enhancement Proposals are the formal mechanism for proposing broadly useful additions to the NWB specification; they are typically prototyped and refined as NWB extensions (NDX) before being folded into the core schema. NWBEP001 followed exactly this path, and its acceptance brings a dedicated, standardized way to represent **events** in NWB.
