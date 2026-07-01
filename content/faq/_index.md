@@ -24,7 +24,7 @@ See the [Installing PyNWB](https://pynwb.readthedocs.io/en/stable/install_users.
 
 ### How do I install MatNWB? {#install-matnwb}
 
-See the [MatNWB documentation](https://matnwb.readthedocs.io/en/latest/pages/getting_started/installation_users.html) for details.
+See the [MatNWB documentation](https://matnwb.readthedocs.io/en/latest/pages/getting_started/installation.html) for details.
 
 ### What is the difference between PyNWB and nwb-schema? {#pynwb-vs-schema}
 
