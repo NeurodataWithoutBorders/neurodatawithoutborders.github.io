@@ -30,8 +30,6 @@ This release adds the new neurodata types defined by the proposal:
 
 `NWBFile` also gains convenience methods for managing multiple event tables, including `merge_events_tables()` to combine event tables and `get_all_events()` to retrieve all events across the file.
 
-The release builds on [**NWB schema 2.10.0**](https://github.com/NeurodataWithoutBorders/nwb-schema/releases/tag/2.10.0) and [**hdmf-common-schema 1.9.0**](https://github.com/hdmf-dev/hdmf-common-schema/releases/tag/1.9.0), the latter introducing the `MeaningsTable` type for documenting the meaning of categorical column values, a natural companion to richer, more self-describing event data.
-
 ## More new capabilities
 
 Beyond the two headline features, PyNWB 4.0.0 adds several quality-of-life improvements:
