@@ -40,7 +40,7 @@ Beyond the two headline features, PyNWB 4.0.0 adds several quality-of-life impro
 - **Python 3.14** support, and a bump to **HDMF ≥ 6.1.0**
 - **pandas 3.0** compatibility
 
-It also resolves a number of bugs, including fixes to `TimeSeries.get_timestamps()` for numpy arrays, round-tripping of `Units` waveform metadata, ROS3 streaming with AWS region support, and parsing of legacy `Device.model` strings.
+It also resolves a number of bugs, including fixes to `TimeSeries.get_timestamps()` for numpy arrays, round-tripping of `Units` waveform metadata, and parsing of legacy `Device.model` strings.
 
 ## Breaking changes
 
