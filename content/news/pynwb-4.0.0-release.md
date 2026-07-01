@@ -26,6 +26,7 @@ This release adds the new neurodata types defined by the proposal:
 - **`EventsTable`**: a table for storing events, including a `source_description` attribute documenting where the events came from
 - **`TimestampVectorData`** and **`DurationVectorData`**: column types for event timing and durations
 - A new **`events`** group on `NWBFile` to hold event tables
+- **`MeaningsTable`**: a table for documenting the meaning of categorical column values of another table, such as the events table
 
 `NWBFile` also gains convenience methods for managing multiple event tables, including `merge_events_tables()` to combine event tables and `get_all_events()` to retrieve all events across the file.
 
