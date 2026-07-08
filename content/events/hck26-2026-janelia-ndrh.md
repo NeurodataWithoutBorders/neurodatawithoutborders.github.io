@@ -55,7 +55,9 @@ Thank you for your interest in NeuroDataReHack 2026. Applicants will be notified
 
 ## Schedule
 
-Schedule details will be posted closer to the event date.
+<img src="/images/events/hck_2x_2026-janelia-ndrh/Agenda -- NeuroDataReHack 2026.png" alt="Agenda NeuroDataReHack 2026" class="img-fluid">
+
+[Download Agenda PDF](/images/events/hck_2x_2026-janelia-ndrh/Agenda%20--%20NeuroDataReHack%202026.pdf)
 
 <!-- ## Kavli Neurodata Discovery Award
 
