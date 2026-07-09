@@ -78,7 +78,6 @@ The event will feature a distinguished team of instructors, including:
 - **Vinam Arora** - Ph.D. candidate in Computer Science, University of Pennsylvania (Developer of torch_brain)
 - **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
 - **Jakob Voigts, Ph.D.** - Group Leader, HHMI Janelia Research Campus
-- **Sue Tappan, Ph.D.** - SPARC Data and Resource Center
 
 <!-- 
 
