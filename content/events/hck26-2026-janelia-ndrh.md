@@ -45,8 +45,6 @@ Example projects include but are not limited to:
 This event will primarily focus on analyzing existing data in NWB and on DANDI, **not** converting data to NWB. If 
 you are interested in learning how to convert data, consider signing up for an NWB Data Conversion Workshop.
 
-We will also receive instructions from the [SPARC team](https://sparc.science/) about analyzing their data.
-
 ## Application
 
 **Applications are now closed.**
