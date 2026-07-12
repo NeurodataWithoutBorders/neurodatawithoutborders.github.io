@@ -83,7 +83,7 @@ The event will feature a distinguished team of instructors, including:
 
 - **Alessio Buccino, Ph.D.** - Electrophysiology Pipeline Engineer, Allen Institute for Neural Dynamics (Lead developer of SpikeInterface)
 
-- 
+-->
 
 Additional instructors to be announced.
 
