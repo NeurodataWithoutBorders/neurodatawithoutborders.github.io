@@ -70,22 +70,20 @@ The event will feature a distinguished team of instructors, including:
 - **Benjamin Dichter, Ph.D.** - Program Chair, CatalystNeuro
 - **Ryan Ly, Ph.D.** - Lawrence Berkeley National Laboratory
 - **Oliver Rübel, Ph.D.** - Lawrence Berkeley National Laboratory
-- **Misha Ahrens, Ph.D.** - Group Leader, HHMI Janelia Research Campus
-- **Jeremy Magland, Ph.D.** - Senior Data Scientist, Flatiron Institute (Lead developer of Neurosift, FigURL, Dendro)
-- **Guillaume Viejo, Ph.D.** - Data Scientist, Flatiron Institute (Lead developer of Pynapple)
 - **Pranav Rai** - Software Engineer, International Brain Lab
+- **Jérôme Lecoq, Ph.D.** - Associate Investigator, Allen Institute for Neural Dynamics (Lead of OpenScope)
 - **Carter Peene** - Data Analyst, Allen Institute for Neural Dynamics (Lead developer of OpenScope Databook)
-- **Vinam Arora** - Ph.D. candidate in Computer Science, University of Pennsylvania (Developer of torch_brain)
-- **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
+- **Will Slatton** - Ph.D. student, Harvard University
+- **Guillaume Viejo, Ph.D.** - Data Scientist, Flatiron Institute (Lead developer of Pynapple)
+- **Misha Ahrens, Ph.D.** - Group Leader, HHMI Janelia Research Campus
+- **Alexandre André** - Ph.D. student, University of Pennsylvania (Developer of torch_brain)
+- **Robin Dard, Ph.D.** - Postdoctoral Researcher, École Polytechnique Fédérale de Lausanne
+- **Jeremy Magland, Ph.D.** - Senior Data Scientist, Flatiron Institute (Lead developer of Neurosift, FigURL, Dendro)
 - **Jakob Voigts, Ph.D.** - Group Leader, HHMI Janelia Research Campus
-
-<!-- 
-
+- **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
+- **Atika Syeda** - Ph.D. student, HHMI Janelia Research Campus (Lead developer of Facemap)
+- **Jacob Pennington** - Software Developer, HHMI Janelia Research Campus (Developer of Kilosort4)
 - **Alessio Buccino, Ph.D.** - Electrophysiology Pipeline Engineer, Allen Institute for Neural Dynamics (Lead developer of SpikeInterface)
-
-- 
-
-Additional instructors to be announced.
 
 ## Eligibility
 
