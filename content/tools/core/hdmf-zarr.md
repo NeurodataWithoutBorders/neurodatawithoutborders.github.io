@@ -54,3 +54,8 @@ with NWBZarrIO('example.zarr', mode='r') as io:
 HDMF-Zarr is particularly useful for working with very large datasets, especially in cloud environments or when parallel data access is needed. It provides an alternative storage format to the traditional HDF5 backend, offering different performance characteristics that may be beneficial for certain use cases.
 
 The library is designed to be a drop-in replacement for the HDF5 backend, making it easy to integrate into existing workflows that use PyNWB.
+
+## Resources
+
+* [Source](https://github.com/hdmf-dev/hdmf-zarr)
+* [Docs](https://hdmf-zarr.readthedocs.io/en/stable/)

@@ -15,10 +15,10 @@
 <section class="section bg-dark-100">
     <div class="container-lg">
         <div class="row flex-column-reverse flex-lg-row justify-content-between mb-5 ps-lg-0">
-            <div class="d-sm-flex justify-content-between col-lg-8 pt-5 pt-lg-0 ps-lg-0">
+            <div class="d-sm-flex justify-content-between col-lg-9 pt-5 pt-lg-0 ps-lg-0">
                 <h3 class="inter-700 dark-900 text-48-responsive">{{ .Title | markdownify }}</h3>
             </div>
-            <div class="col-lg-4 d-flex align-items-center pe-0 ps-lg-5">
+            <div class="col-lg-3 d-flex align-items-center pe-0 ps-lg-5">
                 <div class="d-flex align-items-center border-dark-50 bg-white rounded-3 w-100" id="search">
                     {{/* <input type="text" id="search" class="border-0 inter-400 text-16 slate w-75 bg-white"
                         placeholder="Search">
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="row justify-content-between">
-            <div class="col-lg-8">
+            <div class="col-lg-9">
                 <div>
                     <img src="{{ .Params.image }}" alt="" class="rounded-top-3"
                         style="width: 100% !important; height: 240px !important; object-fit: cover !important;">
@@ -61,8 +61,17 @@
                         {{ .Content }}
                     </div>
                     {{ with .Params.ext_link }}
-                    <div>
-                        <a href="{{ . }}">See post here</a>
+                    <div class="newsletter-embed mt-4">
+                        <iframe
+                            src="{{ . }}"
+                            title="{{ $.Title | plainify }}"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            style="width: 100%; height: 1600px; border: 1px solid #ebebeb; border-radius: 0.5rem;">
+                        </iframe>
+                        <div class="mt-2 text-end">
+                            <a href="{{ . }}" target="_blank" rel="noopener">Open original ↗</a>
+                        </div>
                     </div>
                     {{ end }}
                     <div class="mt-4 ">
@@ -129,17 +138,18 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 mt-5 ps-lg-5">
+            <div class="col-lg-3 mt-5 ps-lg-5">
                 <h4 class="inter-600 text-24 dark-900">Recent News</h4>
-                <div class="row g-2" data-pagefind-body>
+                <div class="row g-2">
                     {{ $pages := where .Site.RegularPages "Section" "news" }}
                     {{ range first 4 ($pages.ByDate.Reverse) }}
                     <div class="col-md-6 col-lg-12 col-sm-8 mx-auto">
                         <div class="rounded-3 shadow-sm bg-white p-2">
                             <div class="d-flex  gap-3 align-items-center">
-                                <div>
-                                    <img data-pagefind-meta="image[src]" src="{{ .Params.image }}" alt="" width="90"
-                                        height="70" class="rounded-3">
+                                <div class="flex-shrink-0">
+                                    <img data-pagefind-meta="image[src]" src="{{ .Params.image }}" alt=""
+                                        class="rounded-3"
+                                        style="width: 120px; height: 75px; object-fit: cover;">
                                 </div>
                                 <div class="w-100 d-flex flex-column row-gap-1">
                                     <div class="d-flex align-items-sm-center gap-1">
@@ -167,24 +177,6 @@
                         </div>
                     </div>
                     {{ end }}
-                </div>
-
-                <h4 class="inter-600 text-24 dark-900 mt-5">Archives</h4>
-                <div class="row g-2">
-                    <div class="col-sm-6 col-lg-12">
-                        <div class="rounded-3 bg-white shadow-sm p-3">
-                            <div class="d-flex align-items-start gap-3">
-                                <div>
-                                    <img src="/images/essentials/bookmark_star.png" alt="" width="15">
-                                </div>
-                                <div>
-                                    <h4 class="inter-600 text-14 dark-900 mb-1 mt-1">August 2022</h4>
-                                    <p class="inter-400 text-12 dark-700 mb-0">Nunc vulputate libero et velit interdum,
-                                        ac aliquet.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
             </div>

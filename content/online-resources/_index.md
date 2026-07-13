@@ -62,6 +62,10 @@ training_section:
       content: "Comprehensive overview of NWB"
       image: "/images/nwb-guide.png"
       url: "https://nwb-overview.readthedocs.io/"
+    - title: "Frequently Asked Questions"
+      content: "Common questions about NWB and their answers"
+      image: "/images/code.png"
+      url: "/faq/"
 
 docs_section:
   enable: true

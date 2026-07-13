@@ -14,8 +14,8 @@ organizers:
   - "Program Committee: Ryan Ly, Benjamin Dichter, Andrew Tritt, Pam Baker, Oliver Rübel, Satrajit S Ghosh, Yaroslav O. Halchenko"
 registration: "Registration is now closed."
 resources:
-  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/raw/master/HCK10_2021_Remote/report/Report___10th_NWB_and_DANDI_Hackathon.pdf"
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK10_2021_Remote"
+  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK10_2021_Remote/report/Report___10th_NWB_and_DANDI_Hackathon.pdf"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK10_2021_Remote"
 ---
 
 ## Dates and Location

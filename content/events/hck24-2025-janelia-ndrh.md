@@ -11,13 +11,20 @@ draft: false
 organizers:
   - "Benjamin Dichter, Ph.D. (Program Chair)"
   - "Stephanie Prince, Ph.D. (Program Chair)"
-registration: "Space for the event is limited. Apply to attend NeuroDataReHack 2025 [here](https://forms.gle/cR9sm5wjAt8oqTaT7). Application deadline: Feb 12. Notification of admission decisions: March 15."
+  - "Ryan Ly, Ph.D. (Program Chair)"
 resources:
   "Event Flyer": "https://drive.google.com/file/d/1ptsGRa1sEMh-je7L_ff3CgtRTj-X11lO/view?usp=sharing"
+  "Recorded Talks": "https://www.youtube.com/playlist?list=PL5wPNhoBP0ZDrMitdDwIsgV67xumuaP3G"
   "Slides from the 2024 NeuroDataReHack": "https://drive.google.com/drive/folders/1DAmQr4qWCamhj_2Zyke0kkHGvV8Kyq13?usp=sharing"
   "PyNWB Documentation": "https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb"
-  "MatNWB Documentation": "https://github.com/NeurodataWithoutBorders/matnwb/blob/master/README.md"
+  "MatNWB Documentation": "https://matnwb.readthedocs.io"
+aliases:
+  - /nwb_hackathons/HCK24_2025_Janelia_NDRH
 ---
+
+## Report
+
+See the [NeuroDataReHack 2025 Report](https://drive.google.com/file/d/1ho5Ebao4kTWk8eElpeYZ_fFYEjStzP0L/view) for a summary of the event, projects completed, and feedback from participants.
 
 ## Objective
 
@@ -39,6 +46,12 @@ Example projects include but are not limited to:
 This event will primarily focus on analyzing existing data in NWB and on DANDI, **not** converting data to NWB. If 
 you are interested in learning how to convert data, consider signing up for an NWB Data Conversion Workshop.
 
+## Schedule
+
+<img src="/images/events/hck24-2025-janelia-ndrh/Agenda -- NeuroDataReHack 2025.png" alt="Agenda NeuroDataReHack 2025" class="img-fluid">
+
+[Download Agenda PDF](/images/events/hck24-2025-janelia-ndrh/Agenda%20--%20NeuroDataReHack%202025.pdf)
+
 ## Kavli Neurodata Discovery Award
 
 Following the event, participants will be invited to apply for a Kavli Foundation Neurodata Discovery Awards, which awards $50,000 (USD) of funding to continue data reanalysis projects that come out of the NeuroDataReHack event. This is a funding opportunity exclusive to NeuroDataReHack participants.
@@ -51,12 +64,16 @@ The event will feature a distinguished team of instructors, including:
 
 - **Benjamin Dichter, Ph.D.** - Program Chair, CatalystNeuro
 - **Stephanie Prince, Ph.D.** - Program Chair, Lawrence Berkeley National Laboratory
+- **Ryan Ly, Ph.D.** - Program Chair, Lawrence Berkeley National Laboratory
 - **Jeremy Magland, Ph.D.** - Senior Data Scientist, Flatiron Institute (Lead developer of Neurosift, FigURL, Dendro)
-- **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of rastermap, suite2p, facemap, cellpose)
-- **Guillaume Viejo, Ph.D.** - Data Scientist, Flatiron Institute (Lead developer of pynapple)
+- **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
+- **Alessio Buccino, Ph.D.** - Electrophysiology Pipeline Engineer, Allen Institute for Neural Dynamics (Lead developer of SpikeInterface)
+- **Guillaume Viejo, Ph.D.** - Data Scientist, Flatiron Institute (Lead developer of Pynapple)
 - **Carter Peene** - Data Analyst I, Allen Institute for Neural Dynamics (Lead developer of OpenScope Databook)
+- **Mayo Faulkner, Ph.D.** - Senior Software Engineer, International Brain Lab
 - **Misha Ahrens, Ph.D.** - Group Leader, HHMI Janelia Research Campus
 - **Jakob Voigts, Ph.D.** - Group Leader, HHMI Janelia Research Campus
+- **Alison Comrie, Ph.D.** - Postdoctoral Scientist, HHMI Janelia Research Campus
 
 ## Eligibility
 
@@ -79,7 +96,7 @@ Bring a laptop with appropriate software installed. Python should be installed a
 instructions on how to install PyNWB, see 
 [the PyNWB documentation](https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb). For instructions
 on how to install MatNWB, see
-[the MatNWB documentation](https://github.com/NeurodataWithoutBorders/matnwb/blob/master/README.md)
+[the MatNWB documentation](https://matnwb.readthedocs.io)
 
 ## Testimonials from NeuroDataReHack 2024
 

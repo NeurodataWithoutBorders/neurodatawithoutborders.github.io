@@ -52,3 +52,8 @@ groups:
 The NWB Schema is a living document that evolves through community contributions and feedback. Extensions build on this foundation, allowing researchers to add specialized data types while maintaining compatibility with the core NWB standard.
 
 Understanding the NWB Schema is essential for anyone developing tools for NWB data, creating extensions, or seeking to understand the detailed structure of NWB files.
+
+## Resources
+
+* [Source](https://github.com/NeurodataWithoutBorders/nwb-schema)
+* [Docs](https://nwb-schema.readthedocs.io/en/latest/)

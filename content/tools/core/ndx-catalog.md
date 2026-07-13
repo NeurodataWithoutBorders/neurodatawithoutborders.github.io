@@ -37,3 +37,8 @@ To use a specific extension from the catalog, follow the installation instructio
 ## Additional Information
 
 The NDX Catalog is an important resource for the NWB community, facilitating the discovery and adoption of extensions that enhance the capabilities of the NWB standard for specific use cases and data types.
+
+## Resources 
+
+* [Source](https://github.com/nwb-extensions/)
+* [Docs](https://nwb-extensions.github.io/)

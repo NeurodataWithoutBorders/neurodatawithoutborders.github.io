@@ -43,3 +43,7 @@ description: Brief description of your extension
 ## Additional Information
 
 The staged-extensions repository is a key part of the NWB extension ecosystem, ensuring that all extensions in the NDX Catalog meet community standards for quality, documentation, and usability. This review process helps maintain the integrity and usefulness of the extension ecosystem.
+
+## Resources
+
+* [Source](https://github.com/nwb-extensions/staged-extensions)

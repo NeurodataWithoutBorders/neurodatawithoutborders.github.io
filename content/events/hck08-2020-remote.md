@@ -16,8 +16,8 @@ organizers:
   - "Oliver Rübel"
 registration: "Registration is now closed."
 resources:
-  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/raw/master/HCK08_2020_Remote/report/Report___8th_NWB_Hackathon.pdf"
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK08_2020_Remote"
+  "Final Report (PDF)": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/blob/main/HCK08_2020_Remote/report/Report___8th_NWB_Hackathon.pdf"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK08_2020_Remote"
 ---
 
 ## Dates and Location
@@ -38,7 +38,7 @@ In contrast to conferences, where the primary focus is to report results, the ob
 * Create a project page with an outline for your workshop project.
 * Have example datasets that you need for your workshop project ready. For any lab-specific data (i.e., data not in NWB) you should know how to read the data using Python or MATLAB and ideally have scripts ready for reading the data.
 * Install the Python or MATLAB software for NWB: 
-  * PyNWB (Python): [https://pynwb.readthedocs.io/en/stable/getting_started.html](https://pynwb.readthedocs.io/en/stable/getting_started.html)
+  * PyNWB (Python): [https://pynwb.readthedocs.io](https://pynwb.readthedocs.io)
   * MatNWB (MATLAB): [https://neurodatawithoutborders.github.io/matnwb/](https://neurodatawithoutborders.github.io/matnwb/)
 * For an overview of NWB, see also: [https://www.nwb.org/](https://www.nwb.org/)
 

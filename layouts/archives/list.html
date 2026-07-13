@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{/* Hero Section */}}
+<section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
+         style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/aboutBg.png');">
+    <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
+    <div class="position-absolute ellipses">
+        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+    </div>
+</section>
+{{/* End Hero Section */}}
+
+{{/* Data Repositories Section */}}
+{{ with .Params.repositories_section }}
+{{ if .enable }}
+<section class="section bg-dark-100">
+    <div class="container-lg">
+        <h3 class="inter-700 text-40 dark-900 mb-3">{{ .title | markdownify }}</h3>
+        <p class="inter-400 text-16 dark-700 lh-base">{{ .content | markdownify }}</p>
+        <div class="row g-4 justify-content-center pt-4">
+            {{ range .boxes }}
+            <a href="{{ .url }}" class="col-12 col-md-6" target="_blank">
+                <div class="bg-white h-100 rounded-3 p-4 shadow-sm">
+                    <div class="d-flex flex-column flex-sm-row gap-4">
+                        <img src="{{ .image }}" alt="{{ .title }}" width="80" height="80" class="flex-shrink-0" style="object-fit: contain;">
+                        <div class="">
+                            <h5 class="inter-700 text-18 dark-900 mb-2">{{ .title | markdownify }}</h5>
+                            <p class="inter-400 text-14 dark-700">{{ .content | markdownify }}</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* End Data Repositories Section */}}
+{{ end }}

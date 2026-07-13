@@ -46,3 +46,8 @@ with NWBHDF5IO('example.nwb', 'r') as io:
 ## Additional Information
 
 PyNWB also includes classes and command line tools for validating compliance of files with the core NWB schema and the schema of NWB Neurodata Extensions (NDX).
+
+## Resources
+
+* [Source](https://github.com/NeurodataWithoutBorders/pynwb/)
+* [Docs](https://pynwb.readthedocs.io/en/stable/)

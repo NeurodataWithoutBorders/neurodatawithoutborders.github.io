@@ -43,3 +43,8 @@ nwb = nwbRead('test_file.nwb');
 ## Additional Information
 
 MatNWB allows MATLAB users to work with NWB data in their preferred environment, using familiar MATLAB data structures and methods.
+
+## Resources
+
+* [Source](https://github.com/NeurodataWithoutBorders/matnwb/)
+* [Docs](https://matnwb.readthedocs.io/)

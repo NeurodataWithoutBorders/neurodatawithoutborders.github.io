@@ -132,9 +132,9 @@ history_section:
     
     The NWB ecosystem has continued to expand with additional tools including:
     
-    - [Neurosift](/tools/analysis/neurosift), [NWB Widgets](/tools/analysis/nwbwidgets) and [NWB Explorer](/tools/analysis/nwbexplorer) for interactive visualizations of NWB data
+    - [Neurosift](/tools/community/neurosift), [NWB Widgets](/tools/community/nwbwidgets) and [NWB Explorer](/tools/community/nwbexplorer) for interactive visualizations of NWB data
     
-    - Integration with analysis frameworks like [CaImAn](/tools/analysis/caiman), [suite2p](/tools/analysis/suite2p), and [SpikeInterface](/tools/analysis/spikeinterface)
+    - Integration with analysis frameworks like [CaImAn](/tools/community/caiman), [suite2p](/tools/community/suite2p), and [SpikeInterface](/tools/community/spikeinterface)
     
     - Data validation tools such as [NWB Inspector](/tools/core/nwbinspector) to ensure format compliance
     

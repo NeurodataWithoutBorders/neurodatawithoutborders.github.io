@@ -3,7 +3,7 @@ logo: "/images/logo.png"
 cta:
   enable: true
   text: "Get Started"
-  link: "/converting-data-to-nwb/"
+  link: "/convert/"
 
 # Footer
 footer_logo: "/images/colored-logo.png"

@@ -2,12 +2,12 @@
 title: "Training Materials"
 summary: "Overview of training materials available for NWB workshops and events."
 draft: false
-type: "page"
+type: "training-and-event-resources"
 ---
 
-# Training Materials Overview
+# Training Materials
 
-The following table provides an overview of training materials for NWB workshops and events.
+The following table provides an overview of training materials for NWB workshops and events. For more information about the different types of NWB events and how these materials are used, please see the <a href="/organizing-nwb-events/" target="_blank">Organizing NWB events</a> page.
 
 <style>
 .training-table {
@@ -57,7 +57,7 @@ The following table provides an overview of training materials for NWB workshops
       <td class="duration">1 hour</td>
       <td><a href="https://www.youtube.com/watch?v=xZiSesEVA3o&list=PL5wPNhoBP0ZB2sLuRKWqwgXf9V3FRl1bw" target="_blank" class="resource-link">NWB Overview</a></td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1yFBDGcjRnVuY-atBKlzqeN8WKiwi8rrQ/edit?usp=drive_web&ouid=108945682556816120528&rtpof=true" target="_blank" class="resource-link">NWB Overview.pptx</a><br>
+        <a href="https://docs.google.com/presentation/d/1yFBDGcjRnVuY-atBKlzqeN8WKiwi8rrQ/edit?usp=drive_web&ouid=108945682556816120528&rtpof=true" target="_blank" class="resource-link">NWB Overview</a><br>
         <a href="https://docs.google.com/presentation/d/1o3T1ZH38B3C6GmMqVTOpdeFe1HFS4hkJpd8pGUSdA6I/edit" target="_blank" class="resource-link">Intro to NWB and DANDI</a>
       </td>
     </tr>
@@ -66,7 +66,7 @@ The following table provides an overview of training materials for NWB workshops
       <td>Using NWB GUIDE to convert your data to NWB</td>
       <td class="duration">45 min</td>
       <td><a href="https://www.youtube.com/watch?v=EhhdDVuHAZ0&list=PL5wPNhoBP0ZB2sLuRKWqwgXf9V3FRl1bw&index=2" target="_blank" class="resource-link">NWB GUIDE Tutorial</a></td>
-      <td>N/A, walk through <a href="https://nwb-guide.readthedocs.io/en/stable/tutorials/index.html" target="_blank" class="resource-link">GUIDE tutorials</a></td>
+      <td>Walk through <a href="https://nwb-guide.readthedocs.io/en/stable/tutorials/index.html" target="_blank" class="resource-link">GUIDE tutorials</a></td>
     </tr>
     <tr>
       <td><strong>PyNWB and MatNWB APIs</strong></td>
@@ -74,7 +74,7 @@ The following table provides an overview of training materials for NWB workshops
       <td class="duration">45 min</td>
       <td><a href="https://www.youtube.com/watch?v=pidQphoPgsg&list=PL5wPNhoBP0ZB2sLuRKWqwgXf9V3FRl1bw&index=3" target="_blank" class="resource-link">PyNWB and MatNWB APIs</a></td>
       <td>
-        N/A, walk through <a href="https://pynwb.readthedocs.io/en/stable/tutorials/general/plot_file.html" target="_blank" class="resource-link">PyNWB NWB File Basics</a> tutorial and 
+        Walk through <a href="https://pynwb.readthedocs.io/en/stable/tutorials/general/plot_file.html" target="_blank" class="resource-link">PyNWB NWB File Basics</a> tutorial and 
         <a href="https://matnwb.readthedocs.io/en/latest/pages/tutorials/intro.html" target="_blank" class="resource-link">Intro to MatNWB</a>
       </td>
     </tr>
@@ -83,42 +83,42 @@ The following table provides an overview of training materials for NWB workshops
       <td>Walking through the extracellular electrophysiology tutorials</td>
       <td class="duration">45 min</td>
       <td><a href="https://www.youtube.com/watch?v=iSL34y1RjA4&list=PL5wPNhoBP0ZB2sLuRKWqwgXf9V3FRl1bw&index=4" target="_blank" class="resource-link">Extracellular Electrophysiology with PyNWB and MatNWB</a></td>
-      <td>N/A, walk through <a href="https://pynwb.readthedocs.io/en/stable/tutorials/domain/ecephys.html" target="_blank" class="resource-link">Ecephys Tutorial</a></td>
+      <td>Walk through <a href="https://pynwb.readthedocs.io/en/stable/tutorials/domain/ecephys.html" target="_blank" class="resource-link">Ecephys Tutorial</a></td>
     </tr>
     <tr>
       <td><strong>Optical Physiology</strong></td>
       <td>Walking through the optical physiology tutorials</td>
       <td class="duration">45 min</td>
       <td><a href="https://www.youtube.com/watch?v=nJTK4dNGejk&list=PL5wPNhoBP0ZB2sLuRKWqwgXf9V3FRl1bw&index=5" target="_blank" class="resource-link">Optical Physiology with PyNWB and MatNWB</a></td>
-      <td>N/A, walk through <a href="https://pynwb.readthedocs.io/en/stable/tutorials/domain/ophys.html" target="_blank" class="resource-link">Ophys Tutorial</a></td>
+      <td>Walk through <a href="https://pynwb.readthedocs.io/en/stable/tutorials/domain/ophys.html" target="_blank" class="resource-link">Ophys Tutorial</a></td>
     </tr>
     <tr>
       <td><strong>Intracellular Electrophysiology</strong></td>
       <td>Walking through the intracellular electrophysiology tutorials</td>
       <td class="duration">45 min</td>
       <td>&mdash;</td>
-      <td><a href="https://docs.google.com/presentation/d/1AIrci0NjZdXrlWebhUXJiKocUl6Z7BNP/edit?usp=drive_web&ouid=108945682556816120528&rtpof=true" target="_blank" class="resource-link">Intracellular Electrophysiology in NWB.pptx</a></td>
+      <td><a href="https://docs.google.com/presentation/d/1AIrci0NjZdXrlWebhUXJiKocUl6Z7BNP/edit?usp=drive_web&ouid=108945682556816120528&rtpof=true" target="_blank" class="resource-link">Intracellular Electrophysiology in NWB</a></td>
     </tr>
     <tr>
       <td><strong>Advanced Data I/O</strong></td>
       <td>Introduction to advanced data I/O methods and different NWB backends (Zarr, HDF5)</td>
       <td class="duration">30 min</td>
       <td><a href="https://www.youtube.com/watch?v=f47yZxJ1w5k&list=PL5wPNhoBP0ZB2sLuRKWqwgXf9V3FRl1bw&index=6" target="_blank" class="resource-link">Introduction to Advanced Data I/O</a></td>
-      <td>&mdash;</td>
+      <td><a href="https://docs.google.com/presentation/d/1scbnjqkV3BaYxgv8b2IwFOH5VUXri2E5_oXuV97SFoo/edit?usp=share_link" target="_blank" class="resource-link">NWB Backends and Advanced Data I/O</a></td>
     </tr>
     <tr>
       <td><strong>Extensions in NWB</strong></td>
       <td>Introduction to creating and sharing extensions in NWB</td>
       <td class="duration">15 min</td>
       <td><a href="https://www.youtube.com/watch?v=qBTeXyujAqo&list=PL5wPNhoBP0ZB2sLuRKWqwgXf9V3FRl1bw&index=8" target="_blank" class="resource-link">Introduction to Extensions to NWB</a></td>
-      <td><a href="https://docs.google.com/presentation/d/1pYA5AIyewonZZMICLrEeJ_8A72Kxuc8H/edit?usp=drive_web&ouid=108945682556816120528&rtpof=true" target="_blank" class="resource-link">NWB Extensions.pptx</a></td>
+      <td><a href="https://docs.google.com/presentation/d/1pYA5AIyewonZZMICLrEeJ_8A72Kxuc8H/edit?usp=drive_web&ouid=108945682556816120528&rtpof=true" target="_blank" class="resource-link">NWB Extensions</a></td>
     </tr>
     <tr>
       <td><strong>Terminologies and HERD</strong></td>
       <td>Introduction to terminologies and the HDMF External Resources Data in NWB</td>
       <td class="duration">15 min</td>
       <td><a href="https://www.youtube.com/watch?v=ILfPrV_8Zns&list=PL5wPNhoBP0ZB2sLuRKWqwgXf9V3FRl1bw&index=7" target="_blank" class="resource-link">Introduction to Terminologies and HERD</a></td>
-      <td>&mdash;</td>
+      <td>Walk through <a href="https://drive.google.com/file/d/1DwDxjnQJMlz4sU3FsLwKKGbZtO4huH9B/view?usp=share_link" target="_blank" class="resource-link">Defining Terminologies Notebook</a></td>
     </tr>
     <tr>
       <td><strong>Reading and Streaming NWB Files</strong></td>
@@ -136,7 +136,7 @@ The following table provides an overview of training materials for NWB workshops
     </tr>
     <tr>
       <td><strong>Data Conversion</strong></td>
-      <td>Overview of data conversion options including NeuroConv, PyNWB, and MatNWb</td>
+      <td>Overview of data conversion options including NeuroConv, PyNWB, and MatNWB</td>
       <td class="duration">1 hour</td>
       <td>&mdash;</td>
       <td><a href="https://docs.google.com/presentation/d/1-77qTcK0G-qAwjYMFlMdUV9hGIm2Lyfz3J-jjQdUwuE/edit" target="_blank" class="resource-link">NWB Data Conversion</a></td>
@@ -157,22 +157,3 @@ The following table provides an overview of training materials for NWB workshops
     </tr>
   </tbody>
 </table>
-
-## Related Lectures and Invited Speakers
-
-<style>
-.speakers-list {
-  margin: 2rem 0;
-}
-.speakers-list li {
-  margin-bottom: 0.75rem;
-}
-</style>
-
-<ul class="speakers-list">
-  <li><strong>Introduction to OpenScope and DataBook</strong>: Contacts: Jerome Lecoq and Carter Peene</li>
-  <li><strong>SpikeInterface</strong>: Contact: Alessio Buccino</li>
-  <li><strong>Neural Data Analysis with Pynapple</strong>: Contact: Guillaume Viejo</li>
-  <li><strong>Calcium Imaging Processing with Suite2P</strong>: Contact: Carsen Stringer</li>
-  <li><strong>NeuroSift, Dendro, and LINDI</strong>: Contact: Jeremy Magland</li>
-</ul>

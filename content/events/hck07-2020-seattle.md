@@ -13,7 +13,7 @@ organizers:
   - "Program Chair: Oliver Ruebel (Lawrence Berkeley National Laboratory)"
 registration: "Registration for this event is closed."
 resources:
-  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/master/HCK07_2020_Seattle"
+  "GitHub Repository": "https://github.com/NeurodataWithoutBorders/nwb_hackathons/tree/main/HCK07_2020_Seattle"
 ---
 
 ## Dates and Location
@@ -28,7 +28,7 @@ This event was centered around core NWB development, bringing together developer
 ## Logistics
 
 - **Hotel:** The Allen Institute organized a special rate at the Staybridge Suites, just 3 blocks from the institute.
-- **Transportation:** Attendees were encouraged to use public transportation or park at a local garage. Additional details on getting to the Allen Institute are available [here](https://alleninstitute.org/events-training/getting-allen-institute/).
+- **Transportation:** Attendees were encouraged to use public transportation or park at a local garage. Additional details on getting to the Allen Institute are available [here](https://alleninstitute.org/getting-to-the-allen-institute/).
 - **Food:** Lunch was provided at the Allen Institute. Breakfast and dinner were on attendees' own.
 
 ## Additional Organizational Support

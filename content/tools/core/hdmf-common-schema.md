@@ -43,3 +43,8 @@ groups:
 The HDMF Common Schema is particularly important because it defines general-purpose data structures that enable efficient and flexible representation of complex data. For example, the `DynamicTable` type provides a way to represent tabular data with columns of different data types and potentially varying numbers of rows, making it suitable for storing experimental metadata, subject information, and other tabular data.
 
 Understanding this schema is helpful for developers creating extensions, especially when they need to represent structured data like tables, which are common in scientific datasets.
+
+## Resources
+
+* [Source](https://github.com/hdmf-dev/hdmf-common-schema)
+* [Documentation](https://hdmf-common-schema.readthedocs.io/en/stable/)

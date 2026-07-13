@@ -329,6 +329,14 @@
   padding: 100px 0 !important;
 }
 
+.section-reduced {
+  padding: 50px 0 !important;
+}
+
+.section-reduced-more {
+  padding: 30px 0 !important;
+}
+
 .shadow-inner {
   box-shadow: inset 0 2px 2px 0 rgb(0 0 0 / 0.05) !important;
 }
@@ -430,10 +438,21 @@ section img[src*="Neurophysiology-min.png"] {
   display: block !important;
 }
 
+/* Limit the maximum size of pynapple graphic abstract image */
+.content img[src*="pynapple/GraphicAbstract.png"] {
+  width: 100% !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
 /* Ensure the image is responsive on smaller screens */
 @media (max-width: 900px) {
   section img[src*="Neurophysiology-min.png"] {
     max-width: 95% !important;
+  }
+  .content img[src*="pynapple/GraphicAbstract.png"] {
+    max-width: 90% !important;
   }
 }
 
@@ -1064,6 +1083,76 @@ ol.custom-ordered-list li::before {
   padding: 0 10px !important;
 }
 
+/* Site-wide search: icon toggle + dropdown panel */
+.site-search-wrapper {
+  position: relative;
+}
+.site-search-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  cursor: pointer;
+}
+.site-search-toggle:hover,
+.site-search-toggle[aria-expanded="true"] {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+.site-search-toggle .bi-search {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #ffffff !important;
+}
+.site-search-toggle:hover .bi-search,
+.site-search-toggle[aria-expanded="true"] .bi-search {
+  color: #ffffff !important;
+}
+.site-search-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: min(420px, 92vw);
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 24px rgba(33, 37, 41, 0.12);
+  padding: 12px;
+  z-index: 1050;
+}
+.site-search-panel[hidden] {
+  display: none;
+}
+.site-search-panel .pagefind-ui__search-input {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  padding: 8px 12px;
+  border: 1px solid #d0d4dd;
+  border-radius: 0.5rem;
+}
+.site-search-panel .pagefind-ui__drawer {
+  position: static !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin-top: 8px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+@media (max-width: 991.98px) {
+  .site-search-panel {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+}
+
 /* Contact Us */
 .contactP a {
   color: #171b26 !important;
@@ -1148,4 +1237,148 @@ ol.custom-ordered-list li::before {
   .tool-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Training Materials pages */
+a.next-page-btn {
+  background-color: white;
+  border: 2px solid #114b7c;
+  transition: all 0.3s ease;
+}
+a.next-page-btn:hover {
+  background-color: #e6f0f9;
+  border: 2px solid #114b7c;
+  text-decoration: none !important;
+}
+
+/* Community Gallery - Reduced spacing */
+.community-gallery .section {
+  padding: 60px 0 !important;
+}
+
+.community-gallery .hero {
+  height: 300px !important;
+}
+
+.community-gallery .section:first-of-type {
+  padding: 40px 0 !important;
+}
+
+@media (max-width: 768px) {
+  .community-gallery .section {
+    padding: 40px 0 !important;
+  }
+  
+  .community-gallery .hero {
+    height: 250px !important;
+  }
+  
+  .community-gallery .section:first-of-type {
+    padding: 30px 0 !important;
+  }
+}
+
+/* Code Styling - Light Theme */
+
+/* Inline code */
+.content code {
+  background-color: #f6f8fa !important;
+  color: #24292f !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 6px !important;
+  font-size: 0.9em !important;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace !important;
+  border: 1px solid #d0d7de !important;
+}
+
+/* Code blocks */
+.content pre {
+  background-color: #f6f8fa !important;
+  padding: 16px !important;
+  border-radius: 6px !important;
+  overflow-x: auto !important;
+  border: 1px solid #d0d7de !important;
+  margin: 1em 0 !important;
+  line-height: 1.45 !important;
+}
+
+.content pre code {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  font-size: 0.875em !important;
+  color: #24292f !important;
+  display: block !important;
+}
+
+/* Syntax highlighting - GitHub light theme colors */
+.chroma .err { color: #f85149; } /* Error */
+.chroma .k { color: #cf222e; } /* Keyword */
+.chroma .kc { color: #0550ae; } /* Keyword.Constant */
+.chroma .kd { color: #cf222e; } /* Keyword.Declaration */
+.chroma .kn { color: #cf222e; } /* Keyword.Namespace */
+.chroma .kp { color: #cf222e; } /* Keyword.Pseudo */
+.chroma .kr { color: #cf222e; } /* Keyword.Reserved */
+.chroma .kt { color: #cf222e; } /* Keyword.Type */
+.chroma .n { color: #24292f; } /* Name */
+.chroma .na { color: #24292f; } /* Name.Attribute */
+.chroma .nb { color: #953800; } /* Name.Builtin */
+.chroma .nc { color: #953800; } /* Name.Class */
+.chroma .nf { color: #8250df; } /* Name.Function */
+.chroma .nx { color: #24292f; } /* Name.Other */
+.chroma .nt { color: #116329; } /* Name.Tag */
+.chroma .nv { color: #24292f; } /* Name.Variable */
+.chroma .s { color: #0a3069; } /* String */
+.chroma .sa { color: #0a3069; } /* String.Affix */
+.chroma .sb { color: #0a3069; } /* String.Backtick */
+.chroma .sc { color: #0a3069; } /* String.Char */
+.chroma .dl { color: #0a3069; } /* String.Delimiter */
+.chroma .sd { color: #57606a; } /* String.Doc */
+.chroma .s2 { color: #0a3069; } /* String.Double */
+.chroma .se { color: #0a3069; } /* String.Escape */
+.chroma .sh { color: #0a3069; } /* String.Heredoc */
+.chroma .si { color: #0a3069; } /* String.Interpol */
+.chroma .sx { color: #0a3069; } /* String.Other */
+.chroma .sr { color: #116329; } /* String.Regex */
+.chroma .s1 { color: #0a3069; } /* String.Single */
+.chroma .ss { color: #0a3069; } /* String.Symbol */
+.chroma .m { color: #0550ae; } /* Number */
+.chroma .mb { color: #0550ae; } /* Number.Bin */
+.chroma .mf { color: #0550ae; } /* Number.Float */
+.chroma .mh { color: #0550ae; } /* Number.Hex */
+.chroma .mi { color: #0550ae; } /* Number.Integer */
+.chroma .il { color: #0550ae; } /* Number.Integer.Long */
+.chroma .mo { color: #0550ae; } /* Number.Oct */
+.chroma .o { color: #cf222e; } /* Operator */
+.chroma .ow { color: #cf222e; } /* Operator.Word */
+.chroma .c { color: #57606a; font-style: italic; } /* Comment */
+.chroma .ch { color: #57606a; font-style: italic; } /* Comment.Hashbang */
+.chroma .cm { color: #57606a; font-style: italic; } /* Comment.Multiline */
+.chroma .c1 { color: #57606a; font-style: italic; } /* Comment.Single */
+.chroma .cs { color: #57606a; font-style: italic; } /* Comment.Special */
+.chroma .cp { color: #57606a; font-style: italic; } /* Comment.Preproc */
+.chroma .cpf { color: #57606a; font-style: italic; } /* Comment.PreprocFile */
+.chroma .gd { color: #82071e; background-color: #ffebe9; } /* Generic.Deleted */
+.chroma .gi { color: #116329; background-color: #dafbe1; } /* Generic.Inserted */
+.chroma .gu { color: #953800; } /* Generic.Subheading */
+.chroma .ge { font-style: italic; } /* Generic.Emph */
+.chroma .gs { font-weight: bold; } /* Generic.Strong */
+
+/* Scrollbar styling for code blocks */
+.content pre::-webkit-scrollbar {
+  height: 8px !important;
+}
+
+.content pre::-webkit-scrollbar-track {
+  background: #f0f0f0 !important;
+  border-radius: 4px !important;
+}
+
+.content pre::-webkit-scrollbar-thumb {
+  background: #d0d7de !important;
+  border-radius: 4px !important;
+}
+
+.content pre::-webkit-scrollbar-thumb:hover {
+  background: #afb8c1 !important;
 }

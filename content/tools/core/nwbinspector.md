@@ -52,3 +52,8 @@ for issue in inspect_nwbfile(nwbfile):
 NWB Inspector is particularly useful for ensuring that your NWB files not only comply with the schema but also follow best practices that make them more useful and reusable. It helps improve data quality and increases the utility of shared data.
 
 In practice, most users should use the NWB Inspector to validate NWB files, as it helps to check for compliance with both the schema and best practices and provides greater flexibility. Direct use of PyNWB's validator is primarily useful for use cases where schema compliance and performance are of primary concern.
+
+## Resources
+
+* [Source](https://github.com/NeurodataWithoutBorders/nwbinspector)
+* [Docs](https://nwbinspector.readthedocs.io/)

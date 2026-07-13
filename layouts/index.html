@@ -46,9 +46,9 @@
 {{/* Banner Section */}}
 {{ with .Params.banner_section }}
 {{ if .enable }}
-<section class="w-100 bg-light-sky">
+<section class="w-100" style="background-color: #fff3cd;">
   <div class="py-5 banner mx-auto">
-    <p class="inter-600 text-24 text-center mb-0">{{ .title | markdownify }}</p>
+    <p class="inter-500 text-24 text-center mb-0" style="color: #664d03;">{{ .title | markdownify }}</p>
   </div>
 </section>
 {{ end }}
