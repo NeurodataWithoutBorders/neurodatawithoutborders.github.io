@@ -85,8 +85,6 @@ The event will feature a distinguished team of instructors, including:
 - **Jacob Pennington** - Software Developer, HHMI Janelia Research Campus (Developer of Kilosort4)
 - **Alessio Buccino, Ph.D.** - Electrophysiology Pipeline Engineer, Allen Institute for Neural Dynamics (Lead developer of SpikeInterface)
 
-Additional instructors to be announced.
-
 ## Eligibility
 
 Eligibility is broad. This course is intended for PhD students, postdoctoral researchers, principal investigators, or similar.
