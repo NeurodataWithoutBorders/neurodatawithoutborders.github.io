@@ -118,8 +118,10 @@
                     <div class="col-md-6 col-lg-12 col-sm-8 mx-auto">
                         <div class="rounded-3 shadow-sm bg-white p-2">
                             <div class="d-flex  gap-3 align-items-center">
-                                <div>
-                                    <img src="{{ .Params.image }}" alt="" width="90" height="70" class="rounded-3" style="object-fit: cover;">
+                                <div class="flex-shrink-0">
+                                    <img src="{{ .Params.image }}" alt=""
+                                        class="rounded-3"
+                                        style="width: 120px; height: 75px; object-fit: cover;">
                                 </div>
                                 <div class="w-100 d-flex flex-column row-gap-1">
                                     <div class="d-flex align-items-sm-center gap-1">
@@ -145,24 +147,6 @@
                         </div>
                     </div>
                     {{ end }}
-                </div>
-
-                <h4 class="inter-600 text-24 dark-900 mt-5">Archives</h4>
-                <div class="row g-2">
-                    <div class="col-sm-6 col-lg-12">
-                        <div class="rounded-3 bg-white shadow-sm p-3">
-                            <div class="d-flex align-items-start gap-3">
-                                <div>
-                                    <img src="/images/essentials/bookmark_star.png" alt="" width="15">
-                                </div>
-                                <div>
-                                    <h4 class="inter-600 text-14 dark-900 mb-1 mt-1">August 2022</h4>
-                                    <p class="inter-400 text-12 dark-700 mb-0">Nunc vulputate libero et velit interdum,
-                                        ac aliquet.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
             </div>
