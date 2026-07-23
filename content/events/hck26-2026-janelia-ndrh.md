@@ -1,11 +1,11 @@
 ---
 title: "NeuroDataReHack 2026"
-date: 2026-07-13
+date: 2026-07-12
 endDate: 2026-07-17
 location: "HHMI Janelia Research Campus, Ashburn, VA"
 eventType: "Hackathon"
 image: "/images/events/hck_2x_2026-janelia-ndrh/ndrh_2026_banner.png"
-weight: 20260713
+weight: 20260712
 summary: "Unlock new discoveries in neurophysiology through secondary analysis."
 draft: false
 organizers:
@@ -177,10 +177,12 @@ Following the event, participants will be invited to apply for a Kavli Foundatio
 
 ## Eligibility
 
-This course is intended for PhD students, postdoctoral researchers, principal investigators, or similar.
+Eligibility is broad. This course is intended for PhD students, postdoctoral researchers, principal investigators, or similar.
 Advanced undergraduates may be considered on a case-by-case basis. We welcome applicants from all areas of
 neuroscience, including but not limited to experimentalists, computational neuroscientists, and data scientists.
 Applicants should have basic programming experience in Python or MATLAB and experience with neurophysiology research.
+Preference will be given to applicants who have a specific project in mind that involves reanalyzing existing
+neurophysiology data in NWB format and who has not previously attended a NeuroDataReHack event.
 
 ## Logistics
 
