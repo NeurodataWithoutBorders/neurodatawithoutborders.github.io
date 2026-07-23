@@ -42,7 +42,13 @@ you are interested in learning how to convert data, consider signing up for an N
 
 ## Application
 
-Applications are not yet open. They will open in the coming months, and the application form and full details will be posted here. To be notified when applications open, subscribe to the [NWB mailing list](https://mailchi.mp/fe2a9bc55a1a/nwb-signup).
+**Applications are now open!**
+
+Apply to participate in NeuroDataReHack 2027 by completing the application form:
+
+**[Apply Here](https://forms.gle/sYN6iTLZ7QXYDqXw8)**
+
+Space is limited and applications are reviewed on a rolling basis, so we encourage you to apply early. Applications close Friday, January 29, 2027.
 
 ## Schedule
 
