@@ -4,6 +4,7 @@ date: 2027-07-18
 endDate: 2027-07-24
 location: "HHMI Janelia Research Campus, Ashburn, VA"
 eventType: "Hackathon"
+image: "/images/events/hck27-2027-janelia-ndrh/ndrh_2027_banner.png"
 weight: 20270718
 summary: "Unlock new discoveries in neurophysiology through secondary analysis."
 draft: false
