@@ -22,7 +22,7 @@ NeuroDataReHack 2027 will be held at the HHMI Janelia Research Campus in Ashburn
 
 ## Objective
 
-[The DANDI Archive](http://dandiarchive.org) now has 450+ neurophysiology datasets in the 
+[The DANDI Archive](http://dandiarchive.org) now has 550+ neurophysiology datasets in the 
 [Neurodata Without Borders](http://nwb.org) format spanning many species, brain areas, task types, and imaging 
 modalities. These include high-value datasets, e.g. from [Allen Institute OpenScope](https://dandiarchive.org/dandiset/search?search=openscope), the [MICrONS project](https://dandiarchive.org/dandiset/000402), and the 
 [International Brain Laboratory Brain Wide Map](https://dandiarchive.org/dandiset/000409), as well as diverse contributions from neuroscience labs around the world. In this 
