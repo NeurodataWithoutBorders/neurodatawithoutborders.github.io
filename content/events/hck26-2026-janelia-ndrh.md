@@ -13,6 +13,7 @@ organizers:
 #   - "Stephanie Prince, Ph.D. (Program Chair)"
 #   - "Ryan Ly, Ph.D. (Program Chair)"
 resources:
+  "Recorded Talks": "https://www.youtube.com/playlist?list=PLEv3d3vCiZ20"
 #   "Event Flyer": "https://drive.google.com/file/d/1ptsGRa1sEMh-je7L_ff3CgtRTj-X11lO/view?usp=sharing"
 #   "Slides from the 2025 NeuroDataReHack": "https://drive.google.com/drive/folders/1DAmQr4qWCamhj_2Zyke0kkHGvV8Kyq13?usp=sharing"
   "PyNWB Documentation": "https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb"
@@ -55,7 +56,70 @@ Applications close March 24, 2026.
 
 ## Schedule
 
-Schedule details will be posted closer to the event date.
+Recordings of the talks are available in the [NeuroDataReHack 2026 playlist](https://www.youtube.com/playlist?list=PLEv3d3vCiZ20) on YouTube. Individual talks are linked in the schedule below. The rest of each day was devoted to working on projects, with breaks and meals provided.
+
+### Day 1: Accessing data and starting projects (Sunday, July 12)
+
+<table class="table">
+<thead><tr><th>Time</th><th>Talk</th><th>Speaker</th></tr></thead>
+<tbody>
+<tr><td>9:00 AM</td><td><a href="https://www.youtube.com/watch?v=gT3Vj8NGAKA">Welcome to NeuroDataReHack 2026</a></td><td>Ben Dichter</td></tr>
+<tr><td>9:30 AM</td><td><a href="https://www.youtube.com/watch?v=ow4olemw8MQ">Introduction to NWB and DANDI</a></td><td>Ryan Ly</td></tr>
+<tr><td>10:30 AM</td><td><a href="https://www.youtube.com/watch?v=sXHLbhdC0Pk">How to read NWB files (including streaming)</a></td><td>Oliver Ruebel</td></tr>
+<tr><td>11:30 AM</td><td><a href="https://www.youtube.com/watch?v=cFyh45TA0J0">A tour of NWB Dandisets and searching tools</a></td><td>Ben Dichter</td></tr>
+<tr><td>1:30 PM</td><td><a href="https://www.youtube.com/watch?v=pMK0w5l7XcM">Data from the International Brain Laboratory</a></td><td>Pranav Rai</td></tr>
+<tr><td>2:15 PM</td><td>OpenScope Predictive Processing and the Global Brain Observatory <sup>*</sup></td><td>Jerome Lecoq</td></tr>
+<tr><td>3:00 PM</td><td><a href="https://www.youtube.com/watch?v=hfLHUzd-i3Y">Introduction to OpenScope data and the DataBook</a></td><td>Carter Peene</td></tr>
+</tbody>
+</table>
+
+### Day 2: Analyzing data (Monday, July 13)
+
+<table class="table">
+<thead><tr><th>Time</th><th>Talk</th><th>Speaker</th></tr></thead>
+<tbody>
+<tr><td>9:15 AM</td><td><a href="https://www.youtube.com/watch?v=K6tvv8x8QIU">OpenScope DataBook (electrophysiology)</a></td><td>Carter Peene</td></tr>
+<tr><td>9:45 AM</td><td><a href="https://www.youtube.com/watch?v=I-L-5U3-_j8">How to write good issues</a></td><td>Ben Dichter</td></tr>
+<tr><td>10:30 AM</td><td>Reuse showcase: Neural population geometry and optimal coding of tasks with shared latent structure <sup>*</sup></td><td>Will Slatton</td></tr>
+<tr><td>12:00 PM</td><td>OpenScope DataBook (calcium imaging) <sup>*</sup></td><td>Carter Peene</td></tr>
+<tr><td>1:30 PM</td><td><a href="https://www.youtube.com/watch?v=TxLuUwS2FeA">Neural Data Analysis with Pynapple</a></td><td>Guillaume Viejo</td></tr>
+<tr><td>5:15 PM</td><td><a href="https://www.youtube.com/watch?v=ozu-r9XaW-8">Dandiset showcase: Glia Accumulate Evidence that Actions Are Futile and Suppress Unsuccessful Behavior</a></td><td>Misha Ahrens</td></tr>
+</tbody>
+</table>
+
+### Day 3: Advanced analysis (Tuesday, July 14)
+
+<table class="table">
+<thead><tr><th>Time</th><th>Talk</th><th>Speaker</th></tr></thead>
+<tbody>
+<tr><td>9:25 AM</td><td><a href="https://www.youtube.com/watch?v=rn2AowyiJ8c">Developing with LLMs</a></td><td>Ben Dichter</td></tr>
+<tr><td>10:55 AM</td><td><a href="https://www.youtube.com/watch?v=PB275Ik4-3M">Applying Neural Foundation Models (torch_brain)</a></td><td>Alexandre Andre</td></tr>
+</tbody>
+</table>
+
+### Day 4: Hacking on projects (Wednesday, July 15)
+
+<table class="table">
+<thead><tr><th>Time</th><th>Talk</th><th>Speaker</th></tr></thead>
+<tbody>
+<tr><td>3:00 PM</td><td><a href="https://www.youtube.com/watch?v=s9uiJMa_TaU">Getting started with AI agents</a></td><td>Ben Dichter</td></tr>
+<tr><td>4:00 PM</td><td><a href="https://www.youtube.com/watch?v=CqFGg6sBXf4">Agent skills</a></td><td>Ben Dichter</td></tr>
+</tbody>
+</table>
+
+### Day 5: Data processing (Thursday, July 16)
+
+<table class="table">
+<thead><tr><th>Time</th><th>Talk</th><th>Speaker</th></tr></thead>
+<tbody>
+<tr><td>9:10 AM</td><td><a href="https://www.youtube.com/watch?v=QxARfHWa_7M">Visual computations in large-scale recordings</a></td><td>Carsen Stringer</td></tr>
+<tr><td>9:10 AM</td><td><a href="https://www.youtube.com/watch?v=Bfw4dT0tIrc">Facemap: quantifying orofacial behavior</a></td><td>Atika Syeda</td></tr>
+<tr><td>10:10 AM</td><td><a href="https://www.youtube.com/watch?v=Ded91tKTMwU">Spike sorting with Kilosort</a></td><td>Jacob Pennington</td></tr>
+<tr><td>10:40 AM</td><td>SpikeInterface <sup>*</sup></td><td>Alessio Buccino</td></tr>
+</tbody>
+</table>
+
+<sup>*</sup> Recordings for these talks are being finalized and will be added when they are available. Most were given remotely, and the room recording did not capture the presenter's shared slides.
 
 <!-- ## Kavli Neurodata Discovery Award
 
