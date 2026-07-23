@@ -44,107 +44,136 @@ you are interested in learning how to convert data, consider signing up for an N
 
 ## Application
 
-**Applications are now open!**
-
-Apply to participate in NeuroDataReHack 2026 by completing the application form:
-
-**[Apply Here](https://forms.gle/6uird2uknZeJbmPr7)**
-
-Space is limited, so we encourage you to apply early. Applications will be reviewed on a rolling basis.
-
-Applications close March 24, 2026.
+Applications for NeuroDataReHack 2026 are now closed, and the event took place July 12 to 17, 2026. The recorded talks are available on the [NeuroDataReHack 2026 playlist](https://www.youtube.com/playlist?list=PLEv3d3vCiZ20), and the full schedule with links to each recording is below. To hear about future NeuroDataReHack events, subscribe to our [mailing list](https://mailchi.mp/fe2a9bc55a1a/nwb-signup).
 
 ## Schedule
 
-Recordings of the talks are available in the [NeuroDataReHack 2026 playlist](https://www.youtube.com/playlist?list=PLEv3d3vCiZ20) on YouTube. Individual talks are linked in the schedule below. The rest of each day was devoted to working on projects, with breaks and meals provided.
+The full schedule is below. Talks are linked to their recordings; the [NeuroDataReHack 2026 playlist](https://www.youtube.com/playlist?list=PLEv3d3vCiZ20) collects all of them. Participants checked in on Sunday, July 12, and most of each day was devoted to working on projects, with meals and breaks provided.
 
-### Day 1: Accessing data and starting projects (Sunday, July 12)
+### Day 1 (Sunday, July 12): Accessing data and starting projects
 
 <table class="table">
-<thead><tr><th>Time</th><th>Talk</th><th>Speaker</th></tr></thead>
+<thead><tr><th>Time</th><th>Session</th><th>Speaker</th><th>Affiliation</th></tr></thead>
 <tbody>
-<tr><td>9:00 AM</td><td><a href="https://www.youtube.com/watch?v=gT3Vj8NGAKA">Welcome to NeuroDataReHack 2026</a></td><td>Ben Dichter</td></tr>
-<tr><td>9:30 AM</td><td><a href="https://www.youtube.com/watch?v=ow4olemw8MQ">Introduction to NWB and DANDI</a></td><td>Ryan Ly</td></tr>
-<tr><td>10:30 AM</td><td><a href="https://www.youtube.com/watch?v=sXHLbhdC0Pk">How to read NWB files (including streaming)</a></td><td>Oliver Ruebel</td></tr>
-<tr><td>11:30 AM</td><td><a href="https://www.youtube.com/watch?v=cFyh45TA0J0">A tour of NWB Dandisets and searching tools</a></td><td>Ben Dichter</td></tr>
-<tr><td>1:30 PM</td><td><a href="https://www.youtube.com/watch?v=pMK0w5l7XcM">Data from the International Brain Laboratory</a></td><td>Pranav Rai</td></tr>
-<tr><td>2:15 PM</td><td>OpenScope Predictive Processing and the Global Brain Observatory <sup>*</sup></td><td>Jerome Lecoq</td></tr>
-<tr><td>3:00 PM</td><td><a href="https://www.youtube.com/watch?v=hfLHUzd-i3Y">Introduction to OpenScope data and the DataBook</a></td><td>Carter Peene</td></tr>
+<tr><td>8:15 AM</td><td>Breakfast</td><td></td><td></td></tr>
+<tr><td>9:00 AM</td><td><a href="https://www.youtube.com/watch?v=gT3Vj8NGAKA">Welcome to NeuroDataReHack 2026</a></td><td>Ben Dichter</td><td>CatalystNeuro</td></tr>
+<tr><td>9:30 AM</td><td><a href="https://www.youtube.com/watch?v=ow4olemw8MQ">Introduction to NWB and DANDI</a></td><td>Ryan Ly</td><td>Lawrence Berkeley National Laboratory</td></tr>
+<tr><td>10:30 AM</td><td><a href="https://www.youtube.com/watch?v=sXHLbhdC0Pk">How to read NWB files (including streaming)</a></td><td>Oliver Ruebel</td><td>Lawrence Berkeley National Laboratory</td></tr>
+<tr><td>11:30 AM</td><td><a href="https://www.youtube.com/watch?v=cFyh45TA0J0">A tour of NWB Dandisets and searching tools</a></td><td>Ben Dichter</td><td>CatalystNeuro</td></tr>
+<tr><td>12:30 PM</td><td>Lunch</td><td></td><td></td></tr>
+<tr><td>1:30 PM</td><td><a href="https://www.youtube.com/watch?v=pMK0w5l7XcM">Data from the International Brain Laboratory</a></td><td>Pranav Rai</td><td>International Brain Laboratory</td></tr>
+<tr><td>2:15 PM</td><td>OpenScope Predictive Processing and the Global Brain Observatory <sup>*</sup></td><td>Jerome Lecoq</td><td>Allen Institute for Neural Dynamics</td></tr>
+<tr><td>3:00 PM</td><td><a href="https://www.youtube.com/watch?v=hfLHUzd-i3Y">Introduction to OpenScope data and the DataBook</a></td><td>Carter Peene</td><td>Allen Institute for Neural Dynamics</td></tr>
+<tr><td>3:20 PM</td><td>Project roundtable</td><td>Ryan Ly</td><td>Lawrence Berkeley National Laboratory</td></tr>
+<tr><td>4:50 PM</td><td>Hacking on projects</td><td></td><td></td></tr>
+<tr><td>5:30 PM</td><td>Speed networking</td><td>Ben Dichter</td><td>CatalystNeuro</td></tr>
+<tr><td>6:30 PM</td><td>Dinner</td><td></td><td></td></tr>
 </tbody>
 </table>
 
-### Day 2: Analyzing data (Monday, July 13)
+### Day 2 (Monday, July 13): Analyzing data
 
 <table class="table">
-<thead><tr><th>Time</th><th>Talk</th><th>Speaker</th></tr></thead>
+<thead><tr><th>Time</th><th>Session</th><th>Speaker</th><th>Affiliation</th></tr></thead>
 <tbody>
-<tr><td>9:15 AM</td><td><a href="https://www.youtube.com/watch?v=K6tvv8x8QIU">OpenScope DataBook (electrophysiology)</a></td><td>Carter Peene</td></tr>
-<tr><td>9:45 AM</td><td><a href="https://www.youtube.com/watch?v=I-L-5U3-_j8">How to write good issues</a></td><td>Ben Dichter</td></tr>
-<tr><td>10:30 AM</td><td>Reuse showcase: Neural population geometry and optimal coding of tasks with shared latent structure <sup>*</sup></td><td>Will Slatton</td></tr>
-<tr><td>12:00 PM</td><td>OpenScope DataBook (calcium imaging) <sup>*</sup></td><td>Carter Peene</td></tr>
-<tr><td>1:30 PM</td><td><a href="https://www.youtube.com/watch?v=TxLuUwS2FeA">Neural Data Analysis with Pynapple</a></td><td>Guillaume Viejo</td></tr>
-<tr><td>5:15 PM</td><td><a href="https://www.youtube.com/watch?v=ozu-r9XaW-8">Dandiset showcase: Glia Accumulate Evidence that Actions Are Futile and Suppress Unsuccessful Behavior</a></td><td>Misha Ahrens</td></tr>
+<tr><td>8:15 AM</td><td>Breakfast</td><td></td><td></td></tr>
+<tr><td>9:00 AM</td><td>Introduction to Day 2</td><td>Ben Dichter</td><td>CatalystNeuro</td></tr>
+<tr><td>9:15 AM</td><td><a href="https://www.youtube.com/watch?v=K6tvv8x8QIU">OpenScope DataBook (electrophysiology)</a></td><td>Carter Peene</td><td>Allen Institute for Neural Dynamics</td></tr>
+<tr><td>9:45 AM</td><td><a href="https://www.youtube.com/watch?v=I-L-5U3-_j8">How to write good issues</a></td><td>Ben Dichter</td><td>CatalystNeuro</td></tr>
+<tr><td>10:30 AM</td><td>Reuse showcase: Neural population geometry and optimal coding of tasks with shared latent structure <sup>*</sup></td><td>Will Slatton</td><td>Harvard University</td></tr>
+<tr><td>11:00 AM</td><td>Hacking on projects</td><td></td><td></td></tr>
+<tr><td>12:00 PM</td><td>OpenScope DataBook (calcium imaging) <sup>*</sup></td><td>Carter Peene</td><td>Allen Institute for Neural Dynamics</td></tr>
+<tr><td>12:30 PM</td><td>Lunch</td><td></td><td></td></tr>
+<tr><td>1:30 PM</td><td><a href="https://www.youtube.com/watch?v=TxLuUwS2FeA">Neural Data Analysis with Pynapple</a></td><td>Guillaume Viejo</td><td>Flatiron Institute</td></tr>
+<tr><td>3:15 PM</td><td>Hacking on projects</td><td></td><td></td></tr>
+<tr><td>5:15 PM</td><td><a href="https://www.youtube.com/watch?v=ozu-r9XaW-8">Dandiset showcase: Glia Accumulate Evidence that Actions Are Futile and Suppress Unsuccessful Behavior</a></td><td>Misha Ahrens</td><td>HHMI Janelia Research Campus</td></tr>
+<tr><td>6:00 PM</td><td>Hacking on projects</td><td></td><td></td></tr>
+<tr><td>6:30 PM</td><td>Dinner</td><td></td><td></td></tr>
 </tbody>
 </table>
 
-### Day 3: Advanced analysis (Tuesday, July 14)
+### Day 3 (Tuesday, July 14): Advanced analysis
 
 <table class="table">
-<thead><tr><th>Time</th><th>Talk</th><th>Speaker</th></tr></thead>
+<thead><tr><th>Time</th><th>Session</th><th>Speaker</th><th>Affiliation</th></tr></thead>
 <tbody>
-<tr><td>9:25 AM</td><td><a href="https://www.youtube.com/watch?v=rn2AowyiJ8c">Developing with LLMs</a></td><td>Ben Dichter</td></tr>
-<tr><td>10:55 AM</td><td><a href="https://www.youtube.com/watch?v=PB275Ik4-3M">Applying Neural Foundation Models (torch_brain)</a></td><td>Alexandre Andre</td></tr>
+<tr><td>8:15 AM</td><td>Breakfast</td><td></td><td></td></tr>
+<tr><td>9:00 AM</td><td>Introduction to Day 3</td><td>Ben Dichter</td><td>CatalystNeuro</td></tr>
+<tr><td>9:10 AM</td><td>Project check-ins</td><td>Everyone</td><td></td></tr>
+<tr><td>9:25 AM</td><td><a href="https://www.youtube.com/watch?v=rn2AowyiJ8c">Developing with LLMs</a></td><td>Ben Dichter</td><td>CatalystNeuro</td></tr>
+<tr><td>10:55 AM</td><td><a href="https://www.youtube.com/watch?v=PB275Ik4-3M">Applying Neural Foundation Models (torch_brain)</a></td><td>Alexandre Andre</td><td>University of Pennsylvania</td></tr>
+<tr><td>12:30 PM</td><td>Lunch</td><td></td><td></td></tr>
+<tr><td>1:30 PM</td><td>Virtual datasets and LINDI <sup>*</sup></td><td>Ryan Ly</td><td>Lawrence Berkeley National Laboratory</td></tr>
+<tr><td>2:10 PM</td><td>Hacking on projects</td><td></td><td></td></tr>
+<tr><td>6:30 PM</td><td>Dinner</td><td></td><td></td></tr>
 </tbody>
 </table>
 
-### Day 4: Hacking on projects (Wednesday, July 15)
+### Day 4 (Wednesday, July 15): Hacking on projects
 
 <table class="table">
-<thead><tr><th>Time</th><th>Talk</th><th>Speaker</th></tr></thead>
+<thead><tr><th>Time</th><th>Session</th><th>Speaker</th><th>Affiliation</th></tr></thead>
 <tbody>
-<tr><td>3:00 PM</td><td><a href="https://www.youtube.com/watch?v=s9uiJMa_TaU">Getting started with AI agents</a></td><td>Ben Dichter</td></tr>
-<tr><td>4:00 PM</td><td><a href="https://www.youtube.com/watch?v=CqFGg6sBXf4">Agent skills</a></td><td>Ben Dichter</td></tr>
+<tr><td>8:15 AM</td><td>Breakfast</td><td></td><td></td></tr>
+<tr><td>9:00 AM</td><td>Introduction to Day 4</td><td>Ben Dichter</td><td>CatalystNeuro</td></tr>
+<tr><td>9:10 AM</td><td>Project check-ins</td><td>Everyone</td><td></td></tr>
+<tr><td>9:30 AM</td><td>Converting data to NWB <sup>*</sup></td><td>Ryan Ly</td><td>Lawrence Berkeley National Laboratory</td></tr>
+<tr><td>10:15 AM</td><td>Neurosift and AI for analysis <sup>*</sup></td><td>Jeremy Magland</td><td>Flatiron Institute</td></tr>
+<tr><td>11:00 AM</td><td>NWB analysis pipelines with CICADA <sup>*</sup></td><td>Robin Dard</td><td>Ecole Polytechnique Federale de Lausanne</td></tr>
+<tr><td>11:30 AM</td><td>Hacking on projects</td><td></td><td></td></tr>
+<tr><td>12:30 PM</td><td>Lunch</td><td></td><td></td></tr>
+<tr><td>1:30 PM</td><td>Lab tour <sup>*</sup></td><td>Jakob Voigts</td><td>HHMI Janelia Research Campus</td></tr>
+<tr><td>2:10 PM</td><td>Hacking on projects</td><td></td><td></td></tr>
+<tr><td>3:00 PM</td><td><a href="https://www.youtube.com/watch?v=s9uiJMa_TaU">Getting started with AI agents</a></td><td>Ben Dichter</td><td>CatalystNeuro</td></tr>
+<tr><td>4:00 PM</td><td><a href="https://www.youtube.com/watch?v=CqFGg6sBXf4">Agent skills</a></td><td>Ben Dichter</td><td>CatalystNeuro</td></tr>
+<tr><td>5:00 PM</td><td>Hacking on projects</td><td></td><td></td></tr>
+<tr><td>6:30 PM</td><td>Dinner</td><td></td><td></td></tr>
 </tbody>
 </table>
 
-### Day 5: Data processing (Thursday, July 16)
+### Day 5 (Thursday, July 16): Data processing
 
 <table class="table">
-<thead><tr><th>Time</th><th>Talk</th><th>Speaker</th></tr></thead>
+<thead><tr><th>Time</th><th>Session</th><th>Speaker</th><th>Affiliation</th></tr></thead>
 <tbody>
-<tr><td>9:10 AM</td><td><a href="https://www.youtube.com/watch?v=QxARfHWa_7M">Visual computations in large-scale recordings</a></td><td>Carsen Stringer</td></tr>
-<tr><td>9:10 AM</td><td><a href="https://www.youtube.com/watch?v=Bfw4dT0tIrc">Facemap: quantifying orofacial behavior</a></td><td>Atika Syeda</td></tr>
-<tr><td>10:10 AM</td><td><a href="https://www.youtube.com/watch?v=Ded91tKTMwU">Spike sorting with Kilosort</a></td><td>Jacob Pennington</td></tr>
-<tr><td>10:40 AM</td><td>SpikeInterface <sup>*</sup></td><td>Alessio Buccino</td></tr>
+<tr><td>8:15 AM</td><td>Breakfast</td><td></td><td></td></tr>
+<tr><td>9:00 AM</td><td>Introduction to Day 5</td><td>Ben Dichter</td><td>CatalystNeuro</td></tr>
+<tr><td>9:10 AM</td><td><a href="https://www.youtube.com/watch?v=QxARfHWa_7M">Visual computations in large-scale recordings</a></td><td>Carsen Stringer</td><td>HHMI Janelia Research Campus</td></tr>
+<tr><td>9:40 AM</td><td><a href="https://www.youtube.com/watch?v=Bfw4dT0tIrc">Facemap: quantifying orofacial behavior</a></td><td>Atika Syeda</td><td>HHMI Janelia Research Campus</td></tr>
+<tr><td>10:10 AM</td><td><a href="https://www.youtube.com/watch?v=Ded91tKTMwU">Spike sorting with Kilosort</a></td><td>Jacob Pennington</td><td>HHMI Janelia Research Campus</td></tr>
+<tr><td>10:40 AM</td><td>SpikeInterface <sup>*</sup></td><td>Alessio Buccino</td><td>Allen Institute for Neural Dynamics</td></tr>
+<tr><td>11:25 AM</td><td>Hacking on projects</td><td></td><td></td></tr>
+<tr><td>12:30 PM</td><td>Lunch</td><td></td><td></td></tr>
+<tr><td>1:30 PM</td><td>Group photo</td><td>Everyone</td><td></td></tr>
+<tr><td>1:45 PM</td><td>Hacking on projects</td><td></td><td></td></tr>
+<tr><td>6:30 PM</td><td>Dinner</td><td></td><td></td></tr>
 </tbody>
 </table>
 
-<sup>*</sup> Recordings for these talks are being finalized and will be added when they are available. Most were given remotely, and the room recording did not capture the presenter's shared slides.
+### Day 6 (Friday, July 17): Presentations
+
+<table class="table">
+<thead><tr><th>Time</th><th>Session</th><th>Speaker</th><th>Affiliation</th></tr></thead>
+<tbody>
+<tr><td>8:15 AM</td><td>Breakfast</td><td></td><td></td></tr>
+<tr><td>9:00 AM</td><td>Introduction to Day 6</td><td>Ben Dichter</td><td>CatalystNeuro</td></tr>
+<tr><td>9:10 AM</td><td>Hacking on projects</td><td></td><td></td></tr>
+<tr><td>12:15 PM</td><td>Project presentations</td><td>Everyone</td><td></td></tr>
+<tr><td>12:30 PM</td><td>Lunch</td><td></td><td></td></tr>
+<tr><td>1:30 PM</td><td>Project presentations</td><td>Everyone</td><td></td></tr>
+<tr><td>3:15 PM</td><td>Project presentations</td><td>Everyone</td><td></td></tr>
+<tr><td>5:00 PM</td><td>Discussion and feedback</td><td>Everyone</td><td></td></tr>
+<tr><td>6:30 PM</td><td>Dinner</td><td></td><td></td></tr>
+</tbody>
+</table>
+
+<sup>*</sup> Recordings for the talks marked with an asterisk are not yet available online. Some were given remotely and the room recording did not capture the presenter's shared slides. We are following up to add them where recordings can be recovered.
 
 <!-- ## Kavli Neurodata Discovery Award
 
 Following the event, participants will be invited to apply for a Kavli Foundation Neurodata Discovery Awards, which awards $50,000 (USD) of funding to continue data reanalysis projects that come out of the NeuroDataReHack event. This is a funding opportunity exclusive to NeuroDataReHack participants.
 
 ![Kavli Foundation Logo](/images/events/hck26-2026-janelia-ndrh/Kavli-Foundation-logo.png) -->
-
-## Instructors
-
-The event will feature a distinguished team of instructors, including:
-
-- **Benjamin Dichter, Ph.D.** - Program Chair, CatalystNeuro
-<!-- - **Stephanie Prince, Ph.D.** - Program Chair, Lawrence Berkeley National Laboratory
-- **Ryan Ly, Ph.D.** - Program Chair, Lawrence Berkeley National Laboratory
-- **Jeremy Magland, Ph.D.** - Senior Data Scientist, Flatiron Institute (Lead developer of Neurosift, FigURL, Dendro)
-- **Carsen Stringer, Ph.D.** - Group Leader, HHMI Janelia Research Campus (Lead developer of Rastermap, Suite2p, Facemap, Cellpose)
-- **Alessio Buccino, Ph.D.** - Electrophysiology Pipeline Engineer, Allen Institute for Neural Dynamics (Lead developer of SpikeInterface)
-- **Guillaume Viejo, Ph.D.** - Data Scientist, Flatiron Institute (Lead developer of Pynapple)
-- **Carter Peene** - Data Analyst I, Allen Institute for Neural Dynamics (Lead developer of OpenScope Databook)
-- **Mayo Faulkner, Ph.D.** - Senior Software Engineer, International Brain Lab
-- **Misha Ahrens, Ph.D.** - Group Leader, HHMI Janelia Research Campus
-- **Jakob Voigts, Ph.D.** - Group Leader, HHMI Janelia Research Campus
-- **Alison Comrie, Ph.D.** - Postdoctoral Scientist, HHMI Janelia Research Campus -->
-
-Additional instructors to be announced.
 
 ## Eligibility
 
