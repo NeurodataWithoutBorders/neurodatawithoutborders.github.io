@@ -15,35 +15,35 @@ The [NeuroDataReHack 2026 playlist](https://www.youtube.com/playlist?list=PLEv3d
 
 ### Getting Started with NWB and DANDI
 
-- [Welcome to NeuroDataReHack 2026](https://www.youtube.com/watch?v=gT3Vj8NGAKA), by Ben Dichter
-- [Introduction to NWB and DANDI](https://www.youtube.com/watch?v=ow4olemw8MQ), by Ryan Ly
-- [How to read NWB files (including streaming)](https://www.youtube.com/watch?v=sXHLbhdC0Pk), by Oliver Ruebel
-- [A tour of NWB Dandisets and searching tools](https://www.youtube.com/watch?v=cFyh45TA0J0), by Ben Dichter
+- [Welcome to NeuroDataReHack 2026](https://www.youtube.com/watch?v=gT3Vj8NGAKA), by Ben Dichter (CatalystNeuro)
+- [Introduction to NWB and DANDI](https://www.youtube.com/watch?v=ow4olemw8MQ), by Ryan Ly (Lawrence Berkeley National Laboratory)
+- [How to read NWB files (including streaming)](https://www.youtube.com/watch?v=sXHLbhdC0Pk), by Oliver Ruebel (Lawrence Berkeley National Laboratory)
+- [A tour of NWB Dandisets and searching tools](https://www.youtube.com/watch?v=cFyh45TA0J0), by Ben Dichter (CatalystNeuro)
 
 ### Datasets on DANDI
 
-- [Data from the International Brain Laboratory](https://www.youtube.com/watch?v=pMK0w5l7XcM), by Pranav Rai
-- [Introduction to OpenScope data and the DataBook](https://www.youtube.com/watch?v=hfLHUzd-i3Y), by Carter Peene
-- [OpenScope DataBook (electrophysiology)](https://www.youtube.com/watch?v=K6tvv8x8QIU), by Carter Peene
-- [Dandiset showcase: Glia Accumulate Evidence that Actions Are Futile and Suppress Unsuccessful Behavior](https://www.youtube.com/watch?v=ozu-r9XaW-8), by Misha Ahrens
+- [Data from the International Brain Laboratory](https://www.youtube.com/watch?v=pMK0w5l7XcM), by Pranav Rai (International Brain Laboratory)
+- [Introduction to OpenScope data and the DataBook](https://www.youtube.com/watch?v=hfLHUzd-i3Y), by Carter Peene (Allen Institute for Neural Dynamics)
+- [OpenScope DataBook (electrophysiology)](https://www.youtube.com/watch?v=K6tvv8x8QIU), by Carter Peene (Allen Institute for Neural Dynamics)
+- [Dandiset showcase: Glia Accumulate Evidence that Actions Are Futile and Suppress Unsuccessful Behavior](https://www.youtube.com/watch?v=ozu-r9XaW-8), by Misha Ahrens (HHMI Janelia Research Campus)
 
 ### Analysis Tools
 
-- [Neural Data Analysis with Pynapple](https://www.youtube.com/watch?v=TxLuUwS2FeA), by Guillaume Viejo
-- [Visual computations in large-scale recordings](https://www.youtube.com/watch?v=QxARfHWa_7M), by Carsen Stringer
-- [Facemap: quantifying orofacial behavior](https://www.youtube.com/watch?v=Bfw4dT0tIrc), by Atika Syeda
-- [Spike sorting with Kilosort](https://www.youtube.com/watch?v=Ded91tKTMwU), by Jacob Pennington
+- [Neural Data Analysis with Pynapple](https://www.youtube.com/watch?v=TxLuUwS2FeA), by Guillaume Viejo (Flatiron Institute)
+- [Visual computations in large-scale recordings](https://www.youtube.com/watch?v=QxARfHWa_7M), by Carsen Stringer (HHMI Janelia Research Campus)
+- [Facemap: quantifying orofacial behavior](https://www.youtube.com/watch?v=Bfw4dT0tIrc), by Atika Syeda (HHMI Janelia Research Campus)
+- [Spike sorting with Kilosort](https://www.youtube.com/watch?v=Ded91tKTMwU), by Jacob Pennington (HHMI Janelia Research Campus)
 
 ### AI-Assisted Workflows
 
-- [Developing with LLMs](https://www.youtube.com/watch?v=rn2AowyiJ8c), by Ben Dichter
-- [Applying Neural Foundation Models (torch_brain)](https://www.youtube.com/watch?v=PB275Ik4-3M), by Alexandre Andre
-- [Getting started with AI agents](https://www.youtube.com/watch?v=s9uiJMa_TaU), by Ben Dichter
-- [Agent skills](https://www.youtube.com/watch?v=CqFGg6sBXf4), by Ben Dichter
+- [Developing with LLMs](https://www.youtube.com/watch?v=rn2AowyiJ8c), by Ben Dichter (CatalystNeuro)
+- [Applying Neural Foundation Models (torch_brain)](https://www.youtube.com/watch?v=PB275Ik4-3M), by Alexandre Andre (University of Pennsylvania)
+- [Getting started with AI agents](https://www.youtube.com/watch?v=s9uiJMa_TaU), by Ben Dichter (CatalystNeuro)
+- [Agent skills](https://www.youtube.com/watch?v=CqFGg6sBXf4), by Ben Dichter (CatalystNeuro)
 
 ### Contributing to Open Source
 
-- [How to write good issues](https://www.youtube.com/watch?v=I-L-5U3-_j8), by Ben Dichter
+- [How to write good issues](https://www.youtube.com/watch?v=I-L-5U3-_j8), by Ben Dichter (CatalystNeuro)
 
 A few additional talks, most of them given remotely, are not yet posted because the room recording did not capture the presenters' shared slides. We are working to recover usable recordings and will add them to the playlist and the schedule when they are available.
 
