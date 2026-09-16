@@ -95,12 +95,8 @@ main:
     weight: 8
     url: "supporting-nwb/"
     parent: "Community"
-  - name: "Contributing to Website"
-    weight: 9
-    url: "contributing/"
-    parent: "Community"
   - name: "Team"
-    weight: 10
+    weight: 9
     url: "team/"
     parent: "Community"
   
@@ -175,11 +171,8 @@ community_links:
   - name: "Supporting NWB"
     weight: 8
     url: "/supporting-nwb"
-  - name: "Contributing to Website"
-    weight: 9
-    url: "/contributing"
   - name: "Contact Us"
-    weight: 10
+    weight: 9
     url: "/contact-us"
 
 resources:
