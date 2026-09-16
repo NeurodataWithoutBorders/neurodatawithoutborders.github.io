@@ -108,7 +108,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // PageFind Init
   window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({ element: "#search", showSubResults: true });
+    if (document.getElementById("search")) {
+      new PagefindUI({ element: "#search", showSubResults: true });
+    }
+    if (document.getElementById("site-search")) {
+      new PagefindUI({
+        element: "#site-search",
+        showSubResults: true,
+        showImages: false,
+        resetStyles: false,
+      });
+    }
+
+    // Site-search toggle
+    const searchToggle = document.querySelector(".site-search-toggle");
+    const searchPanel = document.querySelector(".site-search-panel");
+    if (searchToggle && searchPanel) {
+      const closePanel = () => {
+        searchPanel.hidden = true;
+        searchToggle.setAttribute("aria-expanded", "false");
+      };
+      const openPanel = () => {
+        searchPanel.hidden = false;
+        searchToggle.setAttribute("aria-expanded", "true");
+        const input = searchPanel.querySelector(".pagefind-ui__search-input");
+        if (input) input.focus();
+      };
+      searchToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        searchPanel.hidden ? openPanel() : closePanel();
+      });
+      document.addEventListener("click", (e) => {
+        if (!searchPanel.hidden && !searchPanel.contains(e.target) && e.target !== searchToggle) {
+          closePanel();
+        }
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !searchPanel.hidden) closePanel();
+      });
+    }
   });
 
   if (logos) {

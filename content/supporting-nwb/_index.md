@@ -4,11 +4,6 @@ hero_section:
   enable: true
   title: "Supporting NWB"
   subtitle: "Help sustain the digital infrastructure that enables your neuroscience data sharing"
-urgency_section:
-  enable: true
-  title: "Critical Funding Need"
-  content: "The primary source of funding support for NWB is ending in March 2026. Loss in funding will result in dissolution of the team that develops and maintains NWB. This team is critical to ensure NWB software keeps working and is up-to-date with the latest methods in neuroscience research and advances in data science. We are working diligently to explore all options for funding NWB. **We need your help advocating for NWB!**"
-  alert_type: "warning"
 action_section:
   enable: true
   title: "How You Can Help"

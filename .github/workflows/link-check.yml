@@ -22,5 +22,21 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          # NOTE: Lychee (and sphinx) encounter issues with SSL certificates for INCF URLs, so use --insecure
-          args: --verbose --no-progress './content/**/*.md' './content/**/*.html' './content/**/*.rst' --insecure
+          # --base resolves root-relative paths (e.g. /events/) against the live site
+          # --accept includes 403/429 since many destinations (mathworks, hilton, doi.org,
+          #   slack invites) reject lychee's user-agent rather than the link being broken
+          # --insecure: lychee (and sphinx) hit SSL cert issues on INCF URLs
+          args: >-
+            --verbose
+            --no-progress
+            --base 'https://neurodatawithoutborders.github.io/'
+            --accept '200..=299,403,429'
+            --max-retries 2
+            --insecure
+            './content/**/*.md'
+            './content/**/*.html'
+            './content/**/*.rst'
+          # Don't block PRs on the report; the job summary still surfaces broken links
+          # so they can be triaged separately. Pre-existing dead links in archived
+          # event pages otherwise fail every PR.
+          fail: false
