@@ -1,7 +1,4 @@
-[1;36m"/Users/bendichter/dev/neurodatawithoutborders.github.io/layouts/shortcodes/tool-grid.html:29:1"[0m: parse failed unexpected EOF Error getting the Hugo object: parse failed unexpected EOF 
-/Users/bendichter/dev/neurodatawithoutborders.github.io/layouts/shortcodes/tool-grid.html:29:1:
-  </div>
-</div>---
+---
 title: "NWBView"
 description: "A cross-platform software with a graphical user interface to display the contents of the binary NWB file format. Written in Rust for high-performance, memory safety and ease of deployment."
 category: "exploration"
