@@ -9,7 +9,7 @@ tags: announcement, software, hdmf, hdmf-zarr, zarr, release
 
 We are excited to announce the release of [**HDMF-Zarr 0.14.0**](https://github.com/hdmf-dev/hdmf-zarr/releases/tag/0.14.0), a major update to the HDMF Zarr backend for storing Hierarchical Data Modeling Framework (HDMF) and Neurodata Without Borders (NWB) data using [Zarr](https://zarr.dev/).
 
-This release marks a major transition for HDMF-Zarr: the primary `ZarrIO` and `NWBZarrIO` classes now write and read the new **Zarr v3** format exclusively using `zarr-python` v3. HDMF-Zarr 0.14.0 also adopts the unified Zarr v3 storage convention developed in collaboration with [Zindi](https://github.com/zarr-developers/zindi) and [LINDI](https://github.com/magland/lindi), improving interoperability across tools that work with cloud-native NWB data. With the transition to Zarr v3, `ZarrDataIO` has been updated to align with the new Zarr v3 codec API, and now supports dataset sharding for improved performance on large datasets.
+This release marks a major transition for HDMF-Zarr: the primary `ZarrIO` and `NWBZarrIO` classes now write and read the new **Zarr v3** format exclusively using `zarr-python` v3. HDMF-Zarr 0.14.0 also adopts the unified Zarr v3 storage convention developed in collaboration with [Zindi](https://github.com/bendichter/zindi) and [LINDI](https://github.com/NeurodataWithoutBorders/lindi), improving interoperability across tools that work with cloud-native NWB data. With the transition to Zarr v3, `ZarrDataIO` has been updated to align with the new Zarr v3 codec API, and now supports dataset sharding for improved performance on large datasets.
 
 ## Transition to Zarr v3
 
