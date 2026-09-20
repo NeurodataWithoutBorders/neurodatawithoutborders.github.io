@@ -1,11 +1,12 @@
 ---
-title: "NeuroDataReHack 2027"
+title: "NeuroData AI Summer School 2027 (formerly NeuroDataReHack)"
 date: 2027-07-18
 endDate: 2027-07-24
-location: "HHMI Janelia Research Campus, Ashburn, VA"
+location: "HHMI's Janelia Research Campus, Ashburn, VA"
 eventType: "Hackathon"
+registration: "Applications are open until January 29, 2027 at [neurodata-ai.org/apply](https://neurodata-ai.org/apply/)."
 weight: 20270718
-summary: "Unlock new discoveries in neurophysiology through secondary analysis."
+summary: "NeuroDataReHack continues as the NeuroData AI Summer School, a one-week residential school at HHMI-Janelia on reanalysis of open neurophysiology data and AI methods for neural data. Applications are open until January 29, 2027."
 draft: false
 organizers:
   - "Benjamin Dichter, Ph.D. (Program Chair)"
@@ -35,73 +36,25 @@ aliases:
   - /nwb_hackathons/HCK27_2027_Janelia_NDRH
 ---
 
+NeuroDataReHack continues in 2027 as the [NeuroData AI Summer School](https://neurodata-ai.org), supported by a five-year NIH R25 research education grant from NINDS (R25NS149357) and hosted and sponsored by HHMI-Janelia. The program has its own website at [neurodata-ai.org](https://neurodata-ai.org), which holds the full details for 2027 along with the schedules, recordings, projects, and reports from every NeuroDataReHack since 2022.
+
 ## Dates and Location
 
-NeuroDataReHack 2027 will be held at the HHMI Janelia Research Campus in Ashburn, Virginia. Participants arrive the evening of Sunday, July 18, 2027. The program runs from Monday, July 19 through Saturday, July 24, and participants have the option to check out on Sunday, July 25.
+The 2027 school will be held at HHMI's Janelia Research Campus in Ashburn, Virginia. Participants arrive the evening of Sunday, July 18, 2027. The program runs from Monday, July 19 through Saturday, July 24, and participants may check out on Saturday, July 24 or Sunday, July 25.
 
-## Objective
+## What Changes
 
-[The DANDI Archive](http://dandiarchive.org) now has 550+ neurophysiology datasets in the 
-[Neurodata Without Borders](http://nwb.org) format spanning many species, brain areas, task types, and imaging 
-modalities. These include high-value datasets, e.g. from [Allen Institute OpenScope](https://dandiarchive.org/dandiset/search?search=openscope), the [MICrONS project](https://dandiarchive.org/dandiset/000402), and the 
-[International Brain Laboratory Brain Wide Map](https://dandiarchive.org/dandiset/000409), as well as diverse contributions from neuroscience labs around the world. In this 
-workshop, we will teach attendees about the open neurophysiology datasets available on the DANDI Archive and train 
-them on how to maximally utilize the archive and the NWB standard to incorporate existing data into their scientific 
-workflows. Feedback from attendees will be used to improve the software and data standard to better enable 
-reanalysis workflows.
-
-Example projects include but are not limited to:
-* Determine whether your result is present in another species or brain area.
-* Showcase the capabilities of your tool or analysis on existing data from another lab.
-* Explore follow-up questions to a study.
-* Create educational content that uses open data.
-
-This event will primarily focus on analyzing existing data in NWB and on DANDI, **not** converting data to NWB. If 
-you are interested in learning how to convert data, consider signing up for an NWB Data Conversion Workshop.
+The format is the one NeuroDataReHack refined over five years: participants arrive with a reanalysis question, form teams around shared datasets on the [DANDI Archive](https://dandiarchive.org), take instruction in the mornings, and spend most of the week on project work with faculty and dataset stewards on hand. The week is longer, and a larger share of the curriculum is devoted to AI methods for neural data: foundation models, coding with large language models and agents, dimensionality reduction and neural decoding, and transfer learning across datasets. The focus remains on analyzing existing data in NWB and on DANDI, not on converting data to NWB. If you are interested in learning how to convert data, consider an NWB Data Conversion Workshop.
 
 ## Application
 
-Applications are not yet open. They will open in the coming months, and the application form and full details will be posted here. To be notified when applications open, subscribe to the [NWB mailing list](https://mailchi.mp/fe2a9bc55a1a/nwb-signup).
-
-## Schedule
-
-A detailed schedule will be posted closer to the event. For a sense of the format, see the recordings and schedule from the [2026 NeuroDataReHack](/events/hck26-2026-janelia-ndrh/).
+Applications are open until Friday, January 29, 2027 and are reviewed on a rolling basis. Who should apply, what the form asks for, and how applications are reviewed are described on the [application page](https://neurodata-ai.org/apply/). The school is free to attend, with lodging and meals provided on campus.
 
 ## Instructors
 
 {{< instructors >}}
 
-Additional instructors will be announced closer to the event.
-
-## Eligibility
-
-Eligibility is broad. This course is intended for PhD students, postdoctoral researchers, principal investigators, or similar.
-Advanced undergraduates may be considered on a case-by-case basis. We welcome applicants from all areas of
-neuroscience, including but not limited to experimentalists, computational neuroscientists, and data scientists.
-Applicants should have basic programming experience in Python or MATLAB and experience with neurophysiology research.
-Preference will be given to applicants who have a specific project in mind that involves reanalyzing existing
-neurophysiology data in NWB format and who has not previously attended a NeuroDataReHack event.
-
-## Logistics
-
-Thanks to the generous sponsorship of The Janelia Research Campus, this event will be free to participants:
-* There is no registration or application fee.
-* Participants will be provided a private room at Janelia Research Campus for the duration of this event, 
-  checking in the evening of Sunday, July 18 and checking out on Saturday, July 24 or the morning of Sunday, July 25.
-* Breakfast, lunch, dinner, and coffee breaks will be provided. Janelia is adept at accommodating dietary 
-  restrictions; please indicate any dietary restrictions on your application.
-* You will be responsible for booking your own flight and transportation to Janelia Research Campus.
-* You will be responsible for determining visa and/or healthcare requirements for travel to the United States. Please 
-  plan accordingly, as this process can take several months. We would be happy to provide a letter of invitation to
-  support your visa application if needed.
-
-## What to Bring
-
-Bring a laptop with appropriate software installed. Python should be installed and MATLAB is optional. For 
-instructions on how to install PyNWB, see 
-[the PyNWB documentation](https://pynwb.readthedocs.io/en/stable/install_users.html#installing-pynwb). For instructions
-on how to install MatNWB, see
-[the MatNWB documentation](https://matnwb.readthedocs.io)
+The full faculty list, including the advisory committee, is on the [program website](https://neurodata-ai.org/faculty/). Additional instructors will be announced as they are confirmed.
 
 ## Code of Conduct
 

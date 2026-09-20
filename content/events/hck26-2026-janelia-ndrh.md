@@ -23,6 +23,8 @@ aliases:
   - /nwb_hackathons/HCK26_2026_Janelia_NDRH
 ---
 
+*NeuroDataReHack continues as the [NeuroData AI Summer School](https://neurodata-ai.org). Applications for the 2027 school at HHMI-Janelia are open until January 29, 2027.*
+
 ## Report
 
 See the [NeuroDataReHack 2026 Report](https://drive.google.com/file/d/1CIcdLK5kTdYPIuCoGcqTIxnliTI6Yso3/view?usp=sharing) for a summary of the event, projects completed, and feedback from participants.
