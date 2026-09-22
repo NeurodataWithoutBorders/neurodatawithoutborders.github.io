@@ -154,10 +154,6 @@ type: "page"
   max-width: 100%;
   object-fit: contain;
 }
-.tool-logo .tool-img i {
-  font-size: 2.5rem;
-  color: #8f8f8f;
-}
 </style>
 
 The Neurodata Without Borders (NWB) logo and related artwork are available here for presentations, posters, websites, and other materials that refer to NWB.
@@ -256,7 +252,7 @@ Logos for NWB software tools are maintained in each tool's own repository. Selec
   <a class="tool-logo" href="https://github.com/NeurodataWithoutBorders/nwb-guide/tree/main/docs/assets" target="_blank"><span class="tool-img"><img src="/images/guide_logo_framed.png" alt=""></span>NWB GUIDE</a>
   <a class="tool-logo" href="https://github.com/NeurodataWithoutBorders/aqnwb/tree/main/resources/logo" target="_blank"><span class="tool-img"><img src="/images/aqnwb_logo.png" alt=""></span>AqNWB</a>
   <a class="tool-logo" href="https://github.com/nwb-extensions/nwb-extensions.github.io/tree/main/images" target="_blank"><span class="tool-img"><img src="/images/ndxcatalog_logo_framed.png" alt=""></span>NWB Extensions</a>
-  <a class="tool-logo" href="https://github.com/NeurodataWithoutBorders/nwb_benchmarks/tree/main/docs/assets" target="_blank"><span class="tool-img"><i class="bi bi-speedometer2" aria-hidden="true"></i></span>NWB Benchmarks</a>
+  <a class="tool-logo" href="https://github.com/NeurodataWithoutBorders/nwb-benchmarks/tree/main/docs/assets" target="_blank"><span class="tool-img"><img src="/images/nwb_benchmarks_logo.png" alt=""></span>NWB Benchmarks</a>
   <a class="tool-logo" href="https://github.com/hdmf-dev/hdmf/tree/dev/docs/source" target="_blank"><span class="tool-img"><img src="/images/hdmf_logo_framed.png" alt=""></span>HDMF</a>
   <a class="tool-logo" href="https://github.com/hdmf-dev/hdmf-zarr/tree/dev/docs/source/figures" target="_blank"><span class="tool-img"><img src="/images/hdmf_zarr_logo_framed.png" alt=""></span>HDMF Zarr</a>
   <a class="tool-logo" href="https://github.com/catalystneuro/neuroconv/tree/main/docs/img" target="_blank"><span class="tool-img"><img src="/images/nwbconversiontools_logo_framed.png" alt=""></span>NeuroConv</a>
