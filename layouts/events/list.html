@@ -47,7 +47,7 @@
             <h4 class="inter-600 text-18 dark-900 mb-1"><a href="{{ .RelPermalink }}" class="text-decoration-none dark-900 hover-primary">{{ .Title }}</a></h4>
             <div class="d-flex flex-wrap gap-3">
               <p class="inter-400 text-14 dark-600 mb-0">
-                <i class="fas fa-calendar-alt text-primary me-1"></i>
+                <i class="bi bi-calendar3 text-primary me-1"></i>
                 {{ .Date.Format "January 2, 2006" }}
                 {{ if .Params.endDate }}
                   {{ $startDate := .Date.Format "2006-01-02" }}
@@ -59,13 +59,13 @@
               </p>
               {{ with .Params.location }}
               <p class="inter-400 text-14 dark-600 mb-0">
-                <i class="fas fa-map-marker-alt text-primary me-1"></i>
+                <i class="bi bi-geo-alt-fill text-primary me-1"></i>
                 {{ . }}
               </p>
               {{ end }}
               {{ with .Params.eventType }}
               <p class="inter-400 text-14 dark-600 mb-0">
-                <i class="fas fa-tag text-primary me-1"></i>
+                <i class="bi bi-tag-fill text-primary me-1"></i>
                 {{ . }}
               </p>
               {{ end }}
@@ -95,7 +95,7 @@
             <h4 class="inter-600 text-18 dark-900 mb-1"><a href="{{ .RelPermalink }}" class="text-decoration-none dark-900 hover-primary">{{ .Title }}</a></h4>
             <div class="d-flex flex-wrap gap-3">
               <p class="inter-400 text-14 dark-600 mb-0">
-                <i class="fas fa-calendar-alt text-primary me-1"></i>
+                <i class="bi bi-calendar3 text-primary me-1"></i>
                 {{ .Date.Format "January 2, 2006" }}
                 {{ if .Params.endDate }}
                   {{ $startDate := .Date.Format "2006-01-02" }}
@@ -107,13 +107,13 @@
               </p>
               {{ with .Params.location }}
               <p class="inter-400 text-14 dark-600 mb-0">
-                <i class="fas fa-map-marker-alt text-primary me-1"></i>
+                <i class="bi bi-geo-alt-fill text-primary me-1"></i>
                 {{ . }}
               </p>
               {{ end }}
               {{ with .Params.eventType }}
               <p class="inter-400 text-14 dark-600 mb-0">
-                <i class="fas fa-tag text-primary me-1"></i>
+                <i class="bi bi-tag-fill text-primary me-1"></i>
                 {{ . }}
               </p>
               {{ end }}
