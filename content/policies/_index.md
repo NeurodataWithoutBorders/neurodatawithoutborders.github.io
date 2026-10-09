@@ -1,5 +1,6 @@
 ---
 title: Policies Overview
+description: "Policies that govern NWB, covering community-driven development, the Technical Advisory Board, the software and data standard, and the community."
 section:
   - title: Policies on Community-driven Development and Integration of New
       Neuroscience Technologies with NWB

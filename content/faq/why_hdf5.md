@@ -1,5 +1,6 @@
 ---
 title: "Why use HDF5 as the primary backend for NWB?"
+description: "HDF5 organizes complex hierarchical data and metadata, is a mature standard supported in many programming languages, and allows random access to chunked and compressed datasets."
 weight: 2
 ---
 

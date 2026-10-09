@@ -1,5 +1,6 @@
 ---
 title: Working Groups
+description: "NWB working groups curate the core standard, define ontologies, and integrate NWB with other community standards and tools."
 banner_section:
   enable: true
   content: NWB is involved in several working groups to curate the core NWB

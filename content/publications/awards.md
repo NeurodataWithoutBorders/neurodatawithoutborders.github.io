@@ -1,5 +1,6 @@
 ---
 title: "Awards"
+description: "Awards and endorsements received by NWB, including a 2019 R&D 100 award."
 weight: 4
 icon: "/images/awards.png"
 list:

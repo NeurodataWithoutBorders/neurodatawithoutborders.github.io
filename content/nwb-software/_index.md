@@ -15,6 +15,7 @@ community_tools:
       description: Tools for data acquisition, analysis, visualization, and exploration
       url: "/tools/community/"
 title: The NWB Software <br> Ecosystem
+description: "An overview of the NWB software ecosystem: the specification language, data APIs, data storage, and data standard schema, with the tools built on them."
 software_types:
   enable: true
   title: Areas of Concern and Types of Software in the NWB Ecosystem
