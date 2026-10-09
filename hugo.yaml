@@ -4,6 +4,7 @@ title: Neurodata Without Borders
 
 # Build Settings
 buildFuture: true
+enableRobotsTXT: true
 
 # Pagination
 pagination:
