@@ -9,6 +9,13 @@ buildFuture: true
 pagination:
   pagerSize: 10
 
+# The site does not use taxonomies. Without this, Hugo builds unstyled
+# /tags/ and /categories/ pages that nothing links to and adds them to the
+# sitemap.
+disableKinds:
+  - taxonomy
+  - term
+
 # Markup
 markup:
   goldmark:
