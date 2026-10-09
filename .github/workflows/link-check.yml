@@ -5,38 +5,74 @@ on:
   # Runs weekly every Sunday at 05:00 UTC (midnight EST)
   schedule:
     - cron: '0 5 * * 0'
-  # Runs on pull requests targeting the dev branch
+  # Runs on pull requests targeting the main branch
   pull_request:
     branches: ["main"]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pull-requests: read
+
+env:
+  # --base resolves root-relative paths (e.g. /events/) against the live site
+  # --accept includes 403/429 since many destinations (mathworks, hilton, doi.org,
+  #   slack invites) reject lychee's user-agent rather than the link being broken
+  # --insecure: lychee (and sphinx) hit SSL cert issues on INCF URLs
+  LYCHEE_ARGS: >-
+    --verbose
+    --no-progress
+    --base 'https://neurodatawithoutborders.github.io/'
+    --accept '200..=299,403,429'
+    --max-retries 2
+    --insecure
+
 jobs:
-  link_check:
+  # Blocking check on the content files a pull request adds or edits.
+  pr_link_check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: List content files changed by this pull request
+        id: changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          files=$(gh api --paginate \
+            "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
+            --jq '.[] | select(.status != "removed") | .filename' \
+            | grep -E '^content/.*\.(md|html|rst)$' \
+            | tr '\n' ' ' || true)
+          echo "files=${files}" >> "$GITHUB_OUTPUT"
+          echo "Checking: ${files:-(no content files changed)}"
+
+      - name: Link Checker
+        if: steps.changed.outputs.files != ''
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: ${{ env.LYCHEE_ARGS }} ${{ steps.changed.outputs.files }}
+          fail: true
+
+  # Advisory sweep of every content file. Archived event pages carry dead links
+  # that are triaged separately, so the run reports them in the job summary
+  # without failing.
+  full_link_check:
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Link Checker
-        id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          # --base resolves root-relative paths (e.g. /events/) against the live site
-          # --accept includes 403/429 since many destinations (mathworks, hilton, doi.org,
-          #   slack invites) reject lychee's user-agent rather than the link being broken
-          # --insecure: lychee (and sphinx) hit SSL cert issues on INCF URLs
           args: >-
-            --verbose
-            --no-progress
-            --base 'https://neurodatawithoutborders.github.io/'
-            --accept '200..=299,403,429'
-            --max-retries 2
-            --insecure
+            ${{ env.LYCHEE_ARGS }}
             './content/**/*.md'
             './content/**/*.html'
             './content/**/*.rst'
-          # Don't block PRs on the report; the job summary still surfaces broken links
-          # so they can be triaged separately. Pre-existing dead links in archived
-          # event pages otherwise fail every PR.
           fail: false

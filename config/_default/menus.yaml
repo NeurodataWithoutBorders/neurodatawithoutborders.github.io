@@ -124,6 +124,10 @@ main:
     weight: 5
     url: "faq/"
     parent: "Resources"
+  - name: "Branding & Logos"
+    weight: 7
+    url: "branding/"
+    parent: "Resources"
   
   # Contact
   - name: "Contact"
@@ -191,6 +195,9 @@ resources:
   - name: "FAQ"
     weight: 5
     url: "/faq"
+  - name: "Branding & Logos"
+    weight: 7
+    url: "/branding"
 
 the_standard:
   - name: "Specification"

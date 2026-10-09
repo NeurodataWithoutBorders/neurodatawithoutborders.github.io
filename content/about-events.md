@@ -17,7 +17,7 @@ Participants work collaboratively on solutions that use the NWB unified data for
 
 Over the course of the NWB endeavor, the NWB team has created a range of different event types to address different needs:
 
-- **NeurodataReHack**: Focused on training and projects to generate new insights from existing neurophysiology data through secondary analysis.
+- **NeuroDataReHack**: Focused on training and projects to generate new insights from existing neurophysiology data through secondary analysis. Since 2027 the program continues as the [NeuroData AI Summer School](https://neurodata-ai.org), supported by an NIH R25 award.
 - **User Days**: Focused on training and engagement with the NWB user community and integration of data and lab processes with NWB.
 - **Developer Days**: Focused on engagement with the broader developer community and on integration and development of NWB-enabled tools and core software.
 - **Docathon**: Focused on enhancing documentation for NWB and associated software.

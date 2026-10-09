@@ -13,7 +13,7 @@ resources_section:
     - title: "Hackathons"
       content: "NWB Hackathon events and information"
       image: "/images/hackathon_icon.png"
-      url: "https://neurodatawithoutborders.github.io/nwb_hackathons/"
+      url: "/events/"
     - title: "NWB Neurodata Extension (NDX) Catalog"
       content: "Discover NWB extensions"
       image: "/images/ndxcatalog_logo_framed.png"
@@ -75,5 +75,5 @@ docs_section:
     - title: "Core Tools"
       content: "Documentation for NWB core tools"
       image: "/images/r-docs.png"
-      url: "https://neurodatawithoutborders.github.io/tools/core/"
+      url: "/tools/core/"
 ---

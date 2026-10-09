@@ -1,0 +1,15 @@
+{{ with .Page.Params.instructors }}
+<div class="row g-3 g-md-4 mb-4">
+  {{ range . }}
+  <div class="col-6 col-md-4">
+    <div class="h-100 bg-dark-100 rounded-3 p-3">
+      {{ with .image }}
+      <img src="{{ . }}" alt="" class="img-fluid rounded-3 w-100" style="aspect-ratio: 1 / 1; object-fit: cover;">
+      {{ end }}
+      <h5 class="inter-700 text-18 dark-900 pt-3 mb-1">{{ .name | markdownify }}</h5>
+      {{ with .affiliation }}<p class="inter-400 text-14 dark-700 mb-0">{{ . | markdownify }}</p>{{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
