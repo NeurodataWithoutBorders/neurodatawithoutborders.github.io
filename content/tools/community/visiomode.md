@@ -18,7 +18,7 @@ Visiomode is an open-source platform for building touchscreen-based behavioral t
 
 Visiomode session data can be exported to the NWB format directly from the web interface. Navigate to the "History" tab, choose the session you wish to export and select "NWB" from the "Download" dropdown menu.
 
-![Visiomode NWB Export](/images/tools/visiomode/visiomode-nwb-export.gif)
+<video autoplay loop muted playsinline width="800" height="484" aria-label="Visiomode NWB Export" style="width: 100%; height: auto;"><source src="/images/tools/visiomode/visiomode-nwb-export.mp4" type="video/mp4"></video>
 
 ### Data Structure
 

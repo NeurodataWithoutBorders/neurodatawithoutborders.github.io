@@ -2,7 +2,7 @@
 title: "DeepLabCut"
 description: "An efficient method for 2D and 3D markerless pose estimation based on transfer learning with deep neural networks that achieves excellent results with minimal training data."
 category: "behavior-analysis"
-image: "/images/tools/deeplabcut/deeplabcut.gif"
+image: "/images/tools/deeplabcut/deeplabcut.webp"
 source_url: "https://github.com/DeepLabCut/DeepLabCut"
 docs_url: "http://www.mackenziemathislab.org/deeplabcut"
 weight: 190
@@ -12,7 +12,7 @@ weight: 190
 
 DeepLabCut is an efficient method for 2D and 3D markerless pose estimation based on transfer learning with deep neural networks. It achieves excellent results (matching human labeling accuracy) with minimal training data (typically 50-200 frames). The framework has been proven versatile in tracking various body parts in multiple species across a broad collection of behaviors.
 
-![DeepLabCut Demo](/images/tools/deeplabcut/deeplabcut.gif)
+<video autoplay loop muted playsinline width="300" height="224" aria-label="DeepLabCut Demo" style="width: 100%; height: auto;"><source src="/images/tools/deeplabcut/deeplabcut.mp4" type="video/mp4"></video>
 
 ## NWB Integration
 
