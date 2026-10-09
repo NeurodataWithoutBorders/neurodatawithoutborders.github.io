@@ -12,7 +12,7 @@
     <div class="d-flex flex-column flex-lg-row gap-4 container-lg mx-auto align-items-center justify-content-center justify-content-md-between">
         <div class="col-12 col-sm-4 col-lg-3">
             <div>
-                <img src="{{ .image }}" alt="" class="img-fluid">
+                <img src="{{ partial "img-src.html" (dict "src" .image "width" 1400) }}" loading="lazy" alt="" class="img-fluid">
             </div>
         </div>
         <div class="col-12 col-sm-8 col-lg-8">
@@ -42,7 +42,7 @@
         </div>
         <div class="col-12 col-sm-8 col-lg-6">
             <div>
-                <img src="{{ .image }}" alt="" class="img-fluid">
+                <img src="{{ partial "img-src.html" (dict "src" .image "width" 1400) }}" loading="lazy" alt="" class="img-fluid">
             </div>
         </div>
     </div>
@@ -75,7 +75,7 @@
         <p class="inter-400 text-16 dark-700 mb-0">{{ . | markdownify }}</p>
         {{ end }}
         {{ with .image }}
-        <img src="{{ . }}" alt="nwb-neuro" class="img-fluid my-5">
+        <img src="{{ partial "img-src.html" (dict "src" . "width" 2000) }}" loading="lazy" alt="nwb-neuro" class="img-fluid my-5">
         {{ end }}
         {{ with .wide_image }}
         <div class="wide-image-container">
@@ -100,7 +100,7 @@
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="bg-white p-4 rounded-4 d-flex gap-4 h-100">
                     <div class="boxImg">
-                        <img src="{{ .icon }}" alt="" width="36">
+                        <img src="{{ partial "img-src.html" (dict "src" .icon "width" 108) }}" loading="lazy" alt="" width="36">
                     </div>
                     <div class="d-flex flex-column gap-2">
                         <strong class="inter-600 text-20 text-black mb-1">{{ .title | markdownify }}</strong>
@@ -132,7 +132,7 @@
         <p class="inter-400 text-18 dark-700 mb-0">{{ . | markdownify }}</p>
         {{ end }}
         {{ with .image }}
-        <img src="{{ . }}" alt="nwb-neuro" class="img-fluid my-5">
+        <img src="{{ partial "img-src.html" (dict "src" . "width" 2000) }}" loading="lazy" alt="nwb-neuro" class="img-fluid my-5">
         {{ end }}
         {{ with .wide_image }}
         <div class="wide-image-container">

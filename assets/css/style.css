@@ -431,7 +431,7 @@ h6 {
 }
 
 /* Limit the maximum size of images in the about page */
-section img[src*="Neurophysiology-min.png"] {
+section img[src*="Neurophysiology-min"] {
   width: 100% !important;
   max-width: 800px !important;
   margin: 0 auto !important;
@@ -439,7 +439,7 @@ section img[src*="Neurophysiology-min.png"] {
 }
 
 /* Limit the maximum size of pynapple graphic abstract image */
-.content img[src*="pynapple/GraphicAbstract.png"] {
+.content img[src*="pynapple/GraphicAbstract"] {
   width: 100% !important;
   max-width: 600px !important;
   margin: 0 auto !important;
@@ -448,10 +448,10 @@ section img[src*="Neurophysiology-min.png"] {
 
 /* Ensure the image is responsive on smaller screens */
 @media (max-width: 900px) {
-  section img[src*="Neurophysiology-min.png"] {
+  section img[src*="Neurophysiology-min"] {
     max-width: 95% !important;
   }
-  .content img[src*="pynapple/GraphicAbstract.png"] {
+  .content img[src*="pynapple/GraphicAbstract"] {
     max-width: 90% !important;
   }
 }

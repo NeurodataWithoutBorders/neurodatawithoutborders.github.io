@@ -21,7 +21,7 @@
             <a href="{{ .url }}" class="col-12 col-md-6" target="_blank">
                 <div class="bg-white h-100 rounded-3 p-4 shadow-sm">
                     <div class="d-flex flex-column flex-sm-row gap-4">
-                        <img src="{{ .image }}" alt="{{ .title }}" width="80" height="80" class="flex-shrink-0" style="object-fit: contain;">
+                        <img src="{{ partial "img-src.html" (dict "src" .image "width" 240) }}" loading="lazy" alt="{{ .title }}" width="80" height="80" class="flex-shrink-0" style="object-fit: contain;">
                         <div class="">
                             <h5 class="inter-700 text-18 dark-900 mb-2">{{ .title | markdownify }}</h5>
                             <p class="inter-400 text-14 dark-700">{{ .content | markdownify }}</p>

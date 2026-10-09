@@ -65,7 +65,7 @@
     <div class="col-12 col-sm-6 col-lg-3 mx-auto px-0 px-sm-2">
       <div
         class="rounded-3 px-5 py-4 d-flex flex-column justify-content-between align-items-center aboutBox animate h-100 row-gap-4">
-        <img src="{{ .image }}" alt="about-nwb" width="64">
+        <img src="{{ partial "img-src.html" (dict "src" .image "width" 192) }}" loading="lazy" alt="about-nwb" width="64">
         <div class="h-25">
           <p class="inter-600 text-20 text-center mb-0">{{ .title | markdownify }}</p>
         </div>
@@ -86,7 +86,7 @@
 <section class="section w-100 h-100 pt-0">
   <div class="container-lg row mx-auto justify-content-between">
     <div class="col-12 col-md-5 rounded-3 px-0 mb-5 mb-md-0">
-      <img src="{{ .image }}" alt="nwb-portfolio" class="w-100">
+      <img src="{{ partial "img-src.html" (dict "src" .image "width" 1400) }}" loading="lazy" alt="nwb-portfolio" class="w-100">
     </div>
     <div class="col-12 col-md-6 d-flex flex-column gap-4 px-0">
       <h3 class="inter-700 text-40 mb-0">{{ .heading | markdownify }}</h3>
@@ -96,7 +96,7 @@
       <div class="d-flex gap-3 ms-1 ms-md-0">
         {{ range .logos }}
         <div class="p-1 shadow-sm rounded-3 achiImg">
-          <img src="{{ .logo }}" alt="nwb-achivements" class="img-fluid">
+          <img src="{{ partial "img-src.html" (dict "src" .logo "width" 240) }}" loading="lazy" alt="nwb-achivements" class="img-fluid">
         </div>
         {{ end }}
       </div>
@@ -154,7 +154,7 @@
       <div class="swiper-slide">
         <div class="shadow">
           <div class="shadow-sm">
-            <img src="{{ .Params.image }}" alt="" class="rounded-top-3" style="width: 100% !important; height: 240px !important; object-fit: cover !important;">
+            <img src="{{ partial "img-src.html" (dict "src" .Params.image "width" 900) }}" loading="lazy" alt="" class="rounded-top-3" style="width: 100% !important; height: 240px !important; object-fit: cover !important;">
         </div>
           <div class="h-40 p-4 bg-main rounded-bottom-3 d-flex flex-column gap-3">
             <div class="d-flex gap-2 align-items-center">
@@ -208,7 +208,7 @@
         {{ range .logos }}
         <div class="logo clients">
           <a href="{{ .link }}" target="_blank">
-            <img src="{{ .image }}" alt="Logo 1">
+            <img src="{{ partial "img-src.html" (dict "src" .image "width" 400) }}" loading="lazy" alt="Logo 1">
           </a>
         </div>
         {{ end }}

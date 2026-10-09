@@ -24,3 +24,7 @@ module:
   mounts:
     - source: assets
       target: assets
+    # Lets templates resize images that live in static/images. See
+    # layouts/partials/img-src.html.
+    - source: static/images
+      target: assets/images

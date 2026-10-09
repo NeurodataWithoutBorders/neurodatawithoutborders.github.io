@@ -13,7 +13,7 @@
         <p class="dark-700 text-16 inter-400 lh-md mb-4">{{ .content | markdownify }}</p>
       </div>
       <div class="col-12 col-md-4">
-        <img src="{{ .image }}" alt="NWB Events" class="img-fluid">
+        <img src="{{ partial "img-src.html" (dict "src" .image "width" 1400) }}" loading="lazy" alt="NWB Events" class="img-fluid">
       </div>
     </div>
   </div>

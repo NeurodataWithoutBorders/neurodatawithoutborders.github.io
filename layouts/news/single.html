@@ -31,7 +31,7 @@
         <div class="row justify-content-between">
             <div class="col-lg-9">
                 <div>
-                    <img src="{{ .Params.image }}" alt="" class="rounded-top-3"
+                    <img src="{{ partial "img-src.html" (dict "src" .Params.image "width" 2000) }}" alt="" class="rounded-top-3"
                         style="width: 100% !important; height: auto !important;">
                 </div>
                 <div class="mt-4 bg-white px-5 py-2">
@@ -110,7 +110,7 @@
                     <div class="p-3 bg-slate border">
                         <div class="d-flex flex-wrap gap-3 align-items-center">
                             <div style="width: 100px;">
-                                <img src="{{ .image }}" alt="" class="img-fluid rounded-circle">
+                                <img src="{{ partial "img-src.html" (dict "src" .image "width" 300) }}" loading="lazy" alt="" class="img-fluid rounded-circle">
                             </div>
                             <div>
                                 <p class="mb-1 blue inter-600 text-20">{{ .name }}</p>
@@ -147,7 +147,7 @@
                         <div class="rounded-3 shadow-sm bg-white p-2">
                             <div class="d-flex  gap-3 align-items-center">
                                 <div class="flex-shrink-0">
-                                    <img data-pagefind-meta="image[src]" src="{{ .Params.image }}" alt=""
+                                    <img data-pagefind-meta="image[src]" src="{{ partial "img-src.html" (dict "src" .Params.image "width" 360) }}" loading="lazy" alt=""
                                         class="rounded-3"
                                         style="width: 120px; height: 75px; object-fit: cover;">
                                 </div>
