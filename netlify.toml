@@ -2,6 +2,8 @@
   publish = 'public'
   command = 'hugo --gc --minify --buildFuture && npm_config_yes=true npx pagefind --site "public"'
 
+# Keep in sync with HUGO_VERSION in .github/workflows/hugo.yml, which builds
+# the production site.
 [build.environment]
   HUGO_VERSION = "0.152.2"
 
