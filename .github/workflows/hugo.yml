@@ -49,6 +49,8 @@ jobs:
         run: |
           hugo \
             --minify
+      - name: Build search index with Pagefind
+        run: npx --yes pagefind --site public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
