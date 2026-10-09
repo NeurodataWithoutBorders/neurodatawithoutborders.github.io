@@ -2,7 +2,7 @@
 title: "SLEAP"
 description: "An open source deep-learning based framework for multi-animal pose tracking, capable of tracking any type or number of animals with an advanced labeling/training GUI for active learning and proofreading."
 category: "behavior-analysis"
-image: "/images/tools/sleap/sleap.gif"
+image: "/images/tools/sleap/sleap.webp"
 source_url: "https://github.com/talmolab/sleap"
 docs_url: "https://sleap.ai"
 weight: 200
@@ -12,7 +12,7 @@ weight: 200
 
 SLEAP is an open source deep-learning based framework for multi-animal pose tracking. It can be used to track any type or number of animals and includes an advanced labeling/training GUI for active learning and proofreading.
 
-![SLEAP Demo](/images/tools/sleap/sleap.gif)
+<video autoplay loop muted playsinline width="600" height="278" aria-label="SLEAP Demo" style="width: 100%; height: auto;"><source src="/images/tools/sleap/sleap.mp4" type="video/mp4"></video>
 
 ## NWB Integration
 
