@@ -25,16 +25,6 @@
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 
 {{/*  Styles  */}}
-{{ $plugin := slice }}
-{{ $plugin := $plugin | append (resources.Get "scss/plugins.scss" | resources.ExecuteAsTemplate "plugins.scss" . | toCSS) }}
-{{ $plugin := $plugin | resources.Concat "/css/plugins.css" }}
-
-{{ if hugo.IsProduction }}
-  {{ $plugin = $plugin | fingerprint "sha256" }}
-  {{ $plugin = $plugin | resources.PostProcess }}
-{{ end }}
-<link rel="stylesheet" href="{{ $plugin.RelPermalink }}" />
-
 {{ $styles := dict "transpiler" "libsass" "targetPath" "css/styles.css" }}
 {{ with resources.Get "css/style.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
