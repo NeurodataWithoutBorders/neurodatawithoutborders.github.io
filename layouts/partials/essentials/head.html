@@ -21,6 +21,12 @@
 {{/*  Favicon  */}}
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 
+{{/*  Canonical URL. The pages of the paginated news list all share one
+      .Permalink, so that list is left without a canonical link.  */}}
+{{ if not (and .IsSection (eq .Section "news")) }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+{{ end }}
+
 {{/*  Styles  */}}
 {{ $plugin := slice }}
 {{ $plugin := $plugin | append (resources.Get "scss/plugins.scss" | resources.ExecuteAsTemplate "plugins.scss" . | toCSS) }}
