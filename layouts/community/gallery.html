@@ -35,7 +35,7 @@
                         {{ if .image }}
                         <div class="me-4 flex-shrink-0">
                             <a href="{{ .url }}" target="_blank">
-                                <img src="{{ .image }}" alt="{{ .title }}" class="rounded-3 gallery-card-image" style="width: 100px; height: 100px; object-fit: cover;" onerror="this.parentElement.parentElement.style.display='none';">
+                                <img src="{{ partial "img-src.html" (dict "src" .image "width" 300) }}" loading="lazy" alt="{{ .title }}" class="rounded-3 gallery-card-image" style="width: 100px; height: 100px; object-fit: cover;" onerror="this.parentElement.parentElement.style.display='none';">
                             </a>
                         </div>
                         {{ end }}
@@ -71,7 +71,7 @@
                         {{ if .image }}
                         <div class="me-4 flex-shrink-0">
                             <a href="{{ .url }}" target="_blank">
-                                <img src="{{ .image }}" alt="{{ .title }}" class="rounded-3 gallery-card-image" style="width: 100px; height: 100px; object-fit: cover;" onerror="this.parentElement.parentElement.style.display='none';">
+                                <img src="{{ partial "img-src.html" (dict "src" .image "width" 300) }}" loading="lazy" alt="{{ .title }}" class="rounded-3 gallery-card-image" style="width: 100px; height: 100px; object-fit: cover;" onerror="this.parentElement.parentElement.style.display='none';">
                             </a>
                         </div>
                         {{ end }}
@@ -106,7 +106,7 @@
                     <div class="d-flex flex-row">
                         <div class="me-4">
                             <a href="{{ .url }}" target="_blank">
-                                <img src="{{ .image }}" alt="{{ .title }}" class="rounded-3" style="width: 100px; height: 100px; object-fit: cover;">
+                                <img src="{{ partial "img-src.html" (dict "src" .image "width" 300) }}" loading="lazy" alt="{{ .title }}" class="rounded-3" style="width: 100px; height: 100px; object-fit: cover;">
                             </a>
                         </div>
                         <div class="flex-grow-1">

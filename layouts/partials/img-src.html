@@ -1,0 +1,37 @@
+{{/*
+  Returns the URL to use for an image.
+
+  PNG and JPEG files under /images/ that are wider than "width" are scaled down
+  to that width and converted to WebP. Narrower ones are converted to WebP at
+  their own size. The converted file is used only when it is smaller than the
+  original. Anything else (remote URLs, SVG, GIF, small files, paths that do
+  not resolve) is returned unchanged, so it is always safe to call.
+
+  "width" must be at least as wide as the image is ever displayed, and ideally
+  twice that so it stays sharp on high-density screens. It defaults to 2000.
+
+  Usage: <img src="{{ partial "img-src.html" (dict "src" .image "width" 900) }}">
+*/}}
+{{ $src := .src | default "" }}
+{{ $width := .width | default 2000 }}
+{{ $out := $src }}
+{{ if hasPrefix $src "/images/" }}
+  {{ $parts := split $src "#" }}
+  {{ $path := index $parts 0 }}
+  {{ $fragment := "" }}
+  {{ if gt (len $parts) 1 }}{{ $fragment = printf "#%s" (index $parts 1) }}{{ end }}
+  {{ with resources.Get (strings.TrimPrefix "/" $path) }}
+    {{ if and (in (slice "png" "jpeg") .MediaType.SubType) (gt (len .Content) 20000) }}
+      {{ $webp := "" }}
+      {{ if gt .Width $width }}
+        {{ $webp = .Resize (printf "%dx webp q82 lanczos" $width) }}
+      {{ else }}
+        {{ $webp = .Process "webp q82" }}
+      {{ end }}
+      {{ if lt (len $webp.Content) (len .Content) }}
+        {{ $out = printf "%s%s" $webp.RelPermalink $fragment }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $out }}

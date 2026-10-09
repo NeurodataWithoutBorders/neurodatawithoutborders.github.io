@@ -22,7 +22,7 @@
                 <p class="inter-400 text-16 dark-700">{{ .content | markdownify }}</p>
             </div>
             <div class="col-sm-10 col-md-5">
-                <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                <img src="{{ partial "img-src.html" (dict "src" .image "width" 1400) }}" loading="lazy" alt="" class="img-fluid rounded-3">
             </div>
         </div>
         {{ end }}
@@ -134,7 +134,7 @@
                     <div
                         class="row justify-content-center justify-content-md-between {{ if not (modBool $i 2) }}flex-row-reverse{{ end }}">
                         <div class="col-sm-10 col-md-5 mb-4 mb-md-0">
-                            <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                            <img src="{{ partial "img-src.html" (dict "src" .image "width" 1400) }}" loading="lazy" alt="" class="img-fluid rounded-3">
                         </div>
                         <div class="col-sm-10 col-md-6">
                             <h4 class="inter-600 text-32 dark-900 mb-4">{{ .title | markdownify }}</h4>
@@ -163,7 +163,7 @@
                         <p class="inter-400 text-16 dark-700">{{ .content | markdownify }}</p>
                     </div>
                     <div class="pt-3">
-                        <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                        <img src="{{ partial "img-src.html" (dict "src" .image "width" 1400) }}" loading="lazy" alt="" class="img-fluid rounded-3">
                     </div>
                 </div>
             </div>

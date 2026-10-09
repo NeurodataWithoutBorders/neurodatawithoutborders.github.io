@@ -44,7 +44,7 @@
                 <div class="d-flex flex-column row-gap-4">
                     <div class="d-flex align-items-center gap-4">
                         {{ with .icon }}
-                        <img src="{{ . }}" alt="" width="60">
+                        <img src="{{ partial "img-src.html" (dict "src" . "width" 180) }}" loading="lazy" alt="" width="60">
                         {{ end }}
                         {{ with .title }}
                         <h3 class="inter-700 text-28 dark-900 mb-0 mt-2">{{ . | markdownify }}</h3>
