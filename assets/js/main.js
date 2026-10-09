@@ -219,85 +219,89 @@ document.addEventListener("DOMContentLoaded", function () {
   // Show More Team Members
 
   // Current Team
-  showMoreButton.addEventListener("click", function () {
-    const nextCount = visibleCount + increment;
-    for (let i = visibleCount; i < nextCount && i < teamMembers.length; i++) {
-      if (teamMembers[i]) {
-        teamMembers[i].classList.remove("d-none");
+  if (showMoreButton && showLessButton) {
+    showMoreButton.addEventListener("click", function () {
+      const nextCount = visibleCount + increment;
+      for (let i = visibleCount; i < nextCount && i < teamMembers.length; i++) {
+        if (teamMembers[i]) {
+          teamMembers[i].classList.remove("d-none");
+        }
       }
-    }
-    visibleCount = nextCount;
+      visibleCount = nextCount;
 
-    if (visibleCount > 8) {
-      showLessButton.classList.remove("d-none");
-    }
-
-    if (visibleCount >= teamMembers.length) {
-      showMoreButton.classList.add("d-none");
-    }
-  });
-
-  showLessButton.addEventListener("click", function () {
-    // Calculate the next set of members to hide
-    const nextCount = visibleCount - increment;
-    for (let i = visibleCount - 1; i >= nextCount && i >= 8; i--) {
-      if (teamMembers[i]) {
-        teamMembers[i].classList.add("d-none");
+      if (visibleCount > 8) {
+        showLessButton.classList.remove("d-none");
       }
-    }
-    visibleCount = nextCount;
 
-    // Hide the "Show Less" button if only 8 members are visible
-    if (visibleCount <= 8) {
-      showLessButton.classList.add("d-none");
-    }
+      if (visibleCount >= teamMembers.length) {
+        showMoreButton.classList.add("d-none");
+      }
+    });
 
-    // Show the "Show More" button if not all members are visible
-    if (visibleCount < teamMembers.length) {
-      showMoreButton.classList.remove("d-none");
-    }
-  });
+    showLessButton.addEventListener("click", function () {
+      // Calculate the next set of members to hide
+      const nextCount = visibleCount - increment;
+      for (let i = visibleCount - 1; i >= nextCount && i >= 8; i--) {
+        if (teamMembers[i]) {
+          teamMembers[i].classList.add("d-none");
+        }
+      }
+      visibleCount = nextCount;
+
+      // Hide the "Show Less" button if only 8 members are visible
+      if (visibleCount <= 8) {
+        showLessButton.classList.add("d-none");
+      }
+
+      // Show the "Show More" button if not all members are visible
+      if (visibleCount < teamMembers.length) {
+        showMoreButton.classList.remove("d-none");
+      }
+    });
+  }
 
   // Tech Team
-  showMoreButtonTech.addEventListener("click", function () {
-    // Calculate the next set of members to show
-    const nextCountTech = visibleCountTech + incrementTech;
-    for (let i = visibleCountTech; i < nextCountTech && i < teamMembersTech.length; i++) {
-      if (teamMembersTech[i]) {
-        teamMembersTech[i].classList.remove("d-none");
+  if (showMoreButtonTech && showLessButtonTech) {
+    showMoreButtonTech.addEventListener("click", function () {
+      // Calculate the next set of members to show
+      const nextCountTech = visibleCountTech + incrementTech;
+      for (let i = visibleCountTech; i < nextCountTech && i < teamMembersTech.length; i++) {
+        if (teamMembersTech[i]) {
+          teamMembersTech[i].classList.remove("d-none");
+        }
       }
-    }
-    visibleCountTech = nextCountTech;
+      visibleCountTech = nextCountTech;
 
-    // Show the "Show Less" button if more than 8 members are visible
-    if (visibleCountTech > 8) {
-      showLessButtonTech.classList.remove("d-none");
-    }
-
-    // Hide the "Show More" button if all members are visible
-    if (visibleCountTech >= teamMembersTech.length) {
-      showMoreButtonTech.classList.add("d-none");
-    }
-  });
-
-  showLessButtonTech.addEventListener("click", function () {
-    // Calculate the next set of members to hide
-    const nextCountTech = visibleCountTech - incrementTech;
-    for (let i = visibleCountTech - 1; i >= nextCountTech && i >= 8; i--) {
-      if (teamMembersTech[i]) {
-        teamMembersTech[i].classList.add("d-none");
+      // Show the "Show Less" button if more than 8 members are visible
+      if (visibleCountTech > 8) {
+        showLessButtonTech.classList.remove("d-none");
       }
-    }
-    visibleCountTech = nextCountTech;
 
-    // Hide the "Show Less" button if only 8 members are visible
-    if (visibleCountTech <= 8) {
-      showLessButtonTech.classList.add("d-none");
-    }
+      // Hide the "Show More" button if all members are visible
+      if (visibleCountTech >= teamMembersTech.length) {
+        showMoreButtonTech.classList.add("d-none");
+      }
+    });
 
-    // Show the "Show More" button if not all members are visible
-    if (visibleCountTech < teamMembersTech.length) {
-      showMoreButtonTech.classList.remove("d-none");
-    }
-  });
+    showLessButtonTech.addEventListener("click", function () {
+      // Calculate the next set of members to hide
+      const nextCountTech = visibleCountTech - incrementTech;
+      for (let i = visibleCountTech - 1; i >= nextCountTech && i >= 8; i--) {
+        if (teamMembersTech[i]) {
+          teamMembersTech[i].classList.add("d-none");
+        }
+      }
+      visibleCountTech = nextCountTech;
+
+      // Hide the "Show Less" button if only 8 members are visible
+      if (visibleCountTech <= 8) {
+        showLessButtonTech.classList.add("d-none");
+      }
+
+      // Show the "Show More" button if not all members are visible
+      if (visibleCountTech < teamMembersTech.length) {
+        showMoreButtonTech.classList.remove("d-none");
+      }
+    });
+  }
 });
