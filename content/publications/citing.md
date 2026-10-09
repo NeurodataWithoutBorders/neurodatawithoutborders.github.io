@@ -1,5 +1,6 @@
 ---
 title: Citing NWB
+description: "The citation to use when you acknowledge NWB in your research."
 weight: 1
 icon: /images/citing.png
 content: "If you are using NWB in your research, please use the following
