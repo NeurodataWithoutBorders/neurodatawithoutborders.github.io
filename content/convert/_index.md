@@ -1,5 +1,7 @@
 ---
 title: "Converting Data To NWB"
+aliases:
+  - /converting-data-to-nwb
 
 ### List 
 list:
