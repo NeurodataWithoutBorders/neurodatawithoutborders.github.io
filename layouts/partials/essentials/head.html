@@ -13,10 +13,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 {{/*  Swiper JS  */}}
+{{ if .IsHome }}{{/*  only the home page has carousels  */}}
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+{{ end }}
 
 {{/*  Favicon  */}}
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
