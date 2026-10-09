@@ -2,13 +2,6 @@ baseURL: https://nwb.org/
 languageCode: en
 title: Neurodata Without Borders
 
-# Site Parameters
-params:
-  # Used in search results and link previews for pages that have no
-  # description or image of their own.
-  description: Neurodata Without Borders (NWB) is a data standard and software ecosystem for neurophysiology and behavioral data.
-  shareImage: /images/share-card.jpg
-
 # Build Settings
 buildFuture: true
 

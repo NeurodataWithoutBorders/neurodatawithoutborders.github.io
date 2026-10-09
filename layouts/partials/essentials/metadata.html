@@ -3,12 +3,12 @@
 
   The description is the first of these that is set: `description`, `summary`
   (events) or `subtitle` (news) in the front matter, the start of the page
-  body, then `params.description` in hugo.yaml.
+  body, then `description` in config/_default/params.yaml.
 
   The preview image is the page's `image` when it is a PNG or JPEG no wider
   than 3.3:1. Wider logo strips lose most of their width when a preview crops
   them, so those pages, like pages with a GIF or with no image, use
-  `params.shareImage` from hugo.yaml.
+  `shareImage` from the same file.
 */}}
 {{ $title := site.Title }}
 {{ if and .Title (not .IsHome) }}

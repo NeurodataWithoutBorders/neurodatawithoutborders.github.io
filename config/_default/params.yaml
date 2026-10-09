@@ -8,3 +8,8 @@ cta:
 # Footer
 footer_logo: "/images/colored-logo.png"
 copyright_text: "© Neurodata Without Borders - All Rights Reserved"
+
+# Search results and link previews, for pages that have no description or
+# image of their own
+description: "Neurodata Without Borders (NWB) is a data standard and software ecosystem for neurophysiology and behavioral data."
+shareImage: "/images/share-card.jpg"
