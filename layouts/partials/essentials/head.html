@@ -13,7 +13,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 {{/*  Netlify Identity Widget  */}}
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  // Only needed to complete an invite, confirmation, password recovery or
+  // external login, all of which arrive as a token in the URL hash, so it is
+  // not loaded on ordinary page views.
+  if (/(invite|confirmation|recovery|email_change|access)_token=/.test(window.location.hash)) {
+    var identityWidget = document.createElement("script");
+    identityWidget.src = "https://identity.netlify.com/v1/netlify-identity-widget.js";
+    document.head.appendChild(identityWidget);
+  }
+</script>
 
 {{/*  Swiper JS  */}}
 <link
