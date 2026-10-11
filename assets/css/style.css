@@ -321,10 +321,6 @@
 }
 
 /* Global */
-.hero {
-  height: 350px !important;
-}
-
 .section {
   padding: 100px 0 !important;
 }
@@ -575,8 +571,17 @@ header {
 /* Home  */
 
 /* Hero */
-.hero {
-  height: 350px !important;
+/* Page banner: sized to its title, with room on top for the fixed site header */
+.hero:not(.homeHero) {
+  height: auto !important;
+  min-height: 230px;
+  padding: 100px 1rem 40px;
+  overflow: hidden;
+}
+
+.hero:not(.homeHero) h1 {
+  font-size: clamp(2rem, 7vw, 3rem) !important;
+  margin-bottom: 0;
 }
 
 .homeHero {
@@ -1239,18 +1244,7 @@ ol.custom-ordered-list li::before {
   }
 }
 
-/* Tools pages: compact hero, in-page nav, readable intro */
-.hero--compact {
-  height: 230px !important;
-  overflow: hidden;
-}
-
-.hero--compact h1 {
-  font-size: clamp(2rem, 7vw, 3rem) !important;
-  margin: 2.5rem 0 0 !important;
-  padding: 0 1rem;
-}
-
+/* Tools pages: in-page nav, readable intro */
 .tools-page.section {
   padding-top: 48px !important;
 }
@@ -1531,11 +1525,12 @@ ol.custom-ordered-list li::before {
 }
 
 @media (max-width: 767px) {
+  .hero:not(.homeHero) {
+    min-height: 190px;
+    padding: 90px 1rem 30px;
+  }
   .tool-rows--featured {
     grid-template-columns: 1fr;
-  }
-  .hero--compact {
-    height: 190px !important;
   }
 }
 
@@ -1556,10 +1551,6 @@ a.next-page-btn:hover {
   padding: 60px 0 !important;
 }
 
-.community-gallery .hero {
-  height: 300px !important;
-}
-
 .community-gallery .section:first-of-type {
   padding: 40px 0 !important;
 }
@@ -1567,10 +1558,6 @@ a.next-page-btn:hover {
 @media (max-width: 768px) {
   .community-gallery .section {
     padding: 40px 0 !important;
-  }
-  
-  .community-gallery .hero {
-    height: 250px !important;
   }
   
   .community-gallery .section:first-of-type {
