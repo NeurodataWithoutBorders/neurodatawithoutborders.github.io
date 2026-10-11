@@ -739,7 +739,7 @@ header {
 .newsSect {
   display: table;
   background: linear-gradient(#05223ae5, #072742, #052037e5),
-    url("/images/essentials/newsBg.png");
+    url("/images/essentials/newsBg.webp");
   background-position: center top;
   background-size: cover;
 }
@@ -795,7 +795,7 @@ header {
 /* CTA */
 .ctaSect {
   display: table;
-  background: url("/images/essentials/ctaBg.png"), #114b7c;
+  background: url("/images/essentials/ctaBg.webp"), #114b7c;
   background-position: center center;
   background-size: cover;
 }
@@ -813,7 +813,7 @@ header {
 /* About */
 .aboutSect {
   background: radial-gradient(#063053e5, #062e52e5),
-    url("/images/essentials/aboutBg.png");
+    url("/images/essentials/aboutBg.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -837,7 +837,7 @@ header {
 /* Hero */
 .softwareSect {
   background: radial-gradient(#063053e5, #062e52e5),
-    url("/images/essentials/softwareBg.png");
+    url("/images/essentials/softwareBg.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
