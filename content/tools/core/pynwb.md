@@ -6,6 +6,9 @@ image: "/images/pynwb_logo_framed.png"
 source_url: "https://github.com/NeurodataWithoutBorders/pynwb/"
 docs_url: "https://pynwb.readthedocs.io/en/stable/"
 weight: 10
+task: "Read & write"
+tech: "Python"
+install: "pip install pynwb"
 ---
 
 ## Description

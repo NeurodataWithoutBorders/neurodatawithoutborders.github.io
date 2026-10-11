@@ -6,6 +6,9 @@ image: "/images/nwbconversiontools_logo_framed.png"
 source_url: "https://github.com/catalystneuro/neuroconv"
 docs_url: "https://neuroconv.readthedocs.io/en/main/index.html"
 weight: 30
+task: "Convert"
+tech: "Python"
+install: "pip install neuroconv"
 ---
 
 ## Description

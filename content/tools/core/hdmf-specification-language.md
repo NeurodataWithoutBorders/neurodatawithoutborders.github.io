@@ -1,7 +1,7 @@
 ---
 title: "HDMF Specification Language"
 description: "Formal structures for describing the organization of complex data"
-category: "extension"
+category: "schema"
 image: "/images/specification_language_logo_framed.png"
 source_url: "https://github.com/hdmf-dev/hdmf-schema-language"
 docs_url: "https://hdmf-schema-language.readthedocs.io/en/latest/"

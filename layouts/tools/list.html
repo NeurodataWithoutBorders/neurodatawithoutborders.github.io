@@ -9,7 +9,18 @@
 {{/* End Hero Section */}}
 
 {{/* Content Section */}}
-<section class="section">
+{{ with .Params.page_nav }}
+<nav class="tools-nav" aria-label="On this page">
+    <div class="container">
+        <ul>
+            {{ range . }}
+            <li><a href="#{{ .anchor }}">{{ .name }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</nav>
+{{ end }}
+<section class="section tools-page">
     <div class="container">
         <div class="content">
             {{ .Content }}

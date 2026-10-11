@@ -6,6 +6,9 @@ image: "/images/nwbinspector_logo_framed.png"
 source_url: "https://github.com/NeurodataWithoutBorders/nwbinspector"
 docs_url: "https://nwbinspector.readthedocs.io/"
 weight: 50
+task: "Validate"
+tech: "Python · CLI"
+install: "pip install nwbinspector"
 ---
 
 ## Description

@@ -1,7 +1,7 @@
 ---
 title: "HDMF Common Schema"
 description: "Schema of common, general data structures used throughout the NWB Standard Schema"
-category: "extension"
+category: "schema"
 image: "/images/hdmf_common_schema_logo_framed.png"
 source_url: "https://github.com/hdmf-dev/hdmf-common-schema"
 docs_url: "https://hdmf-common-schema.readthedocs.io/en/stable/"

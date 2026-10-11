@@ -6,6 +6,8 @@ image: "/images/guide_logo_framed.png"
 source_url: "https://github.com/NeurodataWithoutBorders/nwb-guide"
 docs_url: "https://nwb-guide.readthedocs.io/en/stable/"
 weight: 40
+task: "Convert"
+tech: "Desktop app"
 ---
 
 ## Description
