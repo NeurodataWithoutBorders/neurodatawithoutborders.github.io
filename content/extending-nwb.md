@@ -1,5 +1,6 @@
 ---
 title: "Extending NWB"
+description: "NWB can be extended in two ways: NWB Extensions (NDX) for data types that are not yet part of the core standard, and NWB Enhancement Proposals (NWBEP) for changes to the standard itself."
 date: 2025-08-07
 ---
 

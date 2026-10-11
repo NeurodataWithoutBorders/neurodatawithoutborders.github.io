@@ -1,5 +1,6 @@
 ---
 title: "Papers"
+description: "Papers about the NWB data standard and its software ecosystem."
 weight: 3
 icon: "/images/paper.png"
 list:

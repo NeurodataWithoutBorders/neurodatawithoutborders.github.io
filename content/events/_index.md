@@ -1,5 +1,6 @@
 ---
 title: "NWB Events"
+description: "Past and upcoming NWB events, including workshops, hackathons, tutorials, and conferences."
 banner:
   enable: true
   title: "NWB Events"

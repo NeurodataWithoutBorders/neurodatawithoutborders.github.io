@@ -1,5 +1,6 @@
 ---
 title: Grants and Projects
+description: "Grants that fund NWB development and dissemination, and seed grants from The Kavli Foundation that helped labs standardize their data with NWB."
 sponsered_projects:
   enable: true
   boxes:

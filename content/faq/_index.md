@@ -1,5 +1,6 @@
 ---
 title: "Frequently Asked Questions"
+description: "Answers to common questions about using NWB, how it compares with other data standards and formats, and the differences between NWB 1 and NWB 2."
 weight: 5
 ---
 

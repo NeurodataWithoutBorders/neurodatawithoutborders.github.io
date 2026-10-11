@@ -1,5 +1,6 @@
 ---
 title: "Online Resources"
+description: "Links to NWB project websites, documentation for the core tools, training materials, and support channels such as the help desk, Slack, and the mailing list."
 weight: 4
 resources_section:
   enable: true
