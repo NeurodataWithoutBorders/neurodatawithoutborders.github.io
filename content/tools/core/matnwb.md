@@ -6,6 +6,8 @@ image: "/images/matnwb_logo_framed.png"
 source_url: "https://github.com/NeurodataWithoutBorders/matnwb/"
 docs_url: "https://matnwb.readthedocs.io/"
 weight: 20
+task: "Read & write"
+tech: "MATLAB"
 ---
 
 ## Description

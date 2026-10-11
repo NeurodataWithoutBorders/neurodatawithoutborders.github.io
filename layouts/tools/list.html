@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{/* Hero Section */}}
-<section class="hero teamSect d-flex justify-content-center align-items-center position-relative" style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/aboutBg.png');">
-    <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
+<section class="hero hero--compact teamSect d-flex justify-content-center align-items-center position-relative" style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/aboutBg.png');">
+    <h1 class="inter-700 text-white text-center z-4">{{ .Title | markdownify }}</h1>
     <div class="position-absolute ellipses">
         <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
     </div>
@@ -9,7 +9,18 @@
 {{/* End Hero Section */}}
 
 {{/* Content Section */}}
-<section class="section">
+{{ with .Params.page_nav }}
+<nav class="tools-nav" aria-label="On this page">
+    <div class="container">
+        <ul>
+            {{ range . }}
+            <li><a href="#{{ .anchor }}">{{ .name }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</nav>
+{{ end }}
+<section class="section tools-page">
     <div class="container">
         <div class="content">
             {{ .Content }}

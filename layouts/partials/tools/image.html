@@ -1,0 +1,16 @@
+{{- /*
+  Renders a tool image, downscaled to fit the given box and converted to WebP
+  when the source is a PNG or JPEG under static/images (mounted as assets).
+  Anything else (GIF, SVG, remote URL) is emitted unchanged.
+
+  Params: page (the tool page), fit (e.g. "640x400")
+*/ -}}
+{{- $src := .page.Params.image -}}
+{{- $alt := .alt | default "" -}}
+{{- $img := resources.Get (strings.TrimPrefix "/" $src) -}}
+{{- if and $img (in (slice "png" "jpeg") $img.MediaType.SubType) -}}
+  {{- $small := $img.Fit (printf "%s webp" .fit) -}}
+  <img src="{{ $small.RelPermalink }}" alt="{{ $alt }}" width="{{ $small.Width }}" height="{{ $small.Height }}" loading="lazy" decoding="async" />
+{{- else -}}
+  <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async" />
+{{- end -}}

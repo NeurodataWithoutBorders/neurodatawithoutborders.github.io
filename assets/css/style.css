@@ -1239,6 +1239,306 @@ ol.custom-ordered-list li::before {
   }
 }
 
+/* Tools pages: compact hero, in-page nav, readable intro */
+.hero--compact {
+  height: 230px !important;
+  overflow: hidden;
+}
+
+.hero--compact h1 {
+  font-size: clamp(2rem, 7vw, 3rem) !important;
+  margin: 2.5rem 0 0 !important;
+  padding: 0 1rem;
+}
+
+.tools-page.section {
+  padding-top: 48px !important;
+}
+
+/* #d17128 is 3.4:1 on white; this shade meets WCAG AA (4.5:1) for body-size text */
+.tools-page .content a {
+  color: #b35a14 !important;
+}
+
+.tools-page:not(.tools-page--single) .content > p {
+  max-width: 70ch;
+}
+
+.tools-page:not(.tools-page--single) .content > p:first-child {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.tools-page:not(.tools-page--single) .content h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 3.5rem 0 0.75rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e3e6ea;
+}
+
+.tools-page .content h2,
+.tools-page .content h3 {
+  scroll-margin-top: 140px;
+}
+
+.tools-nav {
+  position: sticky;
+  /* Sits directly below the fixed site header */
+  top: 78px;
+  z-index: 900;
+  background: #fff;
+  border-bottom: 1px solid #e3e6ea;
+}
+
+.tools-nav ul {
+  display: flex;
+  gap: 0.5rem 1.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tools-nav a {
+  display: block;
+  padding: 0.9rem 0;
+  color: #114b7c;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.tools-nav a:hover,
+.tools-nav a:focus-visible {
+  border-bottom-color: #d17128;
+}
+
+/* Tool rows: horizontal cards used by the "featured" and "compact" tool-grid variants */
+.tool-rows {
+  display: grid;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.tool-rows--featured {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tool-row {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.25rem;
+  background: #fff;
+  border: 1px solid #e3e6ea;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.tool-row:hover,
+.tool-row:focus-within {
+  border-color: #114b7c;
+  box-shadow: 0 4px 12px -4px rgba(17, 75, 124, 0.25);
+}
+
+.tool-row__logo {
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool-row__logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.tool-row__body {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  min-width: 0;
+  flex: 1;
+}
+
+.tool-row__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.35rem !important;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.tool-row__task {
+  color: #585c67;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tool-row__tech {
+  padding: 0.1rem 0.5rem;
+  color: #114b7c;
+  background: #e8f1f8;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.content .tool-row__title {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.tools-page .content a.tool-row__link {
+  color: #114b7c !important;
+}
+
+/* Makes the whole card a link to the tool page */
+.tool-row__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+}
+
+.content .tool-row__desc {
+  margin: 0 0 0.75rem;
+  color: #4a4e58;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.tool-row__install {
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
+  max-width: 100%;
+  margin-bottom: 0.9rem;
+  padding: 0.3rem 0.6rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  color: #171b26;
+  background: #f3f5f7;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+}
+
+.tool-row__actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+  align-self: flex-start;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.tools-page .content a.tool-row__docs {
+  padding: 0.4rem 1rem;
+  color: #fff !important;
+  background: #114b7c;
+  border-radius: 4px;
+}
+
+.tools-page .content a.tool-row__docs:hover {
+  background: #0d3a61;
+  text-decoration: none !important;
+}
+
+.tools-page .content a.tool-row__source {
+  padding: 0.4rem 0;
+  color: #4a4e58 !important;
+}
+
+.tools-page .content a.tool-row__source:hover {
+  color: #114b7c !important;
+}
+
+/* Compact rows: a denser list for secondary tools, grouped into columns */
+.tool-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.content .tool-group__title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.tool-rows--compact {
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+}
+
+.tool-rows--compact .tool-row {
+  padding: 0.9rem 1rem;
+  gap: 0.85rem;
+}
+
+.tool-rows--compact .tool-row__logo {
+  flex-basis: 48px;
+  width: 48px;
+  height: 48px;
+}
+
+.content .tool-rows--compact .tool-row__title {
+  font-size: 1rem;
+}
+
+.content .tool-rows--compact .tool-row__desc {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.tools-page .content .tool-rows--compact a.tool-row__docs {
+  padding: 0.4rem 0;
+  color: #114b7c !important;
+  background: none;
+}
+
+.tools-page .content .tool-rows--compact a.tool-row__docs:hover {
+  text-decoration: underline !important;
+}
+
+@media (max-width: 1199px) {
+  .tool-rows--featured {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  .tool-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .tool-rows--featured {
+    grid-template-columns: 1fr;
+  }
+  .hero--compact {
+    height: 190px !important;
+  }
+}
+
 /* Training Materials pages */
 a.next-page-btn {
   background-color: white;

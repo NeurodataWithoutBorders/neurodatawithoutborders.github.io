@@ -6,6 +6,8 @@ image: "/images/aqnwb_logo.png"
 source_url: "https://github.com/NeurodataWithoutBorders/aqnwb"
 docs_url: "https://nwb.org/aqnwb/"
 weight: 25
+task: "Read & write"
+tech: "C++"
 ---
 
 ## Description

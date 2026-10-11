@@ -1,11 +1,29 @@
+{{- /*
+  Lists the tools in one or more categories.
+
+  Params:
+    category  one category, or several separated by commas
+    variant   "card" (default), "featured" or "compact"
+    title     optional heading rendered above the group
+    id        optional id for that heading (defaults to the anchorized title)
+*/ -}}
+{{- $categories := split (.Get "category") "," -}}
+{{- $variant := .Get "variant" | default "card" -}}
+{{- $title := .Get "title" -}}
+{{- /* Rows sit one level below the heading that introduces them. */ -}}
+{{- $heading := cond (ne $title "") "h4" "h3" -}}
+{{- $tools := where (where .Site.RegularPages "Section" "tools") "Params.category" "in" $categories -}}
+{{ if $title }}
+<section class="tool-group">
+  <h3 class="tool-group__title" id="{{ .Get "id" | default (anchorize $title) }}">{{ $title }}</h3>
+{{ end }}
+{{ if eq $variant "card" }}
 <div class="tool-grid">
-  {{ $category := .Get "category" }}
-  {{ range where .Site.RegularPages "Section" "tools" }}
-    {{ if eq .Params.category $category }}
+  {{ range $tools }}
     <div class="tool-card" style="display: flex; flex-direction: column;">
       {{ if .Params.image }}
       <div class="tool-image">
-        <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+        {{ partial "tools/image.html" (dict "page" . "fit" "640x400" "alt" .Title) }}
       </div>
       {{ end }}
       <div class="tool-content" style="display: flex; flex-direction: column; flex-grow: 1;">
@@ -26,6 +44,44 @@
         </div>
       </div>
     </div>
-    {{ end }}
   {{ end }}
 </div>
+{{ else }}
+<div class="tool-rows tool-rows--{{ $variant }}">
+  {{ range $tools }}
+    {{ $tool := . }}
+    <article class="tool-row">
+      {{ if .Params.image }}
+      <div class="tool-row__logo">
+        {{/* Decorative: the logo repeats the tool name given in the heading. */}}
+        {{ partial "tools/image.html" (dict "page" . "fit" "192x192") }}
+      </div>
+      {{ end }}
+      <div class="tool-row__body">
+        {{ if and (eq $variant "featured") (or .Params.task .Params.tech) }}
+        <p class="tool-row__meta">
+          {{ with .Params.task }}<span class="tool-row__task">{{ . }}</span>{{ end }}
+          {{ with .Params.tech }}<span class="tool-row__tech">{{ . }}</span>{{ end }}
+        </p>
+        {{ end }}
+        {{ printf `<%s class="tool-row__title">` $heading | safeHTML }}<a class="tool-row__link" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ printf `</%s>` $heading | safeHTML }}
+        <p class="tool-row__desc">{{ .Params.description }}</p>
+        {{ if eq $variant "featured" }}
+          {{ with .Params.install }}<code class="tool-row__install">{{ . }}</code>{{ end }}
+        {{ end }}
+        <div class="tool-row__actions">
+          {{ with .Params.docs_url }}
+          <a href="{{ . }}" class="tool-row__docs" target="_blank" rel="noopener">Docs<span class="visually-hidden">: {{ $tool.Title }}</span></a>
+          {{ end }}
+          {{ with .Params.source_url }}
+          <a href="{{ . }}" class="tool-row__source" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source<span class="visually-hidden">: {{ $tool.Title }}</span></a>
+          {{ end }}
+        </div>
+      </div>
+    </article>
+  {{ end }}
+</div>
+{{ end }}
+{{ if $title }}
+</section>
+{{ end }}

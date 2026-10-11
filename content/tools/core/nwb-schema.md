@@ -1,7 +1,7 @@
 ---
 title: "NWB Schema"
 description: "The NWB data standard format specification"
-category: "extension"
+category: "schema"
 image: "/images/nwbschema_logo_framed.png"
 source_url: "https://github.com/NeurodataWithoutBorders/nwb-schema"
 docs_url: "https://nwb-schema.readthedocs.io/en/latest/"
