@@ -17,7 +17,7 @@
                 <div class="bg-white p-4 rounded-3 shadow-sm">
                     {{ if .Params.image }}
                     <div class="mb-4">
-                        <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid rounded-3 w-100">
+                        <img src="{{ partial "img-src.html" (dict "src" .Params.image "width" 2000) }}" alt="{{ .Title }}" class="img-fluid rounded-3 w-100">
                     </div>
                     {{ end }}
                     <div class="d-flex flex-wrap gap-4 mb-4">

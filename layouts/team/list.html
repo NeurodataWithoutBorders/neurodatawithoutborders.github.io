@@ -43,7 +43,7 @@
               {{ range $index, $element := .team_members }}
               <div class="col-6 col-sm-4 col-md-3 team-member {{ if gt $index 7 }}d-none{{ end }}" data-index="{{ $index }}">
                 <div class="h-100 bg-white rounded-3 p-md-4 p-2 shadow-sm pb-md-3">
-                  <img src="{{ $element.image }}" alt="" class="img-fluid rounded-3">
+                  <img src="{{ partial "img-src.html" (dict "src" $element.image "width" 800) }}" loading="lazy" alt="" class="img-fluid rounded-3">
                   <h5 class="inter-700 text-20 dark-900 pt-4">{{ $element.name | markdownify }}</h5>
                   {{ if $element.post }}<p class="inter-400 text-14 dark-900">{{ $element.post | markdownify }}</p>{{ end }}
                 </div>
@@ -117,7 +117,7 @@
           {{ range $i, $p := .team_members }}
           <div class="col-12 col-sm-4 col-md-3 team-member-tech {{ if gt $i 7 }}d-none{{ end }}" data-index="{{ $i }}">
             <div class="h-100 bg-white rounded-3 p-2 p-md-4 shadow-sm pb-md-3">
-              <img src="{{ $p.image }}" alt="" class="img-fluid rounded-3">
+              <img src="{{ partial "img-src.html" (dict "src" $p.image "width" 800) }}" loading="lazy" alt="" class="img-fluid rounded-3">
               <h5 class="inter-700 text-20 dark-900 pt-4">{{ $p.name | markdownify }}</h5>
               {{ if $p.post }}<p class="inter-400 text-14 dark-900">{{ $p.post | markdownify }}</p>{{ end }}
             </div>
@@ -182,7 +182,7 @@
                 <div class="col-6 col-sm-4 col-md-3">
                     <div class="h-100 bg-white rounded-3 p-4 shadow-sm pb-2 d-flex flex-column justify-content-between">
                         <div class="d-flex flex-column justify-content-center align-items-center">
-                            <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                            <img src="{{ partial "img-src.html" (dict "src" .image "width" 800) }}" loading="lazy" alt="" class="img-fluid rounded-3">
                         </div>
                         <div>
                           <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>
@@ -206,7 +206,7 @@
                 <div class="col-6 col-sm-4 col-md-3">
                     <div class="h-100 bg-white rounded-3 p-4 shadow-sm pb-2 d-flex flex-column justify-content-between">
                         <div class="d-flex flex-column justify-content-center align-items-center">
-                            <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                            <img src="{{ partial "img-src.html" (dict "src" .image "width" 800) }}" loading="lazy" alt="" class="img-fluid rounded-3">
                         </div>
                         <div>
                             <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>
@@ -230,7 +230,7 @@
                 <div class="col-6 col-sm-4 col-md-3">
                     <div class="h-100 bg-white rounded-3 p-4 shadow-sm pb-2 d-flex flex-column justify-content-between">
                         <div class="d-flex flex-column justify-content-center align-items-center">
-                            <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                            <img src="{{ partial "img-src.html" (dict "src" .image "width" 800) }}" loading="lazy" alt="" class="img-fluid rounded-3">
                         </div>
                         <div>
                           <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>

@@ -21,7 +21,7 @@
             <a href="{{ .url }}" class="col-12 col-sm-6 col-md-4 col-lg-4" target="_blank">
                 <div class="bg-white h-100 rounded-3 p-4 shadow-sm">
                     <div class="d-flex flex-column row-gap-4">
-                        <img src="{{ .image }}" alt="" width="40">
+                        <img src="{{ partial "img-src.html" (dict "src" .image "width" 120) }}" loading="lazy" alt="" width="40">
                         <div class="">
                             <h5 class="inter-700 text-18 dark-900 mb-2">{{ .title | markdownify }}</h5>
                             <p class="inter-400 text-14 dark-700">{{ .content | markdownify }}</p>
@@ -49,7 +49,7 @@
             <a href="{{ .url }}" class="col-12 col-sm-6 col-md-4 col-lg-4" target="_blank">
                 <div class="bg-dark-100 h-100 rounded-3 p-4 shadow-sm">
                     <div class="d-flex flex-column row-gap-4">
-                        <img src="{{ .image }}" alt="" width="40">
+                        <img src="{{ partial "img-src.html" (dict "src" .image "width" 120) }}" loading="lazy" alt="" width="40">
                         <div class="">
                             <h5 class="inter-700 text-18 dark-900 mb-2">{{ .title | markdownify }}</h5>
                             <p class="inter-400 text-14 dark-700">{{ .content | markdownify }}</p>
@@ -77,7 +77,7 @@
             <a href="{{ .url }}" class="col-12 col-sm-6 col-md-4 col-lg-4" target="_blank">
                 <div class="bg-white h-100 rounded-3 p-4 shadow-sm">
                     <div class="d-flex flex-column row-gap-4">
-                        <img src="{{ .image }}" alt="" width="40">
+                        <img src="{{ partial "img-src.html" (dict "src" .image "width" 120) }}" loading="lazy" alt="" width="40">
                         <div class="">
                             <h5 class="inter-700 text-18 dark-900 mb-2">{{ .title | markdownify }}</h5>
                             <p class="inter-400 text-14 dark-700">{{ .content | markdownify }}</p>
@@ -105,7 +105,7 @@
             <a href="{{ .url }}" class="col-12 col-sm-6 col-md-4 col-lg-4" target="_blank">
                 <div class="bg-dark-100 h-100 rounded-3 p-4 shadow-sm">
                     <div class="d-flex flex-column row-gap-4">
-                        <img src="{{ .image }}" alt="" width="40">
+                        <img src="{{ partial "img-src.html" (dict "src" .image "width" 120) }}" loading="lazy" alt="" width="40">
                         <div class="">
                             <h5 class="inter-700 text-18 dark-900 mb-2">{{ .title | markdownify }}</h5>
                             <p class="inter-400 text-14 dark-700">{{ .content | markdownify }}</p>

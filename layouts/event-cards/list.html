@@ -16,7 +16,7 @@
   <div class="container-lg">
     <div class="row justify-content-center justify-content-md-between gy-5 g-md-0 align-items-center">
       <div class="col-sm-8 col-md-4">
-        <img src="{{ .image }}" alt="" class="img-fluid">
+        <img src="{{ partial "img-src.html" (dict "src" .image "width" 1400) }}" loading="lazy" alt="" class="img-fluid">
       </div>
       <div class="col-sm-8 col-md-7">
         <h3 class="inter-700 text-48 dark-900 mb-4">{{ .title | markdownify }}</h3>

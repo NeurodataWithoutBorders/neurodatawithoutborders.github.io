@@ -25,7 +25,7 @@
                 {{ range $i, $p := .items }}
                 <div class="d-flex gap-3 ms-1 {{ if eq $i 0 }}pt-4{{ else }}pt-3{{ end }}">
                     <div>
-                        <img src="{{ .icon }}" alt="" width="20">
+                        <img src="{{ partial "img-src.html" (dict "src" .icon "width" 60) }}" loading="lazy" alt="" width="20">
                     </div>
                     <div>
                         {{ if .heading }}
@@ -44,7 +44,7 @@
                             {{ range $index, $params := .nested_list }}
                             <div class="d-flex gap-3 ms-1 {{ if eq $index 0 }}pt-4{{ else }}pt-3{{ end }}">
                                 <div>
-                                    <img src="{{ .icon }}" alt="" width="20">
+                                    <img src="{{ partial "img-src.html" (dict "src" .icon "width" 60) }}" loading="lazy" alt="" width="20">
                                 </div>
                                 <div>
                                     <a href="{{ .link }}" class="inter-600 text-16 blue nav-link">{{ .heading | markdownify }}</a>
