@@ -25,7 +25,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0
+      # Keep in sync with HUGO_VERSION in netlify.toml so that deploy previews
+      # and production are built by the same Hugo.
+      HUGO_VERSION: 0.152.2
     steps:
       - name: Install Hugo CLI
         run: |

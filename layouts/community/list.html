@@ -18,11 +18,12 @@
             <div class="col-12 mt-4">
                 <div class="row g-4">
                     {{ range .Pages }}
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="{{ .Permalink }}" class="text-decoration-none">
-                            <div class="bg-white rounded-3 p-4 shadow-sm h-100">
+                    <div class="col-12 col-md-6">
+                        <a href="{{ .Permalink }}" class="text-decoration-none d-block h-100">
+                            <div class="bg-white rounded-3 p-4 h-100 d-flex flex-column aboutBox animate">
                                 <h4 class="inter-700 text-24 dark-900 mb-3">{{ .Title }}</h4>
-                                <p class="inter-400 text-16 dark-700">{{ .Summary }}</p>
+                                <p class="inter-400 text-16 dark-700">{{ .Summary | plainify }}</p>
+                                <span class="inter-400 text-18 second mt-auto">Learn More →</span>
                             </div>
                         </a>
                     </div>
