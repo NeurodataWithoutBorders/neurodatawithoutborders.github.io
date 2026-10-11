@@ -14,7 +14,7 @@ NWB Widgets is a library of widgets for visualization NWB data in a Jupyter note
 
 ## Demo
 
-![NWB Widgets Demo](/images/tools/nwbwidgets/jupyter_widgets_demo.gif)
+<video autoplay loop muted playsinline width="1006" height="872" aria-label="NWB Widgets Demo" style="width: 100%; height: auto;"><source src="/images/tools/nwbwidgets/jupyter_widgets_demo.mp4" type="video/mp4"></video>
 
 ## Installation
 
