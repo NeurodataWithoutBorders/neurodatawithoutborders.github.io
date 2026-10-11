@@ -21,7 +21,7 @@
                     <div class="d-flex flex-column row-gap-4">
                         <div>
                             <div class="shadow-inner p-3 border rounded-2 d-inline-block">
-                                <img src="{{ .icon }}" alt="" class="img-fluid typeBox">
+                                <img src="{{ partial "img-src.html" (dict "src" .icon "width" 96) }}" loading="lazy" alt="" class="img-fluid typeBox">
                             </div>
                         </div>
                         <div class="">
@@ -47,7 +47,7 @@
         <div
             class="row {{ if $even }}flex-lg-row-reverse{{ end }} gy-4 justify-content-center justify-content-md-between section">
             <div class="col-sm-10 col-md-5">
-                <img src="{{ $p.image }}" alt="" class="img-fluid {{ if $p.community_software }}fixedHeight{{ end }}">
+                <img src="{{ partial "img-src.html" (dict "src" $p.image "width" 1400) }}" loading="lazy" alt="" class="img-fluid {{ if $p.community_software }}fixedHeight{{ end }}">
             </div>
             <div class="col-sm-10 col-lg-6">
                 <div class="d-flex flex-column row-gap-2">
@@ -139,7 +139,7 @@
             
             {{ if .image }}
             <div class="mt-4">
-                <img src="{{ .image }}" alt="NWB Tools Architecture" class="img-fluid" style="max-width: 90%;">
+                <img src="{{ partial "img-src.html" (dict "src" .image "width" 2000) }}" loading="lazy" alt="NWB Tools Architecture" class="img-fluid" style="max-width: 90%;">
             </div>
             {{ end }}
         </div>

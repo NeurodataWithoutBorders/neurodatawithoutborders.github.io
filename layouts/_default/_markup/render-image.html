@@ -1,0 +1,2 @@
+<img src="{{ partial "img-src.html" (dict "src" .Destination) }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">
+{{- /* chomp trailing newline */ -}}

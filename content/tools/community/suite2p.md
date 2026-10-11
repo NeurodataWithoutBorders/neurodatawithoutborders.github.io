@@ -12,7 +12,7 @@ weight: 120
 
 Suite2p is an imaging processing pipeline written in Python. It provides a comprehensive set of tools for analyzing calcium imaging data.
 
-![Suite2p Demo](/images/tools/suite2p/multiselect.gif)
+<video autoplay loop muted playsinline width="1600" height="854" aria-label="Suite2p Demo" style="width: 100%; height: auto;"><source src="/images/tools/suite2p/multiselect.mp4" type="video/mp4"></video>
 
 ## Features
 
