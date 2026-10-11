@@ -242,8 +242,12 @@
   }
 }
 
-/* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* Fonts. Inter is loaded in head.html. Without this rule, text that has no
+   inter-* class, such as paragraphs written in Markdown, uses Bootstrap's
+   system font stack. */
+body {
+  font-family: "Inter", sans-serif !important;
+}
 
 /* Variables */
 :root {
