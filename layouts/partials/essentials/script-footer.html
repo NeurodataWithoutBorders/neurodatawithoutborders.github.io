@@ -1,5 +1,7 @@
-{{/*  Swiper JS  */}}
+{{/*  Swiper JS (only the home page has carousels)  */}}
+{{ if .IsHome }}
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+{{ end }}
 
 {{/*  Scripts  */}}
 {{ with resources.Get "js/plugins.js" }}

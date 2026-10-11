@@ -9,29 +9,18 @@
 {{/*  Bootstrap Icons  */}}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-{{/*  Font Awesome  */}}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 {{/*  Swiper JS  */}}
+{{ if .IsHome }}{{/*  only the home page has carousels  */}}
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+{{ end }}
 
 {{/*  Favicon  */}}
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 
 {{/*  Styles  */}}
-{{ $plugin := slice }}
-{{ $plugin := $plugin | append (resources.Get "scss/plugins.scss" | resources.ExecuteAsTemplate "plugins.scss" . | toCSS) }}
-{{ $plugin := $plugin | resources.Concat "/css/plugins.css" }}
-
-{{ if hugo.IsProduction }}
-  {{ $plugin = $plugin | fingerprint "sha256" }}
-  {{ $plugin = $plugin | resources.PostProcess }}
-{{ end }}
-<link rel="stylesheet" href="{{ $plugin.RelPermalink }}" />
-
 {{ $styles := dict "transpiler" "libsass" "targetPath" "css/styles.css" }}
 {{ with resources.Get "css/style.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
