@@ -46,65 +46,67 @@ document.addEventListener("DOMContentLoaded", function () {
   
   
 
-  // Swiper Init
-  const heroSwiper = new Swiper(".heroSwiper", {
-    slidesPerView: 1,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-  });
+  // Swiper Init (the library is only loaded on pages that have a carousel)
+  if (typeof Swiper !== "undefined") {
+    const heroSwiper = new Swiper(".heroSwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
 
-  const newsSwiper = new Swiper(".newsSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      576: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+    const newsSwiper = new Swiper(".newsSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
       },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      }
-    },
-  });
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        }
+      },
+    });
 
-  const eventsSwiper = new Swiper(".eventsSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      576: {
-        slidesPerView: 2,
-        spaceBetween: 30,
+    const eventsSwiper = new Swiper(".eventsSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
       },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 40
-      }
-    },
-  });
+      breakpoints: {
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        }
+      },
+    });
+  }
 
   // PageFind Init
   window.addEventListener('DOMContentLoaded', (event) => {
