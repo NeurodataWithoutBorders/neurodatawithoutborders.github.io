@@ -242,8 +242,12 @@
   }
 }
 
-/* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* Fonts. Inter is loaded in head.html. Without this rule, text that has no
+   inter-* class, such as paragraphs written in Markdown, uses Bootstrap's
+   system font stack. */
+body {
+  font-family: "Inter", sans-serif !important;
+}
 
 /* Variables */
 :root {
@@ -1381,4 +1385,19 @@ a.next-page-btn:hover {
 
 .content pre::-webkit-scrollbar-thumb:hover {
   background: #afb8c1 !important;
+}
+
+/* Line length. Running text is capped at about 80 characters per line.
+   Paragraphs and list items that hold an image, video, embed, table, code
+   block or other layout keep the full width of their container. */
+main :is(p, li):not(:has(img, video, iframe, table, pre, div)) {
+  max-width: 40em !important;
+}
+
+/* Keep centered paragraphs centered once they are narrower than their
+   container. */
+main .text-center p,
+main p.text-center {
+  margin-left: auto;
+  margin-right: auto;
 }
