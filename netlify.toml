@@ -16,8 +16,3 @@
 
 #[[plugins]]
 #package = 'netlify-plugin-image-optim'
-
-[[redirects]]
-  from = "/converting-data-to-nwb"
-  to = "/convert"
-  status = 301
