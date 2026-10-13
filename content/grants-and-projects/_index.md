@@ -1,5 +1,6 @@
 ---
 title: Grants and Projects
+description: "Grants that fund NWB development and dissemination, and seed grants from The Kavli Foundation that helped labs standardize their data with NWB."
 sponsered_projects:
   enable: true
   boxes:
@@ -186,14 +187,14 @@ past_projects_section:
     - image: /images/project_components.png
       title: "NWB: A Data Standard and Software Ecosystem for Neurophysiology"
       content: The National Institutes of Health, through project <a
-        href='https://reporter.nih.gov/search/39Cu1-L5zUap7i3X41dBTA/project-details/9582696'>1R24MH116922</a>, funded <a href='https://crd.lbl.gov/divisions/scidata/mla/staff/oliver-ruebel/'>Oliver Rübel</a> (Lawrence
+        href='https://reporter.nih.gov/search/39Cu1-L5zUap7i3X41dBTA/project-details/9582696'>1R24MH116922</a>, funded <a href='https://github.com/oruebel'>Oliver Rübel</a> (Lawrence
         Berkeley National Laboratory) and <a href='https://alleninstitute.org/what-we-do/brain-science/about/team/staff-profiles/lydia-ng/'>Lydia Ng</a> (Allen
         Institute for Brain Science) to continue development of the NWB data
         format and software ecosystem to enable standardization, sharing, and
         reuse of neurophysiology data and analyses, enhancing discovery and
         reproducibility. This funding is part of the NIH’s BRAIN Initiative
         support to develop standards.(September 2018-May 2020). For updates on
-        this project see our <a href='http://www.nwb.org/progress-reports/'>Progress Reports page</a>.
+        this project see our <a href='https://web.archive.org/web/20250425022741/https://www.nwb.org/progress-reports/'>Progress Reports page</a>.
     - image: /images/enabling_sharing_nwb.png
       title: Enabling Shared Analysis and Processing of Large Neurophysiology Data
       content: The National Institutes of Health, through project <a href='https://reporter.nih.gov/search/MrtOAMt7skGS5bbZADQBMQ/project-details/9409114'>1R44MH115731</a>, funded

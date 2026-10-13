@@ -1,5 +1,6 @@
 ---
 title: Enhancement Proposals
+description: "NWB Enhancement Proposals (NWBEP) are the formal way to propose major additions or changes to the NWB standard. They are reviewed by the NWB Technical Advisory Board."
 section:
   - title: About NWB Enhancement Proposals (NWBEP)
     list:

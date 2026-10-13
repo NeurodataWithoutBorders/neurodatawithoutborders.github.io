@@ -1,5 +1,6 @@
 ---
 title: Supporting NWB
+description: "Ways to help sustain NWB: advocate for funding, spread the word, add a testimonial, and give credit when you use open data."
 hero_section:
   enable: true
   title: "Supporting NWB"

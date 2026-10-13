@@ -1,5 +1,6 @@
 ---
 title: About NWB
+description: "Neurodata Without Borders began in 2014 as a consortium of researchers and foundations working to remove the obstacles to sharing neuroscience data. Read about its goals and history."
 about_section:
   enable: true
   image: /images/about-nwb.png

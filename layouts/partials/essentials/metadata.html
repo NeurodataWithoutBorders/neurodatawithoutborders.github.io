@@ -1,0 +1,54 @@
+{{/*
+  Description and link preview tags.
+
+  The description is the first of these that is set: `description`, `summary`
+  (events) or `subtitle` (news) in the front matter, the start of the page
+  body, then `description` in config/_default/params.yaml.
+
+  The preview image is the page's `image` when it is a PNG or JPEG no wider
+  than 3.3:1. Wider logo strips lose most of their width when a preview crops
+  them, so those pages, like pages with a GIF or with no image, use
+  `shareImage` from the same file.
+*/}}
+{{ $title := site.Title }}
+{{ if and .Title (not .IsHome) }}
+  {{ $title = .Title | plainify | htmlUnescape | replaceRE `\s+` " " }}
+{{ end }}
+
+{{ $description := .Params.description | default .Params.summary | default .Params.subtitle | default .Summary | default site.Params.description }}
+{{ $description = $description | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 200 }}
+{{ $description = trim $description " " }}
+
+{{ $image := site.Params.shareImage | absURL }}
+{{ $largeImage := true }}
+{{ with .Params.image }}
+  {{ if hasPrefix . "http" }}
+    {{ $image = . }}
+  {{ else }}
+    {{ $path := index (split . "#") 0 }}
+    {{ $file := printf "static%s" $path }}
+    {{ if and (findRE `(?i)\.(png|jpe?g)$` $path) (fileExists $file) }}
+      {{ $config := imageConfig $file }}
+      {{ $ratio := div (float $config.Width) $config.Height }}
+      {{ if le $ratio 3.3 }}
+        {{ $image = $path | absURL }}
+        {{ $largeImage = and (ge $ratio 1.5) (ge $config.Width 600) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<meta name="description" content="{{ $description }}" />
+<meta property="og:site_name" content="{{ site.Title }}" />
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:image" content="{{ $image }}" />
+{{ if and .IsPage (eq .Section "news") }}
+  <meta property="og:type" content="article" />
+  {{ with .Date }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}" />{{ end }}
+{{ else }}
+  <meta property="og:type" content="website" />
+{{ end }}
+{{/*  X reads the Open Graph tags above for everything except the card type.  */}}
+<meta name="twitter:card" content="{{ if $largeImage }}summary_large_image{{ else }}summary{{ end }}" />

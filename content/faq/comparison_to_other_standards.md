@@ -1,5 +1,6 @@
 ---
 title: "How does NWB 2.0 compare to other neurodata standards?"
+description: "How NWB 2.0 differs from NWB 1.0, NIX, and BIDS in approach and scope."
 weight: 1
 ---
 

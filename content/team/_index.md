@@ -1,5 +1,6 @@
 ---
 title: "Team"
+description: "How NWB is governed, with the members of the Executive Board, the Technical Advisory Board, and the core development team."
 governance_section:
   enable: true
   title: Governance Structure

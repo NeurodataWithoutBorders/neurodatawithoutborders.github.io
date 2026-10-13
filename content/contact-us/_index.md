@@ -1,5 +1,6 @@
 ---
 title: Contact Us
+description: "Ask questions on the NWB help desk, join the Slack workspace, contribute on GitHub, or sign up for the mailing list."
 community_section:
   enable: true
   title: Community
