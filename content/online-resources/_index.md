@@ -36,7 +36,7 @@ support_section:
     - title: "Slack"
       content: "Join the NWB community on Slack"
       image: "/images/slack.png"
-      url: "https://bit.ly/3jK6Gm1"
+      url: "https://nwb-users.slack.com/join/shared_invite/zt-9bsx3xdj-wtUILLNzM8a0mOV_RywS~Q#/shared-invite/email"
     - title: "Twitter"
       content: "Follow NWB on Twitter"
       image: "/images/twitter.png"
