@@ -4,7 +4,6 @@ description: "A command line tool and MCP server for finding and reading public 
 category: "exploration"
 image: "/images/tools/brainhound/brainhound-logo.png"
 source_url: "https://github.com/stanczykwyatt/brainhound"
-docs_url: "https://stanczykwyatt.github.io/brainhound/"
 weight: 70
 ---
 

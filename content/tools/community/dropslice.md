@@ -4,7 +4,6 @@ description: "A static web page, built on h5web, that opens NWB and other HDF5 f
 category: "exploration"
 image: "/images/tools/dropslice/dropslice-logo.png"
 source_url: "https://github.com/stanczykwyatt/dropslice"
-docs_url: "https://stanczykwyatt.github.io/dropslice/"
 weight: 60
 ---
 
