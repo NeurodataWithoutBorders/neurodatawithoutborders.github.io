@@ -1,10 +1,10 @@
 <div class="position-relative">
     <div class="position-absolute w-100 h-100 overflow-hidden z-n1 bg-darken-main">
         <div class="position-absolute">
-            <img src="/images/essentials/footer-dots-t.png" alt="" class="w-50">
+            <img src="/images/essentials/footer-dots-t.png" alt="" aria-hidden="true" class="w-50">
         </div>
         <div class="position-absolute footer-dots">
-            <img src="/images/essentials/footer-dots.png" alt="" class="w-50">
+            <img src="/images/essentials/footer-dots.png" alt="" aria-hidden="true" class="w-50">
         </div>
     </div>
     <div class="container-lg footer-padi z-3">
@@ -13,7 +13,7 @@
                 <div class="d-flex flex-column row-gap-4">
                     {{ with site.Params.footer_logo }}
                     <a href="/">
-                        <img src="{{ . }}" alt="nwb-colored-log" class="w-75">
+                        <img src="{{ . }}" alt="Neurodata Without Borders home" class="w-75">
                     </a>
                     {{ end }}
                     {{ with site.Params.copyright_text }}

@@ -32,6 +32,7 @@ card_section:
 portfolio_section:
   enable: true
   image: /images/ai_img.jpg
+  image_alt: "Colorful traces of neural activity recorded across many channels"
   heading: Neurodata Without Borders
   paragraph: Neurodata Without Borders (NWB) is a data standard for
     neurophysiology, providing neuroscientists with a common standard to share,
@@ -44,7 +45,9 @@ portfolio_section:
     toward breaking down the barriers to data sharing in neuroscience
   logos:
     - logo: /images/portfolio-logo.png
+      name: "R&D 100 Award winner"
     - logo: /images/incf.png
+      name: "INCF endorsed standard"
 video_section:
   enable: true
   title: "Learn More About NWB"
@@ -58,18 +61,25 @@ sponsers_section:
   enable: true
   logos:
     - image: /images/sponsor-allen-institute.png
+      name: "Allen Institute"
       link: "https://alleninstitute.org/"
     - image: /images/sponsor-hhmi.png
+      name: "Howard Hughes Medical Institute"
       link: "https://www.hhmi.org/"
     - image: /images/sponsor-kavli.png
+      name: "Kavli Foundation"
       link: "https://www.kavlifoundation.org/"
     - image: /images/sponsor-lbnl.png
+      name: "Lawrence Berkeley National Laboratory"
       link: "https://www.lbl.gov/"
     - image: /images/sponsor-mathworks.png
+      name: "MathWorks"
       link: "https://www.mathworks.com/"
     - image: /images/sponsor-simons-foundation.png
+      name: "Simons Foundation"
       link: "https://www.simonsfoundation.org/"
     - image: /images/sponsor-incf.png
+      name: "INCF"
       link: "https://www.incf.org/"
 cta_section:
   enable: true

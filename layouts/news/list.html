@@ -49,7 +49,7 @@
                             {{ with .Date }}
                             <div class="d-flex gap-2 align-items-center">
                                 <div class="icons">
-                                    <img src="/images/essentials/calender.png" alt="calender" class="img-fluid">
+                                    <img src="/images/essentials/calender.png" alt="" aria-hidden="true" class="img-fluid">
                                 </div>
                                 <p class="inter-400 text-14 dark-600 mb-0 pt-1" data-pagefind-meta="date">{{ . | time.Format "January 02, 2006" }}
                                 </p>
@@ -66,10 +66,10 @@
                             </div>
                             {{ end }}
                             <div>
-                                <a href="{{ .Permalink }}"
+                                <a href="{{ .Permalink }}" aria-label="Read more: {{ .Title | plainify }}"
                                     class="btn btn-main text-18 yellow bg-transparent border-transparent inter-400 scale animate p-0 border-0">
                                     Read More
-                                    <img src="/images/essentials/arrow_right.png" alt="nwb_right_arrow" class="w-20">
+                                    <img src="/images/essentials/arrow_right.png" alt="" aria-hidden="true" class="w-20">
                                 </a>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
                                 <div class="w-100 d-flex flex-column row-gap-1">
                                     <div class="d-flex align-items-sm-center gap-1">
                                         <div>
-                                            <img src="/images/essentials/calender.png" alt="calender" width="17">
+                                            <img src="/images/essentials/calender.png" alt="" aria-hidden="true" width="17">
                                         </div>
                                         <p class="inter-400 text-12 dark-600 mb-0 pt-1">{{ .Date | time.Format "January 02, 2006 "}}</p>
                                     </div>
