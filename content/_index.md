@@ -52,8 +52,10 @@ video_section:
 
 news_section:
   enable: true
-  btn_text: See All New
-  btn_link: /news
+  # Number of most recent posts shown on the homepage; the rest are on /news/.
+  count: 3
+  btn_text: See All News
+  btn_link: /news/
 sponsers_section:
   enable: true
   logos:

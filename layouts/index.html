@@ -136,60 +136,61 @@
 {{ with .Params.news_section }}
 {{ if .enable }}
 <section class="section w-100 h-100 newsSect">
-  <div class="swiper newsSwiper container d-flex flex-column gap-5 px-0">
+  <div class="container d-flex flex-column gap-5 px-0">
 
-    <div class="row justify-content-between align-items-center w-100">
-      <div class="col-md-6">
+    <div class="row justify-content-between align-items-center w-100 mx-0">
+      <div class="col-md-6 px-0">
         <h2 class="text-white inter-700 text-40 mb-0 text-center text-md-start">Latest News & Updates</h2>
       </div>
-      <div class="col-md-6 d-md-flex justify-content-end d-none">
-        <a href="/news/"
-          class="btn btn-outline-main px-4 second border-second aboutBtn btn-lg scale animate">See All News</a>
+      <div class="col-md-6 d-md-flex justify-content-end d-none px-0">
+        <a href="{{ .btn_link | default "/news/" }}"
+          class="btn btn-outline-main px-4 second border-second aboutBtn btn-lg scale animate">{{ .btn_text | default "See All News" }}</a>
       </div>
     </div>
 
-    <div class="swiper-wrapper">
+    <div class="row g-4 mx-0">
       {{ $pages := where site.RegularPages "Section" "news" }}
-      {{ range $pages.ByDate.Reverse }}
-      <div class="swiper-slide">
-        <div class="shadow">
-          <div class="shadow-sm">
-            <img src="{{ .Params.image }}" alt="" class="rounded-top-3" style="width: 100% !important; height: 240px !important; object-fit: cover !important;">
-        </div>
-          <div class="h-40 p-4 bg-main rounded-bottom-3 d-flex flex-column gap-3">
-            <div class="d-flex gap-2 align-items-center">
-              <div class="icons">
-                <img src="/images/essentials/calender.png" alt="calender" class="img-fluid">
-              </div>
-              <p class="inter-400 text-14 slate mb-0 pt-1">{{ .Date | time.Format ":date_long"}}</p>
+      {{ range first (.count | default 3) $pages.ByDate.Reverse }}
+      {{/* Category chip from the comma-separated tags string */}}
+      {{ $tags := lower (delimit (slice .Params.tags) ",") }}
+      {{ $category := "News" }}
+      {{ if in $tags "release" }}{{ $category = "Release" }}
+      {{ else if in $tags "newsletter" }}{{ $category = "Newsletter" }}
+      {{ else if in $tags "training" }}{{ $category = "Training" }}
+      {{ end }}
+      <div class="col-12 col-md-4">
+        <article class="shadow h-100 d-flex flex-column rounded-3">
+          <a href="{{ .Permalink }}" tabindex="-1" aria-hidden="true">
+            <img src="{{ .Params.image }}" alt="" class="rounded-top-3" loading="lazy" decoding="async" width="640" height="240"
+              style="width: 100% !important; height: 240px !important; object-fit: cover !important;">
+          </a>
+          <div class="p-4 bg-main rounded-bottom-3 d-flex flex-column gap-3 flex-grow-1">
+            <div class="d-flex gap-2 align-items-center flex-wrap">
+              <span class="badge rounded-pill text-12 inter-500" style="background-color: #ff9900; color: #071a2b;">{{ $category }}</span>
+              <p class="inter-400 text-14 slate mb-0">{{ .Date | time.Format ":date_long"}}</p>
+            </div>
+            <div class="flex-grow-1">
+              <h3 class="inter-600 text-20 dark-100">
+                <a href="{{ .Permalink }}" class="text-reset text-decoration-none">{{ .Title | markdownify }}</a>
+              </h3>
+              <p class="inter-400 text-16 dark-300 mb-0">{{ .Params.subtitle | markdownify | truncate 120 }}</p>
             </div>
             <div>
-              <h3 class="inter-600 text-20 dark-100">{{ .Title | markdownify | truncate 30 }}</h3>
-              <p class="inter-400 text-16 dark-300 mb-0">{{ .Params.subtitle | markdownify | truncate 60 }}</p>
-            </div>
-            <div>
-              <a href="{{ .Permalink }}"
+              <a href="{{ .Permalink }}" aria-label="Read more: {{ .Title | plainify }}"
                 class="btn btn-main text-16 yellow bg-transparent border-transparent inter-400 scale animate p-0 border-0">
                 Read More
-                <img src="/images/essentials/arrow_right.png" alt="nwb_right_arrow" class="w-20">
+                <img src="/images/essentials/arrow_right.png" alt="" aria-hidden="true" class="w-20">
               </a>
             </div>
           </div>
-        </div>
+        </article>
       </div>
       {{ end }}
-
-    </div>
-    
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div>
-      <div class="swiper-pagination"></div>
     </div>
   </div>
-  <div class="col-md-6 d-flex justify-content-center mt-4 d-md-none">
-    <a href="/news/"
-      class="btn btn-outline-main px-4 second border-second aboutBtn btn-lg scale animate">See All New</a>
+  <div class="d-flex justify-content-center mt-4 d-md-none">
+    <a href="{{ .btn_link | default "/news/" }}"
+      class="btn btn-outline-main px-4 second border-second aboutBtn btn-lg scale animate">{{ .btn_text | default "See All News" }}</a>
   </div>
 </section>
 {{ end }}
